@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "training_status": "completed",
+  "environment_steps": 20000,
+  "source_hashes_match_run": true,
+  "checkpoint_hashes_match": true,
+  "all_six_model_components_changed": true,
+  "optimizer_iterations": {
+    "model": 1501,
+    "actor": 1501,
+    "value": 1501
+  },
+  "finite_loss_and_gradient_rows": 15,
+  "evaluation_episodes": 10,
+  "unique_evaluation_seeds": 10,
+  "evaluation_weights_unchanged": true,
+  "restore_max_abs_difference": 0.0,
+  "episode_statistics_recomputed": true,
+  "mean_return": 30.925519257204552,
+  "std_return": 8.830455513086843,
+  "scope": "Short-run pipeline verification; no claim of paper-level performance."
+}

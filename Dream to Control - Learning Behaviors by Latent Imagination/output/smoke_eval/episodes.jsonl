@@ -1,0 +1,2 @@
+{"task": "dmc_walker_walk", "episode": 0, "seed": 20000, "return": 43.868063961431886, "decisions": 500, "environment_steps": 1000}
+{"task": "dmc_walker_walk", "episode": 1, "seed": 20001, "return": 80.982188291156, "decisions": 500, "environment_steps": 1000}

@@ -1,0 +1,60 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1791894934.927224   60340 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1791894936.601386   60340 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Logdir runs/smoke
+/root/rivermind-data/dreamer-v1-repro/.venv/lib/python3.10/site-packages/gym/spaces/box.py:127: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+Prefill dataset with 0 steps.
+Simulating agent for 1000 steps.
+Found 5296820 model parameters.
+Found 578412 actor parameters.
+Found 413601 value parameters.
+Load checkpoint.
+CHECKPOINT_RESTORED runs/smoke/variables.pkl environment_steps 6000
+Start evaluation.
+Test episode of length 1000 with return 76.4.
+Start collection.
+Training for 5 steps.
+[6000] expl_amount 0.3 / model_grad_norm 3228.0 / value_grad_norm 75.4 / actor_grad_norm 2.3 / prior_ent 37.4 / post_ent 35.9 / image_loss 11762.1 / reward_loss 1.4 / div 4.5 / model_loss 11768.0 / value_loss 26.5 / actor_loss -0.4 / action_ent -20.4
+Train episode of length 1000 with return 39.6.
+CHECKPOINT_AUDIT {"environment_steps": 7000, "initial_module_sha256": {"encode": "0c55007a0294f41dc8edd720b006e1a8b2c217b3ec11ea78aba497c226d6116d", "dynamics": "1569b5d373373b93bbe9a9c2816c0b41ad777246fa6d90eac41a28dee3bff6d2", "decode": "aa4bb5f200a14237978f2e2ca039d36be30e256dbf2f8aa5ee0590b53cb4b88b", "reward": "9325bb27077445c22fbee1a6a39a577f356e888070ca8acb651ca991036e9c5a", "actor": "83199e505f24548704e00b38152b429b2235ca28af1c0ad2be04a29ba77d917d", "value": "011d001c3722e1f70a6f4d54666f47ce3d3628afe39d6eb0a435584f1cd9a73f"}, "current_module_sha256": {"encode": "0ed7a2830f8d17af4d68a1e0117d9e605923b830a6a4089304e06074abb9623e", "dynamics": "bad57d8155fba63f5104b40c600837e3a4c544ff83932462cd2624e1146a684d", "decode": "72d41bbb9fdaa0b15bd671435258ea0936976143e7bd33736752d0d62aebaed2", "reward": "627ed02ffbc1d8da7aa258359c8174838d4d46bb7fe2b0a25fc75f16de60e882", "actor": "e4555b8dc0029dd058d0188c8d8b634ce1761f837062988d6934dd61dbb487d6", "value": "faa0c4fee5214ce07a9d986452f0cdd3f833c3da750707945d452c9411894543"}, "modules_changed": {"encode": true, "dynamics": true, "decode": true, "reward": true, "actor": true, "value": true}, "optimizer_iterations": {"model": 6, "actor": 6, "value": 6}, "checkpoint_sha256": "7eacbcb7e2cafcb6b926af93f0b4773f2487d9398428018f248ede12922f8ebd", "policy_sha256": "091cbfecf9c80ff54b663d2c3740f6cd380d7e4b12e3caf97a0ea09d58fe101e"}
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1791894975.014954   60333 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1791894976.643928   60333 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+/root/rivermind-data/dreamer-v1-repro/.venv/lib/python3.10/site-packages/gym/spaces/box.py:127: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+EVALUATION {"task": "dmc_walker_walk", "episode": 0, "seed": 20000, "return": 43.868063961431886, "decisions": 500, "environment_steps": 1000}
+EVALUATION {"task": "dmc_walker_walk", "episode": 1, "seed": 20001, "return": 80.982188291156, "decisions": 500, "environment_steps": 1000}
+{
+  "status": "completed",
+  "task": "dmc_walker_walk",
+  "episodes": 2,
+  "mean_return": 62.42512612629395,
+  "std_return": 26.243648991348554,
+  "min_return": 43.868063961431886,
+  "max_return": 80.982188291156,
+  "elapsed_seconds": 9.195851983968168,
+  "finished_utc": "2026-10-13T12:36:33.211090+00:00",
+  "weights_unchanged": true,
+  "parameter_sha256": {
+    "encode": "0ed7a2830f8d17af4d68a1e0117d9e605923b830a6a4089304e06074abb9623e",
+    "dynamics": "bad57d8155fba63f5104b40c600837e3a4c544ff83932462cd2624e1146a684d",
+    "actor": "e4555b8dc0029dd058d0188c8d8b634ce1761f837062988d6934dd61dbb487d6"
+  },
+  "checkpoint_source": "/root/rivermind-data/dreamer-v1-repro/runs/smoke",
+  "training_environment_steps": 7000,
+  "evaluation_protocol": "actor sampled-mode approximation; stochastic RSSM; no exploration noise; one independently reset environment per seed",
+  "scope": "short-training pipeline verification, not paper-level performance reproduction",
+  "checkpoint_sha256": "091cbfecf9c80ff54b663d2c3740f6cd380d7e4b12e3caf97a0ea09d58fe101e",
+  "restore_max_abs_difference": 0.0
+}

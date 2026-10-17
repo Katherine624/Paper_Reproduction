@@ -1,0 +1,34 @@
+{
+  "environment_steps": 7000,
+  "initial_module_sha256": {
+    "encode": "0c55007a0294f41dc8edd720b006e1a8b2c217b3ec11ea78aba497c226d6116d",
+    "dynamics": "1569b5d373373b93bbe9a9c2816c0b41ad777246fa6d90eac41a28dee3bff6d2",
+    "decode": "aa4bb5f200a14237978f2e2ca039d36be30e256dbf2f8aa5ee0590b53cb4b88b",
+    "reward": "9325bb27077445c22fbee1a6a39a577f356e888070ca8acb651ca991036e9c5a",
+    "actor": "83199e505f24548704e00b38152b429b2235ca28af1c0ad2be04a29ba77d917d",
+    "value": "011d001c3722e1f70a6f4d54666f47ce3d3628afe39d6eb0a435584f1cd9a73f"
+  },
+  "current_module_sha256": {
+    "encode": "0ed7a2830f8d17af4d68a1e0117d9e605923b830a6a4089304e06074abb9623e",
+    "dynamics": "bad57d8155fba63f5104b40c600837e3a4c544ff83932462cd2624e1146a684d",
+    "decode": "72d41bbb9fdaa0b15bd671435258ea0936976143e7bd33736752d0d62aebaed2",
+    "reward": "627ed02ffbc1d8da7aa258359c8174838d4d46bb7fe2b0a25fc75f16de60e882",
+    "actor": "e4555b8dc0029dd058d0188c8d8b634ce1761f837062988d6934dd61dbb487d6",
+    "value": "faa0c4fee5214ce07a9d986452f0cdd3f833c3da750707945d452c9411894543"
+  },
+  "modules_changed": {
+    "encode": true,
+    "dynamics": true,
+    "decode": true,
+    "reward": true,
+    "actor": true,
+    "value": true
+  },
+  "optimizer_iterations": {
+    "model": 6,
+    "actor": 6,
+    "value": 6
+  },
+  "checkpoint_sha256": "7eacbcb7e2cafcb6b926af93f0b4773f2487d9398428018f248ede12922f8ebd",
+  "policy_sha256": "091cbfecf9c80ff54b663d2c3740f6cd380d7e4b12e3caf97a0ea09d58fe101e"
+}

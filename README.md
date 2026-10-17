@@ -1,9 +1,9 @@
 # Paper Reproduction
 
-论文复现实验归档。每篇论文有独立目录，保存报告、代码、配置、逐条实验记录和对应大文件下载入口。
+每篇论文的代码、实验记录和结果保存在以论文标题命名的独立文件夹中。
 
-| 论文 | 实验日期 | 结果与范围 |
-| --- | --- | --- |
-| [OpenVLA: An Open-Source Vision-Language-Action Model](OpenVLA%20-%20An%20Open-Source%20Vision-Language-Action%20Model/README.md) | 2026-10-13 | 官方 Spatial checkpoint：84/100；LoRA 短训 100 步，恢复至 105 步；完整 checkpoint 与视频已归档 |
+- [τ0-WM: A Unified Video-Action World Model for Robotic Manipulation](./%CF%840-WM%20A%20Unified%20Video-Action%20World%20Model%20for%20Robotic%20Manipulation/)
 
-完整实验附件存放在各论文对应的 GitHub Release，论文目录包含下载链接、SHA256 和恢复脚本。克隆代码仓库不会自动下载多 GB 的训练 checkpoint。
+- [Dream to Control: Learning Behaviors by Latent Imagination](Dream%20to%20Control%20-%20Learning%20Behaviors%20by%20Latent%20Imagination/README.md) — Dreamer v1，代码、短程训练与独立评测结果；[完整归档](https://github.com/Katherine624/Paper_Reproduction/releases/tag/dreamer-v1-reproduction-2026-10-17)。
+
+- [OpenVLA: An Open-Source Vision-Language-Action Model](OpenVLA%20-%20An%20Open-Source%20Vision-Language-Action%20Model/README.md) — 官方 Spatial checkpoint 评测 84/100；LoRA 短训 100 步并恢复至 105 步；三个训练 checkpoint、103 个视频、代码与原始结果；[完整归档](https://github.com/Katherine624/Paper_Reproduction/releases/tag/openvla-2026-10-13-reproduction)。

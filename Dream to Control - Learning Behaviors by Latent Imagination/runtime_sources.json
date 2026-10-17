@@ -1,0 +1,32 @@
+{
+  "initial_probe": {
+    "tensorflow": "2.20.0 (official PyPI)",
+    "result": "failed",
+    "gpu": "NVIDIA RTX 6000D",
+    "compute_capability": "12.0",
+    "failure": "CUDA_ERROR_INVALID_PTX / CUDA_ERROR_INVALID_HANDLE during tf.random.normal multiplication",
+    "log": "logs/runtime_probe_tf220_failed.log"
+  },
+  "validated_runtime": {
+    "status": "passed",
+    "tensorflow": "2.21.0+selfbuild",
+    "official_tensorflow_build": false,
+    "publisher": "Syraxius/TensorflowDockerBuilder",
+    "release": "https://github.com/Syraxius/TensorflowDockerBuilder/releases/tag/v2.21.0-sm120-cuda128-py310-py313",
+    "wheel_url": "https://github.com/Syraxius/TensorflowDockerBuilder/releases/download/v2.21.0-sm120-cuda128-py310-py313/tensorflow-2.21.0%2Bselfbuild-cp310-cp310-linux_x86_64.whl",
+    "wheel_sha256": "32458debb3733cb3b51f534fc24127e1451dc53205f0d3ea307b31236040b51a",
+    "tensorflow_source_commit": "a481b10260dfdf833a1b16007eead49c1d7febf3",
+    "cuda_build_version": "12.8.1",
+    "cudnn_build_version": "9.8.0",
+    "compute_capabilities": [
+      "sm_120",
+      "compute_120"
+    ],
+    "build_review": "Reviewed pinned TensorFlow source build, sm_120/compute_120 flags and CUDA RUNPATH repair; downloaded binary SHA256 verified locally and remotely against the release digest.",
+    "wheel_sha256_verified": true,
+    "validation_evidence": [
+      "output/runtime_probe/report.json",
+      "output/core_validation.json"
+    ]
+  }
+}

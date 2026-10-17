@@ -1,0 +1,10 @@
+{"task": "dmc_walker_walk", "episode": 0, "seed": 20000, "return": 30.673054307214592, "decisions": 500, "environment_steps": 1000}
+{"task": "dmc_walker_walk", "episode": 1, "seed": 20001, "return": 28.44188825749508, "decisions": 500, "environment_steps": 1000}
+{"task": "dmc_walker_walk", "episode": 2, "seed": 20002, "return": 26.803926432629144, "decisions": 500, "environment_steps": 1000}
+{"task": "dmc_walker_walk", "episode": 3, "seed": 20003, "return": 10.756483868662734, "decisions": 500, "environment_steps": 1000}
+{"task": "dmc_walker_walk", "episode": 4, "seed": 20004, "return": 33.388931847698764, "decisions": 500, "environment_steps": 1000}
+{"task": "dmc_walker_walk", "episode": 5, "seed": 20005, "return": 42.70019627931263, "decisions": 500, "environment_steps": 1000}
+{"task": "dmc_walker_walk", "episode": 6, "seed": 20006, "return": 28.81424838758346, "decisions": 500, "environment_steps": 1000}
+{"task": "dmc_walker_walk", "episode": 7, "seed": 20007, "return": 30.304249612016598, "decisions": 500, "environment_steps": 1000}
+{"task": "dmc_walker_walk", "episode": 8, "seed": 20008, "return": 37.7441607229328, "decisions": 500, "environment_steps": 1000}
+{"task": "dmc_walker_walk", "episode": 9, "seed": 20009, "return": 39.62805285649969, "decisions": 500, "environment_steps": 1000}
