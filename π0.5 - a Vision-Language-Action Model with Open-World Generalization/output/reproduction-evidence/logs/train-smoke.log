@@ -1,0 +1,326 @@
+nohup: ignoring input
+BASE_READY_STARTING_TRAINING
+17:32:29.526 [I] Running on: gpufree-container                                                    (5261:train.py:196)
+INFO:2026-10-13 17:32:29,903:jax._src.xla_bridge:925: Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig'
+17:32:29.903 [I] Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig' (5261:xla_bridge.py:925)
+INFO:2026-10-13 17:32:29,904:jax._src.xla_bridge:925: Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+17:32:29.904 [I] Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory (5261:xla_bridge.py:925)
+17:32:30.591 [I] Created BasePyTreeCheckpointHandler: use_ocdbt=True, use_zarr3=False, pytree_metadata_options=PyTreeMetadataOptions(support_rich_types=False), array_metadata_store=<orbax.checkpoint._src.metadata.array_metadata_store.Store object at 0x7f178d6b3090> (5261:base_pytree_checkpoint_handler.py:334)
+17:32:30.591 [I] Created BasePyTreeCheckpointHandler: use_ocdbt=True, use_zarr3=False, pytree_metadata_options=PyTreeMetadataOptions(support_rich_types=False), array_metadata_store=<orbax.checkpoint._src.metadata.array_metadata_store.Store object at 0x7f178d6b3090> (5261:base_pytree_checkpoint_handler.py:334)
+17:32:30.591 [I] [thread=MainThread] Failed to get flag value for EXPERIMENTAL_ORBAX_USE_DISTRIBUTED_PROCESS_ID. (5261:multihost.py:390)
+17:32:30.591 [I] [process=0][thread=MainThread] CheckpointManager init: checkpointers=None, item_names=None, item_handlers={'assets': <openpi.training.checkpoints.CallbackHandler object at 0x7f16c8505790>, 'train_state': <orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeCheckpointHandler object at 0x7f16c81a85d0>, 'params': <orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeCheckpointHandler object at 0x7f16d9b29950>}, handler_registry=None (5261:checkpoint_manager.py:620)
+17:32:30.592 [I] Deferred registration for item: "assets". Adding handler `<openpi.training.checkpoints.CallbackHandler object at 0x7f16c8505790>` for item "assets" and save args `<class 'openpi.training.checkpoints.CallbackSave'>` and restore args `<class 'openpi.training.checkpoints.CallbackRestore'>` to `_handler_registry`. (5261:composite_checkpoint_handler.py:234)
+17:32:30.592 [I] Deferred registration for item: "train_state". Adding handler `<orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeCheckpointHandler object at 0x7f16c81a85d0>` for item "train_state" and save args `<class 'orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeSaveArgs'>` and restore args `<class 'orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeRestoreArgs'>` to `_handler_registry`. (5261:composite_checkpoint_handler.py:234)
+17:32:30.592 [I] Deferred registration for item: "params". Adding handler `<orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeCheckpointHandler object at 0x7f16d9b29950>` for item "params" and save args `<class 'orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeSaveArgs'>` and restore args `<class 'orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeRestoreArgs'>` to `_handler_registry`. (5261:composite_checkpoint_handler.py:234)
+17:32:30.592 [I] Deferred registration for item: "metrics". Adding handler `<orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonCheckpointHandler object at 0x7f16d9464850>` for item "metrics" and save args `<class 'orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonSaveArgs'>` and restore args `<class 'orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonRestoreArgs'>` to `_handler_registry`. (5261:composite_checkpoint_handler.py:234)
+17:32:30.592 [I] Initialized registry DefaultCheckpointHandlerRegistry({('assets', <class 'openpi.training.checkpoints.CallbackSave'>): <openpi.training.checkpoints.CallbackHandler object at 0x7f16c8505790>, ('assets', <class 'openpi.training.checkpoints.CallbackRestore'>): <openpi.training.checkpoints.CallbackHandler object at 0x7f16c8505790>, ('train_state', <class 'orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeSaveArgs'>): <orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeCheckpointHandler object at 0x7f16c81a85d0>, ('train_state', <class 'orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeRestoreArgs'>): <orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeCheckpointHandler object at 0x7f16c81a85d0>, ('params', <class 'orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeSaveArgs'>): <orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeCheckpointHandler object at 0x7f16d9b29950>, ('params', <class 'orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeRestoreArgs'>): <orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeCheckpointHandler object at 0x7f16d9b29950>, ('metrics', <class 'orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonSaveArgs'>): <orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonCheckpointHandler object at 0x7f16d9464850>, ('metrics', <class 'orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonRestoreArgs'>): <orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonCheckpointHandler object at 0x7f16d9464850>}). (5261:composite_checkpoint_handler.py:502)
+17:32:30.592 [I] orbax-checkpoint version: 0.11.13                                                (5261:abstract_checkpointer.py:35)
+17:32:30.592 [I] [process=0][thread=MainThread] Using barrier_sync_fn: <function get_barrier_sync_fn.<locals>.<lambda> at 0x7f16c8552ac0> timeout: 7200 secs and primary_host=0 for async checkpoint writes (5261:async_checkpointer.py:170)
+17:32:30.592 [I] Found 0 checkpoint steps in /root/gpufree-data/pi05-repro/checkpoints/training/pi05_libero_lora_smoke/real8_steps100_seed42 (5261:checkpoint_manager.py:1701)
+17:32:30.593 [I] [process=0][thread=MainThread] CheckpointManager created,  primary_host=0, CheckpointManagerOptions=CheckpointManagerOptions(save_interval_steps=1, max_to_keep=1, keep_time_interval=None, keep_period=None, should_keep_fn=None, best_fn=None, best_mode='max', keep_checkpoints_without_metrics=True, step_prefix=None, step_format_fixed_length=None, step_name_format=None, create=False, cleanup_tmp_directories=False, save_on_steps=frozenset(), single_host_load_and_broadcast=False, todelete_subdir=None, enable_background_delete=False, read_only=False, enable_async_checkpointing=True, async_options=AsyncOptions(timeout_secs=7200, barrier_sync_fn=None, post_finalization_callback=None, create_directories_asynchronously=True), multiprocessing_options=MultiprocessingOptions(primary_host=0, active_processes=None, barrier_sync_key_prefix=None), should_save_fn=None, file_options=FileOptions(path_permission_mode=None), save_root_metadata=True, temporary_path_class=None, save_decision_policy=None, prevent_write_metrics=False), root_directory=/root/gpufree-data/pi05-repro/checkpoints/training/pi05_libero_lora_smoke/real8_steps100_seed42: <orbax.checkpoint.checkpoint_manager.CheckpointManager object at 0x7f16c81ab310> (5261:checkpoint_manager.py:801)
+17:32:30.674 [I] Loaded norm stats from /root/gpufree-data/pi05-repro/assets/pi05_libero_lora_smoke/physical-intelligence/libero (5261:config.py:196)
+17:32:30.675 [I] data_config: DataConfig(repo_id='physical-intelligence/libero', asset_id='physical-intelligence/libero', norm_stats={'state': NormStats(mean=array([-0.03515259,  0.05576148,  0.77249509,  2.98008442, -0.38131484,
+       -0.27673283,  0.02756489, -0.02790394]), std=array([0.10228591, 0.12068322, 0.25314629, 0.27255368, 1.22824883,
+       0.4462752 , 0.01456166, 0.01408861]), q01=array([-3.43142300e-01, -2.60539525e-01,  4.46206361e-01,  2.14013599e+00,
+       -2.81762183e+00, -1.50531109e+00,  6.43310281e-04, -4.00258621e-02]), q99=array([ 1.69774963e-01,  2.91574748e-01,  1.19671915e+00,  3.45285887e+00,
+        2.67643796e+00,  7.10192922e-01,  4.00888538e-02, -2.53793123e-03])), 'actions': NormStats(mean=array([ 0.02216872,  0.07197149, -0.07044656,  0.00529362, -0.00146702,
+       -0.00247985, -0.1507287 ]), std=array([0.34876224, 0.28818041, 0.33500367, 0.0420579 , 0.05698979,
+       0.09149152, 0.98857516]), q01=array([-0.8415    , -0.62825677, -0.7583314 , -0.11846785, -0.15966   ,
+       -0.31465716, -1.        ]), q99=array([0.824625  , 0.79108176, 0.888765  , 0.15850179, 0.13698428,
+       0.37485536, 0.9996    ]))}, repack_transforms=Group(inputs=[RepackTransform(structure={'observation/image': 'image', 'observation/wrist_image': 'wrist_image', 'observation/state': 'state', 'actions': 'actions', 'prompt': 'prompt'})], outputs=()), data_transforms=Group(inputs=[LiberoInputs(model_type=<ModelType.PI05: 'pi05'>)], outputs=[LiberoOutputs()]), model_transforms=Group(inputs=[InjectDefaultPrompt(prompt=None), ResizeImages(height=224, width=224), TokenizePrompt(tokenizer=<openpi.models.tokenizer.PaligemmaTokenizer object at 0x7f16da756f10>, discrete_state_input=False), PadStatesAndActions(model_action_dim=32)], outputs=()), use_quantile_norm=True, action_sequence_keys=('actions',), prompt_from_task=True, rlds_data_dir=None, action_space=None, datasets=()) (5261:data_loader.py:243)
+17:32:30.675 [W] 
+The dataset you requested (physical-intelligence/libero) is in 2.0 format.
+While current version of LeRobot is backward-compatible with it, the version of your dataset still uses global
+stats instead of per-episode stats. Update your dataset stats to the new format using this command:
+```
+python lerobot/common/datasets/v21/convert_dataset_v20_to_v21.py --repo-id=physical-intelligence/libero
+```
+
+If you encounter a problem, contact LeRobot maintainers on [Discord](https://discord.com/invite/s3KuuzsPFb)
+or open an [issue on GitHub](https://github.com/huggingface/lerobot/issues/new/choose).
+ (5261:utils.py:303)
+17:32:30.681 [W] 
+The dataset you requested (physical-intelligence/libero) is in 2.0 format.
+While current version of LeRobot is backward-compatible with it, the version of your dataset still uses global
+stats instead of per-episode stats. Update your dataset stats to the new format using this command:
+```
+python lerobot/common/datasets/v21/convert_dataset_v20_to_v21.py --repo-id=physical-intelligence/libero
+```
+
+If you encounter a problem, contact LeRobot maintainers on [Discord](https://discord.com/invite/s3KuuzsPFb)
+or open an [issue on GitHub](https://github.com/huggingface/lerobot/issues/new/choose).
+ (5261:utils.py:303)
+REAL_DATA_READY 2197 frames
+17:32:30.753 [I] local_batch_size: 2                                                              (5261:data_loader.py:324)
+17:32:30.980 [I] Initialized data loader:
+[0].images['base_0_rgb']: (2, 224, 224, 3)@float32
+[0].images['left_wrist_0_rgb']: (2, 224, 224, 3)@float32
+[0].images['right_wrist_0_rgb']: (2, 224, 224, 3)@float32
+[0].image_masks['base_0_rgb']: (2,)@bool
+[0].image_masks['left_wrist_0_rgb']: (2,)@bool
+[0].image_masks['right_wrist_0_rgb']: (2,)@bool
+[0].state: (2, 32)@float32
+[0].tokenized_prompt: (2, 200)@int32
+[0].tokenized_prompt_mask: (2, 200)@bool
+[1]: (2, 10, 32)@float32 (5261:train.py:227)
+17:32:31.886 [I] Created BasePyTreeCheckpointHandler: use_ocdbt=True, use_zarr3=False, pytree_metadata_options=PyTreeMetadataOptions(support_rich_types=False), array_metadata_store=<orbax.checkpoint._src.metadata.array_metadata_store.Store object at 0x7f178d6b3090> (5261:base_pytree_checkpoint_handler.py:334)
+17:32:31.903 [I] Restoring checkpoint from /root/gpufree-data/pi05-repro/checkpoints/pi05_base/params. (5261:checkpointer.py:298)
+17:32:38.216 [I] [process=0] /jax/checkpoint/read/bytes_per_sec: 2.0 GiB/s (total bytes: 12.5 GiB) (time elapsed: 6 seconds) (per-host) (5261:base_pytree_checkpoint_handler.py:114)
+17:32:38.216 [I] Finished restoring checkpoint in 6.31 seconds from /root/gpufree-data/pi05-repro/checkpoints/pi05_base/params. (5261:checkpointer.py:309)
+PARAMETER_AUDIT 466957072 trainable
+17:32:50.992 [I] Initialized train state:
+['PaliGemma']['img']['Transformer']['encoder_norm']['bias'].value: (1152,)@float32
+['PaliGemma']['img']['Transformer']['encoder_norm']['scale'].value: (1152,)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['LayerNorm_0']['bias'].value: (27, 1152)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['LayerNorm_0']['scale'].value: (27, 1152)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['LayerNorm_1']['bias'].value: (27, 1152)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['LayerNorm_1']['scale'].value: (27, 1152)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['MlpBlock_0']['Dense_0']['bias'].value: (27, 4304)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['MlpBlock_0']['Dense_0']['kernel'].value: (27, 1152, 4304)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['MlpBlock_0']['Dense_1']['bias'].value: (27, 1152)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['MlpBlock_0']['Dense_1']['kernel'].value: (27, 4304, 1152)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['key']['bias'].value: (27, 16, 72)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['key']['kernel'].value: (27, 1152, 16, 72)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['out']['bias'].value: (27, 1152)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['out']['kernel'].value: (27, 16, 72, 1152)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['query']['bias'].value: (27, 16, 72)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['query']['kernel'].value: (27, 1152, 16, 72)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['value']['bias'].value: (27, 16, 72)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['value']['kernel'].value: (27, 1152, 16, 72)@float32
+['PaliGemma']['img']['embedding']['bias'].value: (1152,)@float32
+['PaliGemma']['img']['embedding']['kernel'].value: (14, 14, 3, 1152)@float32
+['PaliGemma']['img']['head']['bias'].value: (2048,)@float32
+['PaliGemma']['img']['head']['kernel'].value: (1152, 2048)@float32
+['PaliGemma']['img']['pos_embedding'].value: (1, 256, 1152)@float32
+['PaliGemma']['llm']['embedder']['input_embedding'].value: (257152, 2048)@bfloat16
+['PaliGemma']['llm']['final_norm']['scale'].value: (2048,)@bfloat16
+['PaliGemma']['llm']['final_norm_1']['Dense_0']['bias'].value: (3072,)@bfloat16
+['PaliGemma']['llm']['final_norm_1']['Dense_0']['kernel'].value: (1024, 3072)@bfloat16
+['PaliGemma']['llm']['layers']['attn']['attn_vec_einsum']['lora_a'].value: (18, 8, 256, 16)@float32
+['PaliGemma']['llm']['layers']['attn']['attn_vec_einsum']['lora_b'].value: (18, 8, 16, 2048)@float32
+['PaliGemma']['llm']['layers']['attn']['attn_vec_einsum']['w'].value: (18, 8, 256, 2048)@bfloat16
+['PaliGemma']['llm']['layers']['attn']['attn_vec_einsum_1']['lora_a'].value: (18, 8, 256, 32)@float32
+['PaliGemma']['llm']['layers']['attn']['attn_vec_einsum_1']['lora_b'].value: (18, 8, 32, 1024)@float32
+['PaliGemma']['llm']['layers']['attn']['attn_vec_einsum_1']['w'].value: (18, 8, 256, 1024)@bfloat16
+['PaliGemma']['llm']['layers']['attn']['kv_einsum']['lora_a'].value: (18, 2, 1, 2048, 16)@float32
+['PaliGemma']['llm']['layers']['attn']['kv_einsum']['lora_b'].value: (18, 2, 1, 16, 256)@float32
+['PaliGemma']['llm']['layers']['attn']['kv_einsum']['w'].value: (18, 2, 1, 2048, 256)@bfloat16
+['PaliGemma']['llm']['layers']['attn']['kv_einsum_1']['lora_a'].value: (18, 2, 1, 1024, 32)@float32
+['PaliGemma']['llm']['layers']['attn']['kv_einsum_1']['lora_b'].value: (18, 2, 1, 32, 256)@float32
+['PaliGemma']['llm']['layers']['attn']['kv_einsum_1']['w'].value: (18, 2, 1, 1024, 256)@bfloat16
+['PaliGemma']['llm']['layers']['attn']['q_einsum']['lora_a'].value: (18, 8, 2048, 16)@float32
+['PaliGemma']['llm']['layers']['attn']['q_einsum']['lora_b'].value: (18, 8, 16, 256)@float32
+['PaliGemma']['llm']['layers']['attn']['q_einsum']['w'].value: (18, 8, 2048, 256)@bfloat16
+['PaliGemma']['llm']['layers']['attn']['q_einsum_1']['lora_a'].value: (18, 8, 1024, 32)@float32
+['PaliGemma']['llm']['layers']['attn']['q_einsum_1']['lora_b'].value: (18, 8, 32, 256)@float32
+['PaliGemma']['llm']['layers']['attn']['q_einsum_1']['w'].value: (18, 8, 1024, 256)@bfloat16
+['PaliGemma']['llm']['layers']['mlp']['gating_einsum'].value: (18, 2, 2048, 16384)@bfloat16
+['PaliGemma']['llm']['layers']['mlp']['gating_einsum_lora_a'].value: (18, 2, 2048, 16)@float32
+['PaliGemma']['llm']['layers']['mlp']['gating_einsum_lora_b'].value: (18, 2, 16, 16384)@float32
+['PaliGemma']['llm']['layers']['mlp']['linear'].value: (18, 16384, 2048)@bfloat16
+['PaliGemma']['llm']['layers']['mlp']['linear_lora_a'].value: (18, 16384, 16)@float32
+['PaliGemma']['llm']['layers']['mlp']['linear_lora_b'].value: (18, 16, 2048)@float32
+['PaliGemma']['llm']['layers']['mlp_1']['gating_einsum'].value: (18, 2, 1024, 4096)@bfloat16
+['PaliGemma']['llm']['layers']['mlp_1']['gating_einsum_lora_a'].value: (18, 2, 1024, 32)@float32
+['PaliGemma']['llm']['layers']['mlp_1']['gating_einsum_lora_b'].value: (18, 2, 32, 4096)@float32
+['PaliGemma']['llm']['layers']['mlp_1']['linear'].value: (18, 4096, 1024)@bfloat16
+['PaliGemma']['llm']['layers']['mlp_1']['linear_lora_a'].value: (18, 4096, 32)@float32
+['PaliGemma']['llm']['layers']['mlp_1']['linear_lora_b'].value: (18, 32, 1024)@float32
+['PaliGemma']['llm']['layers']['pre_attention_norm']['scale'].value: (18, 2048)@bfloat16
+['PaliGemma']['llm']['layers']['pre_attention_norm_1']['Dense_0']['bias'].value: (18, 3072)@bfloat16
+['PaliGemma']['llm']['layers']['pre_attention_norm_1']['Dense_0']['kernel'].value: (18, 1024, 3072)@bfloat16
+['PaliGemma']['llm']['layers']['pre_ffw_norm']['scale'].value: (18, 2048)@bfloat16
+['PaliGemma']['llm']['layers']['pre_ffw_norm_1']['Dense_0']['bias'].value: (18, 3072)@bfloat16
+['PaliGemma']['llm']['layers']['pre_ffw_norm_1']['Dense_0']['kernel'].value: (18, 1024, 3072)@bfloat16
+['action_in_proj']['bias'].value: (1024,)@float32
+['action_in_proj']['kernel'].value: (32, 1024)@float32
+['action_out_proj']['bias'].value: (32,)@float32
+['action_out_proj']['kernel'].value: (1024, 32)@float32
+['time_mlp_in']['bias'].value: (1024,)@float32
+['time_mlp_in']['kernel'].value: (1024, 1024)@float32
+['time_mlp_out']['bias'].value: (1024,)@float32
+['time_mlp_out']['kernel'].value: (1024, 1024)@float32 (5261:train.py:238)
+17:32:51.000 [I] Progress on: -/100 rate:- remaining:? elapsed:00:00 postfix:-                    (5261:tqdm_logging.py:145)
+Step 0: grad_norm=1.8066, loss=0.1035, param_norm=1803.7705
+17:34:05.580 [I] Progress on: -/100 rate:- remaining:? elapsed:01:14 postfix:-                    (5261:tqdm_logging.py:145)
+Step 1: grad_norm=0.6055, loss=0.0467, param_norm=1803.7705
+Step 2: grad_norm=0.7332, loss=0.0303, param_norm=1803.7705
+Step 3: grad_norm=2.2517, loss=0.0628, param_norm=1803.7706
+Step 4: grad_norm=0.4893, loss=0.0634, param_norm=1803.7706
+Step 5: grad_norm=1.2993, loss=0.0481, param_norm=1803.7706
+Step 6: grad_norm=2.4897, loss=0.0868, param_norm=1803.7708
+Step 7: grad_norm=1.6534, loss=0.1212, param_norm=1803.7708
+Step 8: grad_norm=1.1588, loss=0.1117, param_norm=1803.7709
+Step 9: grad_norm=1.4216, loss=0.0966, param_norm=1803.7711
+Step 10: grad_norm=0.5525, loss=0.0416, param_norm=1803.7715
+Step 11: grad_norm=1.2621, loss=0.0754, param_norm=1803.7717
+Step 12: grad_norm=0.6285, loss=0.0814, param_norm=1803.7719
+Step 13: grad_norm=1.3172, loss=0.0593, param_norm=1803.7722
+Step 14: grad_norm=1.7431, loss=0.0714, param_norm=1803.7726
+Step 15: grad_norm=0.5678, loss=0.0382, param_norm=1803.7728
+Step 16: grad_norm=2.6033, loss=0.1649, param_norm=1803.7731
+Step 17: grad_norm=0.6661, loss=0.0861, param_norm=1803.7733
+Step 18: grad_norm=0.5693, loss=0.0591, param_norm=1803.7737
+Step 19: grad_norm=0.4514, loss=0.0663, param_norm=1803.7740
+Step 20: grad_norm=0.7886, loss=0.0978, param_norm=1803.7743
+Step 21: grad_norm=1.5439, loss=0.0446, param_norm=1803.7745
+Step 22: grad_norm=1.0031, loss=0.0720, param_norm=1803.7748
+Step 23: grad_norm=1.0927, loss=0.0868, param_norm=1803.7749
+Step 24: grad_norm=0.9615, loss=0.0699, param_norm=1803.7753
+Step 25: grad_norm=0.9286, loss=0.0755, param_norm=1803.7755
+Step 26: grad_norm=0.7435, loss=0.0418, param_norm=1803.7756
+Step 27: grad_norm=0.9413, loss=0.0499, param_norm=1803.7759
+17:34:15.688 [I] Progress on: 27.0it/100it rate:2.6it/s remaining:00:27 elapsed:01:24 postfix:-   (5261:tqdm_logging.py:145)
+Step 28: grad_norm=0.3088, loss=0.0518, param_norm=1803.7762
+Step 29: grad_norm=0.4313, loss=0.0510, param_norm=1803.7764
+Step 30: grad_norm=0.8742, loss=0.0594, param_norm=1803.7766
+Step 31: grad_norm=0.4984, loss=0.0456, param_norm=1803.7767
+Step 32: grad_norm=0.7158, loss=0.0755, param_norm=1803.7769
+Step 33: grad_norm=1.6223, loss=0.1234, param_norm=1803.7773
+Step 34: grad_norm=0.4086, loss=0.0719, param_norm=1803.7775
+Step 35: grad_norm=1.6351, loss=0.0807, param_norm=1803.7777
+Step 36: grad_norm=0.5815, loss=0.0781, param_norm=1803.7780
+Step 37: grad_norm=0.8997, loss=0.0796, param_norm=1803.7782
+Step 38: grad_norm=0.3253, loss=0.0304, param_norm=1803.7784
+Step 39: grad_norm=0.7771, loss=0.0669, param_norm=1803.7787
+Step 40: grad_norm=0.6001, loss=0.0953, param_norm=1803.7788
+Step 41: grad_norm=0.3347, loss=0.0428, param_norm=1803.7789
+Step 42: grad_norm=0.4286, loss=0.0788, param_norm=1803.7791
+Step 43: grad_norm=0.2705, loss=0.0257, param_norm=1803.7792
+Step 44: grad_norm=1.7235, loss=0.0927, param_norm=1803.7793
+Step 45: grad_norm=0.4263, loss=0.0621, param_norm=1803.7794
+Step 46: grad_norm=1.1688, loss=0.0743, param_norm=1803.7797
+Step 47: grad_norm=0.7012, loss=0.1086, param_norm=1803.7798
+Step 48: grad_norm=0.5494, loss=0.0685, param_norm=1803.7799
+Step 49: grad_norm=1.0290, loss=0.0607, param_norm=1803.7800
+Step 50: grad_norm=0.2958, loss=0.0273, param_norm=1803.7800
+Step 51: grad_norm=1.1409, loss=0.1686, param_norm=1803.7802
+Step 52: grad_norm=0.3933, loss=0.0456, param_norm=1803.7803
+Step 53: grad_norm=0.8987, loss=0.1132, param_norm=1803.7803
+Step 54: grad_norm=0.4520, loss=0.0382, param_norm=1803.7804
+17:34:25.769 [I] Progress on: 54.0it/100it rate:2.7it/s remaining:00:17 elapsed:01:34 postfix:-   (5261:tqdm_logging.py:145)
+Step 55: grad_norm=0.6960, loss=0.0987, param_norm=1803.7805
+Step 56: grad_norm=0.8609, loss=0.0777, param_norm=1803.7805
+Step 57: grad_norm=0.9039, loss=0.0865, param_norm=1803.7808
+Step 58: grad_norm=0.7886, loss=0.0941, param_norm=1803.7808
+Step 59: grad_norm=0.5304, loss=0.0313, param_norm=1803.7809
+Step 60: grad_norm=0.5531, loss=0.0311, param_norm=1803.7809
+Step 61: grad_norm=0.9293, loss=0.0284, param_norm=1803.7810
+Step 62: grad_norm=0.4746, loss=0.0290, param_norm=1803.7810
+Step 63: grad_norm=0.4874, loss=0.0967, param_norm=1803.7810
+Step 64: grad_norm=0.6416, loss=0.0721, param_norm=1803.7810
+Step 65: grad_norm=2.9965, loss=0.1422, param_norm=1803.7811
+Step 66: grad_norm=0.5088, loss=0.0771, param_norm=1803.7811
+Step 67: grad_norm=1.7406, loss=0.1267, param_norm=1803.7811
+Step 68: grad_norm=0.5619, loss=0.0572, param_norm=1803.7811
+Step 69: grad_norm=0.3503, loss=0.0434, param_norm=1803.7811
+Step 70: grad_norm=0.7937, loss=0.1287, param_norm=1803.7812
+Step 71: grad_norm=2.2767, loss=0.1497, param_norm=1803.7812
+Step 72: grad_norm=0.3377, loss=0.0405, param_norm=1803.7812
+Step 73: grad_norm=0.6648, loss=0.1018, param_norm=1803.7812
+Step 74: grad_norm=0.2955, loss=0.0346, param_norm=1803.7814
+Step 75: grad_norm=0.5856, loss=0.0735, param_norm=1803.7814
+Step 76: grad_norm=0.2842, loss=0.0252, param_norm=1803.7814
+Step 77: grad_norm=0.4004, loss=0.0479, param_norm=1803.7814
+Step 78: grad_norm=0.3211, loss=0.0288, param_norm=1803.7814
+Step 79: grad_norm=0.2990, loss=0.0444, param_norm=1803.7814
+Step 80: grad_norm=0.4646, loss=0.0343, param_norm=1803.7814
+Step 81: grad_norm=0.7495, loss=0.0580, param_norm=1803.7814
+17:34:35.893 [I] Progress on: 81.0it/100it rate:2.7it/s remaining:00:07 elapsed:01:44 postfix:-   (5261:tqdm_logging.py:145)
+Step 82: grad_norm=1.2571, loss=0.0772, param_norm=1803.7814
+Step 83: grad_norm=0.5480, loss=0.0858, param_norm=1803.7815
+Step 84: grad_norm=0.7783, loss=0.0323, param_norm=1803.7815
+Step 85: grad_norm=0.6784, loss=0.0790, param_norm=1803.7815
+Step 86: grad_norm=0.5432, loss=0.0705, param_norm=1803.7815
+Step 87: grad_norm=0.4384, loss=0.0653, param_norm=1803.7815
+Step 88: grad_norm=0.3392, loss=0.0223, param_norm=1803.7815
+Step 89: grad_norm=1.4607, loss=0.0934, param_norm=1803.7815
+Step 90: grad_norm=0.4287, loss=0.0662, param_norm=1803.7815
+Step 91: grad_norm=2.5428, loss=0.0855, param_norm=1803.7815
+Step 92: grad_norm=1.1214, loss=0.0628, param_norm=1803.7815
+Step 93: grad_norm=1.7252, loss=0.0487, param_norm=1803.7815
+Step 94: grad_norm=0.2546, loss=0.0324, param_norm=1803.7815
+Step 95: grad_norm=0.5497, loss=0.0773, param_norm=1803.7815
+Step 96: grad_norm=0.4148, loss=0.0548, param_norm=1803.7815
+Step 97: grad_norm=0.3620, loss=0.0392, param_norm=1803.7815
+Step 98: grad_norm=0.2914, loss=0.0239, param_norm=1803.7815
+Step 99: grad_norm=1.7156, loss=0.0799, param_norm=1803.7815
+17:34:42.625 [I] [process=0][thread=MainThread][wait_until_finished] No Save Finalize thread to wait for. Returning. (5261:checkpoint_manager.py:1987)
+17:34:42.625 [I] [process=0] Saving checkpoint at step 99                                         (5261:checkpoint_manager.py:1408)
+17:34:42.626 [I] [process=0] Started async saving checkpoint to /root/gpufree-data/pi05-repro/checkpoints/training/pi05_libero_lora_smoke/real8_steps100_seed42/99. (5261:async_checkpointer.py:439)
+17:34:42.627 [I] Using ThreadSafeKeyValueSignalingClient                                          (5261:signaling_client.py:332)
+17:34:42.628 [I] Creating tmp directory /root/gpufree-data/pi05-repro/checkpoints/training/pi05_libero_lora_smoke/real8_steps100_seed42/99.orbax-checkpoint-tmp-0 (5261:atomicity.py:144)
+17:34:42.638 [I] Wrote Metadata={'item_handlers': None, 'metrics': {}, 'performance_metrics': {}, 'init_timestamp_nsecs': 1791884082637401593, 'commit_timestamp_nsecs': None, 'custom_metadata': {}}, json={"item_handlers": null, "metrics": {}, "performance_metrics": {}, "init_timestamp_nsecs": 1791884082637401593, "commit_timestamp_nsecs": null, "custom_metadata": {}} to /root/gpufree-data/pi05-repro/checkpoints/training/pi05_libero_lora_smoke/real8_steps100_seed42/99.orbax-checkpoint-tmp-0/_CHECKPOINT_METADATA (5261:checkpoint.py:186)
+17:34:42.641 [I] Creating tmp directory /root/gpufree-data/pi05-repro/checkpoints/training/pi05_libero_lora_smoke/real8_steps100_seed42/99.orbax-checkpoint-tmp-0/assets.orbax-checkpoint-tmp-1 (5261:atomicity.py:144)
+17:34:42.641 [I] Creating tmp directory /root/gpufree-data/pi05-repro/checkpoints/training/pi05_libero_lora_smoke/real8_steps100_seed42/99.orbax-checkpoint-tmp-0/params.orbax-checkpoint-tmp-2 (5261:atomicity.py:144)
+17:34:42.641 [I] Creating tmp directory /root/gpufree-data/pi05-repro/checkpoints/training/pi05_libero_lora_smoke/real8_steps100_seed42/99.orbax-checkpoint-tmp-0/train_state.orbax-checkpoint-tmp-3 (5261:atomicity.py:144)
+17:34:42.656 [I] Transferring arrays to host memory with options: use_replica_parallel=True, enable_pinned_host_transfer=False (5261:replica_slices.py:341)
+17:34:45.250 [I] Transferring arrays to host memory with options: use_replica_parallel=True, enable_pinned_host_transfer=False (5261:replica_slices.py:341)
+17:34:45.260 [I] Array name: 'params.PaliGemma.llm.layers.mlp.gating_einsum.value', global shape: (18, 2, 2048, 16384), write shape: (18, 2, 2048, 16384), chosen chunk shape: (18, 2, 2048, 8192) (5261:tensorstore_utils.py:408)
+17:34:45.300 [I] [process=0][thread=array_type_handler] Wrote 71 array_metadata.ArrayMetadata to /root/gpufree-data/pi05-repro/checkpoints/training/pi05_libero_lora_smoke/real8_steps100_seed42/99.orbax-checkpoint-tmp-0/params.orbax-checkpoint-tmp-2/array_metadatas/process_0 (5261:array_metadata_store.py:198)
+17:34:46.692 [I] [process=0] /jax/checkpoint/write/blocking_bytes_per_sec: 1.8 GiB/s (total bytes: 7.2 GiB) (time elapsed: 4 seconds) (per-host) (5261:base_pytree_checkpoint_handler.py:114)
+17:34:46.698 [I] [process=0] /jax/checkpoint/write/blocking_bytes_per_sec: 877.1 MiB/s (total bytes: 3.5 GiB) (time elapsed: 4 seconds) (per-host) (5261:base_pytree_checkpoint_handler.py:114)
+17:34:46.721 [I] [process=0][thread=async_save] Background save thread started.                   (5261:async_checkpointer.py:77)
+17:34:46.721 [I] Finished blocking save in 4.10 seconds. Continuing to save asynchronously to /root/gpufree-data/pi05-repro/checkpoints/training/pi05_libero_lora_smoke/real8_steps100_seed42/99. (5261:async_checkpointer.py:548)
+17:34:46.722 [I] [process=0][thread=MainThread][step=99] Starting CheckpointManager Save Finalize thread=save_finalize (5261:checkpoint_manager.py:1453)
+17:34:46.722 [I] [process=0][thread=save_finalize] Waiting for background save thread=async_save. (5261:async_checkpointer.py:258)
+17:34:46.722 [I] {'step': 99, 'event_type': 'save', 'directory': '/root/gpufree-data/pi05-repro/checkpoints/training/pi05_libero_lora_smoke/real8_steps100_seed42', 'reached_preemption': False, 'preemption_received_at': None, 'synchronous': False, 'wait_for_prev_start_time': 1791884082.6250646, 'wait_for_prev_duration_secs': 0.0001537799835205078, 'checkpointer_blocking_start_time': 1791884082.625647, 'checkpointer_blocking_duration_secs': 4.096299409866333, 'get_old_steps_start_time': 1791884086.721989, 'get_old_steps_duration_secs': 1.0251998901367188e-05, 'checkpoint_manager_blocking_start_time': 1791884082.6247904, 'checkpoint_manager_blocking_duration_secs': 4.098134279251099} (5261:standard_logger.py:34)
+17:34:46.723 [I] [process=0][thread=MainThread][step=99][wait_until_finished] Waiting for Save Finalize thread (save_finalize) to complete. (5261:checkpoint_manager.py:1998)
+17:34:46.745 [I] [process=0][thread=array_type_handler] Wrote 105 array_metadata.ArrayMetadata to /root/gpufree-data/pi05-repro/checkpoints/training/pi05_libero_lora_smoke/real8_steps100_seed42/99.orbax-checkpoint-tmp-0/train_state.orbax-checkpoint-tmp-3/array_metadatas/process_0 (5261:array_metadata_store.py:198)
+17:34:51.778 [I] [process=0] /jax/checkpoint/write/bytes_per_sec: 806.8 MiB/s (total bytes: 7.2 GiB) (time elapsed: 9 seconds) (per-host) (5261:base_pytree_checkpoint_handler.py:114)
+17:34:51.778 [I] [process=0] /jax/checkpoint/write/bytes_per_sec: 389.7 MiB/s (total bytes: 3.5 GiB) (time elapsed: 9 seconds) (per-host) (5261:base_pytree_checkpoint_handler.py:114)
+17:34:51.778 [I] [process=0][thread=async_save] 5 Handler Commit operations completed.            (5261:async_checkpointer.py:87)
+17:34:51.778 [I] Read Metadata={'item_handlers': None, 'metrics': {}, 'performance_metrics': {}, 'init_timestamp_nsecs': 1791884082637401593, 'commit_timestamp_nsecs': None, 'custom_metadata': {}} from /root/gpufree-data/pi05-repro/checkpoints/training/pi05_libero_lora_smoke/real8_steps100_seed42/99.orbax-checkpoint-tmp-0/_CHECKPOINT_METADATA (5261:checkpoint.py:226)
+17:34:51.779 [I] Renaming /root/gpufree-data/pi05-repro/checkpoints/training/pi05_libero_lora_smoke/real8_steps100_seed42/99.orbax-checkpoint-tmp-0/assets.orbax-checkpoint-tmp-1 to /root/gpufree-data/pi05-repro/checkpoints/training/pi05_libero_lora_smoke/real8_steps100_seed42/99.orbax-checkpoint-tmp-0/assets (5261:atomicity.py:289)
+17:34:51.780 [I] Updated Metadata={'item_handlers': {'assets': 'openpi.training.checkpoints.CallbackHandler', 'params': 'orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeCheckpointHandler', 'train_state': 'orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeCheckpointHandler'}, 'metrics': {}, 'performance_metrics': {}, 'init_timestamp_nsecs': 1791884082637401593, 'commit_timestamp_nsecs': None, 'custom_metadata': {}} to /root/gpufree-data/pi05-repro/checkpoints/training/pi05_libero_lora_smoke/real8_steps100_seed42/99.orbax-checkpoint-tmp-0/_CHECKPOINT_METADATA (5261:checkpoint.py:245)
+17:34:51.781 [I] [process=0][thread=async_save] Skipped cross-host ArrayMetadata validation because only one process is found: process_index=0. (5261:array_metadata_store.py:362)
+17:34:51.784 [I] Renaming /root/gpufree-data/pi05-repro/checkpoints/training/pi05_libero_lora_smoke/real8_steps100_seed42/99.orbax-checkpoint-tmp-0/train_state.orbax-checkpoint-tmp-3 to /root/gpufree-data/pi05-repro/checkpoints/training/pi05_libero_lora_smoke/real8_steps100_seed42/99.orbax-checkpoint-tmp-0/train_state (5261:atomicity.py:289)
+17:34:51.785 [I] [process=0][thread=async_save] Skipped cross-host ArrayMetadata validation because only one process is found: process_index=0. (5261:array_metadata_store.py:362)
+17:34:51.787 [I] Renaming /root/gpufree-data/pi05-repro/checkpoints/training/pi05_libero_lora_smoke/real8_steps100_seed42/99.orbax-checkpoint-tmp-0/params.orbax-checkpoint-tmp-2 to /root/gpufree-data/pi05-repro/checkpoints/training/pi05_libero_lora_smoke/real8_steps100_seed42/99.orbax-checkpoint-tmp-0/params (5261:atomicity.py:289)
+17:34:51.787 [I] Renaming /root/gpufree-data/pi05-repro/checkpoints/training/pi05_libero_lora_smoke/real8_steps100_seed42/99.orbax-checkpoint-tmp-0 to /root/gpufree-data/pi05-repro/checkpoints/training/pi05_libero_lora_smoke/real8_steps100_seed42/99 (5261:atomicity.py:289)
+17:34:51.787 [I] [process=0][thread=async_save] Finished saving checkpoint (finalized tmp dir) to `/root/gpufree-data/pi05-repro/checkpoints/training/pi05_libero_lora_smoke/real8_steps100_seed42/99`. (5261:atomicity.py:573)
+17:34:51.788 [I] Finished asynchronous save (blocking + background) in 9.16 seconds to /root/gpufree-data/pi05-repro/checkpoints/training/pi05_libero_lora_smoke/real8_steps100_seed42/99 (5261:async_checkpointer.py:412)
+17:34:51.788 [I] [process=0][thread=async_save] Background save thread done.                      (5261:async_checkpointer.py:143)
+17:34:51.788 [I] [process=0][thread=save_finalize] Done with waiting for background save thread=async_save. (5261:async_checkpointer.py:266)
+17:34:51.788 [I] [process=0][thread=save_finalize] No errors found in background save thread=async_save. (5261:async_checkpointer.py:276)
+17:34:51.788 [I] [process=0][thread=save_finalize][step=99] CheckpointManager Save Finalize is syncing with other hosts... (5261:checkpoint_manager.py:2095)
+17:34:51.788 [I] [process=0][thread=save_finalize][step=99] CheckpointManager Save Finalize is done on all hosts. (5261:checkpoint_manager.py:2110)
+17:34:51.788 [I] [process=0][thread=MainThread][step=99][wait_until_finished] Done waiting for Save Finalize thread (save_finalize) running at step=99. (5261:checkpoint_manager.py:2010)
+TRAINING_VERIFIED {"training_steps": 100, "checkpoint_index": 99, "checkpoint_dir": "/root/gpufree-data/pi05-repro/checkpoints/training/pi05_libero_lora_smoke/real8_steps100_seed42", "sampled_lora_updated": true, "sampled_frozen_unchanged": true, "max_sampled_parameter_change": 0.0011513944482430816, "checkpoint_save_completed": true}
+17:34:51.789 [I] Progress on: 100it/100it rate:3.1s/it remaining:00:00 elapsed:02:00 postfix:-    (5261:tqdm_logging.py:145)
+17:34:51.789 [I] Progress on: 100it/100it rate:3.1s/it remaining:00:00 elapsed:02:00 postfix:-    (5261:tqdm_logging.py:145)
+17:34:51.789 [I] Waiting for checkpoint manager to finish                                         (5261:train.py:275)
+17:34:51.789 [I] [process=0][thread=MainThread][wait_until_finished] No Save Finalize thread to wait for. Returning. (5261:checkpoint_manager.py:1987)
+INFO:2026-10-13 17:34:59,634:jax._src.xla_bridge:925: Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig'
+INFO:jax._src.xla_bridge:Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig'
+INFO:2026-10-13 17:34:59,635:jax._src.xla_bridge:925: Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+INFO:jax._src.xla_bridge:Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+INFO:absl:Created BasePyTreeCheckpointHandler: use_ocdbt=True, use_zarr3=False, pytree_metadata_options=PyTreeMetadataOptions(support_rich_types=False), array_metadata_store=<orbax.checkpoint._src.metadata.array_metadata_store.Store object at 0x7f689f4c8510>
+INFO:absl:Created BasePyTreeCheckpointHandler: use_ocdbt=True, use_zarr3=False, pytree_metadata_options=PyTreeMetadataOptions(support_rich_types=False), array_metadata_store=<orbax.checkpoint._src.metadata.array_metadata_store.Store object at 0x7f689f4c8510>
+INFO:absl:[thread=MainThread] Failed to get flag value for EXPERIMENTAL_ORBAX_USE_DISTRIBUTED_PROCESS_ID.
+INFO:absl:[process=0][thread=MainThread] CheckpointManager init: checkpointers=None, item_names=None, item_handlers={'assets': <openpi.training.checkpoints.CallbackHandler object at 0x7f67d0401d50>, 'train_state': <orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeCheckpointHandler object at 0x7f67c05efdd0>, 'params': <orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeCheckpointHandler object at 0x7f67d042ad90>}, handler_registry=None
+INFO:absl:Deferred registration for item: "assets". Adding handler `<openpi.training.checkpoints.CallbackHandler object at 0x7f67d0401d50>` for item "assets" and save args `<class 'openpi.training.checkpoints.CallbackSave'>` and restore args `<class 'openpi.training.checkpoints.CallbackRestore'>` to `_handler_registry`.
+INFO:absl:Deferred registration for item: "train_state". Adding handler `<orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeCheckpointHandler object at 0x7f67c05efdd0>` for item "train_state" and save args `<class 'orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeSaveArgs'>` and restore args `<class 'orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeRestoreArgs'>` to `_handler_registry`.
+INFO:absl:Deferred registration for item: "params". Adding handler `<orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeCheckpointHandler object at 0x7f67d042ad90>` for item "params" and save args `<class 'orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeSaveArgs'>` and restore args `<class 'orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeRestoreArgs'>` to `_handler_registry`.
+INFO:absl:Deferred registration for item: "metrics". Adding handler `<orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonCheckpointHandler object at 0x7f67c076ba10>` for item "metrics" and save args `<class 'orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonSaveArgs'>` and restore args `<class 'orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonRestoreArgs'>` to `_handler_registry`.
+INFO:absl:Initialized registry DefaultCheckpointHandlerRegistry({('assets', <class 'openpi.training.checkpoints.CallbackSave'>): <openpi.training.checkpoints.CallbackHandler object at 0x7f67d0401d50>, ('assets', <class 'openpi.training.checkpoints.CallbackRestore'>): <openpi.training.checkpoints.CallbackHandler object at 0x7f67d0401d50>, ('train_state', <class 'orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeSaveArgs'>): <orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeCheckpointHandler object at 0x7f67c05efdd0>, ('train_state', <class 'orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeRestoreArgs'>): <orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeCheckpointHandler object at 0x7f67c05efdd0>, ('params', <class 'orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeSaveArgs'>): <orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeCheckpointHandler object at 0x7f67d042ad90>, ('params', <class 'orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeRestoreArgs'>): <orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeCheckpointHandler object at 0x7f67d042ad90>, ('metrics', <class 'orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonSaveArgs'>): <orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonCheckpointHandler object at 0x7f67c076ba10>, ('metrics', <class 'orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonRestoreArgs'>): <orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonCheckpointHandler object at 0x7f67c076ba10>}).
+INFO:absl:orbax-checkpoint version: 0.11.13
+INFO:absl:[process=0][thread=MainThread] Using barrier_sync_fn: <function get_barrier_sync_fn.<locals>.<lambda> at 0x7f67d8333d80> timeout: 7200 secs and primary_host=0 for async checkpoint writes
+INFO:absl:Read Metadata={'item_handlers': {'assets': 'openpi.training.checkpoints.CallbackHandler', 'params': 'orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeCheckpointHandler', 'train_state': 'orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeCheckpointHandler'}, 'metrics': {}, 'performance_metrics': {}, 'init_timestamp_nsecs': 1791884082637401593, 'commit_timestamp_nsecs': 1791884091787633785, 'custom_metadata': {}} from /root/gpufree-data/pi05-repro/checkpoints/training/pi05_libero_lora_smoke/real8_steps100_seed42/99/_CHECKPOINT_METADATA
+WARNING:absl:Missing metrics for step 99
+ERROR:absl:File /root/gpufree-data/pi05-repro/checkpoints/training/pi05_libero_lora_smoke/real8_steps100_seed42/99/metrics/metrics not found.
+INFO:absl:Found 1 checkpoint steps in /root/gpufree-data/pi05-repro/checkpoints/training/pi05_libero_lora_smoke/real8_steps100_seed42
+INFO:absl:[process=0][thread=MainThread] CheckpointManager created,  primary_host=0, CheckpointManagerOptions=CheckpointManagerOptions(save_interval_steps=1, max_to_keep=1, keep_time_interval=None, keep_period=None, should_keep_fn=None, best_fn=None, best_mode='max', keep_checkpoints_without_metrics=True, step_prefix=None, step_format_fixed_length=None, step_name_format=None, create=False, cleanup_tmp_directories=False, save_on_steps=frozenset(), single_host_load_and_broadcast=False, todelete_subdir=None, enable_background_delete=False, read_only=False, enable_async_checkpointing=True, async_options=AsyncOptions(timeout_secs=7200, barrier_sync_fn=None, post_finalization_callback=None, create_directories_asynchronously=True), multiprocessing_options=MultiprocessingOptions(primary_host=0, active_processes=None, barrier_sync_key_prefix=None), should_save_fn=None, file_options=FileOptions(path_permission_mode=None), save_root_metadata=True, temporary_path_class=None, save_decision_policy=None, prevent_write_metrics=False), root_directory=/root/gpufree-data/pi05-repro/checkpoints/training/pi05_libero_lora_smoke/real8_steps100_seed42: <orbax.checkpoint.checkpoint_manager.CheckpointManager object at 0x7f67d835f4d0>
+INFO:absl:Restoring checkpoint from /root/gpufree-data/pi05-repro/checkpoints/training/pi05_libero_lora_smoke/real8_steps100_seed42/99.
+/root/gpufree-data/pi05-repro/openpi/.venv/lib/python3.11/site-packages/orbax/checkpoint/_src/serialization/type_handlers.py:1251: UserWarning: Sharding info not provided when restoring. Populating sharding info from sharding file. Please note restoration time will be slightly increased due to reading from file. Note also that this option is unsafe when restoring on a different topology than the checkpoint was saved with.
+  warnings.warn(
+INFO:absl:[process=0] /jax/checkpoint/read/bytes_per_sec: 1.6 GiB/s (total bytes: 7.2 GiB) (time elapsed: 4 seconds) (per-host)
+INFO:absl:[process=0] /jax/checkpoint/read/bytes_per_sec: 1.8 GiB/s (total bytes: 3.5 GiB) (time elapsed: a second) (per-host)
+INFO:absl:Finished restoring checkpoint in 6.39 seconds from /root/gpufree-data/pi05-repro/checkpoints/training/pi05_libero_lora_smoke/real8_steps100_seed42/99.
+INFO:absl:{'step': 99, 'event_type': 'restore', 'directory': '/root/gpufree-data/pi05-repro/checkpoints/training/pi05_libero_lora_smoke/real8_steps100_seed42', 'checkpointer_start_time': 1791884101.0921426, 'checkpointer_duration_secs': 6.388341188430786, 'checkpoint_manager_start_time': 1791884101.09187, 'checkpoint_manager_duration_secs': 6.388615846633911}
+INFO:absl:[process=0][thread=MainThread][wait_until_finished] No Save Finalize thread to wait for. Returning.
+INFO:absl:Closing _NonBlockingMetadataStore(enable_write=True, _write_lock=<locked _thread.RLock object owner=140094347183936 count=1 at 0x7f67eb249cc0>, _store_impl=<orbax.checkpoint._src.metadata.checkpoint._MetadataStoreImpl object at 0x7f67c055a590>, _single_thread_executor=<concurrent.futures.thread.ThreadPoolExecutor object at 0x7f67d0292250>, _write_futures=[])
+INFO:absl:Closing _NonBlockingMetadataStore(enable_write=True, _write_lock=<locked _thread.RLock object owner=140094347183936 count=1 at 0x7f67eb249cc0>, _store_impl=<orbax.checkpoint._src.metadata.checkpoint._MetadataStoreImpl object at 0x7f67c055a590>, _single_thread_executor=<concurrent.futures.thread.ThreadPoolExecutor object at 0x7f67d0292250>, _write_futures=[])
+INFO:absl:Closing _NonBlockingMetadataStore(enable_write=True, _write_lock=<locked _thread.RLock object owner=140094347183936 count=1 at 0x7f67eb249cc0>, _store_impl=<orbax.checkpoint._src.metadata.checkpoint._MetadataStoreImpl object at 0x7f67c055a590>, _single_thread_executor=<concurrent.futures.thread.ThreadPoolExecutor object at 0x7f67d0292250>, _write_futures=[])
+RESTORE_VERIFIED {"restored_step": 100, "sampled_tensors_verified": 23, "parameter_samples_identical": true, "restored_in_fresh_process": true}
+TRAIN_AND_RESTORE_COMPLETE

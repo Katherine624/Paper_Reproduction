@@ -1,0 +1,64 @@
+π0.5 复现记录：训练流程验证与公开权重仿真评测
+
+本次按“训练跑通即可，推理使用公开 checkpoint 测性能”的要求执行。
+训练使用 pi05_base；评测使用官方 pi05_libero，两部分分别记录。
+这是 OpenPI 的短训练与缩减版 LIBERO 评测，不覆盖原论文的真实家庭开放世界实验。
+
+服务器：NVIDIA L40S 48GB（nvidia-smi 显示 46068 MiB），24 核 CPU 配额、120 GiB 内存配额。
+系统：Ubuntu 22.04.4 LTS；NVIDIA 驱动 575.57.08。
+模型环境：Python 3.11.17、JAX 0.5.3；仿真环境：Python 3.8.20、MuJoCo 3.2.3、robosuite 1.4.1。
+仿真画面由 OSMesa 在 CPU 上生成，模型计算使用 GPU。
+官方代码：https://github.com/Physical-Intelligence/openpi
+代码 commit：215abfb217dbac7d5f1273282331b9b1866c0479
+服务器项目目录：/root/gpufree-data/pi05-repro
+
+训练验证结果
+- 使用官方 physical-intelligence/libero 数据集的 8 条真实示范，共 2197 帧。
+- 数据版本：a4336d589d589045d1c56423ffdf3b88a0e19b1f。
+- 使用官方 LoRA 冻结规则，batch size=2，seed=42，共完成 100 次梯度更新。
+- 全部 100 步的 loss、梯度范数和参数范数均为有限值，梯度范数均大于 0。
+- 前 10 步平均 loss：0.0771；后 10 步平均 loss：0.0571。
+  loss 来自官方训练日志，原始打印精度为小数点后四位。
+- 抽样检查确认 LoRA 参数更新、冻结参数保持不变。
+- checkpoint 保存完成，并在独立的新进程中重载；23 组参数样本完全一致，恢复的步数为 100。
+- checkpoint 路径：/root/gpufree-data/pi05-repro/checkpoints/training/pi05_libero_lora_smoke/real8_steps100_seed42/99
+  文件夹编号 99 对应从 0 开始计数的第 100 次更新。
+- 短训练用于验证训练流程，不能据此判断训练已经收敛。
+
+公开权重评测结果
+- 权重：官方 pi05_libero。
+- 任务集：LIBERO Spatial，10 个任务；每个任务 10 次，共 100 次。
+- seed=7；每个任务使用初始状态编号 0—9；每执行 5 步重新规划动作。
+- 成功 97 次，失败 3 次，成功率 97.0%。
+- 评测耗时约 34.3 分钟（包含场景初始化、首次推理编译和视频保存）。
+- 100 次尝试均有记录和回放视频；没有把通信或推理异常当作普通任务失败计数。
+- 本次只测一个任务集且每任务 10 次，不等同于完整 LIBERO 评测规模。
+
+操作顺序与复查命令
+1. 连接服务器，在 /root/gpufree-data/pi05-repro 下工作。
+2. 检查基础环境：bash scripts/check-model-env.sh 和 bash scripts/check-libero-env.sh。
+3. 准备真实数据子集、官方基础权重，计算归一化统计。
+   source env-model.sh
+   openpi/.venv/bin/python scripts/pi05_experiment.py norms
+4. 短训练与重载：bash scripts/run-train-smoke.sh。
+   已完成的训练目录不会自动覆盖；再次训练需要另设实验目录，并隔离结果文件。
+5. 复查训练结果：openpi/.venv/bin/python scripts/check-training-results.py。
+6. 加载官方权重：bash scripts/run-policy-server.sh。
+7. 在另一个终端评测：bash scripts/run-libero-evaluation.sh。
+   评测目录已存在时脚本会拒绝覆盖；重跑应另设结果目录。
+
+本地交付
+- 评测结果.csv：10 个任务的成功次数与成功率。
+- 训练日志.csv：100 步训练 loss 与梯度、参数范数。
+- reproduction-evidence/：原始日志、配置、核验结果、脚本和 100 段视频。
+- reproduction-evidence.tar.gz：上述证据包。
+
+权重来源和下载完整性
+两份 checkpoint 均来自官方 openpi-assets 存储桶。
+已按官方对象清单检查文件大小，并使用 MD5 或 CRC32C 校验（部分大对象只提供 CRC32C）。
+完整 checkpoint 保存在服务器；本地证据包包含结果和复现所需脚本，不包含大型模型权重。
+
+收尾状态
+实验进程已停止，GPU 显存已释放；云实例本身未关闭，仍会继续计费。
+工具自动审批拦截了清理本地临时权重缓存的操作，仅返回“blocked by policy”，未提供更具体原因。
+因此 data/official-checkpoints 和 work/checkpoint-chunks 中的本地缓存仍保留，不影响实验结果。

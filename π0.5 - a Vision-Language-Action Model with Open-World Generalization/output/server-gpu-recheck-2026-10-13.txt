@@ -1,0 +1,32 @@
+服务器 GPU 复检报告
+日期：2026-10-13（北京时间）
+
+结论：更换/处理后的当前实例通过了基础 CUDA 与 GPU 计算检查。
+
+配置
+- NVIDIA L40S，nvidia-smi 显示 46068 MiB 显存。
+- NVIDIA 驱动：575.57.08。
+- Ubuntu 22.04.4 LTS。
+- 容器配额：24 核 CPU、120 GiB 内存。
+- /root/gpufree-data 数据盘约 196G 可用（初始化时）。
+
+检查结果
+- 不可纠正的 DRAM ECC 错误计数：0。
+- Remapped Rows / Uncorrectable Error：0。
+- Remapped Rows / Pending：No。
+- cudaMalloc 64 MiB：成功。
+- cudaMemset 与 cudaDeviceSynchronize：成功。
+- 用 CUDA kernel 对 1048576 个浮点数执行加法，并逐项与预期值比较：全部通过。
+
+说明
+此结果对应本次重新提供密码后连接的实例。数据盘为空，驱动版本也与上次不同；上一份故障报告仍作为原实例的历史记录保留。
+基础测试通过不等于 π0.5 训练或 LIBERO 评测已经完成。
+
+服务器项目路径
+/root/gpufree-data/pi05-repro
+
+检查脚本与日志
+scripts/gpu_smoke.cu
+scripts/gpu_smoke
+logs/gpu-smoke.txt
+logs/gpu-health-after-repair.txt

@@ -1,0 +1,5 @@
+nohup: ignoring input
+JAX 0.5.3
+DEVICES [CudaDevice(id=0)]
+GPU_MATMUL_PASS
+PI05_CONFIG pi05_libero True 10
