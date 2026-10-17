@@ -43,7 +43,7 @@ Built on NVIDIA Cosmos
 
 ## 完整数据、权重和环境备份
 
-大文件分卷保存在本仓库的 Releases。**上传期间该 Release 为草稿；只有发布后，且带有 `backup-manifest.json` 和 `SHA256SUMS`，才表示整套备份完成。** 不能只下载某个分卷就解压。
+完整备份已发布到本仓库的 Releases：**6 组归档、343 个分卷、压缩后 42.52 GiB**。所有分卷的字节数及 GitHub 服务端 SHA-256 均已核对；实验原件的 1,143 个文件也已下载并逐一核对 SHA-256。恢复请看 [RESTORE.md](RESTORE.md) 和 [校验清单](SHA256SUMS)。不能只下载某个分卷就解压。
 
 备份覆盖本机现有项目文件，包括数据集、官方权重、LoRA/教学权重、Python 虚拟环境及下载缓存；也补充 Linux Python 3.10 解释器、LIBERO 仿真资源和配置。登录令牌、SSH 密钥和项目 `.git` 不在备份中。
 
@@ -56,7 +56,7 @@ Built on NVIDIA Cosmos
 | `caches.tar.gz.part` | uv、Xet 缓存及其他项目环境配置 |
 | `linux-runtime.tar.gz.part` | 项目外的 Python 3.10 解释器、LIBERO 资源和配置 |
 
-恢复步骤及各分卷的字节数、SHA-256 校验值见发布时补充的 `RESTORE.md`、`backup-manifest.json`、`SHA256SUMS`。这是文件和软件包备份，不包含 Windows/WSL 系统镜像、显卡驱动或系统 apt 依赖；迁移到其他路径或机器时，需要按恢复说明调整绝对路径。
+恢复步骤及各分卷的字节数、SHA-256 校验值见本目录的 `RESTORE.md`、`backup-manifest.json`、`SHA256SUMS`。这是文件和软件包备份，不包含 Windows/WSL 系统镜像、显卡驱动或系统 apt 依赖；迁移到其他路径或机器时，需要按恢复说明调整绝对路径。
 
 ## 再次运行评测
 

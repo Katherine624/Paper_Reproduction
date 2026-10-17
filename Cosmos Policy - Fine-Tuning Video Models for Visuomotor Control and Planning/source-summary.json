@@ -1,0 +1,26 @@
+{
+  "root": "\\\\?\\D:\\xiao\\Documents\\ChatGPT\\cosmos",
+  "created": "2026-10-17 20:47:40",
+  "groups": {
+    "project": {
+      "files": 1143,
+      "logical_bytes": 411683454
+    },
+    "models": {
+      "files": 55,
+      "logical_bytes": 12816595051
+    },
+    "datasets": {
+      "files": 6176,
+      "logical_bytes": 28965150611
+    },
+    "caches": {
+      "files": 56081,
+      "logical_bytes": 13708083620
+    },
+    "environment": {
+      "files": 53804,
+      "logical_bytes": 13318253800
+    }
+  }
+}
