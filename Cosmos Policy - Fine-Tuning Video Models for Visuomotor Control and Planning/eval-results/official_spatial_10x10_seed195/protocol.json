@@ -1,0 +1,24 @@
+{
+  "suite": "libero_spatial",
+  "task_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "trials_per_task": 10,
+  "initial_states": "LIBERO default initial states, indices 0 through 9 per task",
+  "seed": 195,
+  "deterministic": true,
+  "action_chunk_size": 16,
+  "action_denoising_steps": 5,
+  "lora_loaded": false,
+  "execution": "Local WSL2, RTX 5060 Laptop 8 GB",
+  "source_version_record": "Vendored source; upstream revision 18a2accadf4e7a3531e56754102af5a24d2316da is recorded in PREPARATION.md; actual source snapshots and hashes are included."
+}

@@ -1,0 +1,96 @@
+{
+  "files": [
+    {
+      "path": "exports/lora_iter_000001900.pt",
+      "bytes": 91945481,
+      "sha256": "1e1c8031cf056a4858288a9b40bc9e2e3a94e82d56c053216652b681f2f47491",
+      "remote": "/root/autodl-tmp/cosmos/cloud-runs/cosmos_policy_cloud/libero_spatial_lora/spatial_rtxpro6000_01/exports/lora_iter_000001900.pt"
+    },
+    {
+      "path": "exports/lora_iter_000001900.json",
+      "bytes": 254,
+      "sha256": "d76bdc5faabd1313e445d5bd8b2b02934f936fc98ed1143c78002a241d190e82",
+      "remote": "/root/autodl-tmp/cosmos/cloud-runs/cosmos_policy_cloud/libero_spatial_lora/spatial_rtxpro6000_01/exports/lora_iter_000001900.json"
+    },
+    {
+      "path": "config.yaml",
+      "bytes": 17651,
+      "sha256": "47eb70e1437174ac34d43a7af21369f808ad0d434f443a3c50e0a3a3f4c8647a",
+      "remote": "/root/autodl-tmp/cosmos/cloud-runs/cosmos_policy_cloud/libero_spatial_lora/spatial_rtxpro6000_01/config.yaml"
+    },
+    {
+      "path": "config.pkl",
+      "bytes": 85437,
+      "sha256": "eaea1b4cee992262303164db422200e5d6f26ba8242325ac8853449dc353f5fe",
+      "remote": "/root/autodl-tmp/cosmos/cloud-runs/cosmos_policy_cloud/libero_spatial_lora/spatial_rtxpro6000_01/config.pkl"
+    },
+    {
+      "path": "cloud_run.json",
+      "bytes": 1927,
+      "sha256": "37ea4c3d27e90affc3865891a8ee82e831cdcf74c31154cb40bd4be5838089fa",
+      "remote": "/root/autodl-tmp/cosmos/cloud-runs/cosmos_policy_cloud/libero_spatial_lora/spatial_rtxpro6000_01/cloud_run.json"
+    },
+    {
+      "path": "job_env.yaml",
+      "bytes": 244,
+      "sha256": "3deaa4513121914bde5925eb9894b2135b958f4f44ebca4d6fd735d8d5b08ca1",
+      "remote": "/root/autodl-tmp/cosmos/cloud-runs/cosmos_policy_cloud/libero_spatial_lora/spatial_rtxpro6000_01/job_env.yaml"
+    },
+    {
+      "path": "launch_info.yaml",
+      "bytes": 2554,
+      "sha256": "f18eb41925059267d6736a6d676555935d0dc41a15e30fa54e7b7ed4ae9a1e6d",
+      "remote": "/root/autodl-tmp/cosmos/cloud-runs/cosmos_policy_cloud/libero_spatial_lora/spatial_rtxpro6000_01/launch_info.yaml"
+    },
+    {
+      "path": "wandb_id.txt",
+      "bytes": 9,
+      "sha256": "a114e0a6cd7b0e4b891cf29ea80c06d3242b6b40c738468f52780eebeb8d3972",
+      "remote": "/root/autodl-tmp/cosmos/cloud-runs/cosmos_policy_cloud/libero_spatial_lora/spatial_rtxpro6000_01/wandb_id.txt"
+    },
+    {
+      "path": "logs/spatial_rtxpro6000_01.log",
+      "bytes": 321145,
+      "sha256": "4f438d2abea2a1b008288683d4bbc6f75b54fd3e974636d9eb8cfe8a63f02413",
+      "remote": "/root/autodl-tmp/cosmos/cloud-runs/logs/spatial_rtxpro6000_01.log"
+    },
+    {
+      "path": "checkpoints/latest_checkpoint.txt",
+      "bytes": 15,
+      "sha256": "69b5272aee6ce3a58f68384bef71b7ad045de0c1a03cd191d55d72249a7c1a33",
+      "remote": "/root/autodl-tmp/cosmos/cloud-runs/cosmos_policy_cloud/libero_spatial_lora/spatial_rtxpro6000_01/checkpoints/latest_checkpoint.txt"
+    },
+    {
+      "path": "checkpoints/iter_000001900/model/.metadata",
+      "bytes": 350405,
+      "sha256": "66a24c2645f8838d8e4109bceff338c21807e5bf246834d873697f2eb27fa18c",
+      "remote": "/root/autodl-tmp/cosmos/cloud-runs/cosmos_policy_cloud/libero_spatial_lora/spatial_rtxpro6000_01/checkpoints/iter_000001900/model/.metadata"
+    },
+    {
+      "path": "checkpoints/iter_000001900/scheduler/.metadata",
+      "bytes": 1419,
+      "sha256": "cbe891a4481fe5072618ce6518d4cb08c10611c877438d01b8e11e3608c732fe",
+      "remote": "/root/autodl-tmp/cosmos/cloud-runs/cosmos_policy_cloud/libero_spatial_lora/spatial_rtxpro6000_01/checkpoints/iter_000001900/scheduler/.metadata"
+    },
+    {
+      "path": "checkpoints/iter_000001900/scheduler/__0_0.distcp",
+      "bytes": 6937,
+      "sha256": "43b48cf129e1df2c295d5dedcf646cee32976f0f0bdb49b15db43301cafa637c",
+      "remote": "/root/autodl-tmp/cosmos/cloud-runs/cosmos_policy_cloud/libero_spatial_lora/spatial_rtxpro6000_01/checkpoints/iter_000001900/scheduler/__0_0.distcp"
+    },
+    {
+      "path": "checkpoints/iter_000001900/trainer/.metadata",
+      "bytes": 671,
+      "sha256": "eb8696cecb57727d6ab4b5380874671c029f8d2cbe0ad8ccd334994ce2a3dcf2",
+      "remote": "/root/autodl-tmp/cosmos/cloud-runs/cosmos_policy_cloud/libero_spatial_lora/spatial_rtxpro6000_01/checkpoints/iter_000001900/trainer/.metadata"
+    },
+    {
+      "path": "checkpoints/iter_000001900/trainer/__0_0.distcp",
+      "bytes": 1261,
+      "sha256": "1e8511408518329521d6139ea2cb6fadf4b1107659a5af6eeb677c6da5868b30",
+      "remote": "/root/autodl-tmp/cosmos/cloud-runs/cosmos_policy_cloud/libero_spatial_lora/spatial_rtxpro6000_01/checkpoints/iter_000001900/trainer/__0_0.distcp"
+    }
+  ],
+  "file_count": 15,
+  "total_bytes": 92735410
+}

@@ -1,0 +1,51 @@
+﻿Cosmos Policy：LIBERO 官方检查点评测记录
+
+状态：完成
+任务范围：LIBERO-Spatial，10 个任务，每任务 10 个回合，seed=195。
+模型：作者发布的完整 Cosmos-Policy-LIBERO-Predict2-2B 权重；未加载我们训练的 LoRA。
+已完成回合：100/100；成功：99。
+成功率：99.0%
+成功判定：LIBERO 仿真环境返回的任务完成状态，不以 loss 或视频观感代替。
+
+各任务结果：
+  task 0: 10/10  pick up the black bowl between the plate and the ramekin and place it on the plate
+  task 1: 10/10  pick up the black bowl next to the ramekin and place it on the plate
+  task 2: 10/10  pick up the black bowl from table center and place it on the plate
+  task 3: 10/10  pick up the black bowl on the cookie box and place it on the plate
+  task 4: 10/10  pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+  task 5: 9/10  pick up the black bowl on the ramekin and place it on the plate
+  task 6: 10/10  pick up the black bowl next to the cookie box and place it on the plate
+  task 7: 10/10  pick up the black bowl on the stove and place it on the plate
+  task 8: 10/10  pick up the black bowl next to the plate and place it on the plate
+  task 9: 10/10  pick up the black bowl on the wooden cabinet and place it on the plate
+
+总用时：67.7 分钟（包括模型加载、环境初始化、评测与视频保存）。
+每次预测 16 个动作的平均计算时间：2.652 秒；中位数 2.628 秒。
+显存采样最大值：5151 MiB（每 10 秒一次，不能代表精确瞬时峰值）。
+
+运行条件与修改：
+  本机 RTX 5060 Laptop 8 GB；WSL2 Ubuntu；实际依赖版本见 environment.json。
+  加载阶段先在 CPU 内存初始化网络、转换为 BF16，再移到 GPU，降低初始化时的显存峰值。
+  模型架构、官方权重、图像输入处理及动作去噪步骤均保留；没有量化成 8 位或 4 位。
+  保留官方动作块长度 16、动作去噪 5 步；配置和完整命令见 command.txt。
+  加入独立视频保存目录、运行错误立即退出、每任务结束关闭仿真环境。
+  source_snapshot/ 与 source_hashes.json 保存关键运行源码与校验值。
+
+与论文完整评测的区别：
+  本次仅覆盖 Spatial 套件、一个随机种子、每任务 10 回合；没有覆盖其他 LIBERO 套件或 RoboCasa。
+  这是缩小评测，用于验证官方模型和训练/推理环境；不能宣称复现了论文完整成功率。
+  24 个任务的表述对应 RoboCasa 方案；本次 LIBERO-Spatial 是 10 个任务。
+
+已有训练证据（与本次官方模型评测分开）：
+  cloud-results/spatial_rtxpro6000_01/ 中有约 3 小时的单卡 LoRA 微调日志，日志记录到 step 1960。
+  latest_checkpoint.txt 指向 iter_000001900；exports/lora_iter_000001900.pt 为导出的适配器权重。
+  训练日志没有 Done with training 标记：应报告为按时间预算进行的短程训练，而非完整训练结束。
+  本次成功率衡量作者发布的模型，不衡量上述适配器的效果。
+
+结果文件：
+  summary.json：结构化汇总；per_task_results.csv：分任务结果；episodes.csv：逐回合结果。
+  logs/：官方评测日志；console.log：完整控制台输出；videos/：回放与预测画面对照视频。
+  exit_code.txt：程序退出状态；0 代表正常退出。
+
+来源：https://github.com/NVlabs/cosmos-policy/blob/main/LIBERO.md
+官方权重：https://huggingface.co/nvidia/Cosmos-Policy-LIBERO-Predict2-2B

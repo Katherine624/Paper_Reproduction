@@ -1,0 +1,22 @@
+[
+  {
+    "path": "checkpoints\\Cosmos-Policy-LIBERO-Predict2-2B\\Cosmos-Policy-LIBERO-Predict2-2B.pt",
+    "bytes": 3913017345,
+    "sha256": "8818528d8c9150cda0ddf8c711b0f221b21dac8ac379bd26d5690235954d33e2"
+  },
+  {
+    "path": "checkpoints\\Cosmos-Policy-LIBERO-Predict2-2B\\libero_dataset_statistics.json",
+    "bytes": 2372,
+    "sha256": "5b119a98ad7824507ddff3c6c7507ca244261ee416dcfa623876702160c580d3"
+  },
+  {
+    "path": "checkpoints\\Cosmos-Policy-LIBERO-Predict2-2B\\libero_t5_embeddings.pkl",
+    "bytes": 41957938,
+    "sha256": "8a03499676c6c196127c577144b9fd09bb02c30f9caf058adbcef09bb99ad8f5"
+  },
+  {
+    "path": "checkpoints\\Cosmos-Predict2-2B-Video2World\\tokenizer\\tokenizer.pth",
+    "bytes": 507609880,
+    "sha256": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981"
+  }
+]

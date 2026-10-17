@@ -1,0 +1,7 @@
+{
+  "iteration": 1900,
+  "tensor_count": 560,
+  "parameter_count": 45875200,
+  "bytes": 91945481,
+  "source_checkpoint": "/root/autodl-tmp/cosmos/cloud-runs/cosmos_policy_cloud/libero_spatial_lora/spatial_rtxpro6000_01/checkpoints/iter_000001900/model"
+}
