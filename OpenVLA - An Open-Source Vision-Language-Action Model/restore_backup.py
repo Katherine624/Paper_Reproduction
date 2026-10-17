@@ -1,11 +1,13 @@
 """Download and verify the exact OpenVLA experiment archive using the stdlib."""
 import argparse
+import concurrent.futures
 import hashlib
 import json
 import shutil
 import tarfile
 import time
 import urllib.request
+import urllib.parse
 from pathlib import Path
 
 
@@ -15,6 +17,54 @@ def sha256(path):
         for block in iter(lambda: f.read(8 * 1024 * 1024), b''):
             h.update(block)
     return h.hexdigest()
+
+
+def download_blocks(part):
+    """Bound requests to 16 MiB; retry interruption without losing byte order."""
+    if urllib.parse.urlsplit(part['url']).scheme == 'file':
+        with urllib.request.urlopen(part['url']) as response:
+            yield from iter(lambda: response.read(4 * 1024 * 1024), b'')
+        return
+    request = urllib.request.Request(part['url'], headers={'User-Agent': 'OpenVLA-reproduction-restore', 'Range': 'bytes=0-0'})
+    with urllib.request.urlopen(request, timeout=120) as response:
+        download_url = response.geturl()
+    chunk_size = 16 * 1024 * 1024
+
+    def segment(start):
+        end = min(start + chunk_size, part['bytes']) - 1
+        wanted = end - start + 1
+        for attempt in range(5):
+            try:
+                req = urllib.request.Request(download_url, headers={
+                    'User-Agent': 'OpenVLA-reproduction-restore',
+                    'Range': f'bytes={start}-{end}', 'Cache-Control': 'no-cache',
+                })
+                with urllib.request.urlopen(req, timeout=120) as resp:
+                    expected_range = f"bytes {start}-{end}/{part['bytes']}"
+                    if resp.status != 206 or resp.headers.get('Content-Range') != expected_range:
+                        raise ValueError('Server did not honor the requested byte range')
+                    data = resp.read(wanted + 1)
+                if len(data) != wanted:
+                    raise ValueError('Incomplete byte range')
+                return data
+            except Exception:
+                if attempt == 4:
+                    raise
+                time.sleep(min(2 ** attempt, 8))
+
+    # Bound in-flight data to four segments instead of queuing the entire archive.
+    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
+        starts = iter(range(0, part['bytes'], chunk_size))
+        pending = []
+        for _ in range(4):
+            start = next(starts, None)
+            if start is not None:
+                pending.append(pool.submit(segment, start))
+        while pending:
+            yield pending.pop(0).result()
+            start = next(starts, None)
+            if start is not None:
+                pending.append(pool.submit(segment, start))
 
 
 def main():
@@ -40,18 +90,16 @@ def main():
             h = hashlib.sha256()
             count = 0
             last = time.monotonic()
-            request = urllib.request.Request(part['url'], headers={'User-Agent': 'OpenVLA-reproduction-restore'})
-            with urllib.request.urlopen(request, timeout=120) as response:
-                for block in iter(lambda: response.read(4 * 1024 * 1024), b''):
-                    count += len(block)
-                    total += len(block)
-                    h.update(block)
-                    whole.update(block)
-                    if sink:
-                        sink.write(block)
-                    if time.monotonic() - last > 20:
-                        print(f"{part['name']}: {count / part['bytes']:.0%}", flush=True)
-                        last = time.monotonic()
+            for block in download_blocks(part):
+                count += len(block)
+                total += len(block)
+                h.update(block)
+                whole.update(block)
+                if sink:
+                    sink.write(block)
+                if time.monotonic() - last > 20:
+                    print(f"{part['name']}: {count / part['bytes']:.0%}", flush=True)
+                    last = time.monotonic()
             if count != part['bytes'] or h.hexdigest() != part['sha256']:
                 raise ValueError('Part failed size or SHA256 verification: ' + part['name'])
             print('Verified ' + part['name'], flush=True)
