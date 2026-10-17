@@ -1,0 +1,11 @@
+{
+  "dataset_index": 227255,
+  "task": "turn on the red light",
+  "action_shape": [
+    33,
+    7
+  ],
+  "action_mae": 0.3300574346900874,
+  "inference_steps": 5,
+  "note": "Held-out example, not a benchmark score."
+}

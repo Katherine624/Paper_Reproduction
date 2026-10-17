@@ -1,0 +1,112 @@
+[
+  {
+    "dataset_index": 178050,
+    "task": "put the yellow block on the table",
+    "action_shape": [
+      33,
+      7
+    ],
+    "action_mae": 0.37213749063682083,
+    "inference_steps": 5,
+    "note": "Held-out example, not a benchmark score."
+  },
+  {
+    "dataset_index": 36497,
+    "task": "push the purple block towards the left",
+    "action_shape": [
+      33,
+      7
+    ],
+    "action_mae": 0.33580343232362403,
+    "inference_steps": 5,
+    "note": "Held-out example, not a benchmark score."
+  },
+  {
+    "dataset_index": 97408,
+    "task": "put the purple block on the table",
+    "action_shape": [
+      33,
+      7
+    ],
+    "action_mae": 0.2990986329561888,
+    "inference_steps": 5,
+    "note": "Held-out example, not a benchmark score."
+  },
+  {
+    "dataset_index": 218218,
+    "task": "lift the purple block",
+    "action_shape": [
+      33,
+      7
+    ],
+    "action_mae": 0.3382196113915754,
+    "inference_steps": 5,
+    "note": "Held-out example, not a benchmark score."
+  },
+  {
+    "dataset_index": 64290,
+    "task": "put the pink block inside the left cabinet",
+    "action_shape": [
+      33,
+      7
+    ],
+    "action_mae": 0.4158627382055653,
+    "inference_steps": 5,
+    "note": "Held-out example, not a benchmark score."
+  },
+  {
+    "dataset_index": 191923,
+    "task": "place the pink object inside the box",
+    "action_shape": [
+      33,
+      7
+    ],
+    "action_mae": 0.6057263028922191,
+    "inference_steps": 5,
+    "note": "Held-out example, not a benchmark score."
+  },
+  {
+    "dataset_index": 200913,
+    "task": "pick up the purple block",
+    "action_shape": [
+      33,
+      7
+    ],
+    "action_mae": 0.40058619251771344,
+    "inference_steps": 5,
+    "note": "Held-out example, not a benchmark score."
+  },
+  {
+    "dataset_index": 227255,
+    "task": "turn on the red light",
+    "action_shape": [
+      33,
+      7
+    ],
+    "action_mae": 0.3300574346900874,
+    "inference_steps": 5,
+    "note": "Held-out example, not a benchmark score."
+  },
+  {
+    "dataset_index": 187936,
+    "task": "lift the pink block",
+    "action_shape": [
+      33,
+      7
+    ],
+    "action_mae": 0.38354841072494367,
+    "inference_steps": 5,
+    "note": "Held-out example, not a benchmark score."
+  },
+  {
+    "dataset_index": 142288,
+    "task": "go close the drawer",
+    "action_shape": [
+      33,
+      7
+    ],
+    "action_mae": 0.446955899945525,
+    "inference_steps": 5,
+    "note": "Held-out example, not a benchmark score."
+  }
+]

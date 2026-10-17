@@ -1,0 +1,42 @@
+lerobot version: 0.4.0
+lerobot version >= 0.4.0
+WARNING:root:keys set() of /root/rivermind-data/tau0-wm-reproduction/data/raw/taco_play were disabled as they are not contained in all the other datasets.
+/root/rivermind-data/tau0-wm-reproduction/env/tau0/lib/python3.10/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+absolute joint
+Initializing models
+SPATIAL_DOWN_RATIO of VAE :16
+TEMPORAL_DOWN_RATIO of VAE :4
+Flash attention 3 is not available
+Flash attention 2 is not available
+Load pretrained model weights:  /root/rivermind-data/tau0-wm-reproduction/weights/vam/simulator/diffusion_pytorch_model.bin
+>>> mismatched_keys: [('act_cond_proj_in.0.weight', torch.Size([96, 26]), torch.Size([96, 7]))]
+>>> missing: ['act_cond_proj_in.0.weight']
+>>> unexpected: []
+>>> Loaded weights from pretrained checkpoint: /root/rivermind-data/tau0-wm-reproduction/weights/vam/simulator/diffusion_pytorch_model.bin
+Total parameters for transformer model:(5952060961, 5952060961)
+/root/rivermind-data/tau0-wm-reproduction/upstream/tau-0-wm/models/wan_2_2_models/vae/vae2_2.py:1028: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+  0%|          | 0/5 [00:00<?, ?it/s]Processing 0/5 | Current timestep: 999:   0%|          | 0/5 [00:00<?, ?it/s]/root/rivermind-data/tau0-wm-reproduction/upstream/tau-0-wm/models/wan_2_2_models/transformers/attention.py:248: UserWarning: Padding mask is disabled when using scaled_dot_product_attention. It can have a significant impact on performance.
+  warnings.warn(
+Processing 0/5 | Current timestep: 999:  20%|██        | 1/5 [00:00<00:01,  2.68it/s]Processing 1/5 | Current timestep: 952:  20%|██        | 1/5 [00:00<00:01,  2.68it/s]Processing 2/5 | Current timestep: 882:  40%|████      | 2/5 [00:00<00:01,  2.68it/s]Processing 2/5 | Current timestep: 882:  60%|██████    | 3/5 [00:00<00:00,  5.66it/s]Processing 3/5 | Current timestep: 769:  60%|██████    | 3/5 [00:00<00:00,  5.66it/s]Processing 4/5 | Current timestep: 555:  80%|████████  | 4/5 [00:00<00:00,  5.66it/s]Processing 4/5 | Current timestep: 555: 100%|██████████| 5/5 [00:00<00:00,  7.86it/s]Processing 4/5 | Current timestep: 555: 100%|██████████| 5/5 [00:00<00:00,  6.66it/s]
+x0.shape:  torch.Size([2, 48, 3, 12, 16])
+/root/rivermind-data/tau0-wm-reproduction/upstream/tau-0-wm/models/wan_2_2_models/vae/vae2_2.py:1042: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+Simulator sample 1 (dataset): index=178050, MSE=0.0417
+  0%|          | 0/5 [00:00<?, ?it/s]Processing 0/5 | Current timestep: 999:   0%|          | 0/5 [00:00<?, ?it/s]Processing 1/5 | Current timestep: 952:  20%|██        | 1/5 [00:00<00:00, 12.00it/s]Processing 1/5 | Current timestep: 952:  40%|████      | 2/5 [00:00<00:00, 11.72it/s]Processing 2/5 | Current timestep: 882:  40%|████      | 2/5 [00:00<00:00, 11.72it/s]Processing 3/5 | Current timestep: 769:  60%|██████    | 3/5 [00:00<00:00, 11.72it/s]Processing 3/5 | Current timestep: 769:  80%|████████  | 4/5 [00:00<00:00, 11.71it/s]Processing 4/5 | Current timestep: 555:  80%|████████  | 4/5 [00:00<00:00, 11.71it/s]Processing 4/5 | Current timestep: 555: 100%|██████████| 5/5 [00:00<00:00, 11.87it/s]
+x0.shape:  torch.Size([2, 48, 3, 12, 16])
+Simulator sample 1 (vam_prediction): index=178050, MSE=0.0499
+  0%|          | 0/5 [00:00<?, ?it/s]Processing 0/5 | Current timestep: 999:   0%|          | 0/5 [00:00<?, ?it/s]Processing 1/5 | Current timestep: 952:  20%|██        | 1/5 [00:00<00:00, 12.47it/s]Processing 1/5 | Current timestep: 952:  40%|████      | 2/5 [00:00<00:00, 12.46it/s]Processing 2/5 | Current timestep: 882:  40%|████      | 2/5 [00:00<00:00, 12.46it/s]Processing 3/5 | Current timestep: 769:  60%|██████    | 3/5 [00:00<00:00, 12.46it/s]Processing 3/5 | Current timestep: 769:  80%|████████  | 4/5 [00:00<00:00, 12.50it/s]Processing 4/5 | Current timestep: 555:  80%|████████  | 4/5 [00:00<00:00, 12.50it/s]Processing 4/5 | Current timestep: 555: 100%|██████████| 5/5 [00:00<00:00, 12.51it/s]
+x0.shape:  torch.Size([2, 48, 3, 12, 16])
+Simulator sample 2 (dataset): index=36497, MSE=0.0938
+  0%|          | 0/5 [00:00<?, ?it/s]Processing 0/5 | Current timestep: 999:   0%|          | 0/5 [00:00<?, ?it/s]Processing 1/5 | Current timestep: 952:  20%|██        | 1/5 [00:00<00:00, 12.59it/s]Processing 1/5 | Current timestep: 952:  40%|████      | 2/5 [00:00<00:00, 12.58it/s]Processing 2/5 | Current timestep: 882:  40%|████      | 2/5 [00:00<00:00, 12.58it/s]Processing 3/5 | Current timestep: 769:  60%|██████    | 3/5 [00:00<00:00, 12.58it/s]Processing 3/5 | Current timestep: 769:  80%|████████  | 4/5 [00:00<00:00, 12.50it/s]Processing 4/5 | Current timestep: 555:  80%|████████  | 4/5 [00:00<00:00, 12.50it/s]Processing 4/5 | Current timestep: 555: 100%|██████████| 5/5 [00:00<00:00, 12.54it/s]
+x0.shape:  torch.Size([2, 48, 3, 12, 16])
+Simulator sample 2 (vam_prediction): index=36497, MSE=0.1371
+  0%|          | 0/5 [00:00<?, ?it/s]Processing 0/5 | Current timestep: 999:   0%|          | 0/5 [00:00<?, ?it/s]Processing 1/5 | Current timestep: 952:  20%|██        | 1/5 [00:00<00:00, 12.49it/s]Processing 1/5 | Current timestep: 952:  40%|████      | 2/5 [00:00<00:00, 12.54it/s]Processing 2/5 | Current timestep: 882:  40%|████      | 2/5 [00:00<00:00, 12.54it/s]Processing 3/5 | Current timestep: 769:  60%|██████    | 3/5 [00:00<00:00, 12.54it/s]Processing 3/5 | Current timestep: 769:  80%|████████  | 4/5 [00:00<00:00, 12.44it/s]Processing 4/5 | Current timestep: 555:  80%|████████  | 4/5 [00:00<00:00, 12.44it/s]Processing 4/5 | Current timestep: 555: 100%|██████████| 5/5 [00:00<00:00, 12.46it/s]
+x0.shape:  torch.Size([2, 48, 3, 12, 16])
+Simulator sample 3 (dataset): index=97408, MSE=0.0602
+  0%|          | 0/5 [00:00<?, ?it/s]Processing 0/5 | Current timestep: 999:   0%|          | 0/5 [00:00<?, ?it/s]Processing 1/5 | Current timestep: 952:  20%|██        | 1/5 [00:00<00:00, 12.35it/s]Processing 1/5 | Current timestep: 952:  40%|████      | 2/5 [00:00<00:00, 12.43it/s]Processing 2/5 | Current timestep: 882:  40%|████      | 2/5 [00:00<00:00, 12.43it/s]Processing 3/5 | Current timestep: 769:  60%|██████    | 3/5 [00:00<00:00, 12.43it/s]Processing 3/5 | Current timestep: 769:  80%|████████  | 4/5 [00:00<00:00, 12.51it/s]Processing 4/5 | Current timestep: 555:  80%|████████  | 4/5 [00:00<00:00, 12.51it/s]Processing 4/5 | Current timestep: 555: 100%|██████████| 5/5 [00:00<00:00, 12.52it/s]
+x0.shape:  torch.Size([2, 48, 3, 12, 16])
+Simulator sample 3 (vam_prediction): index=97408, MSE=0.2850
+Saved results to /root/rivermind-data/tau0-wm-reproduction/runs/inference/sim-public-comparison

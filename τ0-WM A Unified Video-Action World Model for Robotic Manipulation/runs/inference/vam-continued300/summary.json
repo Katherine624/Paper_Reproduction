@@ -1,0 +1,35 @@
+[
+  {
+    "dataset_index": 178050,
+    "task": "put the yellow block on the table",
+    "action_shape": [
+      33,
+      7
+    ],
+    "action_mae": 0.23507398530581236,
+    "inference_steps": 5,
+    "note": "Held-out example, not a benchmark score."
+  },
+  {
+    "dataset_index": 36497,
+    "task": "push the purple block towards the left",
+    "action_shape": [
+      33,
+      7
+    ],
+    "action_mae": 0.22695898544693083,
+    "inference_steps": 5,
+    "note": "Held-out example, not a benchmark score."
+  },
+  {
+    "dataset_index": 97408,
+    "task": "put the purple block on the table",
+    "action_shape": [
+      33,
+      7
+    ],
+    "action_mae": 0.2278559897950798,
+    "inference_steps": 5,
+    "note": "Held-out example, not a benchmark score."
+  }
+]

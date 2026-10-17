@@ -1,0 +1,12 @@
+{
+  "dataset_index": 178050,
+  "task": "put the yellow block on the table",
+  "action_shape": [
+    33,
+    7
+  ],
+  "action_mae": 0.3393270936974447,
+  "proposals": 2,
+  "sim_refine": true,
+  "note": "Offline TTC smoke test, not robot task success."
+}
