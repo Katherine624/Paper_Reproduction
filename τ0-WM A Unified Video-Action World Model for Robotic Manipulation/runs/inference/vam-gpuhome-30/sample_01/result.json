@@ -1,0 +1,11 @@
+{
+  "dataset_index": 178050,
+  "task": "put the yellow block on the table",
+  "action_shape": [
+    33,
+    7
+  ],
+  "action_mae": 0.37213749063682083,
+  "inference_steps": 5,
+  "note": "Held-out example, not a benchmark score."
+}

@@ -1,0 +1,29 @@
+lerobot version: 0.4.0
+lerobot version >= 0.4.0
+Flash attention 3 is not available
+Flash attention 2 is not available
+WARNING:root:keys set() of /root/autodl-tmp/tau0-wm-reproduction/data/raw/taco_play were disabled as they are not contained in all the other datasets.
+/root/autodl-tmp/tau0-wm-reproduction/env/tau0/lib/python3.10/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+absolute joint
+Add state
+Initializing models
+SPATIAL_DOWN_RATIO of VAE :16
+TEMPORAL_DOWN_RATIO of VAE :4
+Load pretrained model weights:  /root/autodl-tmp/tau0-wm-reproduction/runs/checkpoints/vam-taco-play-continued300/step_300
+>>> mismatched_keys: []
+>>> missing: []
+>>> unexpected: []
+>>> Loaded weights from pretrained checkpoint: /root/autodl-tmp/tau0-wm-reproduction/runs/checkpoints/vam-taco-play-continued300/step_300
+Total parameters for transformer model:(5511438535, 5511438535)
+/root/autodl-tmp/tau0-wm-reproduction/upstream/tau-0-wm/models/wan_2_2_models/vae/vae2_2.py:1028: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+  0%|          | 0/5 [00:00<?, ?it/s]/root/autodl-tmp/tau0-wm-reproduction/upstream/tau-0-wm/models/wan_2_2_models/transformers/attention.py:248: UserWarning: Padding mask is disabled when using scaled_dot_product_attention. It can have a significant impact on performance.
+  warnings.warn(
+ 20%|██        | 1/5 [00:00<00:00,  5.81it/s]100%|██████████| 5/5 [00:00<00:00, 18.65it/s]
+VAM sample 1: index=178050, MAE=0.2351
+  0%|          | 0/5 [00:00<?, ?it/s] 60%|██████    | 3/5 [00:00<00:00, 28.79it/s]100%|██████████| 5/5 [00:00<00:00, 32.98it/s]
+VAM sample 2: index=36497, MAE=0.2270
+  0%|          | 0/5 [00:00<?, ?it/s] 60%|██████    | 3/5 [00:00<00:00, 28.82it/s]100%|██████████| 5/5 [00:00<00:00, 32.99it/s]
+VAM sample 3: index=97408, MAE=0.2279
+Saved results to /root/autodl-tmp/tau0-wm-reproduction/runs/inference/vam-continued300

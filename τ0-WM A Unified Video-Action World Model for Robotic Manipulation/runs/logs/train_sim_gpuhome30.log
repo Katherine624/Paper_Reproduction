@@ -1,0 +1,36 @@
+lerobot version: 0.4.0
+lerobot version >= 0.4.0
+Flash attention 3 is not available
+Flash attention 2 is not available
+WARNING:root:keys set() of /root/rivermind-data/tau0-wm-reproduction/data/raw/taco_play were disabled as they are not contained in all the other datasets.
+Simulator subset: 30 samples
+Load pretrained model weights:  weights/simulator/diffusion_pytorch_model.bin
+>>> mismatched_keys: [('act_cond_proj_in.0.weight', torch.Size([96, 26]), torch.Size([96, 7]))]
+>>> missing: ['act_cond_proj_in.0.weight']
+>>> unexpected: []
+>>> Loaded weights from pretrained checkpoint: weights/simulator/diffusion_pytorch_model.bin
+/root/rivermind-data/tau0-wm-reproduction/env/tau0/lib/python3.10/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+/root/rivermind-data/tau0-wm-reproduction/env/tau0/lib/python3.10/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+/root/rivermind-data/tau0-wm-reproduction/env/tau0/lib/python3.10/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+/root/rivermind-data/tau0-wm-reproduction/env/tau0/lib/python3.10/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+/root/rivermind-data/tau0-wm-reproduction/env/tau0/lib/python3.10/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+/root/rivermind-data/tau0-wm-reproduction/env/tau0/lib/python3.10/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+/root/rivermind-data/tau0-wm-reproduction/env/tau0/lib/python3.10/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+/root/rivermind-data/tau0-wm-reproduction/env/tau0/lib/python3.10/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+/root/rivermind-data/tau0-wm-reproduction/upstream/tau-0-wm/models/wan_2_2_models/vae/vae2_2.py:1192: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+/root/rivermind-data/tau0-wm-reproduction/upstream/tau-0-wm/models/wan_2_2_models/transformers/attention.py:248: UserWarning: Padding mask is disabled when using scaled_dot_product_attention. It can have a significant impact on performance.
+  warnings.warn(
+/root/rivermind-data/tau0-wm-reproduction/env/tau0/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py:838: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+epoch=1 step=10 loss=0.2838 video=0.2153 reward=0.0685 lr=0.00005000
+epoch=1 step=20 loss=0.2669 video=0.0873 reward=0.1796 lr=0.00005000
+epoch=1 step=30 loss=0.1228 video=0.1113 reward=0.0115 lr=0.00005000

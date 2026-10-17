@@ -1,0 +1,11 @@
+{
+  "dataset_index": 187936,
+  "task": "lift the pink block",
+  "action_shape": [
+    33,
+    7
+  ],
+  "action_mae": 0.38354841072494367,
+  "inference_steps": 5,
+  "note": "Held-out example, not a benchmark score."
+}

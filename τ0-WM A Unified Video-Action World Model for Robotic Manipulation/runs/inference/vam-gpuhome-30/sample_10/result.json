@@ -1,0 +1,11 @@
+{
+  "dataset_index": 142288,
+  "task": "go close the drawer",
+  "action_shape": [
+    33,
+    7
+  ],
+  "action_mae": 0.446955899945525,
+  "inference_steps": 5,
+  "note": "Held-out example, not a benchmark score."
+}

@@ -1,0 +1,11 @@
+{
+  "dataset_index": 64290,
+  "task": "put the pink block inside the left cabinet",
+  "action_shape": [
+    33,
+    7
+  ],
+  "action_mae": 0.4158627382055653,
+  "inference_steps": 5,
+  "note": "Held-out example, not a benchmark score."
+}

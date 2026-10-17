@@ -1,0 +1,11 @@
+{
+  "dataset_index": 218218,
+  "task": "lift the purple block",
+  "action_shape": [
+    33,
+    7
+  ],
+  "action_mae": 0.3382196113915754,
+  "inference_steps": 5,
+  "note": "Held-out example, not a benchmark score."
+}

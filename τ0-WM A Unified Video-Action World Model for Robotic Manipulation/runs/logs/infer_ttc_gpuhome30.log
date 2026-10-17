@@ -1,0 +1,33 @@
+lerobot version: 0.4.0
+lerobot version >= 0.4.0
+Flash attention 3 is not available
+Flash attention 2 is not available
+WARNING:root:keys set() of /root/rivermind-data/tau0-wm-reproduction/data/raw/taco_play were disabled as they are not contained in all the other datasets.
+/root/rivermind-data/tau0-wm-reproduction/env/tau0/lib/python3.10/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+absolute joint
+Add state
+Initializing models
+SPATIAL_DOWN_RATIO of VAE :16
+TEMPORAL_DOWN_RATIO of VAE :4
+Load pretrained model weights:  /root/rivermind-data/tau0-wm-reproduction/runs/checkpoints/vam-gpuhome-30/step_30
+>>> mismatched_keys: []
+>>> missing: []
+>>> unexpected: []
+>>> Loaded weights from pretrained checkpoint: /root/rivermind-data/tau0-wm-reproduction/runs/checkpoints/vam-gpuhome-30/step_30
+Total parameters for transformer model:(5511438535, 5511438535)
+Load pretrained model weights:  /root/rivermind-data/tau0-wm-reproduction/runs/checkpoints/sim-gpuhome-30/step_30
+>>> mismatched_keys: []
+>>> missing: []
+>>> unexpected: []
+>>> Loaded weights from pretrained checkpoint: /root/rivermind-data/tau0-wm-reproduction/runs/checkpoints/sim-gpuhome-30/step_30
+Total parameters for simulator model:(5952060961, 5952060961)
+/root/rivermind-data/tau0-wm-reproduction/upstream/tau-0-wm/models/wan_2_2_models/vae/vae2_2.py:1028: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+  0%|          | 0/5 [00:00<?, ?it/s]/root/rivermind-data/tau0-wm-reproduction/upstream/tau-0-wm/models/wan_2_2_models/transformers/attention.py:248: UserWarning: Padding mask is disabled when using scaled_dot_product_attention. It can have a significant impact on performance.
+  warnings.warn(
+ 20%|██        | 1/5 [00:00<00:01,  2.69it/s] 80%|████████  | 4/5 [00:00<00:00,  9.80it/s]100%|██████████| 5/5 [00:00<00:00,  9.49it/s]
+  0%|          | 0/5 [00:00<?, ?it/s]Processing 0/5 | Current timestep: 1000.0:   0%|          | 0/5 [00:00<?, ?it/s]Processing 0/5 | Current timestep: 1000.0:  20%|██        | 1/5 [00:00<00:00,  5.81it/s]Processing 1/5 | Current timestep: 800.0:  20%|██        | 1/5 [00:00<00:00,  5.81it/s] Processing 1/5 | Current timestep: 800.0:  40%|████      | 2/5 [00:00<00:00,  7.23it/s]Processing 2/5 | Current timestep: 600.0:  40%|████      | 2/5 [00:00<00:00,  7.23it/s]Processing 2/5 | Current timestep: 600.0:  60%|██████    | 3/5 [00:00<00:00,  7.27it/s]Processing 3/5 | Current timestep: 400.0:  60%|██████    | 3/5 [00:00<00:00,  7.27it/s]SIM: x0_return timestep:  tensor(400., device='cuda:0') 3
+SIM: x0_return sigmas  :  tensor([1.0000, 0.8000, 0.6000, 0.4000, 0.2000, 0.0000], device='cuda:0')
+Processing 3/5 | Current timestep: 400.0:  80%|████████  | 4/5 [00:00<00:00,  6.01it/s]Processing 4/5 | Current timestep: 200.0:  80%|████████  | 4/5 [00:00<00:00,  6.01it/s]Processing 4/5 | Current timestep: 200.0: 100%|██████████| 5/5 [00:00<00:00,  6.80it/s]Processing 4/5 | Current timestep: 200.0: 100%|██████████| 5/5 [00:00<00:00,  6.70it/s]
+TTC sample 1: index=178050, MAE=0.3393

@@ -1,0 +1,11 @@
+{
+  "dataset_index": 191923,
+  "task": "place the pink object inside the box",
+  "action_shape": [
+    33,
+    7
+  ],
+  "action_mae": 0.6057263028922191,
+  "inference_steps": 5,
+  "note": "Held-out example, not a benchmark score."
+}

@@ -1,0 +1,11 @@
+{
+  "dataset_index": 36497,
+  "task": "push the purple block towards the left",
+  "action_shape": [
+    33,
+    7
+  ],
+  "action_mae": 0.22695898544693083,
+  "inference_steps": 5,
+  "note": "Held-out example, not a benchmark score."
+}

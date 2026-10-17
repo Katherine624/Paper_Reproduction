@@ -1,0 +1,63 @@
+lerobot version: 0.4.0
+lerobot version >= 0.4.0
+Flash attention 3 is not available
+Flash attention 2 is not available
+WARNING:root:keys set() of /root/autodl-tmp/tau0-wm-reproduction/data/raw/taco_play were disabled as they are not contained in all the other datasets.
+Simulator subset: 300 samples
+Load pretrained model weights:  runs/checkpoints/sim-taco-play-subset100/step_100
+>>> mismatched_keys: []
+>>> missing: []
+>>> unexpected: []
+>>> Loaded weights from pretrained checkpoint: runs/checkpoints/sim-taco-play-subset100/step_100
+/root/autodl-tmp/tau0-wm-reproduction/env/tau0/lib/python3.10/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+/root/autodl-tmp/tau0-wm-reproduction/env/tau0/lib/python3.10/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+/root/autodl-tmp/tau0-wm-reproduction/env/tau0/lib/python3.10/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+/root/autodl-tmp/tau0-wm-reproduction/env/tau0/lib/python3.10/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+/root/autodl-tmp/tau0-wm-reproduction/env/tau0/lib/python3.10/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+/root/autodl-tmp/tau0-wm-reproduction/env/tau0/lib/python3.10/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+/root/autodl-tmp/tau0-wm-reproduction/env/tau0/lib/python3.10/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+/root/autodl-tmp/tau0-wm-reproduction/env/tau0/lib/python3.10/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+/root/autodl-tmp/tau0-wm-reproduction/upstream/tau-0-wm/models/wan_2_2_models/vae/vae2_2.py:1192: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+/root/autodl-tmp/tau0-wm-reproduction/upstream/tau-0-wm/models/wan_2_2_models/transformers/attention.py:248: UserWarning: Padding mask is disabled when using scaled_dot_product_attention. It can have a significant impact on performance.
+  warnings.warn(
+/root/autodl-tmp/tau0-wm-reproduction/env/tau0/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py:838: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+epoch=1 step=10 loss=1.6064 video=0.1289 reward=1.4775 lr=0.00005000
+epoch=1 step=20 loss=0.2760 video=0.1162 reward=0.1599 lr=0.00005000
+epoch=1 step=30 loss=0.1323 video=0.1174 reward=0.0149 lr=0.00005000
+epoch=1 step=40 loss=0.0718 video=0.0630 reward=0.0087 lr=0.00005000
+epoch=1 step=50 loss=0.2740 video=0.1088 reward=0.1652 lr=0.00005000
+epoch=1 step=60 loss=0.4810 video=0.1162 reward=0.3648 lr=0.00005000
+epoch=1 step=70 loss=0.4382 video=0.1619 reward=0.2762 lr=0.00005000
+epoch=1 step=80 loss=40.4525 video=0.1038 reward=40.3487 lr=0.00005000
+epoch=1 step=90 loss=0.9204 video=0.0749 reward=0.8455 lr=0.00005000
+epoch=1 step=100 loss=0.1604 video=0.1187 reward=0.0417 lr=0.00005000
+epoch=1 step=110 loss=0.1846 video=0.1689 reward=0.0157 lr=0.00005000
+epoch=1 step=120 loss=1.5831 video=0.1112 reward=1.4719 lr=0.00005000
+epoch=1 step=130 loss=0.3733 video=0.3409 reward=0.0324 lr=0.00005000
+epoch=1 step=140 loss=0.1031 video=0.0795 reward=0.0235 lr=0.00005000
+epoch=1 step=150 loss=72.0760 video=0.1366 reward=71.9394 lr=0.00005000
+epoch=1 step=160 loss=1.8104 video=0.1366 reward=1.6738 lr=0.00005000
+epoch=1 step=170 loss=0.0261 video=0.0141 reward=0.0120 lr=0.00005000
+epoch=1 step=180 loss=0.1353 video=0.0895 reward=0.0458 lr=0.00005000
+epoch=1 step=190 loss=0.0623 video=0.0334 reward=0.0289 lr=0.00005000
+epoch=1 step=200 loss=1.3704 video=0.0656 reward=1.3048 lr=0.00005000
+epoch=1 step=210 loss=0.1688 video=0.0837 reward=0.0851 lr=0.00005000
+epoch=1 step=220 loss=0.7225 video=0.2352 reward=0.4873 lr=0.00005000
+epoch=1 step=230 loss=0.8957 video=0.1423 reward=0.7533 lr=0.00005000
+epoch=1 step=240 loss=0.0545 video=0.0504 reward=0.0041 lr=0.00005000
+epoch=1 step=250 loss=0.2474 video=0.2016 reward=0.0458 lr=0.00005000
+epoch=1 step=260 loss=0.9453 video=0.0727 reward=0.8726 lr=0.00005000
+epoch=1 step=270 loss=0.1459 video=0.1176 reward=0.0283 lr=0.00005000
+epoch=1 step=280 loss=1.3156 video=0.0588 reward=1.2568 lr=0.00005000
+epoch=1 step=290 loss=0.3730 video=0.0613 reward=0.3117 lr=0.00005000
+epoch=1 step=300 loss=0.6033 video=0.0655 reward=0.5378 lr=0.00005000
