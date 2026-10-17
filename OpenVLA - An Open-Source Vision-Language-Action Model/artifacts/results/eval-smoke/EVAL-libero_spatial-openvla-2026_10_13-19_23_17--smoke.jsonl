@@ -1,0 +1,3 @@
+{"task_id": 0, "task": "pick up the black bowl between the plate and the ramekin and place it on the plate", "seed": 7, "initial_state_id": 0, "success": true, "steps": 97, "seconds": 18.649353854358196, "error": null}
+{"task_id": 0, "task": "pick up the black bowl between the plate and the ramekin and place it on the plate", "seed": 7, "initial_state_id": 1, "success": false, "steps": 230, "seconds": 45.14035177603364, "error": null}
+{"task_id": 0, "task": "pick up the black bowl between the plate and the ramekin and place it on the plate", "seed": 7, "initial_state_id": 2, "success": true, "steps": 107, "seconds": 20.238201141357422, "error": null}

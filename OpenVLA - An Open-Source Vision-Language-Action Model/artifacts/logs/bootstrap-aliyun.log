@@ -1,0 +1,25 @@
+Using Python 3.10.16 environment at: envs/openvla
+Resolved 38 packages in 42.31s
+Downloading nvidia-cusolver-cu12 (118.4MiB)
+Downloading triton (160.1MiB)
+Downloading pillow (6.6MiB)
+Downloading nvidia-cuda-nvrtc-cu12 (22.6MiB)
+Downloading nvidia-cublas-cu12 (391.6MiB)
+Downloading torchaudio (3.2MiB)
+Downloading networkx (1.6MiB)
+Downloading torch (720.5MiB)
+Downloading nvidia-cusparse-cu12 (186.9MiB)
+Downloading nvidia-nvjitlink-cu12 (37.9MiB)
+Downloading nvidia-cufft-cu12 (116.0MiB)
+Downloading sympy (6.0MiB)
+Downloading nvidia-cuda-cupti-cu12 (13.5MiB)
+Downloading nvidia-curand-cu12 (53.9MiB)
+Downloading torchvision (6.6MiB)
+Downloading nvidia-nccl-cu12 (158.3MiB)
+Downloading nvidia-cudnn-cu12 (697.8MiB)
+Downloading numpy (17.4MiB)
+ Downloaded networkx
+ Downloaded torchaudio
+ Downloaded sympy
+ Downloaded pillow
+ Downloaded torchvision

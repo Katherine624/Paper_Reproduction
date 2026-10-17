@@ -1,0 +1,70 @@
+2026-10-13 19:24:44.039551: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2026-10-13 19:24:44.039601: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2026-10-13 19:24:44.040964: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+10/13 [19:24:57] INFO     | >> [*] Computing dataset           data_utils.py:232
+                          statistics. This may take a bit, but                  
+                          should only need to happen once.                      
+  0%|          | 0/432 [00:00<?, ?it/s]  7%|▋         | 32/432 [00:00<00:01, 304.88it/s] 15%|█▍        | 63/432 [00:00<00:01, 191.11it/s] 20%|█▉        | 85/432 [00:00<00:04, 81.27it/s]  84%|████████▍ | 365/432 [00:00<00:00, 524.82it/s]100%|██████████| 432/432 [00:00<00:00, 447.41it/s]
+
+######################################################################################
+# Loading the following 1 datasets (incl. sampling weight):                         #
+# libero_spatial_no_noops: =================================================1.000000 #
+######################################################################################
+
+10/13 [19:24:59] INFO     | >> [*] Threads per Dataset: [1]       dataset.py:531
+                 INFO     | >> [*] Reads per Dataset: [1]         dataset.py:532
+                 INFO     | >> [*] Constructing datasets...       dataset.py:535
+                 INFO     | >> [*] Applying frame transforms on   dataset.py:575
+                          dataset...                                            
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1791890700.845669   46753 op_level_cost_estimator.cc:699] Error in PredictCost() for the op: op: "CropAndResize" attr { key: "T" value { type: DT_FLOAT } } attr { key: "extrapolation_value" value { f: 0 } } attr { key: "method" value { s: "bilinear" } } inputs { dtype: DT_FLOAT shape { dim { size: 1 } dim { size: 224 } dim { size: 224 } dim { size: -7 } } } inputs { dtype: DT_FLOAT shape { dim { size: -2 } dim { size: 4 } } } inputs { dtype: DT_INT32 shape { dim { size: -2 } } } inputs { dtype: DT_INT32 shape { dim { size: 2 } } } device { type: "CPU" vendor: "GenuineIntel" model: "111" frequency: 2000 num_cores: 224 environment { key: "cpu_instruction_set" value: "AVX SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2" } environment { key: "eigen" value: "3.4.90" } l1_cache_size: 49152 l2_cache_size: 2097152 l3_cache_size: 110100480 memory_size: 268435456 } outputs { dtype: DT_FLOAT shape { dim { size: -2 } dim { size: -8 } dim { size: -9 } dim { size: -7 } } }
+W0000 00:00:1791890700.846060   46753 op_level_cost_estimator.cc:699] Error in PredictCost() for the op: op: "CropAndResize" attr { key: "T" value { type: DT_FLOAT } } attr { key: "extrapolation_value" value { f: 0 } } attr { key: "method" value { s: "bilinear" } } inputs { dtype: DT_FLOAT shape { dim { size: 1 } dim { size: 224 } dim { size: 224 } dim { size: -6 } } } inputs { dtype: DT_FLOAT shape { dim { size: -3 } dim { size: 4 } } } inputs { dtype: DT_INT32 shape { dim { size: -3 } } } inputs { dtype: DT_INT32 shape { dim { size: 2 } } } device { type: "CPU" vendor: "GenuineIntel" model: "111" frequency: 2000 num_cores: 224 environment { key: "cpu_instruction_set" value: "AVX SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2" } environment { key: "eigen" value: "3.4.90" } l1_cache_size: 49152 l2_cache_size: 2097152 l3_cache_size: 110100480 memory_size: 268435456 } outputs { dtype: DT_FLOAT shape { dim { size: -3 } dim { size: -10 } dim { size: -11 } dim { size: -6 } } }
+{"status": "passed", "seconds": 3.7665024623274803, "shapes": {"pixel_values": [2, 6, 224, 224], "input_ids": [2, 41], "attention_mask": [2, 41], "labels": [2, 41]}, "supervised_tokens": [8, 8], "statistics_keys": ["libero_spatial_no_noops"]}
+Exception ignored in: <function AtomicFunction.__del__ at 0x7fb6402368c0>
+Traceback (most recent call last):
+  File "/root/gpufree-data/openvla-repro/envs/openvla/lib/python3.10/site-packages/tensorflow/python/eager/polymorphic_function/atomic_function.py", line 291, in __del__
+TypeError: 'NoneType' object is not subscriptable
+Exception ignored in: <function AtomicFunction.__del__ at 0x7fb6402368c0>
+Traceback (most recent call last):
+  File "/root/gpufree-data/openvla-repro/envs/openvla/lib/python3.10/site-packages/tensorflow/python/eager/polymorphic_function/atomic_function.py", line 291, in __del__
+TypeError: 'NoneType' object is not subscriptable
+Exception ignored in: <function AtomicFunction.__del__ at 0x7fb6402368c0>
+Traceback (most recent call last):
+  File "/root/gpufree-data/openvla-repro/envs/openvla/lib/python3.10/site-packages/tensorflow/python/eager/polymorphic_function/atomic_function.py", line 291, in __del__
+TypeError: 'NoneType' object is not subscriptable
+Exception ignored in: <function AtomicFunction.__del__ at 0x7fb6402368c0>
+Traceback (most recent call last):
+  File "/root/gpufree-data/openvla-repro/envs/openvla/lib/python3.10/site-packages/tensorflow/python/eager/polymorphic_function/atomic_function.py", line 291, in __del__
+TypeError: 'NoneType' object is not subscriptable
+Exception ignored in: <function AtomicFunction.__del__ at 0x7fb6402368c0>
+Traceback (most recent call last):
+  File "/root/gpufree-data/openvla-repro/envs/openvla/lib/python3.10/site-packages/tensorflow/python/eager/polymorphic_function/atomic_function.py", line 291, in __del__
+TypeError: 'NoneType' object is not subscriptable
+Exception ignored in: <function AtomicFunction.__del__ at 0x7fb6402368c0>
+Traceback (most recent call last):
+  File "/root/gpufree-data/openvla-repro/envs/openvla/lib/python3.10/site-packages/tensorflow/python/eager/polymorphic_function/atomic_function.py", line 291, in __del__
+TypeError: 'NoneType' object is not subscriptable
+Exception ignored in: <function AtomicFunction.__del__ at 0x7fb6402368c0>
+Traceback (most recent call last):
+  File "/root/gpufree-data/openvla-repro/envs/openvla/lib/python3.10/site-packages/tensorflow/python/eager/polymorphic_function/atomic_function.py", line 291, in __del__
+TypeError: 'NoneType' object is not subscriptable
+Exception ignored in: <function AtomicFunction.__del__ at 0x7fb6402368c0>
+Traceback (most recent call last):
+  File "/root/gpufree-data/openvla-repro/envs/openvla/lib/python3.10/site-packages/tensorflow/python/eager/polymorphic_function/atomic_function.py", line 291, in __del__
+TypeError: 'NoneType' object is not subscriptable
+Exception ignored in: <function AtomicFunction.__del__ at 0x7fb6402368c0>
+Traceback (most recent call last):
+  File "/root/gpufree-data/openvla-repro/envs/openvla/lib/python3.10/site-packages/tensorflow/python/eager/polymorphic_function/atomic_function.py", line 291, in __del__
+TypeError: 'NoneType' object is not subscriptable
+Exception ignored in: <function AtomicFunction.__del__ at 0x7fb6402368c0>
+Traceback (most recent call last):
+  File "/root/gpufree-data/openvla-repro/envs/openvla/lib/python3.10/site-packages/tensorflow/python/eager/polymorphic_function/atomic_function.py", line 291, in __del__
+TypeError: 'NoneType' object is not subscriptable
+Exception ignored in: <function AtomicFunction.__del__ at 0x7fb6402368c0>
+Traceback (most recent call last):
+  File "/root/gpufree-data/openvla-repro/envs/openvla/lib/python3.10/site-packages/tensorflow/python/eager/polymorphic_function/atomic_function.py", line 291, in __del__
+TypeError: 'NoneType' object is not subscriptable
+Exception ignored in: <function AtomicFunction.__del__ at 0x7fb6402368c0>
+Traceback (most recent call last):
+  File "/root/gpufree-data/openvla-repro/envs/openvla/lib/python3.10/site-packages/tensorflow/python/eager/polymorphic_function/atomic_function.py", line 291, in __del__
+TypeError: 'NoneType' object is not subscriptable

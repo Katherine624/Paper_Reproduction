@@ -1,0 +1,38 @@
+[
+  {
+    "filename": "robosuite-1.4.1-py3-none-any.whl",
+    "url": "https://mirrors.aliyun.com/pypi/packages/60/2f/bbcdf3130fc2c53c098d8699048724ac14292795dfb671168d1d5013fa03/robosuite-1.4.1-py3-none-any.whl",
+    "size": 193518002,
+    "sha256": "62587cd5888d9d3d813f3ffcc7017f6f77efa618952527a0b9bb139ffd0a3741"
+  },
+  {
+    "filename": "opencv_python-4.9.0.80-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "url": "https://mirrors.aliyun.com/pypi/packages/d9/64/7fdfb9386511cd6805451e012c537073a79a958a58795c4e602e538c388c/opencv_python-4.9.0.80-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "size": 62208946,
+    "sha256": "e4088cab82b66a3b37ffc452976b14a3c599269c247895ae9ceb4066d8188a57"
+  },
+  {
+    "filename": "llvmlite-0.42.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "url": "https://mirrors.aliyun.com/pypi/packages/2b/01/764489e364948f52aa7cb958a91a8dafd489357d2401f66946542bbc1764/llvmlite-0.42.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "size": 43802726,
+    "sha256": "763f8d8717a9073b9e0246998de89929071d15b47f254c10eef2310b9aac033d"
+  },
+  {
+    "filename": "scipy-1.15.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "url": "https://mirrors.aliyun.com/pypi/packages/8e/6d/41991e503e51fc1134502694c5fa7a1671501a17ffa12716a4a9151af3df/scipy-1.15.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "size": 37662964,
+    "sha256": "9e2abc762b0811e09a0d3258abee2d98e0c703eee49464ce0069590846f31d40"
+  },
+  {
+    "filename": "imageio_ffmpeg-0.6.0-py3-none-manylinux2014_x86_64.whl",
+    "url": "https://mirrors.aliyun.com/pypi/packages/a0/2d/43c8522a2038e9d0e7dbdf3a61195ecc31ca576fb1527a528c877e87d973/imageio_ffmpeg-0.6.0-py3-none-manylinux2014_x86_64.whl",
+    "size": 29498237,
+    "sha256": "c7e46fcec401dd990405049d2e2f475e2b397779df2519b544b8aab515195282"
+  },
+  {
+    "filename": "libclang-18.1.1-py2.py3-none-manylinux2010_x86_64.whl",
+    "url": "https://mirrors.aliyun.com/pypi/packages/1d/fc/716c1e62e512ef1c160e7984a73a5fc7df45166f2ff3f254e71c58076f7c/libclang-18.1.1-py2.py3-none-manylinux2010_x86_64.whl",
+    "size": 24515943,
+    "sha256": "c533091d8a3bbf7460a00cb6c1a71da93bffe148f172c7d03b1c31fbf8aa2a0b"
+  }
+]

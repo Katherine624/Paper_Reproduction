@@ -1,0 +1,20 @@
+{
+  "start_step": 0,
+  "end_step": 100,
+  "optimizer_steps_completed": 100,
+  "tracked_parameter": "base_model.model.vision_backbone.featurizer.patch_embed.proj.lora_B.default.weight",
+  "max_parameter_update": 0.0128173828125,
+  "verification_loss": 2.784245491027832,
+  "median_step_seconds": 0.2675004415214062,
+  "peak_gpu_allocated_bytes": 21098357248,
+  "resumed_optimizer": false,
+  "generated_action": [
+    0.1092131841895626,
+    -0.0013865477898541423,
+    -0.0026785731315612793,
+    4.831982009551039e-05,
+    0.04366386304883396,
+    -0.01669748083633535,
+    0.996078431372549
+  ]
+}

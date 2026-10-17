@@ -1,0 +1,15 @@
+export OPENVLA_ROOT=/root/gpufree-data/openvla-repro
+source "$OPENVLA_ROOT/envs/openvla/bin/activate"
+export PYTHONPATH="$OPENVLA_ROOT/openvla:$OPENVLA_ROOT/LIBERO:$OPENVLA_ROOT/scripts"
+export HF_HOME="$OPENVLA_ROOT/cache/huggingface"
+export HF_ENDPOINT=https://hf-mirror.com
+export HF_HUB_OFFLINE=1
+export TRANSFORMERS_OFFLINE=1
+export WANDB_MODE=disabled
+export TOKENIZERS_PARALLELISM=false
+export OMP_NUM_THREADS=8
+export OPENBLAS_NUM_THREADS=8
+export TF_CPP_MIN_LOG_LEVEL=2
+export MUJOCO_GL=egl
+export PYOPENGL_PLATFORM=egl
+export LIBERO_CONFIG_PATH="$OPENVLA_ROOT/config/libero"

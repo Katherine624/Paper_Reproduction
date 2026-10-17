@@ -1,0 +1,153 @@
+diff --git a/experiments/robot/libero/run_libero_eval.py b/experiments/robot/libero/run_libero_eval.py
+index 5c3f581..1044fd2 100644
+--- a/experiments/robot/libero/run_libero_eval.py
++++ b/experiments/robot/libero/run_libero_eval.py
+@@ -18,6 +18,9 @@ Usage:
+ """
+ 
+ import os
++import json
++import time
++import torch
+ import sys
+ from dataclasses import dataclass
+ from pathlib import Path
+@@ -70,6 +73,7 @@ class GenerateConfig:
+     #################################################################################################################
+     task_suite_name: str = "libero_spatial"          # Task suite. Options: libero_spatial, libero_object, libero_goal, libero_10, libero_90
+     num_steps_wait: int = 10                         # Number of steps to wait for objects to stabilize in sim
++    task_ids: Optional[str] = None                  # Optional comma-separated task ids for smoke runs
+     num_trials_per_task: int = 50                    # Number of rollouts per task
+ 
+     #################################################################################################################
+@@ -123,6 +127,11 @@ def eval_libero(cfg: GenerateConfig) -> None:
+     os.makedirs(cfg.local_log_dir, exist_ok=True)
+     local_log_filepath = os.path.join(cfg.local_log_dir, run_id + ".txt")
+     log_file = open(local_log_filepath, "w")
++    evidence = open(os.path.join(cfg.local_log_dir, run_id + ".jsonl"), "w", buffering=1)
++    with open(os.path.join(cfg.local_log_dir, run_id + ".config.json"), "w") as f:
++        json.dump(vars(cfg), f, indent=2, default=str)
++    action_latencies = []
++    torch.cuda.reset_peak_memory_stats()
+     print(f"Logging to local log file: {local_log_filepath}")
+ 
+     # Initialize Weights & Biases logging as well
+@@ -145,7 +154,9 @@ def eval_libero(cfg: GenerateConfig) -> None:
+ 
+     # Start evaluation
+     total_episodes, total_successes = 0, 0
+-    for task_id in tqdm.tqdm(range(num_tasks_in_suite)):
++    selected_ids = list(range(num_tasks_in_suite)) if cfg.task_ids is None else [int(x) for x in cfg.task_ids.split(",")]
++    assert all(0 <= x < num_tasks_in_suite for x in selected_ids)
++    for task_id in tqdm.tqdm(selected_ids):
+         # Get task
+         task = task_suite.get_task(task_id)
+ 
+@@ -169,6 +180,9 @@ def eval_libero(cfg: GenerateConfig) -> None:
+ 
+             # Setup
+             t = 0
++            done = False
++            episode_error = None
++            episode_start = time.perf_counter()
+             replay_images = []
+             if cfg.task_suite_name == "libero_spatial":
+                 max_steps = 220  # longest training demo has 193 steps
+@@ -208,6 +222,8 @@ def eval_libero(cfg: GenerateConfig) -> None:
+                     }
+ 
+                     # Query model to get action
++                    torch.cuda.synchronize()
++                    action_start = time.perf_counter()
+                     action = get_action(
+                         cfg,
+                         model,
+@@ -216,6 +232,10 @@ def eval_libero(cfg: GenerateConfig) -> None:
+                         processor=processor,
+                     )
+ 
++                    torch.cuda.synchronize()
++                    action_latencies.append(time.perf_counter() - action_start)
++                    assert np.asarray(action).shape == (7,) and np.isfinite(action).all(), "Invalid action"
++
+                     # Normalize gripper action [0,1] -> [-1,+1] because the environment expects the latter
+                     action = normalize_gripper_action(action, binarize=True)
+ 
+@@ -233,6 +253,8 @@ def eval_libero(cfg: GenerateConfig) -> None:
+                     t += 1
+ 
+                 except Exception as e:
++                    episode_error = repr(e)
++                    done = False
+                     print(f"Caught exception: {e}")
+                     log_file.write(f"Caught exception: {e}\n")
+                     break
+@@ -240,6 +262,10 @@ def eval_libero(cfg: GenerateConfig) -> None:
+             task_episodes += 1
+             total_episodes += 1
+ 
++            evidence.write(json.dumps({"task_id": task_id, "task": task_description, "seed": cfg.seed,
++                "initial_state_id": episode_idx, "success": bool(done), "steps": t,
++                "seconds": time.perf_counter() - episode_start, "error": episode_error}) + "\n")
++
+             # Save a replay video of the episode
+             save_rollout_video(
+                 replay_images, total_episodes, success=done, task_description=task_description, log_file=log_file
+@@ -254,6 +280,8 @@ def eval_libero(cfg: GenerateConfig) -> None:
+             log_file.write(f"# successes: {total_successes} ({total_successes / total_episodes * 100:.1f}%)\n")
+             log_file.flush()
+ 
++        env.close()
++
+         # Log final results
+         print(f"Current task success rate: {float(task_successes) / float(task_episodes)}")
+         print(f"Current total success rate: {float(total_successes) / float(total_episodes)}")
+@@ -268,6 +296,18 @@ def eval_libero(cfg: GenerateConfig) -> None:
+                 }
+             )
+ 
++    timing = np.asarray(action_latencies[10:])
++    summary = {"episodes": total_episodes, "successes": total_successes,
++        "success_rate": total_successes / total_episodes, "seed": cfg.seed,
++        "action_latency_p50_s": float(np.median(timing)) if timing.size else None,
++        "action_latency_p95_s": float(np.percentile(timing, 95)) if timing.size else None,
++        "timed_actions": int(timing.size), "warmup_actions_excluded": min(10, len(action_latencies)),
++        "peak_gpu_allocated_bytes": torch.cuda.max_memory_allocated()}
++    with open(os.path.join(cfg.local_log_dir, run_id + ".summary.json"), "w") as f:
++        json.dump(summary, f, indent=2)
++    evidence.close()
++    print(json.dumps(summary), flush=True)
++
+     # Save local log file
+     log_file.close()
+ 
+diff --git a/experiments/robot/openvla_utils.py b/experiments/robot/openvla_utils.py
+index e12e9a2..9825562 100644
+--- a/experiments/robot/openvla_utils.py
++++ b/experiments/robot/openvla_utils.py
+@@ -6,6 +6,7 @@ import time
+ 
+ import numpy as np
+ import tensorflow as tf
++tf.config.set_visible_devices([], "GPU")
+ import torch
+ from PIL import Image
+ from transformers import AutoConfig, AutoImageProcessor, AutoModelForVision2Seq, AutoProcessor
+@@ -47,7 +48,7 @@ def get_vla(cfg):
+         load_in_8bit=cfg.load_in_8bit,
+         load_in_4bit=cfg.load_in_4bit,
+         low_cpu_mem_usage=True,
+-        trust_remote_code=True,
++        trust_remote_code=False,
+     )
+ 
+     # Move model to device.
+@@ -74,7 +75,7 @@ def get_vla(cfg):
+ 
+ def get_processor(cfg):
+     """Get VLA model's Hugging Face processor."""
+-    processor = AutoProcessor.from_pretrained(cfg.pretrained_checkpoint, trust_remote_code=True)
++    processor = AutoProcessor.from_pretrained(cfg.pretrained_checkpoint, trust_remote_code=False)
+     return processor
+ 
+ 

@@ -1,0 +1,7 @@
+source /root/gpufree-data/openvla-repro/env.sh
+cd "$OPENVLA_ROOT/openvla"
+# Choose a new directory each time.
+RUN="$OPENVLA_ROOT/results/recheck-$(date +%Y%m%d-%H%M%S)"
+python experiments/robot/libero/run_libero_eval.py --pretrained_checkpoint "$OPENVLA_ROOT/models/spatial" --task_suite_name libero_spatial --num_trials_per_task 10 --center_crop True --seed 7 --local_log_dir "$RUN/eval" --run_id_note recheck
+python "$OPENVLA_ROOT/scripts/train_smoke.py" --model "$OPENVLA_ROOT/models/base" --data "$OPENVLA_ROOT/data" --out "$RUN/train" --steps 100 --batch-size 2
+python "$OPENVLA_ROOT/scripts/train_smoke.py" --model "$OPENVLA_ROOT/models/base" --data "$OPENVLA_ROOT/data" --out "$RUN/train" --steps 105 --batch-size 2 --resume "$RUN/train/checkpoint-100"

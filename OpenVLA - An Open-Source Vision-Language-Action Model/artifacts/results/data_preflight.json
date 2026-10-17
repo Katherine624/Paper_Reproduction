@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "seconds": 3.7665024623274803,
+  "shapes": {
+    "pixel_values": [
+      2,
+      6,
+      224,
+      224
+    ],
+    "input_ids": [
+      2,
+      41
+    ],
+    "attention_mask": [
+      2,
+      41
+    ],
+    "labels": [
+      2,
+      41
+    ]
+  },
+  "supervised_tokens": [
+    8,
+    8
+  ],
+  "statistics_keys": [
+    "libero_spatial_no_noops"
+  ]
+}
