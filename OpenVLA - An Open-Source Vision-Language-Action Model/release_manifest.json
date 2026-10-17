@@ -1,0 +1,35 @@
+{
+  "paper": "OpenVLA: An Open-Source Vision-Language-Action Model",
+  "experiment_date": "2026-10-13",
+  "published_date": "2026-10-17",
+  "release_tag": "openvla-2026-10-13-reproduction",
+  "release_url": "https://github.com/Katherine624/Paper_Reproduction/releases/tag/openvla-2026-10-13-reproduction",
+  "archive_name": "openvla_full_backup.tar.gz",
+  "archive_bytes": 2162839133,
+  "archive_sha256": "fe4a3105cb3d83fe9d67fc39697df3b617898861862bf6e6b4662a5a997546e5",
+  "files": 209,
+  "uncompressed_bytes": 2777265780,
+  "checkpoints": [
+    50,
+    100,
+    105
+  ],
+  "videos": 103,
+  "parts": [
+    {
+      "name": "openvla_full_backup.tar.gz.part01",
+      "offset": 0,
+      "bytes": 1610612736,
+      "sha256": "92ab905b598adfa1682982ef8a6f3c53023b4f280ecb89c6c6c2bd240197b20a",
+      "url": "https://github.com/Katherine624/Paper_Reproduction/releases/download/openvla-2026-10-13-reproduction/openvla_full_backup.tar.gz.part01"
+    },
+    {
+      "name": "openvla_full_backup.tar.gz.part02",
+      "offset": 1610612736,
+      "bytes": 552226397,
+      "sha256": "1cf86eced7cf17e38bd5ec013fd77a6a01544d35d89fc45e0cf0a953859d5408",
+      "url": "https://github.com/Katherine624/Paper_Reproduction/releases/download/openvla-2026-10-13-reproduction/openvla_full_backup.tar.gz.part02"
+    }
+  ],
+  "scope": "Generated experiment artifacts; public base models and raw datasets are referenced by pinned revision, not redistributed."
+}

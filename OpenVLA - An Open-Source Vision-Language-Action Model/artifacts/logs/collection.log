@@ -1,0 +1,1 @@
+{"status": "passed", "successes": 84, "episodes": 100, "training_steps": 100, "resume_steps": 5, "bundle": "/root/gpufree-data/openvla-repro/openvla_delivery.tar.gz", "bytes": 2398266}

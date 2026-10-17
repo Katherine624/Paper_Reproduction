@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "archive": "openvla_full_backup.tar.gz",
+  "archive_bytes": 2162839133,
+  "archive_sha256": "fe4a3105cb3d83fe9d67fc39697df3b617898861862bf6e6b4662a5a997546e5",
+  "file_count": 209,
+  "uncompressed_bytes": 2777265780,
+  "checkpoints": [
+    50,
+    100,
+    105
+  ],
+  "videos": 103
+}

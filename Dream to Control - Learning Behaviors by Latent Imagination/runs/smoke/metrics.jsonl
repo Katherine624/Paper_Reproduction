@@ -1,0 +1,11 @@
+{"step": 1000, "train/return": 53.654964447021484, "train/length": 500, "episodes": 1}
+{"step": 2000, "train/return": 37.42662048339844, "train/length": 500, "episodes": 2}
+{"step": 3000, "train/return": 36.39282989501953, "train/length": 500, "episodes": 3}
+{"step": 4000, "train/return": 36.80595397949219, "train/length": 500, "episodes": 4}
+{"step": 5000, "train/return": 46.20416259765625, "train/length": 500, "episodes": 5}
+{"step": 5000, "test/return": 45.81632995605469, "test/length": 500, "episodes": 5}
+{"step": 5000, "expl_amount": 0.0, "model_grad_norm": 1661.6822509765625, "value_grad_norm": 35.1342887878418, "actor_grad_norm": 2.3759734630584717, "prior_ent": 36.478092193603516, "post_ent": 36.03240966796875, "image_loss": 11706.1943359375, "reward_loss": 1.3288143873214722, "div": 7.72040319442749, "model_loss": 11715.2421875, "value_loss": 9.79650592803955, "actor_loss": 0.11300603300333023, "action_ent": -20.714492797851562}
+{"step": 6000, "train/return": 101.6583251953125, "train/length": 500, "episodes": 6}
+{"step": 6000, "test/return": 76.37459564208984, "test/length": 500, "episodes": 6}
+{"step": 6000, "expl_amount": 0.3000015318393707, "model_grad_norm": 3227.9814453125, "value_grad_norm": 75.39720153808594, "actor_grad_norm": 2.334643840789795, "prior_ent": 37.39017868041992, "post_ent": 35.94617462158203, "image_loss": 11762.0693359375, "reward_loss": 1.4358164072036743, "div": 4.501693248748779, "model_loss": 11768.0078125, "value_loss": 26.49612808227539, "actor_loss": -0.4254276156425476, "action_ent": -20.39093780517578}
+{"step": 7000, "train/return": 39.629066467285156, "train/length": 500, "episodes": 7}

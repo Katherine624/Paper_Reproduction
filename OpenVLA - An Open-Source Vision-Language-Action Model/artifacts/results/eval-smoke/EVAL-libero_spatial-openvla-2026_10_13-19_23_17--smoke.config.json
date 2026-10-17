@@ -1,0 +1,18 @@
+{
+  "model_family": "openvla",
+  "pretrained_checkpoint": "/root/gpufree-data/openvla-repro/models/spatial",
+  "load_in_8bit": false,
+  "load_in_4bit": false,
+  "center_crop": true,
+  "task_suite_name": "libero_spatial",
+  "num_steps_wait": 10,
+  "task_ids": "0",
+  "num_trials_per_task": 3,
+  "run_id_note": "smoke",
+  "local_log_dir": "/root/gpufree-data/openvla-repro/results/eval-smoke",
+  "use_wandb": false,
+  "wandb_project": "YOUR_WANDB_PROJECT",
+  "wandb_entity": "YOUR_WANDB_ENTITY",
+  "seed": 7,
+  "unnorm_key": "libero_spatial"
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "filename": "torch-2.2.0-cp310-cp310-manylinux1_x86_64.whl",
+    "url": "https://mirrors.aliyun.com/pypi/packages/8c/67/fcc9b9e2369a9bae4da492aedc0c2dfa95d563ef0eaa9228b70c98395ec2/torch-2.2.0-cp310-cp310-manylinux1_x86_64.whl",
+    "size": 755505538,
+    "sha256": "d366158d6503a3447e67f8c0ad1328d54e6c181d88572d688a625fac61b13a97"
+  },
+  {
+    "filename": "torchvision-0.17.0-cp310-cp310-manylinux1_x86_64.whl",
+    "url": "https://mirrors.aliyun.com/pypi/packages/d8/51/55393d57c2d95311b1675c8cd37d307f5022460cf98746e4df882dfb415c/torchvision-0.17.0-cp310-cp310-manylinux1_x86_64.whl",
+    "size": 6916370,
+    "sha256": "605950cdcefe6c5aef85709ade17b1525bcf171e122cce1df09e666d96525b90"
+  },
+  {
+    "filename": "torchaudio-2.2.0-cp310-cp310-manylinux1_x86_64.whl",
+    "url": "https://mirrors.aliyun.com/pypi/packages/30/fc/cdcf7c2071539ea147ddb6de2b538d9c1599665b621f2e6cf0b3ef51d20d/torchaudio-2.2.0-cp310-cp310-manylinux1_x86_64.whl",
+    "size": 3345657,
+    "sha256": "e2dc32b76eab278707cef43dbbadaad324a98b0f77f088cc4bbe5c2b08a56af1"
+  },
+  {
+    "filename": "triton-2.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "url": "https://mirrors.aliyun.com/pypi/packages/95/05/ed974ce87fe8c8843855daa2136b3409ee1c126707ab54a8b72815c08b49/triton-2.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "size": 167900779,
+    "sha256": "a2294514340cfe4e8f4f9e5c66c702744c4a117d25e618bd08469d0bfed1e2e5"
+  },
+  {
+    "filename": "nvidia_cublas_cu12-12.1.3.1-py3-none-manylinux1_x86_64.whl",
+    "url": "https://mirrors.aliyun.com/pypi/packages/37/6d/121efd7382d5b0284239f4ab1fc1590d86d34ed4a4a2fdb13b30ca8e5740/nvidia_cublas_cu12-12.1.3.1-py3-none-manylinux1_x86_64.whl",
+    "size": 410594774,
+    "sha256": "ee53ccca76a6fc08fb9701aa95b6ceb242cdaab118c3bb152af4e579af792728"
+  },
+  {
+    "filename": "nvidia_cudnn_cu12-8.9.2.26-py3-none-manylinux1_x86_64.whl",
+    "url": "https://mirrors.aliyun.com/pypi/packages/ff/74/a2e2be7fb83aaedec84f391f082cf765dfb635e7caa9b49065f73e4835d8/nvidia_cudnn_cu12-8.9.2.26-py3-none-manylinux1_x86_64.whl",
+    "size": 731725872,
+    "sha256": "5ccb288774fdfb07a7e7025ffec286971c06d8d7b4fb162525334616d7629ff9"
+  },
+  {
+    "filename": "nvidia_cufft_cu12-11.0.2.54-py3-none-manylinux1_x86_64.whl",
+    "url": "https://mirrors.aliyun.com/pypi/packages/86/94/eb540db023ce1d162e7bea9f8f5aa781d57c65aed513c33ee9a5123ead4d/nvidia_cufft_cu12-11.0.2.54-py3-none-manylinux1_x86_64.whl",
+    "size": 121635161,
+    "sha256": "794e3948a1aa71fd817c3775866943936774d1c14e7628c74f6f7417224cdf56"
+  },
+  {
+    "filename": "nvidia_curand_cu12-10.3.2.106-py3-none-manylinux1_x86_64.whl",
+    "url": "https://mirrors.aliyun.com/pypi/packages/44/31/4890b1c9abc496303412947fc7dcea3d14861720642b49e8ceed89636705/nvidia_curand_cu12-10.3.2.106-py3-none-manylinux1_x86_64.whl",
+    "size": 56467784,
+    "sha256": "9d264c5036dde4e64f1de8c50ae753237c12e0b1348738169cd0f8a536c0e1e0"
+  },
+  {
+    "filename": "nvidia_cusolver_cu12-11.4.5.107-py3-none-manylinux1_x86_64.whl",
+    "url": "https://mirrors.aliyun.com/pypi/packages/bc/1d/8de1e5c67099015c834315e333911273a8c6aaba78923dd1d1e25fc5f217/nvidia_cusolver_cu12-11.4.5.107-py3-none-manylinux1_x86_64.whl",
+    "size": 124161928,
+    "sha256": "8a7ec542f0412294b15072fa7dab71d31334014a69f953004ea7a118206fe0dd"
+  },
+  {
+    "filename": "nvidia_cusparse_cu12-12.1.0.106-py3-none-manylinux1_x86_64.whl",
+    "url": "https://mirrors.aliyun.com/pypi/packages/65/5b/cfaeebf25cd9fdec14338ccb16f6b2c4c7fa9163aefcf057d86b9cc248bb/nvidia_cusparse_cu12-12.1.0.106-py3-none-manylinux1_x86_64.whl",
+    "size": 195958278,
+    "sha256": "f3b50f42cf363f86ab21f720998517a659a48131e8d538dc02f8768237bd884c"
+  },
+  {
+    "filename": "nvidia_nccl_cu12-2.19.3-py3-none-manylinux1_x86_64.whl",
+    "url": "https://mirrors.aliyun.com/pypi/packages/38/00/d0d4e48aef772ad5aebcf70b73028f88db6e5640b36c38e90445b7a57c45/nvidia_nccl_cu12-2.19.3-py3-none-manylinux1_x86_64.whl",
+    "size": 165987969,
+    "sha256": "a9734707a2c96443331c1e48c717024aa6678a0e2a4cb66b2c364d18cee6b48d"
+  },
+  {
+    "filename": "nvidia_cuda_nvrtc_cu12-12.1.105-py3-none-manylinux1_x86_64.whl",
+    "url": "https://mirrors.aliyun.com/pypi/packages/b6/9f/c64c03f49d6fbc56196664d05dba14e3a561038a81a638eeb47f4d4cfd48/nvidia_cuda_nvrtc_cu12-12.1.105-py3-none-manylinux1_x86_64.whl",
+    "size": 23671734,
+    "sha256": "339b385f50c309763ca65456ec75e17bbefcbbf2893f462cb8b90584cd27a1c2"
+  },
+  {
+    "filename": "tensorflow-2.15.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "url": "https://mirrors.aliyun.com/pypi/packages/d7/3f/41f868253756f696fd00771885be60cf680352a818f08dda6e0ed8c96eea/tensorflow-2.15.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "size": 475215351,
+    "sha256": "ed601b43df9b7d9bed0203b34bcb9356efd4f671eaaac1046b7166a2afee0cf8"
+  },
+  {
+    "filename": "jaxlib-0.4.23-cp310-cp310-manylinux2014_x86_64.whl",
+    "url": "https://mirrors.aliyun.com/pypi/packages/33/b3/73450617622abbe1313cd35f6c6f5a53c91b16df5150e1e087f42ec7b3a1/jaxlib-0.4.23-cp310-cp310-manylinux2014_x86_64.whl",
+    "size": 77207631,
+    "sha256": "7275fbe5a489c683c5502603d55e508323cda2f4bd9521aa8383c674fb0ab2f3"
+  }
+]

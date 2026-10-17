@@ -1,0 +1,47 @@
+2026-10-13 19:23:03.900574: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2026-10-13 19:23:03.900617: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2026-10-13 19:23:03.901677: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /root/gpufree-data/openvla-repro/envs/openvla/lib/python3.10/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+[*] Instantiating Pretrained VLA model
+[*] Loading in BF16 with Flash-Attention Enabled
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  4.16it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  5.45it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  6.09it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  6.55it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  6.05it/s]
+Loaded model: <class 'prismatic.extern.hf.modeling_prismatic.OpenVLAForActionPrediction'>
+Logging to local log file: /root/gpufree-data/openvla-repro/results/eval-smoke/EVAL-libero_spatial-openvla-2026_10_13-19_23_17--smoke.txt
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Task suite: libero_spatial
+  0%|          | 0/1 [00:00<?, ?it/s]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Starting episode 1...
+Saved rollout MP4 at path ./rollouts/2026_10_13/2026_10_13-19_23_17--episode=1--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+Success: True
+# episodes completed so far: 1
+# successes: 1 (100.0%)
+
+ 33%|███▎      | 1/3 [00:21<00:42, 21.42s/it][A
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Starting episode 2...
+Saved rollout MP4 at path ./rollouts/2026_10_13/2026_10_13-19_23_17--episode=2--success=False--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+Success: False
+# episodes completed so far: 2
+# successes: 1 (50.0%)
+
+ 67%|██████▋   | 2/3 [01:09<00:37, 37.01s/it][A
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Starting episode 3...
+Saved rollout MP4 at path ./rollouts/2026_10_13/2026_10_13-19_23_17--episode=3--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+Success: True
+# episodes completed so far: 3
+# successes: 2 (66.7%)
+
+100%|██████████| 3/3 [01:32<00:00, 30.67s/it][A100%|██████████| 3/3 [01:32<00:00, 30.82s/it]
+Current task success rate: 0.6666666666666666
+Current total success rate: 0.6666666666666666
+100%|██████████| 1/1 [01:35<00:00, 95.28s/it]100%|██████████| 1/1 [01:35<00:00, 95.28s/it]
+{"episodes": 3, "successes": 2, "success_rate": 0.6666666666666666, "seed": 7, "action_latency_p50_s": 0.1839587166905403, "action_latency_p95_s": 0.1857468131929636, "timed_actions": 396, "warmup_actions_excluded": 10, "peak_gpu_allocated_bytes": 15484920832}

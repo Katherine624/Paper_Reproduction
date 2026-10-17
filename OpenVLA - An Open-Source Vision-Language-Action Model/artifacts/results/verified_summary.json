@@ -1,0 +1,120 @@
+{
+  "status": "passed",
+  "evaluation": {
+    "episodes": 100,
+    "successes": 84,
+    "success_rate": 0.84,
+    "seed": 7,
+    "action_latency_p50_s": 0.18571290746331215,
+    "action_latency_p95_s": 0.18762291930615901,
+    "timed_actions": 12992,
+    "warmup_actions_excluded": 10,
+    "peak_gpu_allocated_bytes": 15485928448
+  },
+  "training": {
+    "start_step": 0,
+    "end_step": 100,
+    "optimizer_steps_completed": 100,
+    "tracked_parameter": "base_model.model.vision_backbone.featurizer.patch_embed.proj.lora_B.default.weight",
+    "max_parameter_update": 0.0128173828125,
+    "verification_loss": 2.784245491027832,
+    "median_step_seconds": 0.2675004415214062,
+    "peak_gpu_allocated_bytes": 21098357248,
+    "resumed_optimizer": false,
+    "generated_action": [
+      0.1092131841895626,
+      -0.0013865477898541423,
+      -0.0026785731315612793,
+      4.831982009551039e-05,
+      0.04366386304883396,
+      -0.01669748083633535,
+      0.996078431372549
+    ]
+  },
+  "resume": {
+    "start_step": 100,
+    "end_step": 105,
+    "optimizer_steps_completed": 5,
+    "tracked_parameter": "base_model.model.vision_backbone.featurizer.patch_embed.proj.lora_B.default.weight",
+    "max_parameter_update": 0.001220703125,
+    "verification_loss": 0.6706885099411011,
+    "median_step_seconds": 0.26576851308345795,
+    "peak_gpu_allocated_bytes": 21093933568,
+    "resumed_optimizer": true,
+    "generated_action": [
+      0.9342000525266515,
+      -0.20638655096876857,
+      0.34192226657680447,
+      -0.014023108955691851,
+      0.06622688752763412,
+      0.00012604848426930881,
+      0.996078431372549
+    ]
+  },
+  "per_task": [
+    {
+      "task_id": 0,
+      "task": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "episodes": 10,
+      "successes": 8
+    },
+    {
+      "task_id": 1,
+      "task": "pick up the black bowl next to the ramekin and place it on the plate",
+      "episodes": 10,
+      "successes": 9
+    },
+    {
+      "task_id": 2,
+      "task": "pick up the black bowl from table center and place it on the plate",
+      "episodes": 10,
+      "successes": 8
+    },
+    {
+      "task_id": 3,
+      "task": "pick up the black bowl on the cookie box and place it on the plate",
+      "episodes": 10,
+      "successes": 9
+    },
+    {
+      "task_id": 4,
+      "task": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "episodes": 10,
+      "successes": 8
+    },
+    {
+      "task_id": 5,
+      "task": "pick up the black bowl on the ramekin and place it on the plate",
+      "episodes": 10,
+      "successes": 10
+    },
+    {
+      "task_id": 6,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episodes": 10,
+      "successes": 10
+    },
+    {
+      "task_id": 7,
+      "task": "pick up the black bowl on the stove and place it on the plate",
+      "episodes": 10,
+      "successes": 7
+    },
+    {
+      "task_id": 8,
+      "task": "pick up the black bowl next to the plate and place it on the plate",
+      "episodes": 10,
+      "successes": 7
+    },
+    {
+      "task_id": 9,
+      "task": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "episodes": 10,
+      "successes": 8
+    }
+  ],
+  "training_first_loss": 11.346039772033691,
+  "training_last_loss": 1.836437702178955,
+  "training_first_10_mean_loss": 7.3248051404953,
+  "training_last_10_mean_loss": 2.8317561388015746
+}

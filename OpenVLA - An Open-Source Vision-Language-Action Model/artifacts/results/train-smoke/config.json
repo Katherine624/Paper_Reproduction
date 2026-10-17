@@ -1,0 +1,15 @@
+{
+  "model": "/root/gpufree-data/openvla-repro/models/base",
+  "data": "/root/gpufree-data/openvla-repro/data",
+  "out": "/root/gpufree-data/openvla-repro/results/train-smoke",
+  "steps": 100,
+  "batch_size": 2,
+  "resume": null,
+  "seed": 7,
+  "attention": "flash_attention_2",
+  "lora_rank": 32,
+  "lora_alpha": 16,
+  "learning_rate": 0.0005,
+  "trainable_parameters": 110828288,
+  "dataset": "libero_spatial_no_noops"
+}

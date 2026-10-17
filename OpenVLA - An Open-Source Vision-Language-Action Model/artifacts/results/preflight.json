@@ -1,0 +1,19 @@
+{
+  "python": "3.10.16 (main, Dec 11 2024, 16:24:50) [GCC 11.2.0]",
+  "torch": "2.2.0+cu121",
+  "cuda": "12.1",
+  "gpu": "NVIDIA L40S",
+  "transformers": "4.40.1",
+  "tensorflow": "2.15.0",
+  "flash_attn": "2.5.5",
+  "robosuite": "1.4.1",
+  "mujoco": "2.3.7",
+  "task_count": 10,
+  "first_task": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+  "image_shape": [
+    224,
+    224,
+    3
+  ],
+  "status": "passed"
+}

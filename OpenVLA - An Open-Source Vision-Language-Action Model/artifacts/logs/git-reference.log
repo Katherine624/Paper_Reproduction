@@ -1,0 +1,3 @@
+Cloning into 'LIBERO'...
+info: Could not add alternate for '/root/gpufree-data/pi05-repro/openpi/third_party/libero': reference repository '/root/gpufree-data/pi05-repro/openpi/third_party/libero' is shallow
+fatal: early EOF

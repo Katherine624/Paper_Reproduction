@@ -1,0 +1,121 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1791895192.406929   61200 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1791895194.052043   61200 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Logdir runs/walker_walk_seed0
+/root/rivermind-data/dreamer-v1-repro/.venv/lib/python3.10/site-packages/gym/spaces/box.py:127: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+Prefill dataset with 5000 steps.
+Train episode of length 1000 with return 53.7.
+Train episode of length 1000 with return 37.4.
+Train episode of length 1000 with return 36.4.
+Train episode of length 1000 with return 36.8.
+Train episode of length 1000 with return 46.2.
+Simulating agent for 15000 steps.
+Found 5296820 model parameters.
+Found 578412 actor parameters.
+Found 413601 value parameters.
+Start evaluation.
+Test episode of length 1000 with return 41.5.
+Start collection.
+Training for 100 steps.
+[5000] expl_amount 0.0 / model_grad_norm 1354.6 / value_grad_norm 68.2 / actor_grad_norm 3.0 / prior_ent 36.6 / post_ent 35.4 / image_loss 11511.8 / reward_loss 1.6 / div 3.4 / model_loss 11516.8 / value_loss 31.1 / actor_loss 0.3 / action_ent -20.7
+Train episode of length 1000 with return 75.6.
+Training for 100 steps.
+[6000] expl_amount 0.3 / model_grad_norm 383.3 / value_grad_norm 60.4 / actor_grad_norm 2.3 / prior_ent 36.8 / post_ent 33.2 / image_loss 11389.5 / reward_loss 1.3 / div 3.2 / model_loss 11394.1 / value_loss 21.0 / actor_loss -0.8 / action_ent -20.4 / fps 3.8
+Train episode of length 1000 with return 71.0.
+Training for 100 steps.
+[7000] expl_amount 0.3 / model_grad_norm 173.1 / value_grad_norm 19.1 / actor_grad_norm 1.2 / prior_ent 34.1 / post_ent 30.2 / image_loss 11367.0 / reward_loss 1.0 / div 3.4 / model_loss 11371.3 / value_loss 3.3 / actor_loss -1.3 / action_ent -21.4 / fps 6.3
+Train episode of length 1000 with return 40.6.
+Training for 100 steps.
+[8000] expl_amount 0.3 / model_grad_norm 134.4 / value_grad_norm 12.8 / actor_grad_norm 1.2 / prior_ent 32.6 / post_ent 28.5 / image_loss 11353.1 / reward_loss 0.9 / div 3.6 / model_loss 11357.6 / value_loss 1.8 / actor_loss -2.8 / action_ent -24.3 / fps 12.1
+Train episode of length 1000 with return 28.2.
+Training for 100 steps.
+[9000] expl_amount 0.3 / model_grad_norm 100.4 / value_grad_norm 15.4 / actor_grad_norm 0.5 / prior_ent 32.3 / post_ent 28.1 / image_loss 11346.2 / reward_loss 0.9 / div 4.1 / model_loss 11351.2 / value_loss 2.6 / actor_loss -9.0 / action_ent -28.1 / fps 12.1
+Train episode of length 1000 with return 18.0.
+CHECKPOINT_AUDIT {"environment_steps": 10000, "initial_module_sha256": {"encode": "7a6c8a32da73b2fa49104a6a89996b7863b24d1318ea32214f1568292abb3e4a", "dynamics": "e6853fb4c242400d43045b7705efdb05e0612b5a8be8e929e008244ee6be3135", "decode": "4e02df4c1c2383c005c0464d84fbc27958cb341fe3ff1d0c6c9deca0e81a4822", "reward": "09f73e1597c447864bd2fae904b152c34b9e8e5e11671f20b091d09a56a17a2b", "actor": "414a5f6882c36c6993c5373d88f4d5350865257831ea043e266ac24e895e0398", "value": "23485e19d8af4aaf069400adf7163b3345cae3ed0ad21a2fc32c6a5342440a89"}, "current_module_sha256": {"encode": "f692c804aaf96ffcce9ddcc05d3111b8aa7073ebb577213826952ad602c485d5", "dynamics": "e6aae74f9e580d6865b988e412e8d60a96068e0aea9d1d55f4e6be6a3f48c57c", "decode": "769863ff7f95bc768ce96dd3ff4f575b5b8f6ebea7759c8b3e0a909308c98734", "reward": "470b6c642287b6a82d2604f5a33cf8f2cc7aff875d179ba41900b80d562a5628", "actor": "c12389aad15693080d5e0dbd085d83a19ca4bc53232def08e47d37c09e08286a", "value": "add4ed42b880ecf401af840fd484dcb5f99f1c242991313e23d23af82744196d"}, "modules_changed": {"encode": true, "dynamics": true, "decode": true, "reward": true, "actor": true, "value": true}, "optimizer_iterations": {"model": 501, "actor": 501, "value": 501}, "checkpoint_sha256": "1bf18811c44c162abefe899fe4911e829f09a27c8e90e40c3575e0f9b275418e", "policy_sha256": "36755930c6a25f742ea33bcb039690b4d9926844df4fe0cf37ba9659608d7b4a"}
+Start evaluation.
+Test episode of length 1000 with return 25.4.
+Start collection.
+Training for 100 steps.
+[10000] expl_amount 0.3 / model_grad_norm 91.7 / value_grad_norm 14.4 / actor_grad_norm 0.1 / prior_ent 31.5 / post_ent 26.9 / image_loss 11337.4 / reward_loss 0.9 / div 4.5 / model_loss 11342.9 / value_loss 3.1 / actor_loss -15.5 / action_ent -32.6 / fps 9.0
+Train episode of length 1000 with return 26.9.
+Training for 100 steps.
+[11000] expl_amount 0.3 / model_grad_norm 89.1 / value_grad_norm 24.7 / actor_grad_norm 0.2 / prior_ent 30.8 / post_ent 26.0 / image_loss 11330.7 / reward_loss 0.9 / div 4.8 / model_loss 11336.5 / value_loss 3.4 / actor_loss -12.1 / action_ent -33.9 / fps 6.1
+Train episode of length 1000 with return 18.1.
+Training for 100 steps.
+[12000] expl_amount 0.3 / model_grad_norm 75.1 / value_grad_norm 49.2 / actor_grad_norm 2.8 / prior_ent 30.0 / post_ent 25.1 / image_loss 11323.3 / reward_loss 0.9 / div 4.9 / model_loss 11329.1 / value_loss 8.0 / actor_loss -14.0 / action_ent -32.3 / fps 11.7
+Train episode of length 1000 with return 29.9.
+Training for 100 steps.
+[13000] expl_amount 0.3 / model_grad_norm 66.8 / value_grad_norm 71.6 / actor_grad_norm 2.9 / prior_ent 29.7 / post_ent 25.1 / image_loss 11319.0 / reward_loss 0.9 / div 4.7 / model_loss 11324.6 / value_loss 10.2 / actor_loss -20.3 / action_ent -36.3 / fps 11.2
+Train episode of length 1000 with return 31.2.
+Training for 100 steps.
+[14000] expl_amount 0.3 / model_grad_norm 54.9 / value_grad_norm 73.9 / actor_grad_norm 4.1 / prior_ent 29.3 / post_ent 25.0 / image_loss 11316.2 / reward_loss 0.9 / div 4.4 / model_loss 11321.4 / value_loss 8.4 / actor_loss -27.8 / action_ent -39.7 / fps 10.4
+Train episode of length 1000 with return 31.9.
+CHECKPOINT_AUDIT {"environment_steps": 15000, "initial_module_sha256": {"encode": "7a6c8a32da73b2fa49104a6a89996b7863b24d1318ea32214f1568292abb3e4a", "dynamics": "e6853fb4c242400d43045b7705efdb05e0612b5a8be8e929e008244ee6be3135", "decode": "4e02df4c1c2383c005c0464d84fbc27958cb341fe3ff1d0c6c9deca0e81a4822", "reward": "09f73e1597c447864bd2fae904b152c34b9e8e5e11671f20b091d09a56a17a2b", "actor": "414a5f6882c36c6993c5373d88f4d5350865257831ea043e266ac24e895e0398", "value": "23485e19d8af4aaf069400adf7163b3345cae3ed0ad21a2fc32c6a5342440a89"}, "current_module_sha256": {"encode": "256a69af992ba9b844f862ee9524dda62c10afb3f6f7f68303834826a124dad4", "dynamics": "aa1b18210870199ff267c2d0b120088eff0c7bf831c30f21b33574f031f2590c", "decode": "f71d54ff3a3f9a04784ca2d8b7e38d06bf8ce8a9cb0c867679b36ffa088efbac", "reward": "f2c54954eec77fa794ede6f1eb1cf005659fb15cbfcc6b118d9c3a10aabe4d84", "actor": "67b793738fe40beaf22c8b940f173522758247399738a2dcfd4c21ddf184e851", "value": "0c765facf8cf8a4fd3a0cd71541928caed129f5c3b70e2236a8eb36dd3864e02"}, "modules_changed": {"encode": true, "dynamics": true, "decode": true, "reward": true, "actor": true, "value": true}, "optimizer_iterations": {"model": 1001, "actor": 1001, "value": 1001}, "checkpoint_sha256": "8d2eab54fa953be19204bfcd98a910741456abc7747f1a4df60752c2275c81f8", "policy_sha256": "2396bf35806305cd466fa4e88779bdbcff8e37638f7935c56aa1213e1f2a6d41"}
+Start evaluation.
+Test episode of length 1000 with return 28.9.
+Start collection.
+Training for 100 steps.
+[15000] expl_amount 0.3 / model_grad_norm 51.0 / value_grad_norm 68.2 / actor_grad_norm 5.4 / prior_ent 29.0 / post_ent 24.6 / image_loss 11314.2 / reward_loss 0.9 / div 4.4 / model_loss 11319.5 / value_loss 7.5 / actor_loss -27.7 / action_ent -39.0 / fps 5.8
+Train episode of length 1000 with return 16.6.
+Training for 100 steps.
+[16000] expl_amount 0.3 / model_grad_norm 44.6 / value_grad_norm 35.4 / actor_grad_norm 3.5 / prior_ent 28.8 / post_ent 24.9 / image_loss 11311.4 / reward_loss 0.9 / div 4.0 / model_loss 11316.3 / value_loss 3.8 / actor_loss -12.5 / action_ent -42.7 / fps 11.9
+Train episode of length 1000 with return 34.2.
+Training for 100 steps.
+[17000] expl_amount 0.3 / model_grad_norm 41.2 / value_grad_norm 49.9 / actor_grad_norm 3.5 / prior_ent 28.4 / post_ent 24.6 / image_loss 11309.8 / reward_loss 0.9 / div 3.8 / model_loss 11314.5 / value_loss 6.6 / actor_loss -16.0 / action_ent -45.5 / fps 11.7
+Train episode of length 1000 with return 45.4.
+Training for 100 steps.
+[18000] expl_amount 0.3 / model_grad_norm 41.3 / value_grad_norm 110.0 / actor_grad_norm 4.4 / prior_ent 28.1 / post_ent 24.4 / image_loss 11308.0 / reward_loss 0.9 / div 3.7 / model_loss 11312.6 / value_loss 11.5 / actor_loss -34.4 / action_ent -48.2 / fps 10.0
+Train episode of length 1000 with return 48.0.
+Training for 100 steps.
+[19000] expl_amount 0.3 / model_grad_norm 36.6 / value_grad_norm 47.7 / actor_grad_norm 4.2 / prior_ent 27.8 / post_ent 24.2 / image_loss 11307.3 / reward_loss 0.9 / div 3.6 / model_loss 11311.8 / value_loss 3.8 / actor_loss -27.5 / action_ent -58.1 / fps 6.0
+Train episode of length 1000 with return 40.5.
+CHECKPOINT_AUDIT {"environment_steps": 20000, "initial_module_sha256": {"encode": "7a6c8a32da73b2fa49104a6a89996b7863b24d1318ea32214f1568292abb3e4a", "dynamics": "e6853fb4c242400d43045b7705efdb05e0612b5a8be8e929e008244ee6be3135", "decode": "4e02df4c1c2383c005c0464d84fbc27958cb341fe3ff1d0c6c9deca0e81a4822", "reward": "09f73e1597c447864bd2fae904b152c34b9e8e5e11671f20b091d09a56a17a2b", "actor": "414a5f6882c36c6993c5373d88f4d5350865257831ea043e266ac24e895e0398", "value": "23485e19d8af4aaf069400adf7163b3345cae3ed0ad21a2fc32c6a5342440a89"}, "current_module_sha256": {"encode": "ed892c6f3efd4f2b341a6d7135b567a08b8a93126e8f5e194ab9de7b677f982e", "dynamics": "5e10f385cc38943e9df5f700fb6fc73d5209130be592b1ed90cb0e622bf057aa", "decode": "af1d6364454c3596412f67a850e4dc80bede2a62f60d9c5ff89fb2732f29df91", "reward": "c299d704d0217712b2f928d692e281cc36a8357c8021ab489f2ceb7408aabe3b", "actor": "1c962743b620a0ca559212fd42b14a1ec55cce4a535e0da60b0833c3b125ca03", "value": "6e8d3124332d90df1e8255b365e9dff5663a5d362eb2fb822cdef8e5dc4193b5"}, "modules_changed": {"encode": true, "dynamics": true, "decode": true, "reward": true, "actor": true, "value": true}, "optimizer_iterations": {"model": 1501, "actor": 1501, "value": 1501}, "checkpoint_sha256": "6ea7b48abb2afa7d39590e57150ad59ca2bc2a29073728105de6acbc706d40ac", "policy_sha256": "82ac07292324530cc673567b88485f3b44cf0afdac45e2398dc9e05afeae5f09"}
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1791896960.525310   62008 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1791896962.185793   62008 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+/root/rivermind-data/dreamer-v1-repro/.venv/lib/python3.10/site-packages/gym/spaces/box.py:127: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+EVALUATION {"task": "dmc_walker_walk", "episode": 0, "seed": 20000, "return": 30.673054307214592, "decisions": 500, "environment_steps": 1000}
+EVALUATION {"task": "dmc_walker_walk", "episode": 1, "seed": 20001, "return": 28.44188825749508, "decisions": 500, "environment_steps": 1000}
+EVALUATION {"task": "dmc_walker_walk", "episode": 2, "seed": 20002, "return": 26.803926432629144, "decisions": 500, "environment_steps": 1000}
+EVALUATION {"task": "dmc_walker_walk", "episode": 3, "seed": 20003, "return": 10.756483868662734, "decisions": 500, "environment_steps": 1000}
+EVALUATION {"task": "dmc_walker_walk", "episode": 4, "seed": 20004, "return": 33.388931847698764, "decisions": 500, "environment_steps": 1000}
+EVALUATION {"task": "dmc_walker_walk", "episode": 5, "seed": 20005, "return": 42.70019627931263, "decisions": 500, "environment_steps": 1000}
+EVALUATION {"task": "dmc_walker_walk", "episode": 6, "seed": 20006, "return": 28.81424838758346, "decisions": 500, "environment_steps": 1000}
+EVALUATION {"task": "dmc_walker_walk", "episode": 7, "seed": 20007, "return": 30.304249612016598, "decisions": 500, "environment_steps": 1000}
+EVALUATION {"task": "dmc_walker_walk", "episode": 8, "seed": 20008, "return": 37.7441607229328, "decisions": 500, "environment_steps": 1000}
+EVALUATION {"task": "dmc_walker_walk", "episode": 9, "seed": 20009, "return": 39.62805285649969, "decisions": 500, "environment_steps": 1000}
+{
+  "status": "completed",
+  "task": "dmc_walker_walk",
+  "episodes": 10,
+  "mean_return": 30.925519257204552,
+  "std_return": 8.830455513086843,
+  "min_return": 10.756483868662734,
+  "max_return": 42.70019627931263,
+  "elapsed_seconds": 40.30858555994928,
+  "finished_utc": "2026-10-13T13:10:09.822629+00:00",
+  "weights_unchanged": true,
+  "parameter_sha256": {
+    "encode": "ed892c6f3efd4f2b341a6d7135b567a08b8a93126e8f5e194ab9de7b677f982e",
+    "dynamics": "5e10f385cc38943e9df5f700fb6fc73d5209130be592b1ed90cb0e622bf057aa",
+    "actor": "1c962743b620a0ca559212fd42b14a1ec55cce4a535e0da60b0833c3b125ca03"
+  },
+  "checkpoint_source": "/root/rivermind-data/dreamer-v1-repro/runs/walker_walk_seed0",
+  "training_environment_steps": 20000,
+  "evaluation_protocol": "actor sampled-mode approximation; stochastic RSSM; no exploration noise; one independently reset environment per seed",
+  "scope": "short-training pipeline verification, not paper-level performance reproduction",
+  "checkpoint_sha256": "82ac07292324530cc673567b88485f3b44cf0afdac45e2398dc9e05afeae5f09",
+  "restore_max_abs_difference": 0.0
+}

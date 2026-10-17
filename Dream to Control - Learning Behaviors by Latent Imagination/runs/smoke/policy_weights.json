@@ -1,0 +1,255 @@
+{
+  "format": "dreamer_v1_policy_v1",
+  "variables": {
+    "encode": [
+      {
+        "key": "encode_0000",
+        "name": "conv2d/kernel:0",
+        "shape": [
+          4,
+          4,
+          3,
+          32
+        ]
+      },
+      {
+        "key": "encode_0001",
+        "name": "conv2d/bias:0",
+        "shape": [
+          32
+        ]
+      },
+      {
+        "key": "encode_0002",
+        "name": "conv2d_1/kernel:0",
+        "shape": [
+          4,
+          4,
+          32,
+          64
+        ]
+      },
+      {
+        "key": "encode_0003",
+        "name": "conv2d_1/bias:0",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "key": "encode_0004",
+        "name": "conv2d_2/kernel:0",
+        "shape": [
+          4,
+          4,
+          64,
+          128
+        ]
+      },
+      {
+        "key": "encode_0005",
+        "name": "conv2d_2/bias:0",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "key": "encode_0006",
+        "name": "conv2d_3/kernel:0",
+        "shape": [
+          4,
+          4,
+          128,
+          256
+        ]
+      },
+      {
+        "key": "encode_0007",
+        "name": "conv2d_3/bias:0",
+        "shape": [
+          256
+        ]
+      }
+    ],
+    "dynamics": [
+      {
+        "key": "dynamics_0000",
+        "name": "gru_cell/kernel:0",
+        "shape": [
+          200,
+          600
+        ]
+      },
+      {
+        "key": "dynamics_0001",
+        "name": "gru_cell/recurrent_kernel:0",
+        "shape": [
+          200,
+          600
+        ]
+      },
+      {
+        "key": "dynamics_0002",
+        "name": "gru_cell/bias:0",
+        "shape": [
+          2,
+          600
+        ]
+      },
+      {
+        "key": "dynamics_0003",
+        "name": "dense/kernel:0",
+        "shape": [
+          36,
+          200
+        ]
+      },
+      {
+        "key": "dynamics_0004",
+        "name": "dense/bias:0",
+        "shape": [
+          200
+        ]
+      },
+      {
+        "key": "dynamics_0005",
+        "name": "dense_1/kernel:0",
+        "shape": [
+          200,
+          200
+        ]
+      },
+      {
+        "key": "dynamics_0006",
+        "name": "dense_1/bias:0",
+        "shape": [
+          200
+        ]
+      },
+      {
+        "key": "dynamics_0007",
+        "name": "dense_2/kernel:0",
+        "shape": [
+          200,
+          60
+        ]
+      },
+      {
+        "key": "dynamics_0008",
+        "name": "dense_2/bias:0",
+        "shape": [
+          60
+        ]
+      },
+      {
+        "key": "dynamics_0009",
+        "name": "dense/kernel:0",
+        "shape": [
+          1224,
+          200
+        ]
+      },
+      {
+        "key": "dynamics_0010",
+        "name": "dense/bias:0",
+        "shape": [
+          200
+        ]
+      },
+      {
+        "key": "dynamics_0011",
+        "name": "dense_1/kernel:0",
+        "shape": [
+          200,
+          60
+        ]
+      },
+      {
+        "key": "dynamics_0012",
+        "name": "dense_1/bias:0",
+        "shape": [
+          60
+        ]
+      }
+    ],
+    "actor": [
+      {
+        "key": "actor_0000",
+        "name": "dense_4/kernel:0",
+        "shape": [
+          230,
+          400
+        ]
+      },
+      {
+        "key": "actor_0001",
+        "name": "dense_4/bias:0",
+        "shape": [
+          400
+        ]
+      },
+      {
+        "key": "actor_0002",
+        "name": "dense_5/kernel:0",
+        "shape": [
+          400,
+          400
+        ]
+      },
+      {
+        "key": "actor_0003",
+        "name": "dense_5/bias:0",
+        "shape": [
+          400
+        ]
+      },
+      {
+        "key": "actor_0004",
+        "name": "dense_6/kernel:0",
+        "shape": [
+          400,
+          400
+        ]
+      },
+      {
+        "key": "actor_0005",
+        "name": "dense_6/bias:0",
+        "shape": [
+          400
+        ]
+      },
+      {
+        "key": "actor_0006",
+        "name": "dense_7/kernel:0",
+        "shape": [
+          400,
+          400
+        ]
+      },
+      {
+        "key": "actor_0007",
+        "name": "dense_7/bias:0",
+        "shape": [
+          400
+        ]
+      },
+      {
+        "key": "actor_0008",
+        "name": "dense_8/kernel:0",
+        "shape": [
+          400,
+          12
+        ]
+      },
+      {
+        "key": "actor_0009",
+        "name": "dense_8/bias:0",
+        "shape": [
+          12
+        ]
+      }
+    ]
+  },
+  "sha256": "091cbfecf9c80ff54b663d2c3740f6cd380d7e4b12e3caf97a0ea09d58fe101e",
+  "upstream_commit": "56d4d444dfd0582b0e79dab80aebbea74c0ce40d"
+}

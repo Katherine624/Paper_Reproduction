@@ -1,0 +1,42 @@
+2026-10-13 20:17:25.505512: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2026-10-13 20:17:25.505563: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2026-10-13 20:17:25.506640: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:00<00:00,  3.82it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00,  4.91it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00,  5.56it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00,  5.21it/s]
+trainable params: 110,828,288 || all params: 7,652,065,472 || trainable%: 1.4483
+{"event": "resumed", "global_step": 100, "optimizer_entries": 852, "data_stream": "restarted; exact iterator continuation is not claimed"}
+10/13 [20:17:44] INFO     | >> [*] Loading existing dataset    data_utils.py:208
+                          statistics from                                       
+                          /root/gpufree-data/openvla-repro/dat                  
+                          a/libero_spatial_no_noops/1.0.0/data                  
+                          set_statistics_d80d4635a531408f1c248                  
+                          922bff39d12b55d4ab2d6eaeb91aca8c94d3                  
+                          8829de6.json.                                         
+
+######################################################################################
+# Loading the following 1 datasets (incl. sampling weight):                         #
+# libero_spatial_no_noops: =================================================1.000000 #
+######################################################################################
+
+                 INFO     | >> [*] Threads per Dataset: [1]       dataset.py:531
+                 INFO     | >> [*] Reads per Dataset: [1]         dataset.py:532
+                 INFO     | >> [*] Constructing datasets...       dataset.py:535
+10/13 [20:17:45] INFO     | >> [*] Applying frame transforms on   dataset.py:575
+                          dataset...                                            
+                 INFO     | >> [*] Saved dataset statistics    data_utils.py:293
+                          file at path                                          
+                          /root/gpufree-data/openvla-repro/res                  
+                          ults/train-smoke/dataset_statistics.                  
+                          json                                                  
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1791893866.047518   53221 op_level_cost_estimator.cc:699] Error in PredictCost() for the op: op: "CropAndResize" attr { key: "T" value { type: DT_FLOAT } } attr { key: "extrapolation_value" value { f: 0 } } attr { key: "method" value { s: "bilinear" } } inputs { dtype: DT_FLOAT shape { dim { size: 1 } dim { size: 224 } dim { size: 224 } dim { size: -7 } } } inputs { dtype: DT_FLOAT shape { dim { size: -2 } dim { size: 4 } } } inputs { dtype: DT_INT32 shape { dim { size: -2 } } } inputs { dtype: DT_INT32 shape { dim { size: 2 } } } device { type: "CPU" vendor: "GenuineIntel" model: "111" frequency: 2000 num_cores: 224 environment { key: "cpu_instruction_set" value: "AVX SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2" } environment { key: "eigen" value: "3.4.90" } l1_cache_size: 49152 l2_cache_size: 2097152 l3_cache_size: 110100480 memory_size: 268435456 } outputs { dtype: DT_FLOAT shape { dim { size: -2 } dim { size: -8 } dim { size: -9 } dim { size: -7 } } }
+W0000 00:00:1791893866.047837   53221 op_level_cost_estimator.cc:699] Error in PredictCost() for the op: op: "CropAndResize" attr { key: "T" value { type: DT_FLOAT } } attr { key: "extrapolation_value" value { f: 0 } } attr { key: "method" value { s: "bilinear" } } inputs { dtype: DT_FLOAT shape { dim { size: 1 } dim { size: 224 } dim { size: 224 } dim { size: -6 } } } inputs { dtype: DT_FLOAT shape { dim { size: -3 } dim { size: 4 } } } inputs { dtype: DT_INT32 shape { dim { size: -3 } } } inputs { dtype: DT_INT32 shape { dim { size: 2 } } } device { type: "CPU" vendor: "GenuineIntel" model: "111" frequency: 2000 num_cores: 224 environment { key: "cpu_instruction_set" value: "AVX SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2" } environment { key: "eigen" value: "3.4.90" } l1_cache_size: 49152 l2_cache_size: 2097152 l3_cache_size: 110100480 memory_size: 268435456 } outputs { dtype: DT_FLOAT shape { dim { size: -3 } dim { size: -10 } dim { size: -11 } dim { size: -6 } } }
+{"step": 101, "loss": 2.784245491027832, "grad_norm": 5.661121845245361, "seconds": 1.3086660839617252, "peak_gpu_allocated_bytes": 20839602176}
+/root/gpufree-data/openvla-repro/envs/openvla/lib/python3.10/site-packages/peft/utils/save_and_load.py:180: UserWarning: Setting `save_embedding_layers` to `True` as embedding layers found in `target_modules`.
+  warnings.warn("Setting `save_embedding_layers` to `True` as embedding layers found in `target_modules`.")
+10/13 [20:17:49] INFO     | >> [*] Saved dataset statistics    data_utils.py:293
+                          file at path                                          
+                          /root/gpufree-data/openvla-repro/res                  
+                          ults/train-smoke/checkpoint-105/data                  
+                          set_statistics.json                                   
+{"event": "checkpoint", "step": 105, "path": "/root/gpufree-data/openvla-repro/results/train-smoke/checkpoint-105"}
+{"start_step": 100, "end_step": 105, "optimizer_steps_completed": 5, "tracked_parameter": "base_model.model.vision_backbone.featurizer.patch_embed.proj.lora_B.default.weight", "max_parameter_update": 0.001220703125, "verification_loss": 0.6706885099411011, "median_step_seconds": 0.26576851308345795, "peak_gpu_allocated_bytes": 21093933568, "resumed_optimizer": true, "generated_action": [0.9342000525266515, -0.20638655096876857, 0.34192226657680447, -0.014023108955691851, 0.06622688752763412, 0.00012604848426930881, 0.996078431372549]}

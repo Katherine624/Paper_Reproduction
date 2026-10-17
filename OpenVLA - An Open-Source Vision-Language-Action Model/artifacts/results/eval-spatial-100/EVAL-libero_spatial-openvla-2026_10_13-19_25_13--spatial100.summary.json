@@ -1,0 +1,11 @@
+{
+  "episodes": 100,
+  "successes": 84,
+  "success_rate": 0.84,
+  "seed": 7,
+  "action_latency_p50_s": 0.18571290746331215,
+  "action_latency_p95_s": 0.18762291930615901,
+  "timed_actions": 12992,
+  "warmup_actions_excluded": 10,
+  "peak_gpu_allocated_bytes": 15485928448
+}

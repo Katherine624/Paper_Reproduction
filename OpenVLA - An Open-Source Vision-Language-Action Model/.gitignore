@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.partial
+*.safetensors
+*.pt
+*.tar.gz
+*.tar.gz.part*
+restored_backup/
+.venv/

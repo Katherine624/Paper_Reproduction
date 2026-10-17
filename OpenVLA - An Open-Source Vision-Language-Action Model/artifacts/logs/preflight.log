@@ -1,0 +1,14 @@
+2026-10-13 19:22:28.516697: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2026-10-13 19:22:28.516749: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2026-10-13 19:22:28.518059: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /root/gpufree-data/openvla-repro/envs/openvla/lib/python3.10/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+/root/gpufree-data/openvla-repro/envs/openvla/lib/python3.10/site-packages/wandb/analytics/sentry.py:90: SentryHubDeprecationWarning: `sentry_sdk.Hub` is deprecated and will be removed in a future major release. Please consult our 1.x to 2.x migration guide for details on how to migrate `Hub` usage to the new API: https://docs.sentry.io/platforms/python/migration/1.x-to-2.x
+  self.hub = sentry_sdk.Hub(client)
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+{"python": "3.10.16 (main, Dec 11 2024, 16:24:50) [GCC 11.2.0]", "torch": "2.2.0+cu121", "cuda": "12.1", "gpu": "NVIDIA L40S", "transformers": "4.40.1", "tensorflow": "2.15.0", "flash_attn": "2.5.5", "robosuite": "1.4.1", "mujoco": "2.3.7", "task_count": 10, "first_task": "pick up the black bowl between the plate and the ramekin and place it on the plate", "image_shape": [224, 224, 3], "status": "passed"}
