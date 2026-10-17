@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-13T19:18:35+08:00",
+  "platform": "Linux-5.15.0-164-generic-x86_64-with-glibc2.35",
+  "cpu_count_visible": 224,
+  "gpu": "NVIDIA L40S, 46068 MiB, 575.57.08",
+  "cpu_limit": "2400000 100000",
+  "memory_limit": "128849018880"
+}

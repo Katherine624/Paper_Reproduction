@@ -1,0 +1,182 @@
+π0.5 项目文件导览
+核对日期：2026-10-13
+
+一、第一次打开，按这个顺序看
+
+1. output/π0.5复现结果.txt
+   用记事本或编辑器打开。先了解做了什么、结果怎样、用了什么环境。
+   这是本次实验的主要说明，包含服务器上的复查命令。
+
+2. output/评测结果.csv
+   用 Excel 打开。每行一个任务，查看“成功次数”“尝试次数”“成功率”。
+   一共 10 个任务，各 10 次；合计 97/100。1.0 表示 100%，0.8 表示 80%。
+   这是官方 pi05_libero 权重的成绩，不是我们短训练后的成绩。
+
+3. output/训练日志.csv
+   用 Excel 打开。每行一次参数更新，共 100 行，step_index 从 0 到 99。
+   loss：训练损失；grad_norm：梯度的整体大小；param_norm：参数的整体大小。
+   先看步数是否完整、是否出现 NaN/Inf，再看 loss 的变化。
+   这些数字由原始日志提取，精度为小数点后四位。
+   100 步只用于证明训练流程能运行，不能证明模型已经充分训练。
+
+4. output/reproduction-evidence/results/first-libero-success.mp4
+   用视频播放器打开，直观看一次成功操作。
+   正式 100 次评测的全部视频在：
+   output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/
+   文件名含 success 表示成功，failure 表示失败。
+   视频编号为 000—099；失败的是 032、039、094。
+
+5. 要向师兄提供原始材料时，再看 output/reproduction-evidence/。
+   需要传输时可使用对应的 reproduction-evidence.tar.gz 压缩包。
+   建议同时附上前面的结果说明和两个 CSV，它们是单独生成的阅读版。
+
+二、根目录下每个文件夹干什么
+
+output/ —— 实验输出，最值得先看。
+   包含结果说明、表格、日志、视频、核验记录和分阶段备份。
+
+src/ —— 本地编写的 Python 脚本。
+   用编辑器阅读。训练与评测脚本需要服务器上的 OpenPI 和相关环境。
+   本地文件夹不是一个双击脚本就能完整运行的 Windows 安装包。
+
+data/ —— 输入数据与下载过的官方权重缓存。
+   libero-subset/：实际选用的 8 条训练示范，含数据和元信息。
+   official-checkpoints/：本地下载留下的官方权重缓存，可能含未完成下载。
+   不要把这个本地缓存当作我们训练生成的权重。
+   两份通过完整性检查的官方权重及训练产物在服务器上。
+
+work/ —— 下载、传输和准备环境时的工作文件。
+   checkpoint-chunks/：模型文件的分块下载缓存。
+   remote-setup/：传服务器用的数据压缩包、数据元信息、官方权重文件清单。
+   python-tools/：本地下载校验使用的辅助 Python 库。
+   理解实验结果时可以先跳过。
+
+tmp/ —— 临时文件。
+   pdfs/：阅读论文时渲染出来的两张论文页面图片。
+
+.git/ —— 隐藏的 Git 版本管理目录。
+   不是实验结果，不需要逐个打开其中的文件。
+
+三、output/ 里的新旧文件如何区分
+
+【最终结果，优先看】
+π0.5复现结果.txt：结果说明、实验范围、环境和操作顺序。
+评测结果.csv：按任务汇总的成功率。
+训练日志.csv：100 步训练指标。
+reproduction-evidence/：本次训练和评测的最终证据目录。
+reproduction-evidence.tar.gz：上述目录对应的压缩包，便于传输、存档。
+   目录用于直接浏览；压缩包用于发送，不是另外一次实验。
+
+【较早的阶段记录，排查过程时再看】
+training-evidence/ 及 training-evidence.tar.gz：
+   训练跑通阶段的备份，含首次成功回放。
+   其中主要的训练证据在最终 reproduction-evidence 中也有。
+
+environment-evidence-2026-10-13/ 及同名 .tar.gz：
+   环境安装、GPU 检查、仿真画面检查的阶段记录。
+   包含安装和环境检查脚本；需要重建环境时有参考价值。
+
+环境检查记录-2026-10-13.txt：
+   只说明环境准备阶段的状态。里面“尚未训练/评测”等表述不代表当前进度。
+
+server-gpu-check-2026-10-13.txt：最初那台有 GPU 问题的实例检查记录。
+server-gpu-recheck-2026-10-13.txt：更换实例后的 GPU 复查记录。
+first-libero-success-final-frame.png：首次成功回放的一帧截图，不是新的评测。
+
+四、最终证据目录 reproduction-evidence/ 怎么读
+
+results/ —— 结构化的实验结果。
+
+  final-checks.json
+    最后核验结果：100 步训练指标有效、保存后重载通过、100 次评测、97 次成功等。
+    true 表示该项检查通过。它是核验摘要，细节看下面的记录和 logs/。
+
+  experiment-protocol.json
+    本次实验采用的设置和脚本校验值；用于说明这次究竟如何运行。
+
+  artifact-manifest.json
+    导出文件清单和 SHA256 校验值，用于检查文件是否改变或损坏。
+
+  train-smoke/ —— 短训练记录。
+    training-config.txt：模型、batch size、学习率、训练步数等完整配置。
+    dataset-audit.json：数据来源、版本、选择的示范编号和帧数。
+    training-verification.json：参数抽样变化、冻结参数抽样不变、checkpoint 保存检查。
+    restore-verification.json：在新进程中重新加载 checkpoint 的检查结果。
+    metrics-summary.json：100 步指标检查和前后 10 步平均 loss。
+    metrics-from-log.jsonl：从原始日志提取的逐步指标，是“训练日志.csv”的来源。
+    parameter-audit.json：参数抽样检查所使用的记录。
+    initial-parameter-samples.npz / final-parameter-samples.npz：
+      训练前后的参数样本，用 Python/NumPy 读取；不是完整模型权重。
+
+  eval-libero-spatial-seed7-trials10/ —— 正式 100 次仿真评测。
+    目录名含义：LIBERO Spatial 任务集、随机种子 7、每任务 10 次尝试。
+    summary.json：总体与各任务的成功次数、成功率等汇总。
+    protocol.json：评测使用的设置。
+    episodes.jsonl：一次尝试一行，共 100 行，记录任务、成功与否和对应视频路径。
+    videos/：每次尝试的回放视频，共 100 个。
+
+logs/ —— 原始运行输出，排查细节时看。
+  train-smoke.log：训练及保存、重载过程的终端输出。
+  train-norms.log：计算训练数据归一化统计时的输出。
+  libero-evaluation.log：仿真评测过程的输出。
+  policy-server.log：模型推理服务的输出。
+  openpi-commit.txt：所使用的官方代码版本。
+  openpi-packages.txt / libero-packages.txt：两个 Python 环境的软件包版本。
+  gpu-final-status.txt：实验结束时的 GPU 状态快照，不代表实时状态。
+  checkpoint-server-ranges.log：服务器下载权重时的记录。
+  pi05_base-asset-list.json / pi05_libero-asset-list.json：官方权重文件及校验信息。
+
+scripts/ —— 从服务器导出的实验脚本，核对本次实际执行的程序时优先看这里。
+  run-train-smoke.sh：启动短训练与重载检查。
+  pi05_experiment.py：设置数据子集、LoRA 配置，调用官方训练实现并检查参数。
+  check-training-results.py：核验实际训练结果并提取日志指标。
+  run-policy-server.sh + serve_libero_policy.py：加载官方权重，启动模型推理服务。
+  run-libero-evaluation.sh + evaluate_libero.py：运行 LIBERO，保存结果及视频。
+  download-server-ranges.py：服务器分块下载官方权重。
+  verify-official-checkpoint.py：检查官方权重完整性。
+  export-results.py：检查并打包实验材料。
+
+env.sh / env-model.sh / env-libero.sh：服务器使用的路径和环境变量设置。
+config/：LIBERO 配置与依赖版本记录。
+assets/：训练数据归一化统计 norm_stats.json；不是模型权重。
+data/：证据包内只保存数据元信息和子集清单，不含完整训练数据。
+
+五、src/ 中的脚本分别做什么
+
+pi05_experiment.py：短训练相关代码，学习训练流程时先看这个。
+serve_libero_policy.py：加载官方 pi05_libero 模型，接收观测并返回动作。
+evaluate_libero.py：组织仿真任务，向模型请求动作，记录成功率和视频。
+summarize_run.py：把最终证据整理成结果说明和两个 CSV。
+download_libero_subset.py：下载本次选用的官方数据子集。
+download_checkpoint_ranges.py：本地分块下载与校验官方模型的辅助脚本。
+download_checkpoints.py：早期下载尝试；只处理 MD5，不能处理部分大型对象，后续已换方案。
+__pycache__/：Python 自动生成的缓存，不用阅读。
+
+这些脚本主要负责配置、数据选择、执行和记录。模型结构、损失函数和优化器更新
+调用服务器上的官方 OpenPI 源码；本地 src/ 不包含整个官方仓库。
+
+六、文件格式怎么打开
+
+.txt / .log：记事本或代码编辑器。
+.csv：Excel，适合看表格和画曲线。
+.json：编辑器，按字段组织的设置或结果。
+.jsonl：编辑器，每一行是一条独立记录。
+.mp4：视频播放器。
+.png：图片查看器。
+.py / .sh：编辑器阅读；执行时需要对应 Python/Linux 环境。
+.npz / .parquet：程序读取的数值或数据文件，不适合记事本直接阅读。
+.tar.gz / .tar：压缩包，用支持该格式的解压工具打开。
+
+七、模型权重在哪里
+
+服务器项目目录：/root/gpufree-data/pi05-repro
+官方基础权重：checkpoints/pi05_base/
+官方评测权重：checkpoints/pi05_libero/
+100 步短训练产物：
+checkpoints/training/pi05_libero_lora_smoke/real8_steps100_seed42/99/
+
+本地最终证据包不包含大型权重，也不包含完整的服务器环境。
+目录 99 是从 0 开始计数的第 100 次更新，不表示只训练了 99 步。
+短训练用于证明训练流程能跑通；97% 来自另行加载的官方评测权重。
+
+当前结构保留了过程文件，所以显得重复；阅读时先集中看第一部分的五个入口即可。

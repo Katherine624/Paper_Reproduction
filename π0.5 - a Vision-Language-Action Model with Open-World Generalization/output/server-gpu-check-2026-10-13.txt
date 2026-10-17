@@ -1,0 +1,45 @@
+服务器 GPU 检测报告
+检测日期：2026-10-13（北京时间）
+
+用途：π0.5 复现环境搭建前检查。
+结果：SSH 登录成功，但 CUDA 最小显存分配失败；尚未安装 openpi、下载模型权重或启动训练。
+
+已核对配置
+- GPU：NVIDIA L40S，nvidia-smi 显示 46068 MiB 显存。
+- NVIDIA 驱动：580.126.09。
+- 镜像系统：Ubuntu 22.04.4 LTS。
+- 镜像 CUDA Toolkit：12.4。
+- 容器 CPU 配额：24 核（cpu.max = 2400000 100000）。
+- 容器内存配额：120 GiB（memory.max = 128849018880）。
+- 数据盘：/root/gpufree-data，df 显示约 196G 可用。
+
+nvidia-smi -q -d ECC,PAGE_RETIREMENT,ROW_REMAPPER 的关键输出
+- ECC Errors / Volatile / DRAM Uncorrectable: 1
+- ECC Errors / Aggregate / DRAM Uncorrectable: 1
+- Remapped Rows / Uncorrectable Error: 1
+- Remapped Rows / Pending: Yes
+- Remapped Rows / Remapping Failure Occurred: No
+
+CUDA 测试
+通过系统现有 libcudart.so 调用 cudaMalloc，申请 64 MiB 显存。
+执行两次，均返回：
+  cuda_error_code: 214
+  cuda_error_message: uncorrectable ECC error encountered
+第二次测试时间：2026-10-13 16:20:11（北京时间）。
+
+解释
+错误发生在模型安装和运行之前。当前实例不能通过基本 CUDA 检查，需要平台检查宿主机 GPU、处理待完成的显存行重映射，或更换健康节点。检测未尝试重置共享宿主机 GPU，也未更改 ECC 配置。
+
+供平台客服参考
+刚创建的 L40S 实例出现不可纠正 ECC 错误。nvidia-smi 显示 DRAM Uncorrectable=1、Remapped Rows Pending=Yes。直接调用 CUDA Runtime 分配 64 MiB 显存，连续两次返回 cudaErrorECCUncorrectable（214）。请协助检查并重置对应宿主机 GPU，或迁移至健康节点；请保留实例的数据盘。处理完成后需要重新验证 CUDA 分配和计算。
+
+服务器上保存的检测文件
+/root/gpufree-data/pi05-repro/logs/gpu-health.txt
+/root/gpufree-data/pi05-repro/logs/cuda-check.json
+/root/gpufree-data/pi05-repro/scripts/check_cuda.py
+
+参考
+NVIDIA GPU Memory Error Management - Error Recovery and Response Flags
+https://docs.nvidia.com/deploy/a100-gpu-mem-error-mgmt/error-recovery-and-response-flags.html
+
+状态：SSH 会话已退出；未关闭云平台实例。实例计费状态需在平台控制台处理。

@@ -1,0 +1,502 @@
+[
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=1--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4",
+    "bytes": 33648,
+    "sha256": "bcb6688e0b3494ea35875b89f005a132d93f1c96ef1efe31db8b3b5e23091c1e"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=10--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4",
+    "bytes": 31957,
+    "sha256": "033d6234e49f3178c5fdabfbf0239b0c3a837de74c96367f726509cef68e766c"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=100--success=True--task=pick_up_the_black_bowl_on_the_wooden_cabinet_and_p.mp4",
+    "bytes": 42582,
+    "sha256": "33f26ebe1022beeffb9575321fdc4cb97b0a3e0f8e6777e47d1ddc7db1a4bc75"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=11--success=True--task=pick_up_the_black_bowl_next_to_the_ramekin_and_pla.mp4",
+    "bytes": 34268,
+    "sha256": "3c92161ca57c93a2bb39255717a0a0a79e4e55626fe8c26352097e1904da03af"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=12--success=True--task=pick_up_the_black_bowl_next_to_the_ramekin_and_pla.mp4",
+    "bytes": 31517,
+    "sha256": "d33183e1e165670add607b43817b12034db2babec37351774c7ed4102bb6a0dc"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=13--success=True--task=pick_up_the_black_bowl_next_to_the_ramekin_and_pla.mp4",
+    "bytes": 46282,
+    "sha256": "acb8954a02daa411996be4b1e8a862c061e7a62326f6a09d8e98d2a2be6a3297"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=14--success=True--task=pick_up_the_black_bowl_next_to_the_ramekin_and_pla.mp4",
+    "bytes": 31422,
+    "sha256": "c814cb1d2a8940ff9cad5022639ab0266ea4bb6152e12ae733ef62ef3f3f2306"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=15--success=False--task=pick_up_the_black_bowl_next_to_the_ramekin_and_pla.mp4",
+    "bytes": 67764,
+    "sha256": "1e4fa59563628398a58c5ae6a3f9503bce5c9a38ad0aa493a9987ff35ac5245f"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=16--success=True--task=pick_up_the_black_bowl_next_to_the_ramekin_and_pla.mp4",
+    "bytes": 31479,
+    "sha256": "3c331d7446570aba692f0c65b0ddfac358a65146d16e49c9b7daf7ff9d04111d"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=17--success=True--task=pick_up_the_black_bowl_next_to_the_ramekin_and_pla.mp4",
+    "bytes": 32690,
+    "sha256": "c03a94c292c70704562077e8e9c5325c00df7e646ea9b6134fdc9699cc9c18ae"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=18--success=True--task=pick_up_the_black_bowl_next_to_the_ramekin_and_pla.mp4",
+    "bytes": 34582,
+    "sha256": "9b311a39d34bff261717ed5d745810962d5f7f373595cb053e9aed6157796ae0"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=19--success=True--task=pick_up_the_black_bowl_next_to_the_ramekin_and_pla.mp4",
+    "bytes": 59230,
+    "sha256": "7f3e0e914c78fcec92dd5c7b42203fd75aaa7648536d08bc0833361d9a78b1d7"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=2--success=False--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4",
+    "bytes": 62199,
+    "sha256": "5c66e00a14b453d01a5e8526ffd80827d478cf565f8e36964d94d8d2c34d510b"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=20--success=True--task=pick_up_the_black_bowl_next_to_the_ramekin_and_pla.mp4",
+    "bytes": 32744,
+    "sha256": "654680fdaae02744e587d80695aa6b58d82c30383e30f357f84856baf7cb66b6"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=21--success=True--task=pick_up_the_black_bowl_from_table_center_and_place.mp4",
+    "bytes": 49007,
+    "sha256": "8c2b4e967c04f1ff7b9dc53cc5fd5e75eaeca4487b0b24245a2eab76513a3e38"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=22--success=True--task=pick_up_the_black_bowl_from_table_center_and_place.mp4",
+    "bytes": 40804,
+    "sha256": "2e27a895c9b54cd58662af44b49c2c086e25d17cb1daaea3bc7a9ba0b9f310b0"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=23--success=True--task=pick_up_the_black_bowl_from_table_center_and_place.mp4",
+    "bytes": 41728,
+    "sha256": "037fa63aa77ff62f671435cff74da1bc0a9757d27830cb317c899c95f5f282c8"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=24--success=True--task=pick_up_the_black_bowl_from_table_center_and_place.mp4",
+    "bytes": 34320,
+    "sha256": "866cb3b6f36a113aa41656e412d7f3b10589fe6bd07a557955bbf7c0975c1372"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=25--success=False--task=pick_up_the_black_bowl_from_table_center_and_place.mp4",
+    "bytes": 71902,
+    "sha256": "64c86fbb5f071fdb2ff9bb585d612e741639e91b704dc3984233582ac58f79c4"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=26--success=True--task=pick_up_the_black_bowl_from_table_center_and_place.mp4",
+    "bytes": 41608,
+    "sha256": "287c3870e380c79335fafe5c183b27ca05303cdeb606225ecb92d0878215c819"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=27--success=False--task=pick_up_the_black_bowl_from_table_center_and_place.mp4",
+    "bytes": 65777,
+    "sha256": "1e12f480bf988ed873c36201e4f7843e5d8e8f3099645ba86b9e9adafe3d2892"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=28--success=True--task=pick_up_the_black_bowl_from_table_center_and_place.mp4",
+    "bytes": 37733,
+    "sha256": "e5e50e4bd27cbdaff9012460dd1839005e318b89089591cd28b62233e0fee8e5"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=29--success=True--task=pick_up_the_black_bowl_from_table_center_and_place.mp4",
+    "bytes": 45420,
+    "sha256": "5b301b2398b9c3808e541b4111fb7cb4d39df3a42fae8c71b9ecb2c9227d965f"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=3--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4",
+    "bytes": 35348,
+    "sha256": "18e1853c2679de0a508dedac59f9f3ffccf9cca5d5c93a7ee41f1d65a073ea5c"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=30--success=True--task=pick_up_the_black_bowl_from_table_center_and_place.mp4",
+    "bytes": 39926,
+    "sha256": "922a9c81b6ef0c43b7894c6dfab445c35a77f231e13f4a91c0ad4f55ea6062d2"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=31--success=True--task=pick_up_the_black_bowl_on_the_cookie_box_and_place.mp4",
+    "bytes": 41432,
+    "sha256": "0c6d6e23c9d915cf4dfcfaec9f7f319855b809502f95325406154b29ee839822"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=32--success=True--task=pick_up_the_black_bowl_on_the_cookie_box_and_place.mp4",
+    "bytes": 38259,
+    "sha256": "5deb994485bd2e9d126e904d1ef09190ddf7dcc75fd64039c3039ac518dc2dd8"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=33--success=True--task=pick_up_the_black_bowl_on_the_cookie_box_and_place.mp4",
+    "bytes": 38682,
+    "sha256": "4868427d16bdffc80ca5a68a4812fe2d2c615c7533241b6ddea679dce62483ab"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=34--success=True--task=pick_up_the_black_bowl_on_the_cookie_box_and_place.mp4",
+    "bytes": 36495,
+    "sha256": "57769015268b3c27202bb25cc8d3040180ad4953bf3d0436913a616ea0246f1d"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=35--success=True--task=pick_up_the_black_bowl_on_the_cookie_box_and_place.mp4",
+    "bytes": 39283,
+    "sha256": "ddef8aa7e5b6003baf7cecc336563ddafa1305297243c6483f1ed374ac89dd5c"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=36--success=True--task=pick_up_the_black_bowl_on_the_cookie_box_and_place.mp4",
+    "bytes": 38114,
+    "sha256": "e679997f0d1d144e5cd272a0ed0985f250436beb19cab9644e2fd432672b22ac"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=37--success=False--task=pick_up_the_black_bowl_on_the_cookie_box_and_place.mp4",
+    "bytes": 64906,
+    "sha256": "1f84ffc65d962e37eee6bfeb28d0c96b72bc2492a1b4ac48cb1806450a961204"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=38--success=True--task=pick_up_the_black_bowl_on_the_cookie_box_and_place.mp4",
+    "bytes": 38219,
+    "sha256": "5d6dfb1f2134eb5106f598a97a7aa385bb1b177f92280d6de653b7894948d581"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=39--success=True--task=pick_up_the_black_bowl_on_the_cookie_box_and_place.mp4",
+    "bytes": 34937,
+    "sha256": "76b19590409ec0de20abb2f52b46f1f73184ee297b3cbe523b869898d876c619"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=4--success=False--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4",
+    "bytes": 23184,
+    "sha256": "14b5529cc8595a2fc3d90ed4a90877f8e4e7e62e547d0b7321f896ecab9aa0eb"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=40--success=True--task=pick_up_the_black_bowl_on_the_cookie_box_and_place.mp4",
+    "bytes": 39094,
+    "sha256": "4450ddffdf7e9482eced311f262215323604edc4362343b1d2c9d0f4bc04efc6"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=41--success=True--task=pick_up_the_black_bowl_in_the_top_drawer_of_the_wo.mp4",
+    "bytes": 52467,
+    "sha256": "e5a3602e4e944058e9a82245c6e709e16433af02eb452958011d750d6dd96468"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=42--success=True--task=pick_up_the_black_bowl_in_the_top_drawer_of_the_wo.mp4",
+    "bytes": 69502,
+    "sha256": "5397704d1acabd800eb3b8d0675d88c1aacefe82f2379f18fcaca0818c1c9482"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=43--success=True--task=pick_up_the_black_bowl_in_the_top_drawer_of_the_wo.mp4",
+    "bytes": 47662,
+    "sha256": "4aa3c411faff56ed68f9daef4c11032591eda0a42c433b98ec0fb5e9f213cb91"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=44--success=False--task=pick_up_the_black_bowl_in_the_top_drawer_of_the_wo.mp4",
+    "bytes": 63867,
+    "sha256": "3c1e910def50446a90da9d4949c34e643373c59f8a565ce296803e27b4a78011"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=45--success=True--task=pick_up_the_black_bowl_in_the_top_drawer_of_the_wo.mp4",
+    "bytes": 54361,
+    "sha256": "ff09577711a231c3b86ea9948f689c2adbbdc36ad885aa31c3c48c9668b5a0fb"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=46--success=True--task=pick_up_the_black_bowl_in_the_top_drawer_of_the_wo.mp4",
+    "bytes": 55282,
+    "sha256": "51e28c0e68dcafa0b90033c1e5523eeb6671b1d41bdd87007c97d02bc87a7031"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=47--success=True--task=pick_up_the_black_bowl_in_the_top_drawer_of_the_wo.mp4",
+    "bytes": 50018,
+    "sha256": "7c11c482a386f08d6d13394b1acc8762df1f1f81be386ad939931b68985f6283"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=48--success=False--task=pick_up_the_black_bowl_in_the_top_drawer_of_the_wo.mp4",
+    "bytes": 77921,
+    "sha256": "1795f7acf2a33cf08e1e8008c5ba0ed6252a080ec3df4e0e2fe47d8fdf8a142b"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=49--success=True--task=pick_up_the_black_bowl_in_the_top_drawer_of_the_wo.mp4",
+    "bytes": 45564,
+    "sha256": "bb202a23f0ab11fcaca7e3187f516b1f911b501dfcc07fae68b6e23fa327f6ec"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=5--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4",
+    "bytes": 30093,
+    "sha256": "4274f239acb8045be014c21c50fa3fc5aec0cc90b9e13e73db74a10a9ec76fdf"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=50--success=True--task=pick_up_the_black_bowl_in_the_top_drawer_of_the_wo.mp4",
+    "bytes": 57296,
+    "sha256": "fb0dd46ec4d79046a1e62b0b8a0f987759d30cc6fa50524db0122eedd3502060"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=51--success=True--task=pick_up_the_black_bowl_on_the_ramekin_and_place_it.mp4",
+    "bytes": 36703,
+    "sha256": "a459f297172535c111056556c94fafcf475f3ba257b887ffc1a792b69534a71b"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=52--success=True--task=pick_up_the_black_bowl_on_the_ramekin_and_place_it.mp4",
+    "bytes": 31540,
+    "sha256": "a1e894b0f28e31655770aaf89ab47f7d98534c7517be597521cc8372e901150b"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=53--success=True--task=pick_up_the_black_bowl_on_the_ramekin_and_place_it.mp4",
+    "bytes": 31137,
+    "sha256": "13430c292268896dd226f1977ad2fdc979be6bdd09c40e8c41d35d99de49a64e"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=54--success=True--task=pick_up_the_black_bowl_on_the_ramekin_and_place_it.mp4",
+    "bytes": 34121,
+    "sha256": "eadbc2d9d4e4b3415a572e5ca51197744c477a5f0ab5262f8231ec9daec53761"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=55--success=True--task=pick_up_the_black_bowl_on_the_ramekin_and_place_it.mp4",
+    "bytes": 31024,
+    "sha256": "4d54f8c8a3c2f5c8331a0bfc8082ff1e2ad33f9f62a4fca1a78433ed56ee1910"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=56--success=True--task=pick_up_the_black_bowl_on_the_ramekin_and_place_it.mp4",
+    "bytes": 31313,
+    "sha256": "e85296ad32d5488f2118be3380a23f33efb098d52660ad521d6dd33d7572c650"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=57--success=True--task=pick_up_the_black_bowl_on_the_ramekin_and_place_it.mp4",
+    "bytes": 32186,
+    "sha256": "00a0a867c00abe7eb29a9cc947c3ea7a5775f78a76394febd446c3ac1a9cdd58"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=58--success=True--task=pick_up_the_black_bowl_on_the_ramekin_and_place_it.mp4",
+    "bytes": 33701,
+    "sha256": "a125afb3c2be5540a4f3b82eb7bab7be9e4138570a16e8e554bacf09901c4600"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=59--success=True--task=pick_up_the_black_bowl_on_the_ramekin_and_place_it.mp4",
+    "bytes": 30870,
+    "sha256": "d2253d042786f4dad2ef0a9bc178457e407353322117ef7cb07fe60e2c871a05"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=6--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4",
+    "bytes": 35998,
+    "sha256": "bb0ce865952317ad2fb1858ece7f032d97a392f165d23ccda464617a86766ab3"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=60--success=True--task=pick_up_the_black_bowl_on_the_ramekin_and_place_it.mp4",
+    "bytes": 34207,
+    "sha256": "677c6ed074a4cc250a9180cb4fb88f34e81d06b269e9dcebac6ef8654e76329b"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=61--success=True--task=pick_up_the_black_bowl_next_to_the_cookie_box_and_.mp4",
+    "bytes": 51873,
+    "sha256": "d4c04e78be620335d5ed260bc7541ece9a3cd30181bb629b52d1ccaf20d2a781"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=62--success=True--task=pick_up_the_black_bowl_next_to_the_cookie_box_and_.mp4",
+    "bytes": 48999,
+    "sha256": "79931f31b853f3ed6325d612bb34d157585b5140a69609b16511fd0d39561358"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=63--success=True--task=pick_up_the_black_bowl_next_to_the_cookie_box_and_.mp4",
+    "bytes": 48267,
+    "sha256": "ab8b5043fc6078aa37e928ded00cc310e09e86b3dc6a2abe9246c5f13bea5bfe"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=64--success=True--task=pick_up_the_black_bowl_next_to_the_cookie_box_and_.mp4",
+    "bytes": 45983,
+    "sha256": "f691e1a25ea44681f092147bae9f76f501dc764341bbbc88fe00de8f12aaee74"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=65--success=True--task=pick_up_the_black_bowl_next_to_the_cookie_box_and_.mp4",
+    "bytes": 46300,
+    "sha256": "41864475e15376ea0c533477a389bdc76f9d02a74a34038b189c143046f1cd77"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=66--success=True--task=pick_up_the_black_bowl_next_to_the_cookie_box_and_.mp4",
+    "bytes": 52269,
+    "sha256": "98aa53447924c15b6014c15fba1e444e9fedc6759252961b70023c0d70f05268"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=67--success=True--task=pick_up_the_black_bowl_next_to_the_cookie_box_and_.mp4",
+    "bytes": 50722,
+    "sha256": "77866cce12041f36a95514a0202a9ba6506e19da9413bad244d98e0c0cd80e68"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=68--success=True--task=pick_up_the_black_bowl_next_to_the_cookie_box_and_.mp4",
+    "bytes": 48533,
+    "sha256": "5e9940cbf2b7374c1798d9184718272641ff6b088b3cfd658c659231715eeec3"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=69--success=True--task=pick_up_the_black_bowl_next_to_the_cookie_box_and_.mp4",
+    "bytes": 62647,
+    "sha256": "e853ffeb7c7c7b3ee9eb23375e994481a4c04860d6509a3e4c536b0b36584074"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=7--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4",
+    "bytes": 31409,
+    "sha256": "9d85eb40977c510d20ac327f951755dd61f52bb5b149ff395ab63110e2ae0289"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=70--success=True--task=pick_up_the_black_bowl_next_to_the_cookie_box_and_.mp4",
+    "bytes": 45569,
+    "sha256": "416fca063a8498e68040e20b84ac03b498850079e71a814d5ee6d9e312b340da"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=71--success=False--task=pick_up_the_black_bowl_on_the_stove_and_place_it_o.mp4",
+    "bytes": 70977,
+    "sha256": "a50127a0c69629f6424bb4784c461e5763d01eb31a9d78eeb6883d33e3e4eb7e"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=72--success=True--task=pick_up_the_black_bowl_on_the_stove_and_place_it_o.mp4",
+    "bytes": 40275,
+    "sha256": "49f209a721ff8b7f38bcfa5ef8ca0a67f2af7cd8b843be372d6e66f23f78eb68"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=73--success=True--task=pick_up_the_black_bowl_on_the_stove_and_place_it_o.mp4",
+    "bytes": 41979,
+    "sha256": "0a6307647f36cd9cd4752644090608513b18e6e700953b78de64fa36beecd8a4"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=74--success=False--task=pick_up_the_black_bowl_on_the_stove_and_place_it_o.mp4",
+    "bytes": 67692,
+    "sha256": "1ff196fced08249f0dc2f6e247286a1c28ee31205295d6454f2975c868694a04"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=75--success=True--task=pick_up_the_black_bowl_on_the_stove_and_place_it_o.mp4",
+    "bytes": 41694,
+    "sha256": "ec593a67acf96677fd4f63e40ff44086d1e142d55c94f63bd82c3c0442d657a8"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=76--success=True--task=pick_up_the_black_bowl_on_the_stove_and_place_it_o.mp4",
+    "bytes": 40686,
+    "sha256": "a095fa104fc394bd25c78d148cbf20734c463458c0dc1c95c1169ec7471411ef"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=77--success=True--task=pick_up_the_black_bowl_on_the_stove_and_place_it_o.mp4",
+    "bytes": 42699,
+    "sha256": "7c5ee6761a2499403fc1ff2d91df3515932eddafbb824bb307448d857162f865"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=78--success=True--task=pick_up_the_black_bowl_on_the_stove_and_place_it_o.mp4",
+    "bytes": 49677,
+    "sha256": "c7fe31b90c37d661a2b2c7fd0c067ee9b242cc47b4c3c9f7567e23915ac232dc"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=79--success=True--task=pick_up_the_black_bowl_on_the_stove_and_place_it_o.mp4",
+    "bytes": 45701,
+    "sha256": "f6bd29fa653f35d2cb6fe6a31b02adfae49c1b0f62649c1c38145bd7564df2b8"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=8--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4",
+    "bytes": 31838,
+    "sha256": "461ba233c5eccf5f1470a56b848457f89fc726e7f716185b6850758af0e8acd3"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=80--success=False--task=pick_up_the_black_bowl_on_the_stove_and_place_it_o.mp4",
+    "bytes": 65506,
+    "sha256": "185d2e474fe218a8367cf04645856f0ee4c4a9cad5f841324516025f38d9b849"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=81--success=False--task=pick_up_the_black_bowl_next_to_the_plate_and_place.mp4",
+    "bytes": 66609,
+    "sha256": "98f4cf08f8ae63a4b464c4921639051f6c0141e9fa6b71302a804f7c742fc87b"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=82--success=True--task=pick_up_the_black_bowl_next_to_the_plate_and_place.mp4",
+    "bytes": 38364,
+    "sha256": "b2e08faeabbf54532a1375bb75acb91937ac8b800822b4ec964226bf5841e754"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=83--success=False--task=pick_up_the_black_bowl_next_to_the_plate_and_place.mp4",
+    "bytes": 80360,
+    "sha256": "5007350dca323bfec0634a87f4c3050a2109ccf62531d801dcf0e7f5fd13ca3f"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=84--success=True--task=pick_up_the_black_bowl_next_to_the_plate_and_place.mp4",
+    "bytes": 44542,
+    "sha256": "af7073bb0e4906854f7c03e41b6e8e1d98c490ba70319c849669714848ae8d81"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=85--success=False--task=pick_up_the_black_bowl_next_to_the_plate_and_place.mp4",
+    "bytes": 69664,
+    "sha256": "9d96ee737093d7b8074eaa501983e75dfc3721c36ee52567e3c8a82fc06cbff9"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=86--success=True--task=pick_up_the_black_bowl_next_to_the_plate_and_place.mp4",
+    "bytes": 40570,
+    "sha256": "ace40379f3b0820b6050538e020493b3358f4a0142a25d8cb60adea14e3a9783"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=87--success=True--task=pick_up_the_black_bowl_next_to_the_plate_and_place.mp4",
+    "bytes": 36729,
+    "sha256": "91349e307538e6120e0a7d933dc6839da940b194c5aba5a8aba5aebe2cacef35"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=88--success=True--task=pick_up_the_black_bowl_next_to_the_plate_and_place.mp4",
+    "bytes": 38548,
+    "sha256": "68c4b8bfff8e3e24e14bd22a5e7b2a26ca2b028a8c8069747292fe6c3a3eb56e"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=89--success=True--task=pick_up_the_black_bowl_next_to_the_plate_and_place.mp4",
+    "bytes": 56245,
+    "sha256": "109b16b45ad7721efdba58c096766f00fdef9b4fd78cff92904452ec2ee54bb3"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=9--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4",
+    "bytes": 34904,
+    "sha256": "96c58a34af4a932f86ab0c3286c24d7810d0fc71ecee86c4d448d62a9a234235"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=90--success=True--task=pick_up_the_black_bowl_next_to_the_plate_and_place.mp4",
+    "bytes": 47704,
+    "sha256": "e22dac20f6c1596d75a9347f05dcc5e0b31674cd7f9925e90ea68dfd009cb0e4"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=91--success=True--task=pick_up_the_black_bowl_on_the_wooden_cabinet_and_p.mp4",
+    "bytes": 40909,
+    "sha256": "0a6e2d0b0ca6eabff5b2e92bb84a649b7abd7bf488b6099767968fa4c61cc1a9"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=92--success=True--task=pick_up_the_black_bowl_on_the_wooden_cabinet_and_p.mp4",
+    "bytes": 49062,
+    "sha256": "5fd62965f57c8e811a52a1b56dd089bec38513e788785d0eab8a285fe15d0478"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=93--success=True--task=pick_up_the_black_bowl_on_the_wooden_cabinet_and_p.mp4",
+    "bytes": 43707,
+    "sha256": "0b47ad5a65346563108a4e991f95579b6ee5ed8488d85980256ed9c238814ccc"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=94--success=True--task=pick_up_the_black_bowl_on_the_wooden_cabinet_and_p.mp4",
+    "bytes": 41487,
+    "sha256": "04eb3918b22605fd237adb152fef5aae6fd83f1ebc9c85b21d5490ef19a3e035"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=95--success=True--task=pick_up_the_black_bowl_on_the_wooden_cabinet_and_p.mp4",
+    "bytes": 38008,
+    "sha256": "dce04af7c59d79a1e4ce49a832328d2f380e7958ff63bcb904e111c58c275bb7"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=96--success=False--task=pick_up_the_black_bowl_on_the_wooden_cabinet_and_p.mp4",
+    "bytes": 59480,
+    "sha256": "4ab4bcb016e85ad808ebadf1a7d0ce486c82fa2fb0d409a544861df50c4db5fd"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=97--success=True--task=pick_up_the_black_bowl_on_the_wooden_cabinet_and_p.mp4",
+    "bytes": 44147,
+    "sha256": "d7d0b8e43a7a632f37f4645da4be25681e13f9a0dcbad75e132e44bcd26b4dd0"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=98--success=False--task=pick_up_the_black_bowl_on_the_wooden_cabinet_and_p.mp4",
+    "bytes": 62590,
+    "sha256": "2afed1fae9a348bf240ef9094e98e6d489c5a65bddef4940f405eb163d2fc567"
+  },
+  {
+    "path": "/root/gpufree-data/openvla-repro/openvla/rollouts/2026_10_13/2026_10_13-19_25_13--episode=99--success=True--task=pick_up_the_black_bowl_on_the_wooden_cabinet_and_p.mp4",
+    "bytes": 40035,
+    "sha256": "9669d5f0e577afecde6f874364f87b2e62836e4e568d2d6c17676199bc23bbc8"
+  }
+]

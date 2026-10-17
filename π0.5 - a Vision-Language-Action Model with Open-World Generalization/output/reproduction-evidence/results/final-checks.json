@@ -1,0 +1,10 @@
+{
+  "training_verified": true,
+  "fresh_process_restore_verified": true,
+  "finite_training_metrics": 100,
+  "evaluation_episodes": 100,
+  "evaluation_successes": 97,
+  "videos_verified": 100,
+  "evaluation_infrastructure_errors": 0,
+  "experiment_source_hashes_match_protocol": true
+}

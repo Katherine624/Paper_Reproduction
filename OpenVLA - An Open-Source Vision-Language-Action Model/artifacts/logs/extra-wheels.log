@@ -1,0 +1,8 @@
+[('robosuite-1.4.1-py3-none-any.whl', 193518002), ('opencv_python-4.9.0.80-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl', 62208946), ('llvmlite-0.42.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl', 43802726), ('scipy-1.15.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl', 37662964), ('imageio_ffmpeg-0.6.0-py3-none-manylinux2014_x86_64.whl', 29498237), ('libclang-18.1.1-py2.py3-none-manylinux2010_x86_64.whl', 24515943)]
+{"event": "wheel_complete", "file": "robosuite-1.4.1-py3-none-any.whl", "size": 193518002}
+{"chunks": 50, "total": 96, "seconds": 37}
+{"event": "wheel_complete", "file": "opencv_python-4.9.0.80-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", "size": 62208946}
+{"event": "wheel_complete", "file": "llvmlite-0.42.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", "size": 43802726}
+{"event": "wheel_complete", "file": "imageio_ffmpeg-0.6.0-py3-none-manylinux2014_x86_64.whl", "size": 29498237}
+{"event": "wheel_complete", "file": "libclang-18.1.1-py2.py3-none-manylinux2010_x86_64.whl", "size": 24515943}
+{"event": "wheel_complete", "file": "scipy-1.15.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", "size": 37662964}

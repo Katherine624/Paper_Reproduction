@@ -1,0 +1,51 @@
+{
+  "paper": {
+    "title": "Dream to Control: Learning Behaviors by Latent Imagination",
+    "venue": "ICLR 2020",
+    "arxiv": "1912.01603",
+    "algorithm": "Dreamer v1",
+    "main_benchmark_tasks": 20,
+    "paper_environment_steps_per_task": 5000000,
+    "paper_training_seeds": 5
+  },
+  "implementation": {
+    "repository": "https://github.com/danijar/dreamer",
+    "commit": "56d4d444dfd0582b0e79dab80aebbea74c0ce40d",
+    "license": "MIT",
+    "route": "Author TensorFlow 2 implementation with runtime compatibility patches",
+    "original_tensorflow": "2.2.0",
+    "target_tensorflow": "2.21.0+selfbuild (community sm_120 build)",
+    "architecture_source": "Author TF2 defaults, not identical to paper Appendix A",
+    "known_architecture_difference": "TF2 num_units=400 with reward/value/actor hidden layers 2/3/4; paper describes three 300-unit dense layers. No claim of exact paper architecture."
+  },
+  "scope": {
+    "training": "Verify multiple real environment collection and world-model/actor/value update cycles",
+    "evaluation": "Evaluate matching pretrained weights if obtainable; otherwise report self-trained short-run results as pipeline verification only",
+    "pretrained_weights": "No download located in official project homepage, READMEs, or Releases during initial audit",
+    "performance_reproduction_status": "pending compatible pretrained checkpoint or longer training"
+  },
+  "short_training": {
+    "task": "dmc_walker_walk",
+    "seed": 0,
+    "environment_steps": 20000,
+    "prefill_environment_steps": 5000,
+    "action_repeat": 2,
+    "episode_environment_steps": 1000,
+    "image_shape": [64, 64, 3],
+    "batch_size": 50,
+    "batch_length": 50,
+    "imagination_horizon": 15,
+    "precision": 32,
+    "checkpoint_eval_episodes": 10
+  },
+  "acceptance": [
+    "GPU graph convolution and gradients execute with finite values",
+    "A seeded control environment renders nonblank image observations and finishes 1000 environment steps",
+    "Hand-calculated lambda returns and zero-discount boundary pass",
+    "World model, actor, and value parameters update and losses remain finite",
+    "Checkpoint saves and parameters reload exactly",
+    "Separate evaluation resets recurrent state each episode and performs no parameter updates",
+    "Raw episode returns, environment versions, commands, source hashes and limitations are saved"
+  ],
+  "remote_root": "/root/rivermind-data/dreamer-v1-repro"
+}

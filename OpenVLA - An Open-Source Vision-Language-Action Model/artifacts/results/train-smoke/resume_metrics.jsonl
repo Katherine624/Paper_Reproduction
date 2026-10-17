@@ -1,0 +1,5 @@
+{"step": 101, "loss": 2.784245491027832, "grad_norm": 5.661121845245361, "seconds": 1.3086660839617252, "peak_gpu_allocated_bytes": 20839602176}
+{"step": 102, "loss": 2.7338449954986572, "grad_norm": 4.319962501525879, "seconds": 0.2668208107352257, "peak_gpu_allocated_bytes": 21093933568}
+{"step": 103, "loss": 2.924550771713257, "grad_norm": 4.4110894203186035, "seconds": 0.2619803696870804, "peak_gpu_allocated_bytes": 21093933568}
+{"step": 104, "loss": 2.8343591690063477, "grad_norm": 5.616053581237793, "seconds": 0.2630453258752823, "peak_gpu_allocated_bytes": 21093933568}
+{"step": 105, "loss": 2.1328623294830322, "grad_norm": 4.270613193511963, "seconds": 0.26576851308345795, "peak_gpu_allocated_bytes": 21093933568}

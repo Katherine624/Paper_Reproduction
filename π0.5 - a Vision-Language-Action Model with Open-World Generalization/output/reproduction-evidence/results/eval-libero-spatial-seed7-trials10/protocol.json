@@ -1,0 +1,11 @@
+{
+  "host": "127.0.0.1",
+  "port": 8765,
+  "resize_size": 224,
+  "replan_steps": 5,
+  "task_suite_name": "libero_spatial",
+  "num_steps_wait": 10,
+  "num_trials_per_task": 10,
+  "video_out_path": "/root/gpufree-data/pi05-repro/results/eval-libero-spatial-seed7-trials10/videos",
+  "seed": 7
+}

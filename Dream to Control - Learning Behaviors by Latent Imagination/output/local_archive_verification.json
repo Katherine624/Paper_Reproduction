@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "archive_sha256": "8a7c0e9583aa38411affca58a8127d998a69a424d1f4f50fde33650b4a5a0177",
+  "bytes": 95087960,
+  "verified_files": 93,
+  "newly_extracted_files": 62,
+  "includes_replay": true
+}

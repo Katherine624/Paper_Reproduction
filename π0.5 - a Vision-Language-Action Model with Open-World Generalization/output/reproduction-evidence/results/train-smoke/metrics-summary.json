@@ -1,0 +1,19 @@
+{
+  "steps_with_finite_metrics": 100,
+  "first_step": {
+    "step_index": 0,
+    "grad_norm": 1.8066,
+    "loss": 0.1035,
+    "param_norm": 1803.7705
+  },
+  "last_step": {
+    "step_index": 99,
+    "grad_norm": 1.7156,
+    "loss": 0.0799,
+    "param_norm": 1803.7815
+  },
+  "mean_loss_first10": 0.07711,
+  "mean_loss_last10": 0.057069999999999996,
+  "precision": "parsed from upstream logs rounded to four decimals",
+  "all_gradient_norms_positive": true
+}

@@ -1,0 +1,31 @@
+[
+  {
+    "path": "data/official-checkpoints",
+    "reason": "Re-downloadable official weights or disposable download/runtime cache",
+    "files": 46,
+    "bytes": 12441782102
+  },
+  {
+    "path": "work/checkpoint-chunks",
+    "reason": "Re-downloadable official weights or disposable download/runtime cache",
+    "files": 102,
+    "bytes": 3221170171
+  },
+  {
+    "path": "work/python-tools",
+    "reason": "Re-downloadable official weights or disposable download/runtime cache",
+    "files": 21,
+    "bytes": 99734
+  },
+  {
+    "path": "src/__pycache__",
+    "reason": "Re-downloadable official weights or disposable download/runtime cache",
+    "files": 3,
+    "bytes": 25308
+  },
+  {
+    "path": "work/remote-setup/libero-subset.tar",
+    "reason": "Duplicate of data/libero-subset, which is included in the full release archive",
+    "bytes": 267970560
+  }
+]

@@ -1,0 +1,56 @@
+{
+  "completed": true,
+  "suite": "libero_spatial",
+  "seed": 7,
+  "trials_per_task": 10,
+  "checkpoint": "official pi05_libero (independent of short training)",
+  "episodes": 100,
+  "successes": 97,
+  "success_rate": 0.97,
+  "elapsed_seconds": 2055.0752232074738,
+  "per_task": {
+    "pick up the black bowl between the plate and the ramekin and place it on the plate": {
+      "episodes": 10,
+      "successes": 10
+    },
+    "pick up the black bowl next to the ramekin and place it on the plate": {
+      "episodes": 10,
+      "successes": 10
+    },
+    "pick up the black bowl from table center and place it on the plate": {
+      "episodes": 10,
+      "successes": 10
+    },
+    "pick up the black bowl on the cookie box and place it on the plate": {
+      "episodes": 10,
+      "successes": 8
+    },
+    "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate": {
+      "episodes": 10,
+      "successes": 10
+    },
+    "pick up the black bowl on the ramekin and place it on the plate": {
+      "episodes": 10,
+      "successes": 10
+    },
+    "pick up the black bowl next to the cookie box and place it on the plate": {
+      "episodes": 10,
+      "successes": 10
+    },
+    "pick up the black bowl on the stove and place it on the plate": {
+      "episodes": 10,
+      "successes": 10
+    },
+    "pick up the black bowl next to the plate and place it on the plate": {
+      "episodes": 10,
+      "successes": 10
+    },
+    "pick up the black bowl on the wooden cabinet and place it on the plate": {
+      "episodes": 10,
+      "successes": 9
+    }
+  },
+  "openpi_commit": "215abfb217dbac7d5f1273282331b9b1866c0479",
+  "rendering": "OSMesa CPU offscreen",
+  "replan_steps": 5
+}

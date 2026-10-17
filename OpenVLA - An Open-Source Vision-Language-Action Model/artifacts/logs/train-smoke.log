@@ -1,0 +1,57 @@
+2026-10-13 20:16:32.275890: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2026-10-13 20:16:32.275957: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2026-10-13 20:16:32.277268: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:00<00:00,  3.62it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00,  4.80it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00,  5.32it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00,  4.99it/s]
+trainable params: 110,828,288 || all params: 7,652,065,472 || trainable%: 1.4483
+10/13 [20:16:50] INFO     | >> [*] Loading existing dataset    data_utils.py:208
+                          statistics from                                       
+                          /root/gpufree-data/openvla-repro/dat                  
+                          a/libero_spatial_no_noops/1.0.0/data                  
+                          set_statistics_d80d4635a531408f1c248                  
+                          922bff39d12b55d4ab2d6eaeb91aca8c94d3                  
+                          8829de6.json.                                         
+
+######################################################################################
+# Loading the following 1 datasets (incl. sampling weight):                         #
+# libero_spatial_no_noops: =================================================1.000000 #
+######################################################################################
+
+                 INFO     | >> [*] Threads per Dataset: [1]       dataset.py:531
+                 INFO     | >> [*] Reads per Dataset: [1]         dataset.py:532
+                 INFO     | >> [*] Constructing datasets...       dataset.py:535
+10/13 [20:16:51] INFO     | >> [*] Applying frame transforms on   dataset.py:575
+                          dataset...                                            
+10/13 [20:16:52] INFO     | >> [*] Saved dataset statistics    data_utils.py:293
+                          file at path                                          
+                          /root/gpufree-data/openvla-repro/res                  
+                          ults/train-smoke/dataset_statistics.                  
+                          json                                                  
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1791893812.430771   52838 op_level_cost_estimator.cc:699] Error in PredictCost() for the op: op: "CropAndResize" attr { key: "T" value { type: DT_FLOAT } } attr { key: "extrapolation_value" value { f: 0 } } attr { key: "method" value { s: "bilinear" } } inputs { dtype: DT_FLOAT shape { dim { size: 1 } dim { size: 224 } dim { size: 224 } dim { size: -7 } } } inputs { dtype: DT_FLOAT shape { dim { size: -2 } dim { size: 4 } } } inputs { dtype: DT_INT32 shape { dim { size: -2 } } } inputs { dtype: DT_INT32 shape { dim { size: 2 } } } device { type: "CPU" vendor: "GenuineIntel" model: "111" frequency: 2000 num_cores: 224 environment { key: "cpu_instruction_set" value: "AVX SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2" } environment { key: "eigen" value: "3.4.90" } l1_cache_size: 49152 l2_cache_size: 2097152 l3_cache_size: 110100480 memory_size: 268435456 } outputs { dtype: DT_FLOAT shape { dim { size: -2 } dim { size: -8 } dim { size: -9 } dim { size: -7 } } }
+W0000 00:00:1791893812.431525   52838 op_level_cost_estimator.cc:699] Error in PredictCost() for the op: op: "CropAndResize" attr { key: "T" value { type: DT_FLOAT } } attr { key: "extrapolation_value" value { f: 0 } } attr { key: "method" value { s: "bilinear" } } inputs { dtype: DT_FLOAT shape { dim { size: 1 } dim { size: 224 } dim { size: 224 } dim { size: -6 } } } inputs { dtype: DT_FLOAT shape { dim { size: -3 } dim { size: 4 } } } inputs { dtype: DT_INT32 shape { dim { size: -3 } } } inputs { dtype: DT_INT32 shape { dim { size: 2 } } } device { type: "CPU" vendor: "GenuineIntel" model: "111" frequency: 2000 num_cores: 224 environment { key: "cpu_instruction_set" value: "AVX SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2" } environment { key: "eigen" value: "3.4.90" } l1_cache_size: 49152 l2_cache_size: 2097152 l3_cache_size: 110100480 memory_size: 268435456 } outputs { dtype: DT_FLOAT shape { dim { size: -3 } dim { size: -10 } dim { size: -11 } dim { size: -6 } } }
+{"step": 1, "loss": 11.346039772033691, "grad_norm": 43.72758483886719, "seconds": 1.2599766366183758, "peak_gpu_allocated_bytes": 20412958720}
+{"step": 10, "loss": 3.378117799758911, "grad_norm": 6.464692115783691, "seconds": 0.25736067444086075, "peak_gpu_allocated_bytes": 21098357248}
+{"step": 20, "loss": 4.325340747833252, "grad_norm": 4.027242183685303, "seconds": 0.25464505702257156, "peak_gpu_allocated_bytes": 21098357248}
+{"step": 30, "loss": 3.2939610481262207, "grad_norm": 3.293484687805176, "seconds": 0.2712591029703617, "peak_gpu_allocated_bytes": 21098357248}
+{"step": 40, "loss": 3.21657657623291, "grad_norm": 3.2233850955963135, "seconds": 0.2724960409104824, "peak_gpu_allocated_bytes": 21098357248}
+{"step": 50, "loss": 3.6737852096557617, "grad_norm": 7.408318042755127, "seconds": 0.2638058066368103, "peak_gpu_allocated_bytes": 21098357248}
+/root/gpufree-data/openvla-repro/envs/openvla/lib/python3.10/site-packages/peft/utils/save_and_load.py:180: UserWarning: Setting `save_embedding_layers` to `True` as embedding layers found in `target_modules`.
+  warnings.warn("Setting `save_embedding_layers` to `True` as embedding layers found in `target_modules`.")
+10/13 [20:17:07] INFO     | >> [*] Saved dataset statistics    data_utils.py:293
+                          file at path                                          
+                          /root/gpufree-data/openvla-repro/res                  
+                          ults/train-smoke/checkpoint-50/datas                  
+                          et_statistics.json                                    
+{"event": "checkpoint", "step": 50, "path": "/root/gpufree-data/openvla-repro/results/train-smoke/checkpoint-50"}
+{"step": 60, "loss": 3.369154930114746, "grad_norm": 4.786628246307373, "seconds": 0.2612391449511051, "peak_gpu_allocated_bytes": 21098357248}
+{"step": 70, "loss": 2.924408435821533, "grad_norm": 3.5798988342285156, "seconds": 0.27824410423636436, "peak_gpu_allocated_bytes": 21098357248}
+{"step": 80, "loss": 3.3943965435028076, "grad_norm": 3.8585853576660156, "seconds": 0.280942190438509, "peak_gpu_allocated_bytes": 21098357248}
+{"step": 90, "loss": 3.673156261444092, "grad_norm": 4.145559787750244, "seconds": 0.25765517354011536, "peak_gpu_allocated_bytes": 21098357248}
+{"step": 100, "loss": 1.836437702178955, "grad_norm": 3.657216787338257, "seconds": 0.2686372548341751, "peak_gpu_allocated_bytes": 21098357248}
+10/13 [20:17:22] INFO     | >> [*] Saved dataset statistics    data_utils.py:293
+                          file at path                                          
+                          /root/gpufree-data/openvla-repro/res                  
+                          ults/train-smoke/checkpoint-100/data                  
+                          set_statistics.json                                   
+{"event": "checkpoint", "step": 100, "path": "/root/gpufree-data/openvla-repro/results/train-smoke/checkpoint-100"}
+{"start_step": 0, "end_step": 100, "optimizer_steps_completed": 100, "tracked_parameter": "base_model.model.vision_backbone.featurizer.patch_embed.proj.lora_B.default.weight", "max_parameter_update": 0.0128173828125, "verification_loss": 2.784245491027832, "median_step_seconds": 0.2675004415214062, "peak_gpu_allocated_bytes": 21098357248, "resumed_optimizer": false, "generated_action": [0.1092131841895626, -0.0013865477898541423, -0.0026785731315612793, 4.831982009551039e-05, 0.04366386304883396, -0.01669748083633535, 0.996078431372549]}

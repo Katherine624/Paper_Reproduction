@@ -1,0 +1,1172 @@
+[
+  {
+    "path": ".gitattributes",
+    "bytes": 9,
+    "sha256": "8b9c3028d6467ff3be7c793141927841d70f47f52d0590677438f488ca154992"
+  },
+  {
+    "path": ".gitignore",
+    "bytes": 47,
+    "sha256": "d4b03abd3e3ae25c0c4319975792b86883614ad9d4be1bc40a8a4de615544a16"
+  },
+  {
+    "path": "00_先看这里_文件导览.txt",
+    "bytes": 10037,
+    "sha256": "eb3dfac9540ce0937a7b73683fcf4bb7455bc73ab490699a3d1584142d1c7c79"
+  },
+  {
+    "path": "backup/excluded-recoverable-files.json",
+    "bytes": 895,
+    "sha256": "72df25ac30b716f15fd2731b813757d9c669cf2880e3873eb51556b7e5ea83b6"
+  },
+  {
+    "path": "backup/original-files.json",
+    "bytes": 55030,
+    "sha256": "b3cb37aaafcc9af7f92b1839e82c2e99cb47ae4224a19ee7bf9ab929ffa7369e"
+  },
+  {
+    "path": "backup/verify_archive.py",
+    "bytes": 476,
+    "sha256": "44c3127b52d12c94a2e935e9b7788beb98f53efb6f52cc00381631b10991b020"
+  },
+  {
+    "path": "data/libero-subset/data/chunk-000/episode_000000.parquet",
+    "bytes": 28009331,
+    "sha256": "1dff46a888aac51da3c4fedb6c6fe596df16f8cba47dd10d0e0c0ca565fd1d65"
+  },
+  {
+    "path": "data/libero-subset/data/chunk-000/episode_000001.parquet",
+    "bytes": 37414512,
+    "sha256": "6c416803bba7649172e6b3c0cb2c579a570fcb234e41249f7589c52809971916"
+  },
+  {
+    "path": "data/libero-subset/data/chunk-000/episode_000002.parquet",
+    "bytes": 35350193,
+    "sha256": "e590ad6f1f13e894d6e3a250ba54346b16803e873403061a7f0978903830d53d"
+  },
+  {
+    "path": "data/libero-subset/data/chunk-000/episode_000003.parquet",
+    "bytes": 28709548,
+    "sha256": "c9be4cd08fcdc306e9e176cb8ce1da78460567d6c3b9e3b91ebc4842ffd126f1"
+  },
+  {
+    "path": "data/libero-subset/data/chunk-000/episode_000004.parquet",
+    "bytes": 36229453,
+    "sha256": "f244b312166abe97d9b25b7b7d21a7ec9140929736fb59e55a757d6d9ac86ba9"
+  },
+  {
+    "path": "data/libero-subset/data/chunk-000/episode_000005.parquet",
+    "bytes": 31571376,
+    "sha256": "aa507af5ebe6b874a4f2d1ff78d7c02c48dd6fadef3efd86afb0556af71be02e"
+  },
+  {
+    "path": "data/libero-subset/data/chunk-000/episode_000006.parquet",
+    "bytes": 33946834,
+    "sha256": "202f9eb18c0d4d0ff2fb398d1423d9a3c947801b6027c631f095a007017d1db2"
+  },
+  {
+    "path": "data/libero-subset/data/chunk-000/episode_000007.parquet",
+    "bytes": 36515760,
+    "sha256": "a8e0b399a4a625236792ed4e989f98406e1c4010469b336fc71d24bf5cf813ad"
+  },
+  {
+    "path": "data/libero-subset/meta/episodes.jsonl",
+    "bytes": 180384,
+    "sha256": "0479a2ced6117700e4638a1da54dccd9f60ae5f47485ea6d91390c869befcf08"
+  },
+  {
+    "path": "data/libero-subset/meta/info.json",
+    "bytes": 2131,
+    "sha256": "77c0da93c67960bac803a8ea25dabf380d752c26c1d91c54151121dd10e7d82f"
+  },
+  {
+    "path": "data/libero-subset/meta/stats.json",
+    "bytes": 5855,
+    "sha256": "1fe6c2d548a7998394488ae68bc2be46a51c8cd3798af6ab74fff79f8b20e293"
+  },
+  {
+    "path": "data/libero-subset/meta/tasks.jsonl",
+    "bytes": 3375,
+    "sha256": "e72ef3cf7ca7a3abe70b3e142a0d1acf2719d2a3f27598869092cc4f1762bb99"
+  },
+  {
+    "path": "data/libero-subset/subset-manifest.json",
+    "bytes": 2460,
+    "sha256": "924f6fbc59f31b02bfa7fdf02848a95d098a0f6cc276d86744572b6f8c9f75ae"
+  },
+  {
+    "path": "output/environment-evidence-2026-10-13/config/libero/config.yaml",
+    "bytes": 440,
+    "sha256": "5b4ed0181ff7589aa4174f8b6dc91a949471ab09db2f34f06957f5d2c0a1a081"
+  },
+  {
+    "path": "output/environment-evidence-2026-10-13/config/libero-requirements-resolved.txt",
+    "bytes": 2206,
+    "sha256": "fb5d51e4a0b6c1c1a3dd462c390418d958cb10de3ebdf9070baa61df1613194a"
+  },
+  {
+    "path": "output/environment-evidence-2026-10-13/env-libero.sh",
+    "bytes": 322,
+    "sha256": "97c9b77235b0f150ae19e6fd1765889cd90a4f6c711a71e37deccdd4111c2ce5"
+  },
+  {
+    "path": "output/environment-evidence-2026-10-13/env-model.sh",
+    "bytes": 232,
+    "sha256": "ecb58cedc77fa5eadee69c2a35bb7de665bca082a8440901e049a35ff984d3d6"
+  },
+  {
+    "path": "output/environment-evidence-2026-10-13/env.sh",
+    "bytes": 463,
+    "sha256": "086226fbbbf3007709483909a763ddfd9b4769cb1e11b79eb5b8f9d9dfac6d49"
+  },
+  {
+    "path": "output/environment-evidence-2026-10-13/logs/gpu-final-status.txt",
+    "bytes": 84,
+    "sha256": "1a6eb1393ae0e1fed05ba463feed1640a52adfd755c3ace23c88b5bb52cfb340"
+  },
+  {
+    "path": "output/environment-evidence-2026-10-13/logs/gpu-health-after-repair.txt",
+    "bytes": 1748,
+    "sha256": "8fbd7b6a41031d975985c0d6edad6baf3bd742912e0a3c43d44ef1e68a63bc44"
+  },
+  {
+    "path": "output/environment-evidence-2026-10-13/logs/gpu-smoke.txt",
+    "bytes": 37,
+    "sha256": "b52a3e9185677506fc7c34769f09cc3f4606d9883d0868bad3fc5748b530c8d4"
+  },
+  {
+    "path": "output/environment-evidence-2026-10-13/logs/install-libero-resolved.log",
+    "bytes": 2198,
+    "sha256": "2733368cf544bf3dbea6e9363eb091bb62849ccbc471a75a4415c027301322fb"
+  },
+  {
+    "path": "output/environment-evidence-2026-10-13/logs/libero-packages.txt",
+    "bytes": 2206,
+    "sha256": "fb5d51e4a0b6c1c1a3dd462c390418d958cb10de3ebdf9070baa61df1613194a"
+  },
+  {
+    "path": "output/environment-evidence-2026-10-13/logs/libero-render-check.log",
+    "bytes": 1549,
+    "sha256": "11393f92f553dcc9d6294cd4c8ef2955d18988942563cb87c5b000cb3fc3d01c"
+  },
+  {
+    "path": "output/environment-evidence-2026-10-13/logs/model-env-check.log",
+    "bytes": 107,
+    "sha256": "051c72acd1130c128e8110e6fb61c4260c89b01c5bc8a0525486589f0c615557"
+  },
+  {
+    "path": "output/environment-evidence-2026-10-13/logs/openpi-commit.txt",
+    "bytes": 41,
+    "sha256": "098521594e2be2dfad16b5fcbf6775b9e706fdaae4cde4cec5cf6dede93b3665"
+  },
+  {
+    "path": "output/environment-evidence-2026-10-13/logs/openpi-packages.txt",
+    "bytes": 3900,
+    "sha256": "6588447e581d739dd7b4d1d76841d5a1b5065a7a975347bf5630b26d3bac51f3"
+  },
+  {
+    "path": "output/environment-evidence-2026-10-13/logs/source-status.txt",
+    "bytes": 141,
+    "sha256": "621fe416163bec268e1ce1e3167336dab9118562137bf0d2bf2c5be0ee760a6e"
+  },
+  {
+    "path": "output/environment-evidence-2026-10-13/logs/torch-import-check.log",
+    "bytes": 28,
+    "sha256": "f9924fc8516f684052a8e6591d2822ef151588528c84ee209ea53ef6581861d9"
+  },
+  {
+    "path": "output/environment-evidence-2026-10-13/results/agentview_image.png",
+    "bytes": 65356,
+    "sha256": "29bfacaf9b90cc7f339174ce3b3947af079396d56466f2337a30c1ab09590663"
+  },
+  {
+    "path": "output/environment-evidence-2026-10-13/results/environment-status.txt",
+    "bytes": 1816,
+    "sha256": "e4e53e2d53e7a004ed9a9e152b93c0168a9e315c5d4043fc3ea086c73a324381"
+  },
+  {
+    "path": "output/environment-evidence-2026-10-13/results/robot0_eye_in_hand_image.png",
+    "bytes": 58182,
+    "sha256": "4c734d407eaeaad23fba33a1a3c854f017568feb7519e7656c3d220e3990ca7b"
+  },
+  {
+    "path": "output/environment-evidence-2026-10-13/scripts/check-libero-env.sh",
+    "bytes": 126,
+    "sha256": "3626dd0e05d51a1542db166edac4916b6af05efca07e0cf7b23ceb9ebe098c72"
+  },
+  {
+    "path": "output/environment-evidence-2026-10-13/scripts/check-model-env.py",
+    "bytes": 510,
+    "sha256": "6c6947b350edd76ddce86229212caa2403b522843a4785fd7b5072f537494950"
+  },
+  {
+    "path": "output/environment-evidence-2026-10-13/scripts/check-model-env.sh",
+    "bytes": 122,
+    "sha256": "622c7022dcd996a4b53916873ffa306a151652237d846fb50cfa10b84213a684"
+  },
+  {
+    "path": "output/environment-evidence-2026-10-13/scripts/gpu_smoke.cu",
+    "bytes": 794,
+    "sha256": "7df392d88333f320bd7faf4eb9ed6a44330ac96c2c8c2153e137a4f499dc3903"
+  },
+  {
+    "path": "output/environment-evidence-2026-10-13/scripts/install-libero.sh",
+    "bytes": 453,
+    "sha256": "5fd60ee5870768c7542fda1b2cecada3f433273131b68a87ce58f90a6c296cae"
+  },
+  {
+    "path": "output/environment-evidence-2026-10-13/scripts/install-openpi.sh",
+    "bytes": 605,
+    "sha256": "1eb0407f345bad32b3209a64f0b41ccdd270c98eee8fdccea680f8e69b8400aa"
+  },
+  {
+    "path": "output/environment-evidence-2026-10-13/scripts/install-system-deps.sh",
+    "bytes": 257,
+    "sha256": "70d36af1bb4af77db7490dd696e2f346d94eb324973135976c51b3f771e850ce"
+  },
+  {
+    "path": "output/environment-evidence-2026-10-13/scripts/libero-render-smoke.py",
+    "bytes": 1233,
+    "sha256": "8b3d57e079b66436315f2f59a9fb366a56b745340a5cd4d52760338a8f3cc9fc"
+  },
+  {
+    "path": "output/environment-evidence-2026-10-13.tar.gz",
+    "bytes": 132372,
+    "sha256": "589f37d1eb918c741f4e56ffa895f606af632000f74011f237eaab7ee0a568ec"
+  },
+  {
+    "path": "output/first-libero-success-final-frame.png",
+    "bytes": 42796,
+    "sha256": "e0eb57fee9e5af0c0a3ac0af3d398582ad44b315a98a9d53c5ecbdecb3298148"
+  },
+  {
+    "path": "output/reproduction-evidence/assets/pi05_libero_lora_smoke/physical-intelligence/libero/norm_stats.json",
+    "bytes": 1954,
+    "sha256": "5cae65c7664cb894a20584e0951af06df7d6b7eb683f3a98f454c61d668b32be"
+  },
+  {
+    "path": "output/reproduction-evidence/config/libero/config.yaml",
+    "bytes": 440,
+    "sha256": "5b4ed0181ff7589aa4174f8b6dc91a949471ab09db2f34f06957f5d2c0a1a081"
+  },
+  {
+    "path": "output/reproduction-evidence/config/libero-requirements-resolved.txt",
+    "bytes": 2206,
+    "sha256": "fb5d51e4a0b6c1c1a3dd462c390418d958cb10de3ebdf9070baa61df1613194a"
+  },
+  {
+    "path": "output/reproduction-evidence/data/libero-subset/meta/episodes.jsonl",
+    "bytes": 180384,
+    "sha256": "0479a2ced6117700e4638a1da54dccd9f60ae5f47485ea6d91390c869befcf08"
+  },
+  {
+    "path": "output/reproduction-evidence/data/libero-subset/meta/info.json",
+    "bytes": 2131,
+    "sha256": "77c0da93c67960bac803a8ea25dabf380d752c26c1d91c54151121dd10e7d82f"
+  },
+  {
+    "path": "output/reproduction-evidence/data/libero-subset/meta/stats.json",
+    "bytes": 5855,
+    "sha256": "1fe6c2d548a7998394488ae68bc2be46a51c8cd3798af6ab74fff79f8b20e293"
+  },
+  {
+    "path": "output/reproduction-evidence/data/libero-subset/meta/tasks.jsonl",
+    "bytes": 3375,
+    "sha256": "e72ef3cf7ca7a3abe70b3e142a0d1acf2719d2a3f27598869092cc4f1762bb99"
+  },
+  {
+    "path": "output/reproduction-evidence/data/libero-subset/subset-manifest.json",
+    "bytes": 2460,
+    "sha256": "924f6fbc59f31b02bfa7fdf02848a95d098a0f6cc276d86744572b6f8c9f75ae"
+  },
+  {
+    "path": "output/reproduction-evidence/env-libero.sh",
+    "bytes": 322,
+    "sha256": "97c9b77235b0f150ae19e6fd1765889cd90a4f6c711a71e37deccdd4111c2ce5"
+  },
+  {
+    "path": "output/reproduction-evidence/env-model.sh",
+    "bytes": 232,
+    "sha256": "ecb58cedc77fa5eadee69c2a35bb7de665bca082a8440901e049a35ff984d3d6"
+  },
+  {
+    "path": "output/reproduction-evidence/env.sh",
+    "bytes": 463,
+    "sha256": "086226fbbbf3007709483909a763ddfd9b4769cb1e11b79eb5b8f9d9dfac6d49"
+  },
+  {
+    "path": "output/reproduction-evidence/logs/checkpoint-server-ranges.log",
+    "bytes": 2719,
+    "sha256": "6a1ae0442989130906b8f3cb36be87286c2a1e3a5fdf2c47223bc839e5d82543"
+  },
+  {
+    "path": "output/reproduction-evidence/logs/gpu-final-status.txt",
+    "bytes": 84,
+    "sha256": "1a6eb1393ae0e1fed05ba463feed1640a52adfd755c3ace23c88b5bb52cfb340"
+  },
+  {
+    "path": "output/reproduction-evidence/logs/libero-evaluation.log",
+    "bytes": 69665,
+    "sha256": "6536fa4601df630a0b42b01e45f97c58004e07f077d8a93fe96244b4dd5df498"
+  },
+  {
+    "path": "output/reproduction-evidence/logs/libero-packages.txt",
+    "bytes": 2206,
+    "sha256": "fb5d51e4a0b6c1c1a3dd462c390418d958cb10de3ebdf9070baa61df1613194a"
+  },
+  {
+    "path": "output/reproduction-evidence/logs/openpi-commit.txt",
+    "bytes": 41,
+    "sha256": "098521594e2be2dfad16b5fcbf6775b9e706fdaae4cde4cec5cf6dede93b3665"
+  },
+  {
+    "path": "output/reproduction-evidence/logs/openpi-packages.txt",
+    "bytes": 3900,
+    "sha256": "6588447e581d739dd7b4d1d76841d5a1b5065a7a975347bf5630b26d3bac51f3"
+  },
+  {
+    "path": "output/reproduction-evidence/logs/pi05_base-asset-list.json",
+    "bytes": 31937,
+    "sha256": "96154ede7a573c72363c652ecfb7724289c3bfd6ab36c87d697c155449c693f0"
+  },
+  {
+    "path": "output/reproduction-evidence/logs/pi05_libero-asset-list.json",
+    "bytes": 18097,
+    "sha256": "fb663fc794a45a5da7d6cbabd3bb0321e908926a85ba30081b00086a3b7ecbce"
+  },
+  {
+    "path": "output/reproduction-evidence/logs/policy-server.log",
+    "bytes": 2068,
+    "sha256": "565a1d5b01290f6ba6077fc6705933a8b58b1c5c7831aa148355e909ff2a62d7"
+  },
+  {
+    "path": "output/reproduction-evidence/logs/train-norms.log",
+    "bytes": 33213,
+    "sha256": "c209079c6810645634d0247e1d8c809b7cd5e284c2be2b5d93024d7fcb2aefce"
+  },
+  {
+    "path": "output/reproduction-evidence/logs/train-smoke.log",
+    "bytes": 46112,
+    "sha256": "b8852306470242d9555006fd06cc7902525d06d8b4fc8c407e5d8286d18f1eb5"
+  },
+  {
+    "path": "output/reproduction-evidence/results/artifact-manifest.json",
+    "bytes": 35417,
+    "sha256": "e064c9048dc6341a01a2ee500b799de11f5944235c202421ac998cd9158aa396"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/episodes.jsonl",
+    "bytes": 35912,
+    "sha256": "c1837870e19c7d038ada78731d68b78d11a32d007837c0c9c59aa064728b2d6d"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/protocol.json",
+    "bytes": 292,
+    "sha256": "9f4a566279b5572271051323708e8a7507774c9fa6fca9d243cf033d3778cf8f"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/summary.json",
+    "bytes": 1717,
+    "sha256": "f4305a07a85d6e61dd6d6ac2d8e1b8747656f169045dd1ae78d58ead3f6e5c74"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_000_rollout_pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_success.mp4",
+    "bytes": 57487,
+    "sha256": "9dc692cce88af5d8ad05beab4f7932fa7fbc18ca11bb7185a94546056a56da30"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_001_rollout_pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_success.mp4",
+    "bytes": 48667,
+    "sha256": "baf7ef92ec36c8c7098dcb674f1dfeb94e19fd5b22503c5772bfa89816a823b6"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_002_rollout_pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_success.mp4",
+    "bytes": 47397,
+    "sha256": "fc35c59290cc5aa024ab1d172d4430bdbe2ec07785ee8232301f7aaca1162990"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_003_rollout_pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_success.mp4",
+    "bytes": 45257,
+    "sha256": "e750be05d6c4f41a3f0f49f5870130ac44e5aacedb673544adbadef76eb3e28c"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_004_rollout_pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_success.mp4",
+    "bytes": 44550,
+    "sha256": "1e9fecc89974140dee423aebfeb33177cfede8ece75b6656689c07dd86a437b6"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_005_rollout_pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_success.mp4",
+    "bytes": 47460,
+    "sha256": "aa05a60a6b5e32dd26fca779ad1de9e83f702d241f0c46e3dcbe16e2d2d96c75"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_006_rollout_pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_success.mp4",
+    "bytes": 45996,
+    "sha256": "8e38b9a10fca97be31e14186140144792d9f4aa800d53ac5bf7f2a58c73e62c9"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_007_rollout_pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_success.mp4",
+    "bytes": 46583,
+    "sha256": "0deb7fa8ec40c3895ec99a9e0d5fa751c07d536803e24e50c4afdb47145bd695"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_008_rollout_pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_success.mp4",
+    "bytes": 42868,
+    "sha256": "441f0942cf624341f25da858cef11841944a3ef7fa1b339a829b7ef546a374f6"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_009_rollout_pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_success.mp4",
+    "bytes": 45391,
+    "sha256": "21e027f88e0ca179b74f7fe8e0f45d37116aac3606f0dde3d1f79ebbbafba351"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_010_rollout_pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_success.mp4",
+    "bytes": 48840,
+    "sha256": "7a03b8cfe22249fbd2d87753c73e19cc81810d62bf6749927ad4199b53d346a1"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_011_rollout_pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_success.mp4",
+    "bytes": 46623,
+    "sha256": "a8a77493e6606ca3deef06f592c2b9b5304fbec139301432c9f5d4043b026d79"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_012_rollout_pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_success.mp4",
+    "bytes": 44936,
+    "sha256": "a1bc5c57baa550a0f6b309a9269f8ec7643c2e497b93133cb346423f4c96121f"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_013_rollout_pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_success.mp4",
+    "bytes": 45331,
+    "sha256": "7e7d8e42ceba26dedb5939026aadf315167668a1d191c6cf143e34213e812e72"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_014_rollout_pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_success.mp4",
+    "bytes": 47823,
+    "sha256": "26492d4635bbe3798bdc5e5b9a5d03c770603bbd0a763cdf42b1765df1ec24ed"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_015_rollout_pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_success.mp4",
+    "bytes": 44680,
+    "sha256": "84286cb637b3187865b4a798e6d85b73b143020e9dc5806b17cda097ecd50d7f"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_016_rollout_pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_success.mp4",
+    "bytes": 49037,
+    "sha256": "9bceafdcfd894b04438d1bf82ce4c7b3f4b891c27861ccd17e592cbb1e8b466b"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_017_rollout_pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_success.mp4",
+    "bytes": 53610,
+    "sha256": "78099c417dc6e04f473b5f561fea3e0532330c87bb2fc641449a5839bb871a72"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_018_rollout_pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_success.mp4",
+    "bytes": 51390,
+    "sha256": "3924b759dde827ba892d0f9aa18f5b057c08b31496a02d96173b6cde44e0835f"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_019_rollout_pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_success.mp4",
+    "bytes": 47441,
+    "sha256": "959a6399c1e9d4ff4f19ed19adfd022b79b717ada1d750b13c851d934009ddc6"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_020_rollout_pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_success.mp4",
+    "bytes": 65259,
+    "sha256": "34a59d299cdbba14bfe5ab87e0275a42772a547958081ac249b4ad5c62a32fcf"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_021_rollout_pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_success.mp4",
+    "bytes": 56653,
+    "sha256": "a64b5a46165ae47ebf0ad84ac455563d0bd43f7a6510864af95e81d5bdf5c973"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_022_rollout_pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_success.mp4",
+    "bytes": 53463,
+    "sha256": "17db03029c2ded647d2666cb455704477762d94986637b513f2b0a193a2fc443"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_023_rollout_pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_success.mp4",
+    "bytes": 53076,
+    "sha256": "942b05fd45e24e37cd37f4d4c5ed456ce72f7a8c6f213ae432d53d8e0e926178"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_024_rollout_pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_success.mp4",
+    "bytes": 54742,
+    "sha256": "6fd85c9bd1872895fdefc2227e3b750e1b10d17cb005b9fd1d90a8226c6def30"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_025_rollout_pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_success.mp4",
+    "bytes": 58245,
+    "sha256": "e92b5da2a55a34dd379fd3d933236a60a2c0708e306c6c5ed7778bd3f5037bbc"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_026_rollout_pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_success.mp4",
+    "bytes": 56462,
+    "sha256": "32f6c1d6ea4280fd7af0b71baf13cd814af63057ae9ad0e601eaaa93f6f6fddb"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_027_rollout_pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_success.mp4",
+    "bytes": 52396,
+    "sha256": "78bbbeefd8ea3d334abf7160ca66562049589ff9eddd2b97c21089bc6abdfe63"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_028_rollout_pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_success.mp4",
+    "bytes": 57369,
+    "sha256": "f9992ddb081aa30f4eac9d14cc65eb9e78f316939059219f32b62ae08f90a683"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_029_rollout_pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_success.mp4",
+    "bytes": 52829,
+    "sha256": "83ba34f6865a6ef8eda13b5a13ce71ccb42ab18a4e79633c13f98fa1da4c24f5"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_030_rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_success.mp4",
+    "bytes": 57884,
+    "sha256": "0f0d04633c4e35310d390c465d3b556d3673cbd43c924bff5136af85dbb8f904"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_031_rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_success.mp4",
+    "bytes": 53330,
+    "sha256": "cdc22caf4fa54cfca4c3ad7b7745604f852126144bda5253de85c03d8fb5c4fa"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_032_rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_failure.mp4",
+    "bytes": 104208,
+    "sha256": "08435855ec92d88375d892ade99a0c17b25bcdad6bcfc7fd60ccbb7c453a480c"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_033_rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_success.mp4",
+    "bytes": 55326,
+    "sha256": "ccd0f1e95ee8d6f354778ef6c180a61bb924abae6e28aa8081cc49a11a1fab9e"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_034_rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_success.mp4",
+    "bytes": 56599,
+    "sha256": "4c242c0f0450f868e1ef0bde06029f1f4f31f1dbc1e68bad4888825008f25af0"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_035_rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_success.mp4",
+    "bytes": 54415,
+    "sha256": "bca20c37bb41821eb7e77083c0488bcece1774b527bac3137ce99c6558e268c3"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_036_rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_success.mp4",
+    "bytes": 54413,
+    "sha256": "0bf346e7de373be8fbe2f3964b61dd86d68f1dff89013b7e2fd6b21de856204e"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_037_rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_success.mp4",
+    "bytes": 54084,
+    "sha256": "2685b6b77dc19e2f253a87f3900882f86c020b8004235b5690763e4407cb2830"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_038_rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_success.mp4",
+    "bytes": 54487,
+    "sha256": "091d1c9730e463212bc35b799e69fc415380106750e1b2c25bf48231b5208eea"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_039_rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_failure.mp4",
+    "bytes": 117410,
+    "sha256": "43ae8467d7f09c4731b6193149a8930232e0acad97f505ae51b193ac079a931d"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_040_rollout_pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_success.mp4",
+    "bytes": 72219,
+    "sha256": "8ad71c0e7ccce26edce7f09c1c95c6db8639777569f5e60758a96427c5719f65"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_041_rollout_pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_success.mp4",
+    "bytes": 89722,
+    "sha256": "a719c14702a2cf411b54bc3ae8bb70abe90ee9d81a31a3d21a41b446c480e8a1"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_042_rollout_pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_success.mp4",
+    "bytes": 71864,
+    "sha256": "37540ef977fdf49f72a6a95b2602a51be84607be67c04090fb2bd58b797831eb"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_043_rollout_pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_success.mp4",
+    "bytes": 80075,
+    "sha256": "f1004bde0aa5d07281cf5279245ab0dd53f2f2d0023a1226b7f8676af3f7ed5e"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_044_rollout_pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_success.mp4",
+    "bytes": 77306,
+    "sha256": "139291146ddda9a33e1e90e833a026815fb470646714d2b488e582201f439d0c"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_045_rollout_pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_success.mp4",
+    "bytes": 74374,
+    "sha256": "7fe47b7217a87a502b0454a64b5b921c6049bfcca3c52fe5279a6729f6ee9fee"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_046_rollout_pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_success.mp4",
+    "bytes": 79379,
+    "sha256": "7095dcaca2ec3702969639537a48232b4e77d904f52e785d1adf8c8b5beb1931"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_047_rollout_pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_success.mp4",
+    "bytes": 69366,
+    "sha256": "56f13a2164cbf10e3d7ba25ff2d447095e279ba352aa26fb3d55b55dea214d0e"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_048_rollout_pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_success.mp4",
+    "bytes": 72662,
+    "sha256": "21d532d7a733bba0ff66b0f480e0d45746b5ab6b78a9e4f76f9460d9f221d1f1"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_049_rollout_pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_success.mp4",
+    "bytes": 74682,
+    "sha256": "ec684a7802e1f8ca6783e3b259da293a30e7780d393449c16af8c307edef5002"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_050_rollout_pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_success.mp4",
+    "bytes": 53795,
+    "sha256": "7d01a35b7fcc76f21761c62cb6dcae9fe33b62fedccad21ff6a227f420f71fbf"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_051_rollout_pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_success.mp4",
+    "bytes": 58518,
+    "sha256": "2d99d09dd381daecff2244f865d06f5b1b9758355bd708d5bd00954159698176"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_052_rollout_pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_success.mp4",
+    "bytes": 45532,
+    "sha256": "4a24375781e498d66a35c928b77ea3e28ba88eaf9eb0ab7f0053b85ef686d5e6"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_053_rollout_pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_success.mp4",
+    "bytes": 43831,
+    "sha256": "8c1a8bb28f1aab92b3b069d8781dc6bee8bd73d936e9db7c19f9b7dba8957288"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_054_rollout_pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_success.mp4",
+    "bytes": 52604,
+    "sha256": "c9bfb93c7ea49a301a228fa3bbbd660cce5db5b2728a81380803e5d120c739cf"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_055_rollout_pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_success.mp4",
+    "bytes": 45666,
+    "sha256": "b8951d77acffdcf9d0401464b7ff649d34173a6a823f5308ebf904e3dab247f9"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_056_rollout_pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_success.mp4",
+    "bytes": 45344,
+    "sha256": "84711d8c6866a95d30d5cd967e1e227b72352a640f4a6e04b5120f5845fe5419"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_057_rollout_pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_success.mp4",
+    "bytes": 46075,
+    "sha256": "8acc432af941f1c41ce792c7c75db057170404b8f5f2b9c9b53c2996045c709a"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_058_rollout_pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_success.mp4",
+    "bytes": 48522,
+    "sha256": "0959442690bd98b11df9016a51a2d46253ec2c3dbd71113c48864d08c063679f"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_059_rollout_pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_success.mp4",
+    "bytes": 45694,
+    "sha256": "c9b92f102796ea9eb66e2ddc1ab357aec8df94616fce73fcc1805fd610ef8262"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_060_rollout_pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_success.mp4",
+    "bytes": 74311,
+    "sha256": "4cb89a6d667ed5f5c7385a778887ea1a9d104e39208bea396e94cb5545a9fd81"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_061_rollout_pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_success.mp4",
+    "bytes": 69102,
+    "sha256": "e2eeeba99504621681e1236680d74ec6877c4da42775071797e854422158dc59"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_062_rollout_pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_success.mp4",
+    "bytes": 66095,
+    "sha256": "d2404a9433745da906a45ec7a20ab7080e827cc044fc732f9e484eb327a721e3"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_063_rollout_pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_success.mp4",
+    "bytes": 60630,
+    "sha256": "d83d076d822ccaf6658e41aafe81eb094e970924fc4ce593019380b551ec07ac"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_064_rollout_pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_success.mp4",
+    "bytes": 64597,
+    "sha256": "d52ec398af6dba1e4426393ad9a22931d5a3cc9ef77be26a448ca5617fe24e40"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_065_rollout_pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_success.mp4",
+    "bytes": 73738,
+    "sha256": "f01fc1451362307b7e941be33949d2ffc03b587c3ba8fd31d71d5b785e3c879c"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_066_rollout_pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_success.mp4",
+    "bytes": 72950,
+    "sha256": "222243cab704c8915fbab5a4fc94d8ae0470d0eb3095284f4afa6c4d6bf565d1"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_067_rollout_pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_success.mp4",
+    "bytes": 63319,
+    "sha256": "5bc2f99a2ff2bf8864e260c68a96e43d6caaf49281b4cf7ae416611c3eaff172"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_068_rollout_pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_success.mp4",
+    "bytes": 72544,
+    "sha256": "5359ade99c14716b96c41ad3952435ea56c48ff0eeac89499260a382a423d95a"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_069_rollout_pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_success.mp4",
+    "bytes": 67892,
+    "sha256": "458cc48e9e2c384b018d9894645a664a66b6e7f4e8a11c49d61a92c9a09da260"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_070_rollout_pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_success.mp4",
+    "bytes": 59447,
+    "sha256": "d66840bed4f4d7a9bf49767d303979a06ba2cee9d1acc06cbe0f15adf2cd4de2"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_071_rollout_pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_success.mp4",
+    "bytes": 57728,
+    "sha256": "5e268f32048111aa013852b241d36794665fac4596fef2f05841578c524632a0"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_072_rollout_pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_success.mp4",
+    "bytes": 60212,
+    "sha256": "994d45786e712d8312590b231166e1535a5d2c83d1b3d4ba48937e52952ae38e"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_073_rollout_pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_success.mp4",
+    "bytes": 60710,
+    "sha256": "1af0bd20ff1a1f5da682c6ab2b1843aaf96f4bd976a06b8dd18563f6a71ede95"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_074_rollout_pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_success.mp4",
+    "bytes": 64177,
+    "sha256": "e8daad2922abf305635761303fff7895220b69d12b463b401735241afcb6db9c"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_075_rollout_pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_success.mp4",
+    "bytes": 60881,
+    "sha256": "d2e3896555ab663da99835fb19621790a35cee32e0195fd032d8e68b32252f77"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_076_rollout_pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_success.mp4",
+    "bytes": 62696,
+    "sha256": "8cfc6f10637d702edc4ada693d92b7f46fa64a14f47b9b03f15b72826090f694"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_077_rollout_pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_success.mp4",
+    "bytes": 71878,
+    "sha256": "c07a3431c77c765a90db9efc628016eae44b99c3fbe864c236a0acc8b0f0b8fa"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_078_rollout_pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_success.mp4",
+    "bytes": 63140,
+    "sha256": "d5ac2ab73633b0cbcdb116dc185437529c5828e688079dc2c009ba01b0f18c3c"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_079_rollout_pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_success.mp4",
+    "bytes": 61902,
+    "sha256": "79ee14323eafda868b259da85adbdca11ebe8da2beb8a58f538c4981843d7709"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_080_rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_success.mp4",
+    "bytes": 63850,
+    "sha256": "8f44343affdbd41fb798c521c205ef0433fda7f1e7a1be3714fb9dc09e731eba"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_081_rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_success.mp4",
+    "bytes": 55244,
+    "sha256": "32cc671ae0175ce4d47cfd8154bc9c6655586d099d7499f6e0484f910c595430"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_082_rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_success.mp4",
+    "bytes": 55817,
+    "sha256": "f6acb9bc7a05db1e209375513292beef1244a53583b4bef5efdb1156a5ed1735"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_083_rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_success.mp4",
+    "bytes": 57922,
+    "sha256": "864be4908d69cabca6585fb8a36fab35f4f1bd26d7496a9fe7e01097f8f2833d"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_084_rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_success.mp4",
+    "bytes": 56129,
+    "sha256": "33180a53627d1ff9a50ee81a203685975bdbebffc347b805a7e35452edc29776"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_085_rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_success.mp4",
+    "bytes": 54281,
+    "sha256": "7fd6c1e7e2554fb2f7e21a9f8fc21ab7b0ac434b60e9c12d153453fc5ea80776"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_086_rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_success.mp4",
+    "bytes": 53462,
+    "sha256": "563be564c3804bc843d4ef2baabc7a3a3b457df627c0e2cd74471b707e3f37f4"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_087_rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_success.mp4",
+    "bytes": 54424,
+    "sha256": "656bc5baa6eec18e0690dabf54211392ad47b2696f1a0b342ea0fd5cfd86d932"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_088_rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_success.mp4",
+    "bytes": 58058,
+    "sha256": "aadd8a59517facbbd57d0e2c4d199f7ec0069607bca83ae2f5099038a12aa902"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_089_rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_success.mp4",
+    "bytes": 52697,
+    "sha256": "781f09229ffba897c89877b34881c8dea444082e4a50c729b94e1a04ff5be1c1"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_090_rollout_pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_success.mp4",
+    "bytes": 61114,
+    "sha256": "2baf72083a2d6bafbbc323f8bd9055130814ebf076f3661a400f6e88f614431e"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_091_rollout_pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_success.mp4",
+    "bytes": 67535,
+    "sha256": "d3476a781022a60d0827b7891f35c5f0421fc03a6a866243f66b8e187282ef17"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_092_rollout_pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_success.mp4",
+    "bytes": 59490,
+    "sha256": "cff4fdced364cf66ae6346d279c1e1f292120b751afce73eaf0f571b3013c6f9"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_093_rollout_pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_success.mp4",
+    "bytes": 58482,
+    "sha256": "4291bdd81364abbb4bf0d75209c05965b44f327e882d581cc098642f1f8a6713"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_094_rollout_pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_failure.mp4",
+    "bytes": 106362,
+    "sha256": "dda14c33dd5083a84c9bad670a2a41be702d9e61cd573a2cd8a826fac397679c"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_095_rollout_pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_success.mp4",
+    "bytes": 62007,
+    "sha256": "4db246be89b46746de08ec53d286d53c9f5b9910630b1fd126a537e16f0489d1"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_096_rollout_pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_success.mp4",
+    "bytes": 74675,
+    "sha256": "a4aa3cc8082af9d2333262342d6df629119925c77eb7d155dc26e8b7abfdce9f"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_097_rollout_pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_success.mp4",
+    "bytes": 68754,
+    "sha256": "e3f5a25f7d74d55fcb8909aa4f44fae253cc3e30f0ff2367e433909cda9e2fd8"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_098_rollout_pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_success.mp4",
+    "bytes": 61278,
+    "sha256": "a1b2fb97123944a704ac5afef9172a7080978bcde034556ff335c48118466512"
+  },
+  {
+    "path": "output/reproduction-evidence/results/eval-libero-spatial-seed7-trials10/videos/episode_099_rollout_pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_success.mp4",
+    "bytes": 58996,
+    "sha256": "f72ac30f306ae8d23d887dfdb41f4c677c01ad71664e70a6b664d803451c8b2b"
+  },
+  {
+    "path": "output/reproduction-evidence/results/experiment-protocol.json",
+    "bytes": 2066,
+    "sha256": "f80030000cd720ddf05880b4e7ac56b9ead5fed030fbbb0f4140cd5e2b924813"
+  },
+  {
+    "path": "output/reproduction-evidence/results/final-checks.json",
+    "bytes": 285,
+    "sha256": "310cdc0cff930038b7d803373bf5f6b3f82d2eb33f63d5373cdbf04722125af3"
+  },
+  {
+    "path": "output/reproduction-evidence/results/first-libero-success-final-frame.png",
+    "bytes": 42796,
+    "sha256": "e0eb57fee9e5af0c0a3ac0af3d398582ad44b315a98a9d53c5ecbdecb3298148"
+  },
+  {
+    "path": "output/reproduction-evidence/results/first-libero-success.mp4",
+    "bytes": 57487,
+    "sha256": "9dc692cce88af5d8ad05beab4f7932fa7fbc18ca11bb7185a94546056a56da30"
+  },
+  {
+    "path": "output/reproduction-evidence/results/train-smoke/dataset-audit.json",
+    "bytes": 970,
+    "sha256": "25dd0c04c7253caa09f039c8bd318727c5c62a19027ad06afd70b24fa0c53a3a"
+  },
+  {
+    "path": "output/reproduction-evidence/results/train-smoke/final-parameter-samples.npz",
+    "bytes": 29028,
+    "sha256": "2be40af96d83e2b6445830414bad08bf6b8aafffbdd244c00603abec696e4734"
+  },
+  {
+    "path": "output/reproduction-evidence/results/train-smoke/initial-parameter-samples.npz",
+    "bytes": 29028,
+    "sha256": "a29683ae3936800ee93290e275390dfe7929042481df4374c5c4d2895a649435"
+  },
+  {
+    "path": "output/reproduction-evidence/results/train-smoke/metrics-from-log.jsonl",
+    "bytes": 8069,
+    "sha256": "08ba7461fcf6f7cd1f44642982986f2eda9da4b132be313dfc6b8f214437dd86"
+  },
+  {
+    "path": "output/reproduction-evidence/results/train-smoke/metrics-summary.json",
+    "bytes": 456,
+    "sha256": "8207cfaba8be18dd7132fca2dbd28d8d79e25c347e891877b4fc6be5a00fd8a3"
+  },
+  {
+    "path": "output/reproduction-evidence/results/train-smoke/parameter-audit.json",
+    "bytes": 2526,
+    "sha256": "d1492458891e5a50f50ef3c4887f88f239e80b3acbb60ff15397d0bd833f22df"
+  },
+  {
+    "path": "output/reproduction-evidence/results/train-smoke/restore-verification.json",
+    "bytes": 136,
+    "sha256": "13c4ac18df7efa2a2c1cf26d20be3a1bcb04e841324bc583b2b1b6e2ec0f19c0"
+  },
+  {
+    "path": "output/reproduction-evidence/results/train-smoke/training-config.txt",
+    "bytes": 1707,
+    "sha256": "e09a8e3aa0f264bc5373b6b29cfde9535abe65f88163ab0456f0ed634eb4ee09"
+  },
+  {
+    "path": "output/reproduction-evidence/results/train-smoke/training-verification.json",
+    "bytes": 334,
+    "sha256": "86ad7e68b07a1c26d46f6a2f91a3ea9d9c7a9e0180811db926763bce4760a6e7"
+  },
+  {
+    "path": "output/reproduction-evidence/scripts/check-training-results.py",
+    "bytes": 1461,
+    "sha256": "103fdf4a2b7e7f62cf6eb220a98e05cac0f1964d17e8aee3a3acd6c2ef4399c5"
+  },
+  {
+    "path": "output/reproduction-evidence/scripts/download-server-ranges.py",
+    "bytes": 3431,
+    "sha256": "a2c1e2fd2056b518987ebad11813abf24999ac3b37162a178635611d0c590f94"
+  },
+  {
+    "path": "output/reproduction-evidence/scripts/evaluate_libero.py",
+    "bytes": 3724,
+    "sha256": "02d66097544a4fabcc710b19ff6cc55f2b7776c6f4f021ff0f8ec9bbbca1ff58"
+  },
+  {
+    "path": "output/reproduction-evidence/scripts/export-results.py",
+    "bytes": 3748,
+    "sha256": "016161d467ce1e3ae050a80d183a4173a2946229d1afc8c6c67bedee45e6bf67"
+  },
+  {
+    "path": "output/reproduction-evidence/scripts/pi05_experiment.py",
+    "bytes": 8785,
+    "sha256": "55d8cd23e1cb429d0b3767c16c5fe160fc101b4c84154afd9980ce1707e0adca"
+  },
+  {
+    "path": "output/reproduction-evidence/scripts/run-libero-evaluation.sh",
+    "bytes": 202,
+    "sha256": "caa613b644b302839e9922a53c919e651a695c3c9f1396201f51a450a02b0694"
+  },
+  {
+    "path": "output/reproduction-evidence/scripts/run-policy-server.sh",
+    "bytes": 259,
+    "sha256": "6da305343319f7e5236b4530a5f3bafc9c3cc4deeecaf1879bddfd74b97366b5"
+  },
+  {
+    "path": "output/reproduction-evidence/scripts/run-train-smoke.sh",
+    "bytes": 318,
+    "sha256": "cacbde5c2c23a0c6985daa96ca83d4a0a82b27294aa9a094e5e7f22ae1ea482f"
+  },
+  {
+    "path": "output/reproduction-evidence/scripts/serve_libero_policy.py",
+    "bytes": 652,
+    "sha256": "a423b9e48db486bee5cf8f0a475859e277a241d5010a91d6fb8a5842f71bd033"
+  },
+  {
+    "path": "output/reproduction-evidence/scripts/verify-official-checkpoint.py",
+    "bytes": 950,
+    "sha256": "be005ef0c86cd4ce2f7d2b73fe0b8e0489edd32444d129ad46b947082b51fe5b"
+  },
+  {
+    "path": "output/reproduction-evidence.tar.gz",
+    "bytes": 6066742,
+    "sha256": "865268448be0e154836dabbc80ac3f25349e3c178957df951a4c4217582a4fc7"
+  },
+  {
+    "path": "output/server-gpu-check-2026-10-13.txt",
+    "bytes": 2307,
+    "sha256": "e287255dcf410ab96271e05fe02fcebeb0774ece7b700c379bef185d6e19c402"
+  },
+  {
+    "path": "output/server-gpu-recheck-2026-10-13.txt",
+    "bytes": 1132,
+    "sha256": "0449724d368a8b9765a7de055038c754a35d40d00c76d9a82f536482bc5145ae"
+  },
+  {
+    "path": "output/training-evidence/logs/openpi-commit.txt",
+    "bytes": 41,
+    "sha256": "098521594e2be2dfad16b5fcbf6775b9e706fdaae4cde4cec5cf6dede93b3665"
+  },
+  {
+    "path": "output/training-evidence/logs/train-norms.log",
+    "bytes": 33213,
+    "sha256": "c209079c6810645634d0247e1d8c809b7cd5e284c2be2b5d93024d7fcb2aefce"
+  },
+  {
+    "path": "output/training-evidence/logs/train-smoke.log",
+    "bytes": 46112,
+    "sha256": "b8852306470242d9555006fd06cc7902525d06d8b4fc8c407e5d8286d18f1eb5"
+  },
+  {
+    "path": "output/training-evidence/results/experiment-protocol.json",
+    "bytes": 2066,
+    "sha256": "f80030000cd720ddf05880b4e7ac56b9ead5fed030fbbb0f4140cd5e2b924813"
+  },
+  {
+    "path": "output/training-evidence/results/first-libero-success.mp4",
+    "bytes": 57487,
+    "sha256": "9dc692cce88af5d8ad05beab4f7932fa7fbc18ca11bb7185a94546056a56da30"
+  },
+  {
+    "path": "output/training-evidence/results/train-smoke/dataset-audit.json",
+    "bytes": 970,
+    "sha256": "25dd0c04c7253caa09f039c8bd318727c5c62a19027ad06afd70b24fa0c53a3a"
+  },
+  {
+    "path": "output/training-evidence/results/train-smoke/final-parameter-samples.npz",
+    "bytes": 29028,
+    "sha256": "2be40af96d83e2b6445830414bad08bf6b8aafffbdd244c00603abec696e4734"
+  },
+  {
+    "path": "output/training-evidence/results/train-smoke/initial-parameter-samples.npz",
+    "bytes": 29028,
+    "sha256": "a29683ae3936800ee93290e275390dfe7929042481df4374c5c4d2895a649435"
+  },
+  {
+    "path": "output/training-evidence/results/train-smoke/metrics-from-log.jsonl",
+    "bytes": 8069,
+    "sha256": "08ba7461fcf6f7cd1f44642982986f2eda9da4b132be313dfc6b8f214437dd86"
+  },
+  {
+    "path": "output/training-evidence/results/train-smoke/metrics-summary.json",
+    "bytes": 456,
+    "sha256": "8207cfaba8be18dd7132fca2dbd28d8d79e25c347e891877b4fc6be5a00fd8a3"
+  },
+  {
+    "path": "output/training-evidence/results/train-smoke/parameter-audit.json",
+    "bytes": 2526,
+    "sha256": "d1492458891e5a50f50ef3c4887f88f239e80b3acbb60ff15397d0bd833f22df"
+  },
+  {
+    "path": "output/training-evidence/results/train-smoke/restore-verification.json",
+    "bytes": 136,
+    "sha256": "13c4ac18df7efa2a2c1cf26d20be3a1bcb04e841324bc583b2b1b6e2ec0f19c0"
+  },
+  {
+    "path": "output/training-evidence/results/train-smoke/training-config.txt",
+    "bytes": 1707,
+    "sha256": "e09a8e3aa0f264bc5373b6b29cfde9535abe65f88163ab0456f0ed634eb4ee09"
+  },
+  {
+    "path": "output/training-evidence/results/train-smoke/training-verification.json",
+    "bytes": 334,
+    "sha256": "86ad7e68b07a1c26d46f6a2f91a3ea9d9c7a9e0180811db926763bce4760a6e7"
+  },
+  {
+    "path": "output/training-evidence/scripts/check-training-results.py",
+    "bytes": 1461,
+    "sha256": "103fdf4a2b7e7f62cf6eb220a98e05cac0f1964d17e8aee3a3acd6c2ef4399c5"
+  },
+  {
+    "path": "output/training-evidence/scripts/pi05_experiment.py",
+    "bytes": 8785,
+    "sha256": "55d8cd23e1cb429d0b3767c16c5fe160fc101b4c84154afd9980ce1707e0adca"
+  },
+  {
+    "path": "output/training-evidence/scripts/run-train-smoke.sh",
+    "bytes": 318,
+    "sha256": "cacbde5c2c23a0c6985daa96ca83d4a0a82b27294aa9a094e5e7f22ae1ea482f"
+  },
+  {
+    "path": "output/training-evidence.tar.gz",
+    "bytes": 123508,
+    "sha256": "861b8ba8dc904aaaae12d0d54501d4c48fdab4ef30305f1d6c9da2f4b16088c5"
+  },
+  {
+    "path": "output/π0.5复现结果.txt",
+    "bytes": 4294,
+    "sha256": "5714b2d0db6b52c4da0877797931249301a56a3b2d6bdb22207a3ff76fa8ebdb"
+  },
+  {
+    "path": "output/环境检查记录-2026-10-13.txt",
+    "bytes": 2227,
+    "sha256": "49889277ba0bc6a5a7b769665bc797381ebb1376368f835841d6f975d733b5de"
+  },
+  {
+    "path": "output/训练日志.csv",
+    "bytes": 2810,
+    "sha256": "a2b3351be63e0bf078e9a59d07d19bdaf46650a082d32a8fafd63ce08805f834"
+  },
+  {
+    "path": "output/评测结果.csv",
+    "bytes": 933,
+    "sha256": "75ca7de37d6990235362b7d674162a57cede97d2fd49d4817fb25b328b316c58"
+  },
+  {
+    "path": "README.md",
+    "bytes": 4345,
+    "sha256": "ab570f6bb3f82163b4401af735b63e1b4dc0b9fd326848f25c0918963f24b420"
+  },
+  {
+    "path": "src/download_checkpoint_ranges.py",
+    "bytes": 4883,
+    "sha256": "7f84cbebf86976edcaffde4ca471cc2ee8437d91510e6285bce5925e9c09e002"
+  },
+  {
+    "path": "src/download_checkpoints.py",
+    "bytes": 3459,
+    "sha256": "787d4013075647bafb964958a9beab3974b0aa50d64db438b708d86bdd6b6ae1"
+  },
+  {
+    "path": "src/download_libero_subset.py",
+    "bytes": 2622,
+    "sha256": "af9979e703a583ca0d1b310e8ed90f00c9c1d2b7394f112b92cfc54c8165810c"
+  },
+  {
+    "path": "src/evaluate_libero.py",
+    "bytes": 3724,
+    "sha256": "02d66097544a4fabcc710b19ff6cc55f2b7776c6f4f021ff0f8ec9bbbca1ff58"
+  },
+  {
+    "path": "src/pi05_experiment.py",
+    "bytes": 8785,
+    "sha256": "55d8cd23e1cb429d0b3767c16c5fe160fc101b4c84154afd9980ce1707e0adca"
+  },
+  {
+    "path": "src/serve_libero_policy.py",
+    "bytes": 652,
+    "sha256": "a423b9e48db486bee5cf8f0a475859e277a241d5010a91d6fb8a5842f71bd033"
+  },
+  {
+    "path": "src/summarize_run.py",
+    "bytes": 7027,
+    "sha256": "2441d43a9f3d36b11a98e57ae23e5c754ead92a5ab7b39672d11f811a25f29fe"
+  },
+  {
+    "path": "work/remote-setup/libero-info.json",
+    "bytes": 96552,
+    "sha256": "df51678b193e35da67cca5f189479bd3c4b0907fbaced4d5ff0f9da4ba3a9a1a"
+  },
+  {
+    "path": "work/remote-setup/libero-meta-info.json",
+    "bytes": 1713,
+    "sha256": "ccaa7a87745441675e19755c1af0c6f6b2ebec07073e707e4fcf9cff6ebf2007"
+  },
+  {
+    "path": "work/remote-setup/pi05_base-asset-list.json",
+    "bytes": 32521,
+    "sha256": "9876d742d922444b6f95d251bae8dedb1517809eb3b6947db1a75de455b61747"
+  },
+  {
+    "path": "work/remote-setup/pi05_libero-asset-list.json",
+    "bytes": 18421,
+    "sha256": "35cda0a193482616485b850a496701903c2a85ee46295b54a97620564285c1a3"
+  }
+]
