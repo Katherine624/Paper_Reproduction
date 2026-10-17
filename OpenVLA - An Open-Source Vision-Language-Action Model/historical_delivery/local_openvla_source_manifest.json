@@ -1,0 +1,286 @@
+[
+  {
+    "kind": "model",
+    "repo": "openvla/openvla-7b-finetuned-libero-spatial",
+    "revision": "962318cec55ac10993ff0f5f43eda9a270b4c873",
+    "destination": "models/spatial",
+    "files": [
+      {
+        "path": ".gitattributes",
+        "size": 1519,
+        "sha256": null
+      },
+      {
+        "path": "README.md",
+        "size": 1847,
+        "sha256": null
+      },
+      {
+        "path": "added_tokens.json",
+        "size": 21,
+        "sha256": null
+      },
+      {
+        "path": "config.json",
+        "size": 3508,
+        "sha256": null
+      },
+      {
+        "path": "dataset_statistics.json",
+        "size": 2109,
+        "sha256": null
+      },
+      {
+        "path": "generation_config.json",
+        "size": 136,
+        "sha256": null
+      },
+      {
+        "path": "model-00001-of-00004.safetensors",
+        "size": 4925122448,
+        "sha256": "094ba8d798d0e13152230897e893d4d12ca3fe11ddb218f27545b1e6e7536134"
+      },
+      {
+        "path": "model-00002-of-00004.safetensors",
+        "size": 4947392496,
+        "sha256": "086780bb21b61eee9fb54acc0b938017c599e9d741bcdda18da23c4617fa36d7"
+      },
+      {
+        "path": "model-00003-of-00004.safetensors",
+        "size": 4947417456,
+        "sha256": "d696e042cf49abd0b5846e73cbd4931d75a5467ae44857bf8e54a90ed6588308"
+      },
+      {
+        "path": "model-00004-of-00004.safetensors",
+        "size": 262668432,
+        "sha256": "234f92229d4055749c17e904e4d3f1c9a9af3eb13f96f14eaaa4530c0c376473"
+      },
+      {
+        "path": "model.safetensors.index.json",
+        "size": 94764,
+        "sha256": null
+      },
+      {
+        "path": "preprocessor_config.json",
+        "size": 1690,
+        "sha256": null
+      },
+      {
+        "path": "special_tokens_map.json",
+        "size": 552,
+        "sha256": null
+      },
+      {
+        "path": "tokenizer.json",
+        "size": 1842976,
+        "sha256": null
+      },
+      {
+        "path": "tokenizer.model",
+        "size": 499723,
+        "sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347"
+      },
+      {
+        "path": "tokenizer_config.json",
+        "size": 1212,
+        "sha256": null
+      }
+    ]
+  },
+  {
+    "kind": "dataset",
+    "repo": "openvla/modified_libero_rlds",
+    "revision": "6ce6aaaaabdbe590b1eef5cd29c0d33f14a08551",
+    "destination": "data",
+    "files": [
+      {
+        "path": "libero_spatial_no_noops/1.0.0/dataset_info.json",
+        "size": 930,
+        "sha256": null
+      },
+      {
+        "path": "libero_spatial_no_noops/1.0.0/features.json",
+        "size": 9195,
+        "sha256": null
+      },
+      {
+        "path": "libero_spatial_no_noops/1.0.0/libero_spatial-train.tfrecord-00000-of-00016",
+        "size": 118202941,
+        "sha256": "6d6360559a4b71df3bcabd9b55a75451f04375449ca5267616cbc1c21528eac5"
+      },
+      {
+        "path": "libero_spatial_no_noops/1.0.0/libero_spatial-train.tfrecord-00001-of-00016",
+        "size": 117638784,
+        "sha256": "9b0c706e9796304dbc40be5f0ccf6a407a471cd3aecbecfc3baab2af26a2a631"
+      },
+      {
+        "path": "libero_spatial_no_noops/1.0.0/libero_spatial-train.tfrecord-00002-of-00016",
+        "size": 124105247,
+        "sha256": "e2be727ff29840040cecbce68ee17d7118129cc64d58c2a60ea38967a7482456"
+      },
+      {
+        "path": "libero_spatial_no_noops/1.0.0/libero_spatial-train.tfrecord-00003-of-00016",
+        "size": 114001484,
+        "sha256": "ca5c55cef57390f3e3c8a4ef0cbfe8b155b9f7e5a8b37c993f676faecbe25a3a"
+      },
+      {
+        "path": "libero_spatial_no_noops/1.0.0/libero_spatial-train.tfrecord-00004-of-00016",
+        "size": 123511634,
+        "sha256": "c29887f8cee8d761439ec865884b8ba1877a3c3d2d886f1f0e802b93b863f268"
+      },
+      {
+        "path": "libero_spatial_no_noops/1.0.0/libero_spatial-train.tfrecord-00005-of-00016",
+        "size": 119156456,
+        "sha256": "58dddf6a314a3c2fa6db405bf185313f0984f1778db84bcc9799279fbf5cca26"
+      },
+      {
+        "path": "libero_spatial_no_noops/1.0.0/libero_spatial-train.tfrecord-00006-of-00016",
+        "size": 125554213,
+        "sha256": "2dfaef9cfc3786ca2b99124f220bb883c654e173fd77a1da2d77d6ae50a16373"
+      },
+      {
+        "path": "libero_spatial_no_noops/1.0.0/libero_spatial-train.tfrecord-00007-of-00016",
+        "size": 116016812,
+        "sha256": "e86de6f6a090f7abe323debf91a04f6e19e4b22a8fe87ca40a244b4f3304fd28"
+      },
+      {
+        "path": "libero_spatial_no_noops/1.0.0/libero_spatial-train.tfrecord-00008-of-00016",
+        "size": 115049321,
+        "sha256": "7d787a79b404b65b8cd213e004359908c2a00473531992abec7d580efce6d722"
+      },
+      {
+        "path": "libero_spatial_no_noops/1.0.0/libero_spatial-train.tfrecord-00009-of-00016",
+        "size": 123912982,
+        "sha256": "917d05bb4c3f9938b75e08c7344e2282f72d1be97a6b20ea9938dc25ef573612"
+      },
+      {
+        "path": "libero_spatial_no_noops/1.0.0/libero_spatial-train.tfrecord-00010-of-00016",
+        "size": 125254897,
+        "sha256": "ffa2df4872379462dcbb76e79fb79eb14770530ccfdad0ba2f676f80ed583cff"
+      },
+      {
+        "path": "libero_spatial_no_noops/1.0.0/libero_spatial-train.tfrecord-00011-of-00016",
+        "size": 115996912,
+        "sha256": "561b132619aa8980d125ee4bac6543e1ad3f1fee4bfe9b2a81877bcb2dab829a"
+      },
+      {
+        "path": "libero_spatial_no_noops/1.0.0/libero_spatial-train.tfrecord-00012-of-00016",
+        "size": 120268059,
+        "sha256": "d7bf2ea3e7f42a4b942d1661fad0160745062627cedb9f7e94f06c809e2fb3af"
+      },
+      {
+        "path": "libero_spatial_no_noops/1.0.0/libero_spatial-train.tfrecord-00013-of-00016",
+        "size": 119776671,
+        "sha256": "ba8aafffa7d4bd741f21b1fca95ebf952b201f2b8440a8e140fab00dd82494b0"
+      },
+      {
+        "path": "libero_spatial_no_noops/1.0.0/libero_spatial-train.tfrecord-00014-of-00016",
+        "size": 116903288,
+        "sha256": "6c432441521c78f87ce61e5886faa563b48869410c3d38d82b21f0de8e1a98b2"
+      },
+      {
+        "path": "libero_spatial_no_noops/1.0.0/libero_spatial-train.tfrecord-00015-of-00016",
+        "size": 119276849,
+        "sha256": "d58bd00542030bf10bafe262d7e294b36f8347f70a783d83bce14ef6375b953c"
+      }
+    ]
+  },
+  {
+    "kind": "model",
+    "repo": "openvla/openvla-7b",
+    "revision": "47a0ec7fc4ec123775a391911046cf33cf9ed83f",
+    "destination": "models/base",
+    "files": [
+      {
+        "path": ".gitattributes",
+        "size": 1519,
+        "sha256": null
+      },
+      {
+        "path": "README.md",
+        "size": 5038,
+        "sha256": null
+      },
+      {
+        "path": "added_tokens.json",
+        "size": 21,
+        "sha256": null
+      },
+      {
+        "path": "config.json",
+        "size": 60712,
+        "sha256": null
+      },
+      {
+        "path": "configuration_prismatic.py",
+        "size": 5865,
+        "sha256": null
+      },
+      {
+        "path": "generation_config.json",
+        "size": 136,
+        "sha256": null
+      },
+      {
+        "path": "model-00001-of-00003.safetensors",
+        "size": 6948961960,
+        "sha256": "10d8636256018712c5e5c823d12e22b5797f99bb721bd123bf6bf2379892be85"
+      },
+      {
+        "path": "model-00002-of-00003.safetensors",
+        "size": 6971232040,
+        "sha256": "2050b14f21d48904d269f48d5a980fecea87cd7b36641d9b0f015e72d1fe216a"
+      },
+      {
+        "path": "model-00003-of-00003.safetensors",
+        "size": 1162406824,
+        "sha256": "ea65305a1577f36f721965bf84c8caec0a948ce7ce84d754701637376c531fef"
+      },
+      {
+        "path": "model.safetensors.index.json",
+        "size": 94764,
+        "sha256": null
+      },
+      {
+        "path": "modeling_prismatic.py",
+        "size": 26062,
+        "sha256": null
+      },
+      {
+        "path": "preprocessor_config.json",
+        "size": 1650,
+        "sha256": null
+      },
+      {
+        "path": "processing_prismatic.py",
+        "size": 12718,
+        "sha256": null
+      },
+      {
+        "path": "processor_config.json",
+        "size": 130,
+        "sha256": null
+      },
+      {
+        "path": "special_tokens_map.json",
+        "size": 552,
+        "sha256": null
+      },
+      {
+        "path": "tokenizer.json",
+        "size": 1842976,
+        "sha256": null
+      },
+      {
+        "path": "tokenizer.model",
+        "size": 499723,
+        "sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347"
+      },
+      {
+        "path": "tokenizer_config.json",
+        "size": 1192,
+        "sha256": null
+      }
+    ]
+  }
+]
