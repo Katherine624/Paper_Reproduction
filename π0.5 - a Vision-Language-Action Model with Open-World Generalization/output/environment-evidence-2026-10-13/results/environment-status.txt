@@ -1,0 +1,36 @@
+Environment verification complete (2026-10-13).
+Project: /root/gpufree-data/pi05-repro
+
+Hardware: L40S 46068 MiB, 24 vCPU quota, 120 GiB memory quota.
+Driver: 575.57.08. Ubuntu: 22.04.4 LTS.
+OpenPI commit: 215abfb217dbac7d5f1273282331b9b1866c0479
+LIBERO commit: f78abd68ee283de9f9be3c8f7e2a9ad60246e95c
+Model Python: 3.11.17; JAX: 0.5.3; PyTorch: 2.7.1+cu126.
+Simulation Python: 3.8.20; MuJoCo: 3.2.3; robosuite: 1.4.1.
+
+Verified:
+- ECC uncorrectable errors 0 and row-remapper pending No.
+- CUDA allocation and GPU kernel arithmetic checked against expected values.
+- JAX BF16 GPU matrix product checked against expected values.
+- pi05_libero model config imports correctly; pi05=True, action_horizon=10.
+- Model environment PyTorch CUDA detection True.
+- Both Python environments pass uv pip check.
+- LIBERO spatial task 0 resets, advances 10 dummy steps, and renders two cameras.
+
+Project-only fixes:
+- env-model.sh and env-libero.sh unset LD_LIBRARY_PATH to avoid cloud system cuDNN conflicting with project CUDA libraries.
+- LIBERO dependencies installed recursively while retaining upstream pinned versions; resolved package list saved.
+- OSMesa CPU offscreen rendering is used for simulation; model computation uses GPU.
+
+Recheck commands, from the project directory:
+bash scripts/check-model-env.sh
+bash scripts/check-libero-env.sh
+
+Not done yet:
+- Training datasets and model checkpoints not downloaded.
+- No model training has run; no checkpoint update/save/reload verified.
+- No policy evaluation has run; no success rate has been measured.
+- Server cannot currently reach huggingface.co; local access works and can be used for dataset transfer.
+
+Next planned sequence:
+Real-data short LoRA training from pi05_base -> save/reload verification -> official pi05_libero evaluation with reduced episode count.

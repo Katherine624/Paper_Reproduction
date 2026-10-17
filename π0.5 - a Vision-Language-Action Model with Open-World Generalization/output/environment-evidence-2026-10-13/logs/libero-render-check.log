@@ -1,0 +1,16 @@
+nohup: ignoring input
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /root/gpufree-data/pi05-repro/envs/libero/lib/python3.8/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /root/gpufree-data/pi05-repro/openpi/third_party/libero/libero/datasets does not exist!
+TASK pick up the black bowl between the plate and the ramekin and place it on the plate
+[Warning]: datasets path /root/gpufree-data/pi05-repro/openpi/third_party/libero/libero/datasets does not exist!
+RENDER agentview_image (256, 256, 3) SAVED /root/gpufree-data/pi05-repro/results/agentview_image.png
+RENDER robot0_eye_in_hand_image (256, 256, 3) SAVED /root/gpufree-data/pi05-repro/results/robot0_eye_in_hand_image.png
+PASS: simulation reset, 10 physics steps and two camera renders; no policy evaluation.
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+/root/gpufree-data/pi05-repro/envs/libero/lib/python3.8/site-packages/numba/np/arraymath.py:3845: DeprecationWarning: `np.MachAr` is deprecated (NumPy 1.22).
+  @overload(np.MachAr)

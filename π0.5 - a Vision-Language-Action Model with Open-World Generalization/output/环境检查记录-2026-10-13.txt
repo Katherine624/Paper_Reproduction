@@ -1,0 +1,45 @@
+π0.5 复现：服务器与基础环境检查
+日期：2026-10-13
+
+结论：新密码连接成功；当前实例通过基础 GPU、模型运行环境和 LIBERO 仿真检查。
+
+服务器配置
+- L40S，46068 MiB 显存，驱动 575.57.08。
+- Ubuntu 22.04.4 LTS；容器配额 24 核 CPU、120 GiB 内存。
+- 数据盘总容量约 196G，环境安装完成后剩余约 183G。
+- 项目目录：/root/gpufree-data/pi05-repro
+
+已通过的检查
+1. 不可纠正 ECC 错误计数为 0；没有待处理的显存行重映射。
+2. CUDA 显存分配和 GPU 加法测试通过，逐项核对了计算结果。
+3. JAX 0.5.3 能使用 GPU 完成 BF16 矩阵乘法，结果符合预期。
+4. 官方 pi05_libero 配置能正常读取；PyTorch 能检测到 CUDA。
+5. 模型环境 Python 3.11.17 和仿真环境 Python 3.8.20 均通过依赖检查。
+6. LIBERO 空间任务 0 能重置场景、执行 10 步固定动作，并生成两个相机的画面。
+
+环境调整
+- 项目启动脚本清除镜像预设的 LD_LIBRARY_PATH，解决系统 cuDNN 与项目依赖混用造成的冲突。
+- 保留上游指定版本，补齐 LIBERO 的间接依赖，并记录最终依赖清单。
+- 仿真采用 OSMesa 在 CPU 上生成画面，模型计算使用 GPU。
+
+代码版本
+OpenPI：215abfb217dbac7d5f1273282331b9b1866c0479
+LIBERO：f78abd68ee283de9f9be3c8f7e2a9ad60246e95c
+
+复查方法（连接服务器后执行）
+cd /root/gpufree-data/pi05-repro
+bash scripts/check-model-env.sh
+bash scripts/check-libero-env.sh
+
+当前边界与下一步
+- 尚未下载模型权重与训练数据，尚未进行模型训练或策略评测。
+- 这次仿真检查没有加载策略模型，也没有统计任务成功率。
+- 服务器暂时无法直连 huggingface.co；本机能访问，可在准备数据时进行传输。
+- 后续顺序：准备权重和真实数据 → pi05_base 短 LoRA 训练 → 保存和重载验证 → 使用官方 pi05_libero 权重评测。
+
+本地证据
+同目录的 environment-evidence-2026-10-13.tar.gz 包含检查脚本、日志、依赖清单与仿真画面。
+解压目录：environment-evidence-2026-10-13。
+文件不包含 SSH 密码。
+
+已退出 SSH 会话；没有关闭云实例，实例仍会继续计费。

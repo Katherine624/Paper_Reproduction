@@ -1,0 +1,114 @@
+--- a/cosmos_policy/trainer.py
++++ b/cosmos_policy/trainer.py
+@@ -20,7 +20,9 @@
+ - Epoch tracking and sampler epoch setting for proper distributed sampling
+ """
+ 
++import os
+ import signal
++import time
+ 
+ import torch
+ import torch.utils.data
+@@ -68,6 +70,12 @@
+         # Load the model checkpoint and get the starting iteration number.
+         iteration = self.checkpointer.load(model, optimizer, scheduler, grad_scaler)
+         grad_accum_iter = 0
++        budget_seconds = float(os.environ.get("COSMOS_POLICY_TRAIN_BUDGET_SECONDS", "0"))
++        if budget_seconds < 0:
++            raise ValueError("COSMOS_POLICY_TRAIN_BUDGET_SECONDS must be nonnegative")
++        deadline = time.monotonic() + budget_seconds if budget_seconds else None
++        if deadline is not None:
++            log.info(f"Training time budget: {budget_seconds / 3600:.2f} hours after checkpoint loading")
+         log.critical(f"Distributed parallelism mode: {self.config.trainer.distributed_parallelism}")
+         if self.config.trainer.distributed_parallelism == "ddp":
+             # Create a DDP model wrapper.
+@@ -107,8 +115,13 @@
+                         break
+                     finally:
+                         self.callbacks.on_after_dataloading(iteration)
+-                    # If max_iter is reached, exit the training loop.
+-                    if iteration >= self.config.trainer.max_iter:
++                    # Stop between optimizer updates so the normal final-checkpoint path runs.
++                    time_budget_reached = (
++                        deadline is not None and grad_accum_iter == 0 and time.monotonic() >= deadline
++                    )
++                    if iteration >= self.config.trainer.max_iter or time_budget_reached:
++                        if time_budget_reached:
++                            log.info(f"Training time budget reached at optimizer step {iteration}; saving final checkpoint")
+                         _end_training = True
+                         break
+                     # Move all tensors in the data batch to GPU device.
+--- a/cosmos_policy/_src/predict2/models/text2world_model.py
++++ b/cosmos_policy/_src/predict2/models/text2world_model.py
+@@ -229,6 +229,17 @@
+                 net.to_empty(device="cuda")
+                 # IMPORTANT: (qsh) model init should not depends on current tensor shape, or it can handle Dtensor shape.
+                 net.init_weights()
++                # to_empty discards PEFT's initial values created on the meta device.
++                # Restore A's standard initialization and B=0 after allocation.
++                if config.use_lora:
++                    reset_count = 0
++                    for module in net.modules():
++                        if hasattr(module, "lora_A") and hasattr(module, "reset_lora_parameters"):
++                            for adapter_name in module.lora_A.keys():
++                                module.reset_lora_parameters(adapter_name, config.init_lora_weights)
++                                reset_count += 1
++                    if reset_count == 0:
++                        raise RuntimeError("LoRA was enabled, but no adapter layers were initialized")
+ 
+             if self.fsdp_device_mesh:
+                 broadcast_dtensor_model_states(net, self.fsdp_device_mesh)
+@@ -822,6 +833,26 @@
+ 
+         state_dict = _reg_state_dict
+ 
++        # PEFT wraps adapted Linear layers in a base_layer submodule. A plain
++        # Predict2 checkpoint still uses the original *.weight/*.bias names.
++        # Translate only keys whose PEFT destination exists, leaving resumed
++        # LoRA checkpoints untouched.
++        if self.config.use_lora:
++            model_keys = set(self.net.state_dict())
++            remapped = 0
++            for key in list(_reg_state_dict):
++                if key in model_keys or not key.endswith((".weight", ".bias")):
++                    continue
++                stem, parameter = key.rsplit(".", 1)
++                peft_key = f"{stem}.base_layer.{parameter}"
++                if peft_key in model_keys:
++                    _reg_state_dict[peft_key] = _reg_state_dict.pop(key)
++                    remapped += 1
++            if remapped:
++                log.info(f"Mapped {remapped} base checkpoint tensors to PEFT base_layer names")
++            elif not any(".lora_A." in key for key in _reg_state_dict):
++                raise RuntimeError("LoRA base checkpoint contains no adaptable layer weights")
++
+         if strict:
+             reg_results: _IncompatibleKeys = self.net.load_state_dict(_reg_state_dict, strict=strict, assign=assign)
+ 
+--- a/cosmos_policy/config/experiment/cosmos_policy_experiment_configs.py
++++ b/cosmos_policy/config/experiment/cosmos_policy_experiment_configs.py
+@@ -145,7 +145,8 @@
+             context_parallel_size=1,
+         ),
+         checkpoint=dict(
+-            load_path=get_checkpoint_path("hf://nvidia/Cosmos-Predict2-2B-Video2World/model-480p-16fps.pt"),
++            load_path=os.environ.get("COSMOS_POLICY_BASE_MODEL_PATH")
++            or get_checkpoint_path("hf://nvidia/Cosmos-Predict2-2B-Video2World/model-480p-16fps.pt"),
+             load_training_state=False,  # This means do not load train state from the base checkpoint above (load_path); but when resuming this job, will load train state
+             strict_resume=False,
+             save_iter=1000,
+@@ -401,8 +402,12 @@
+         ],
+         checkpoint=dict(
+             # Resume from 50K checkpoint of base Cosmos Policy run
+-            load_path=get_checkpoint_path(
++            load_path=(
+                 "hf://nvidia/Cosmos-Policy-ALOHA-Predict2-2B/Cosmos-Policy-ALOHA-Predict2-2B.pt"
++                if os.environ.get("COSMOS_POLICY_SKIP_UNUSED_CHECKPOINT_DOWNLOADS") == "1"
++                else get_checkpoint_path(
++                    "hf://nvidia/Cosmos-Policy-ALOHA-Predict2-2B/Cosmos-Policy-ALOHA-Predict2-2B.pt"
++                )
+             ),
+         ),
+         scheduler=dict(

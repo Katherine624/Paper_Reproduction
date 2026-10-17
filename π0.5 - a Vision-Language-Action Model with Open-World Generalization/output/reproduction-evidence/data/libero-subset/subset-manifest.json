@@ -1,0 +1,78 @@
+{
+  "source_repo": "physical-intelligence/libero",
+  "revision": "a4336d589d589045d1c56423ffdf3b88a0e19b1f",
+  "episodes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "purpose": "real-data short training verification; not converged training",
+  "metadata": "upstream full metadata retained; loader must explicitly select episodes",
+  "files": [
+    {
+      "path": "meta/info.json",
+      "bytes": 2131,
+      "sha256": "77c0da93c67960bac803a8ea25dabf380d752c26c1d91c54151121dd10e7d82f"
+    },
+    {
+      "path": "meta/tasks.jsonl",
+      "bytes": 3375,
+      "sha256": "e72ef3cf7ca7a3abe70b3e142a0d1acf2719d2a3f27598869092cc4f1762bb99"
+    },
+    {
+      "path": "meta/episodes.jsonl",
+      "bytes": 180384,
+      "sha256": "0479a2ced6117700e4638a1da54dccd9f60ae5f47485ea6d91390c869befcf08"
+    },
+    {
+      "path": "meta/stats.json",
+      "bytes": 5855,
+      "sha256": "1fe6c2d548a7998394488ae68bc2be46a51c8cd3798af6ab74fff79f8b20e293"
+    },
+    {
+      "path": "data/chunk-000/episode_000000.parquet",
+      "bytes": 28009331,
+      "sha256": "1dff46a888aac51da3c4fedb6c6fe596df16f8cba47dd10d0e0c0ca565fd1d65"
+    },
+    {
+      "path": "data/chunk-000/episode_000001.parquet",
+      "bytes": 37414512,
+      "sha256": "6c416803bba7649172e6b3c0cb2c579a570fcb234e41249f7589c52809971916"
+    },
+    {
+      "path": "data/chunk-000/episode_000002.parquet",
+      "bytes": 35350193,
+      "sha256": "e590ad6f1f13e894d6e3a250ba54346b16803e873403061a7f0978903830d53d"
+    },
+    {
+      "path": "data/chunk-000/episode_000003.parquet",
+      "bytes": 28709548,
+      "sha256": "c9be4cd08fcdc306e9e176cb8ce1da78460567d6c3b9e3b91ebc4842ffd126f1"
+    },
+    {
+      "path": "data/chunk-000/episode_000004.parquet",
+      "bytes": 36229453,
+      "sha256": "f244b312166abe97d9b25b7b7d21a7ec9140929736fb59e55a757d6d9ac86ba9"
+    },
+    {
+      "path": "data/chunk-000/episode_000005.parquet",
+      "bytes": 31571376,
+      "sha256": "aa507af5ebe6b874a4f2d1ff78d7c02c48dd6fadef3efd86afb0556af71be02e"
+    },
+    {
+      "path": "data/chunk-000/episode_000006.parquet",
+      "bytes": 33946834,
+      "sha256": "202f9eb18c0d4d0ff2fb398d1423d9a3c947801b6027c631f095a007017d1db2"
+    },
+    {
+      "path": "data/chunk-000/episode_000007.parquet",
+      "bytes": 36515760,
+      "sha256": "a8e0b399a4a625236792ed4e989f98406e1c4010469b336fc71d24bf5cf813ad"
+    }
+  ]
+}

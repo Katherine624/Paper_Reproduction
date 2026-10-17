@@ -1,0 +1,112 @@
+{
+  "status": "complete",
+  "model": "nvidia/Cosmos-Policy-LIBERO-Predict2-2B",
+  "checkpoint_revision": "cb689ec0e3347c13667d70a78a3447388f5c3bb8",
+  "seed": 195,
+  "expected_episodes": 100,
+  "completed_episodes": 100,
+  "successes": 99,
+  "overall_success_rate": 0.99,
+  "task_count": 10,
+  "exit_code": 0,
+  "video_count": 200,
+  "evaluator_log": "logs\\ENV_EVAL-libero_spatial-cosmos-2026_10_13-16_01_46--official_spatial_10x10_seed195.txt",
+  "tasks": [
+    {
+      "task_id": 0,
+      "task": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "episodes": 10,
+      "successes": 10,
+      "failures": 0,
+      "success_rate": 1.0
+    },
+    {
+      "task_id": 1,
+      "task": "pick up the black bowl next to the ramekin and place it on the plate",
+      "episodes": 10,
+      "successes": 10,
+      "failures": 0,
+      "success_rate": 1.0
+    },
+    {
+      "task_id": 2,
+      "task": "pick up the black bowl from table center and place it on the plate",
+      "episodes": 10,
+      "successes": 10,
+      "failures": 0,
+      "success_rate": 1.0
+    },
+    {
+      "task_id": 3,
+      "task": "pick up the black bowl on the cookie box and place it on the plate",
+      "episodes": 10,
+      "successes": 10,
+      "failures": 0,
+      "success_rate": 1.0
+    },
+    {
+      "task_id": 4,
+      "task": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "episodes": 10,
+      "successes": 10,
+      "failures": 0,
+      "success_rate": 1.0
+    },
+    {
+      "task_id": 5,
+      "task": "pick up the black bowl on the ramekin and place it on the plate",
+      "episodes": 10,
+      "successes": 9,
+      "failures": 1,
+      "success_rate": 0.9
+    },
+    {
+      "task_id": 6,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episodes": 10,
+      "successes": 10,
+      "failures": 0,
+      "success_rate": 1.0
+    },
+    {
+      "task_id": 7,
+      "task": "pick up the black bowl on the stove and place it on the plate",
+      "episodes": 10,
+      "successes": 10,
+      "failures": 0,
+      "success_rate": 1.0
+    },
+    {
+      "task_id": 8,
+      "task": "pick up the black bowl next to the plate and place it on the plate",
+      "episodes": 10,
+      "successes": 10,
+      "failures": 0,
+      "success_rate": 1.0
+    },
+    {
+      "task_id": 9,
+      "task": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "episodes": 10,
+      "successes": 10,
+      "failures": 0,
+      "success_rate": 1.0
+    }
+  ],
+  "limitation": "Reduced evaluation, one seed; not the paper's full protocol.",
+  "started_at": "2026-10-13T16:00:33+08:00",
+  "finished_at": "2026-10-13T17:08:15+08:00",
+  "wall_time_seconds": 4062.0,
+  "action_query_seconds": {
+    "count": 694,
+    "mean": 2.651827089337176,
+    "median": 2.628,
+    "maximum": 4.775,
+    "note": "Per action chunk of 16 actions; includes the first warm-up query."
+  },
+  "gpu_memory_samples": {
+    "count": 386,
+    "maximum_mib": 5151,
+    "note": "Total device memory sampled every 10 seconds; not an exact peak measurement."
+  }
+}

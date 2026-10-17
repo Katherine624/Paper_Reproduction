@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "episodes": 100,
+  "successes": 99,
+  "task_rows": 10,
+  "original_videos": 200,
+  "videos_per_episode": 2,
+  "video_outcomes_match_episode_table": true,
+  "runtime_tracebacks": 0,
+  "representative_videos_probed": [
+    "examples/success.mp4",
+    "examples/failure.mp4"
+  ],
+  "note": "Representative videos passed ffprobe; failure video final frame was decoded and visually inspected. Not every video was fully decoded."
+}

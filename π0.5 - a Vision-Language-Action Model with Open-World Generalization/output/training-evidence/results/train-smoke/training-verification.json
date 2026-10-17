@@ -1,0 +1,9 @@
+{
+  "training_steps": 100,
+  "checkpoint_index": 99,
+  "checkpoint_dir": "/root/gpufree-data/pi05-repro/checkpoints/training/pi05_libero_lora_smoke/real8_steps100_seed42",
+  "sampled_lora_updated": true,
+  "sampled_frozen_unchanged": true,
+  "max_sampled_parameter_change": 0.0011513944482430816,
+  "checkpoint_save_completed": true
+}

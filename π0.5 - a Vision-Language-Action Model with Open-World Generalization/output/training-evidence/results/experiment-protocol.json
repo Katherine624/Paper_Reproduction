@@ -1,0 +1,69 @@
+{
+  "created_utc": "2026-10-13T09:30:11.032632+00:00",
+  "openpi_commit": "215abfb217dbac7d5f1273282331b9b1866c0479",
+  "training": {
+    "base_checkpoint": "pi05_base",
+    "episodes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "frames": 2197,
+    "dataset_revision": "a4336d589d589045d1c56423ffdf3b88a0e19b1f",
+    "steps": 100,
+    "batch_size": 2,
+    "seed": 42,
+    "paligemma_variant": "gemma_2b_lora",
+    "action_expert_variant": "gemma_300m_lora",
+    "freeze_filter": "upstream Pi0Config.get_freeze_filter",
+    "ema_decay": null,
+    "action_horizon": 10,
+    "discrete_state_input": false,
+    "extra_delta_transform": false,
+    "acceptance": [
+      "finite loss and gradients",
+      "sampled LoRA tensors changed",
+      "sampled frozen tensors unchanged",
+      "checkpoint save completed",
+      "fresh-process restore with identical parameter samples and step counter"
+    ]
+  },
+  "evaluation": {
+    "checkpoint": "official pi05_libero; independent of short-trained checkpoint",
+    "suite": "libero_spatial",
+    "tasks": 10,
+    "trials_per_task": 10,
+    "seed": 7,
+    "initial_state_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "replan_steps": 5,
+    "max_control_steps": 220,
+    "initial_wait_steps": 10,
+    "render_resolution": 256,
+    "model_resolution": 224,
+    "renderer": "OSMesa CPU",
+    "inference_device": "L40S GPU",
+    "exceptions": "infrastructure exceptions abort the run rather than being counted as task failure"
+  },
+  "scope": "OpenPI training smoke verification and reduced LIBERO evaluation; not reproduction of the original paper household generalization experiments",
+  "scripts_sha256": {
+    "scripts/pi05_experiment.py": "55d8cd23e1cb429d0b3767c16c5fe160fc101b4c84154afd9980ce1707e0adca",
+    "scripts/serve_libero_policy.py": "a423b9e48db486bee5cf8f0a475859e277a241d5010a91d6fb8a5842f71bd033",
+    "scripts/evaluate_libero.py": "02d66097544a4fabcc710b19ff6cc55f2b7776c6f4f021ff0f8ec9bbbca1ff58"
+  }
+}

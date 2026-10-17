@@ -1,0 +1,61 @@
+nohup: ignoring input
+START pi05_base existing_GB 2.326 ranges 9652
+PROGRESS pi05_base 3.102 GB remaining 8912
+PROGRESS pi05_base 3.927 GB remaining 8125
+PROGRESS pi05_base 4.709 GB remaining 7379
+PROGRESS pi05_base 5.526 GB remaining 6599
+PROGRESS pi05_base 6.302 GB remaining 5859
+PROGRESS pi05_base 7.13 GB remaining 5070
+PROGRESS pi05_base 7.955 GB remaining 4283
+PROGRESS pi05_base 8.772 GB remaining 3503
+PROGRESS pi05_base 9.573 GB remaining 2738
+PROGRESS pi05_base 10.418 GB remaining 1932
+PROGRESS pi05_base 11.284 GB remaining 1106
+PROGRESS pi05_base 12.163 GB remaining 268
+PROGRESS pi05_base 12.442 GB remaining 0
+VERIFIED pi05_base 0832cad6c37f82d4eedd897dcbb8da9d
+VERIFIED pi05_base 35a545f74995e511808d4f94dfbef3b6
+VERIFIED pi05_base 7bc9d3296d23a6fb83a6b3778ac6e964
+VERIFIED pi05_base 8c5d7070ea57bdce2f0a19f95b8a21b4
+VERIFIED pi05_base b4349aaadb7dfa45c3a53fc67c04b8f6
+VERIFIED pi05_base caf01a82962cbd4651563d2ac1063e0b
+VERIFIED pi05_base deefd3c43390a50472cbcd317b0fff58
+VERIFIED pi05_base ec484cf8f02dcf59e1892180f0862e40
+VERIFIED pi05_base manifest.ocdbt
+MODEL_READY pi05_base
+START pi05_libero existing_GB 0.0 ranges 11874
+PROGRESS pi05_libero 0.431 GB remaining 11457
+PROGRESS pi05_libero 0.93 GB remaining 10981
+PROGRESS pi05_libero 1.348 GB remaining 10583
+PROGRESS pi05_libero 1.867 GB remaining 10088
+PROGRESS pi05_libero 2.33 GB remaining 9646
+PROGRESS pi05_libero 2.808 GB remaining 9190
+PROGRESS pi05_libero 3.455 GB remaining 8573
+PROGRESS pi05_libero 4.206 GB remaining 7857
+PROGRESS pi05_libero 5.03 GB remaining 7070
+PROGRESS pi05_libero 5.911 GB remaining 6230
+PROGRESS pi05_libero 6.799 GB remaining 5383
+PROGRESS pi05_libero 7.64 GB remaining 4580
+PROGRESS pi05_libero 8.521 GB remaining 3740
+PROGRESS pi05_libero 9.407 GB remaining 2895
+PROGRESS pi05_libero 10.274 GB remaining 2068
+PROGRESS pi05_libero 11.139 GB remaining 1242
+PROGRESS pi05_libero 12.0 GB remaining 420
+PROGRESS pi05_libero 12.439 GB remaining 0
+VERIFIED pi05_libero norm_stats.json
+VERIFIED pi05_libero _METADATA
+VERIFIED pi05_libero _sharding
+VERIFIED pi05_libero process_0
+VERIFIED pi05_libero 98a77a52a8eb845ae4830eb7fe983979
+VERIFIED pi05_libero manifest.ocdbt
+VERIFIED pi05_libero 0eaaecefaa9720d30a32cc56e65fd345
+VERIFIED pi05_libero 155391c1cbf93a1be16266de052e5b48
+VERIFIED pi05_libero 2b6985f48e9da86f68627a7608c5bc25
+VERIFIED pi05_libero 475fab3ee8821662585a8cde3eb32e22
+VERIFIED pi05_libero 6c54da5a6f62c20a09c0f3f8c3329e00
+VERIFIED pi05_libero 896bf93c5cf2e8ddd274a6ea0a2feec0
+VERIFIED pi05_libero bc613ff288a162563e622d01bb60622a
+VERIFIED pi05_libero bda87d9791f23df771cd2d15293780cc
+VERIFIED pi05_libero efbb46173882cb35ed41ffe0c2db8a5e
+VERIFIED pi05_libero manifest.ocdbt
+MODEL_READY pi05_libero

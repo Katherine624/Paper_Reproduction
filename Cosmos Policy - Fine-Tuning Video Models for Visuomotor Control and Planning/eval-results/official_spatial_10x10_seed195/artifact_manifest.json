@@ -1,0 +1,1157 @@
+[
+  {
+    "path": "command.txt",
+    "bytes": 1429,
+    "sha256": "fdc99fa2c1646f4759d92d40c958045f08f0b0481f3d9c8ee9b1fb36cf3c34e0"
+  },
+  {
+    "path": "console.log",
+    "bytes": 1406046,
+    "sha256": "8917520498ff125343a5dc2272718e09b1b8bc3cd25ff7d2338fa5a844f184c4"
+  },
+  {
+    "path": "environment.json",
+    "bytes": 353,
+    "sha256": "7c8079167a2fb30e013a9835523a137406b4ccb1ecb2130317f432ee68383744"
+  },
+  {
+    "path": "episodes.csv",
+    "bytes": 7853,
+    "sha256": "eeefe7b49f64cbca4ed880e1e6ae76645cbdcb600edef5df2c068f25f499957b"
+  },
+  {
+    "path": "examples/failure.mp4",
+    "bytes": 109742,
+    "sha256": "9136fc11f684f859363dc9f769fa2083f15c6dbfc4b7a6c6cfa27617f7f687d6"
+  },
+  {
+    "path": "examples/failure_final_frame.jpg",
+    "bytes": 7509,
+    "sha256": "5eb7a93e40d50807b5bf104106c8ac89df23f45f9c86ec621fa365bfddea66f1"
+  },
+  {
+    "path": "examples/manifest.json",
+    "bytes": 336,
+    "sha256": "78b876c99157376233cb02f24290d88a6c66009ec3dacb8f9383136d25c2fbc8"
+  },
+  {
+    "path": "examples/success.mp4",
+    "bytes": 44740,
+    "sha256": "60190e938bf10f629ebf29510bcffe24eba30e26506a3defe67f552048ece586"
+  },
+  {
+    "path": "exit_code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "path": "finished_at.txt",
+    "bytes": 26,
+    "sha256": "47e9bc00758646cdbf22ada687eb5dde2d8289b591564c5a2253751657b67390"
+  },
+  {
+    "path": "gpu.csv",
+    "bytes": 94,
+    "sha256": "0c3f31ed0f2561106717cceb17e468ded140f50364e30d1e9f6afabdb5057653"
+  },
+  {
+    "path": "gpu_samples.csv",
+    "bytes": 18410,
+    "sha256": "7a5548065fa52c017c78adcd5da2d5b9c4c3906b5af9529b3882f293830a25bf"
+  },
+  {
+    "path": "input_manifest.json",
+    "bytes": 839,
+    "sha256": "6ec7f2204a0874fb0bc14b144cf4897005a6082f976987b19ea4f78a0706a434"
+  },
+  {
+    "path": "logs/ENV_EVAL-libero_spatial-cosmos-2026_10_13-16_01_46--official_spatial_10x10_seed195.txt",
+    "bytes": 175788,
+    "sha256": "7ff55fe3a6255de8d997314c76ccbc108a8a8bf01ae2b1aba9fc1cd6daebf757"
+  },
+  {
+    "path": "per_task_results.csv",
+    "bytes": 918,
+    "sha256": "7a8196948b9412d92d6723ea70edfde39904f69bdf238fe3651971a36cc661e5"
+  },
+  {
+    "path": "protocol.json",
+    "bytes": 611,
+    "sha256": "fc6e46e8aec88a7fbbb926ee87d751fcc7493f5901c650d688e9860208aaf7bd"
+  },
+  {
+    "path": "RESULTS.txt",
+    "bytes": 3593,
+    "sha256": "d7ffd6fb090c5fa542e05d541b14a9199bef0ffafe0393ebf2a6b6ca5daaaed3"
+  },
+  {
+    "path": "source_hashes.json",
+    "bytes": 1519,
+    "sha256": "76540e09c916dbb853efad07b0228d7424c9e1a4559610526d699355835faded"
+  },
+  {
+    "path": "source_snapshot/cosmos_policy/_src/predict2/models/text2world_model.py",
+    "bytes": 55868,
+    "sha256": "bbaa01cffe073c841b6aa0737de9809e0ed00423cf1df052a656efad85bd8edc"
+  },
+  {
+    "path": "source_snapshot/cosmos_policy/_src/predict2/utils/model_loader.py",
+    "bytes": 18196,
+    "sha256": "625dc3bf8c9c8d6295c3bf6762acd0d70b5fc692e8f6e81ba51f8753ebc3170b"
+  },
+  {
+    "path": "source_snapshot/cosmos_policy/config/config.py",
+    "bytes": 1365,
+    "sha256": "65dbfa8c7e608be975d551f90d751d49be5786fbeb01df5210b4832dd21b5f1b"
+  },
+  {
+    "path": "source_snapshot/cosmos_policy/config/experiment/cosmos_policy_experiment_configs.py",
+    "bytes": 21131,
+    "sha256": "f0da2fc5294c4b3e3928c9978b8d01a56894d343bc0e9db724b52a7dc0f7b0dc"
+  },
+  {
+    "path": "source_snapshot/cosmos_policy/experiments/robot/cosmos_utils.py",
+    "bytes": 110973,
+    "sha256": "bff0299519a883a3523b98049468d307544f77d116b93258f70e9da39355387f"
+  },
+  {
+    "path": "source_snapshot/cosmos_policy/experiments/robot/libero/libero_utils.py",
+    "bytes": 13168,
+    "sha256": "69c08fe630c75c8f7551fa45860565d9c85ccb2905b5debc2b2fccc48b2721ab"
+  },
+  {
+    "path": "source_snapshot/cosmos_policy/experiments/robot/libero/run_libero_eval.py",
+    "bytes": 47826,
+    "sha256": "3d5bdf27fa0f8134d6603b4851c3d58d1fb343e30ba83d97ec201d982456ec1f"
+  },
+  {
+    "path": "source_snapshot/eval_official_libero.sh",
+    "bytes": 2927,
+    "sha256": "65d2b3e46d0a5975c238ff97eca0c0f448fbbddb399ae16f7b603866f3c3c922"
+  },
+  {
+    "path": "source_snapshot/LIBERO.md",
+    "bytes": 6591,
+    "sha256": "827b6fc57913e0d54702904aab193f7410d6534bcb90dc39db23e0294df0fe77"
+  },
+  {
+    "path": "source_snapshot/summarize_official_eval.py",
+    "bytes": 9014,
+    "sha256": "a4c9c9eea4b948107a869de5c5caee96702e142a2022ce05a0e72429b6c1ec43"
+  },
+  {
+    "path": "started_at.txt",
+    "bytes": 26,
+    "sha256": "62e6c3fac9a2c58fbedc5d08cf26029a5cf674b8f675c250a8dcc69e90b53da2"
+  },
+  {
+    "path": "summary.json",
+    "bytes": 3277,
+    "sha256": "e7509469d4570a13b2f04d903a445ba13abc9796c0296a120a369adfe6efe204"
+  },
+  {
+    "path": "verification.json",
+    "bytes": 465,
+    "sha256": "11e88768d9478ca659a21cb9ae77c27089336839c5a054eca93d84686aef9b97"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=1--success=True--task=pick_up_the_black_bowl_between_the_plate.mp4",
+    "bytes": 44740,
+    "sha256": "60190e938bf10f629ebf29510bcffe24eba30e26506a3defe67f552048ece586"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=10--success=True--task=pick_up_the_black_bowl_between_the_plate.mp4",
+    "bytes": 45251,
+    "sha256": "9c77f38926b6f01cbb0d031ac2e61a5d43cf3666bae05a6453ff27b22c0057ce"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=100--success=True--task=pick_up_the_black_bowl_on_the_wooden_cab.mp4",
+    "bytes": 61891,
+    "sha256": "16edc436f93646b3b3816c3fa782292a918fe97fb8aa9f759e60d2f745cb4f15"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=11--success=True--task=pick_up_the_black_bowl_next_to_the_ramek.mp4",
+    "bytes": 51011,
+    "sha256": "7f71da0beeac1a6b3ba693500ed01a432efda56362ab0d3b2ec3e203922c0a85"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=12--success=True--task=pick_up_the_black_bowl_next_to_the_ramek.mp4",
+    "bytes": 48200,
+    "sha256": "835f1dbc0cef1e244319ea4404c205d94284c1c93d4be615ac3e4909da1fdb68"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=13--success=True--task=pick_up_the_black_bowl_next_to_the_ramek.mp4",
+    "bytes": 48909,
+    "sha256": "2f068bcef15ab5ea55ced27acfa86295a4fbebb03f4bcb005f0dfd6c3b275437"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=14--success=True--task=pick_up_the_black_bowl_next_to_the_ramek.mp4",
+    "bytes": 49056,
+    "sha256": "3caf2b7f62266b0bd0ad505921af95e6f5ee0852cee7fd0b0202e743f34da227"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=15--success=True--task=pick_up_the_black_bowl_next_to_the_ramek.mp4",
+    "bytes": 49926,
+    "sha256": "d31c30a15010c80628b760720f82b55b235140413445ca8577cd186505e30abe"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=16--success=True--task=pick_up_the_black_bowl_next_to_the_ramek.mp4",
+    "bytes": 49678,
+    "sha256": "14a4f492f9b99a927b3bb1e157b5cb9cdd4a6712d63e890c1fb8dc294d3ee5fe"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=17--success=True--task=pick_up_the_black_bowl_next_to_the_ramek.mp4",
+    "bytes": 51092,
+    "sha256": "e5dd1bf2fa31a5adbcd31a4909d57af1dca9c32819cad6059f61978fb5f48748"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=18--success=True--task=pick_up_the_black_bowl_next_to_the_ramek.mp4",
+    "bytes": 52783,
+    "sha256": "57d58af3d7abc04263a33d81716b3e4017754935c0c6f27428cf501f375fb939"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=19--success=True--task=pick_up_the_black_bowl_next_to_the_ramek.mp4",
+    "bytes": 49373,
+    "sha256": "1ec8d45d4555aaa4258dbe69303081955545710bd02b30e46e09977f91a1db23"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=2--success=True--task=pick_up_the_black_bowl_between_the_plate.mp4",
+    "bytes": 47427,
+    "sha256": "26a614079a031a1b2751720ecc43b058563bf5c20996eb69859e70d84d2323c1"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=20--success=True--task=pick_up_the_black_bowl_next_to_the_ramek.mp4",
+    "bytes": 58829,
+    "sha256": "efcb56844322c241daace8298117be53171f387d0d0b3a58cd66608963abd6e7"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=21--success=True--task=pick_up_the_black_bowl_from_table_center.mp4",
+    "bytes": 57632,
+    "sha256": "bb6adb08e6c5ed10c955263f1cc287a924044c2bdfc9bd721918c0a858fa1a56"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=22--success=True--task=pick_up_the_black_bowl_from_table_center.mp4",
+    "bytes": 54909,
+    "sha256": "45e9309c0a4205020b2d33dd01d19aeff3bb26257f12cb38165aa63e202a7c04"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=23--success=True--task=pick_up_the_black_bowl_from_table_center.mp4",
+    "bytes": 54258,
+    "sha256": "afdcee05a7b825c6d16c695c0452ec975005c646c151566d53288a439fc1c361"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=24--success=True--task=pick_up_the_black_bowl_from_table_center.mp4",
+    "bytes": 54542,
+    "sha256": "56110b11e2a9ff63f9242667f9788309d6b8e4fd144d0e66baeb75d01fb9174d"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=25--success=True--task=pick_up_the_black_bowl_from_table_center.mp4",
+    "bytes": 53382,
+    "sha256": "7f3532c4889bf4fe1f2588c0270f4a6fb198eacfb2c43b8aeaa166796e2ede29"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=26--success=True--task=pick_up_the_black_bowl_from_table_center.mp4",
+    "bytes": 57618,
+    "sha256": "79d9ae4363fd6c87d1eb407006b91e25b4c430e6d0d727061d75633b4b5f1e93"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=27--success=True--task=pick_up_the_black_bowl_from_table_center.mp4",
+    "bytes": 57640,
+    "sha256": "179be1ae036e64d5ea3cf595d50c61a9fab7f1ad4851656647d3c13fecdab641"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=28--success=True--task=pick_up_the_black_bowl_from_table_center.mp4",
+    "bytes": 56569,
+    "sha256": "f117b1bf57529a54be072610f8ff64b628be8d76bca18b89ec10884a9c9d1f20"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=29--success=True--task=pick_up_the_black_bowl_from_table_center.mp4",
+    "bytes": 54488,
+    "sha256": "ca2a6749ed976e18f77c3ece4cbefb69f412d38cca084aeea0a95b3e500146b7"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=3--success=True--task=pick_up_the_black_bowl_between_the_plate.mp4",
+    "bytes": 47809,
+    "sha256": "4d24d47909cbfbc54bb9b09cd2af5ce04e6f516624f0594ebe48d1c64ef7bf6f"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=30--success=True--task=pick_up_the_black_bowl_from_table_center.mp4",
+    "bytes": 53124,
+    "sha256": "09ceb0d88c7447f2f81d8f25ef254eb22d7e67d27ec3fb9c6d22b884b36190a1"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=31--success=True--task=pick_up_the_black_bowl_on_the_cookie_box.mp4",
+    "bytes": 52526,
+    "sha256": "7cbc4c523a5dccdae825111f8aaf01f7f7f135aae7d2a26d484e6c31b88c6149"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=32--success=True--task=pick_up_the_black_bowl_on_the_cookie_box.mp4",
+    "bytes": 52865,
+    "sha256": "4ccda3bbaff5660ed162b0cf41a398449f3c4f8b54f4cd5fb56f138757e5fc89"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=33--success=True--task=pick_up_the_black_bowl_on_the_cookie_box.mp4",
+    "bytes": 56523,
+    "sha256": "9ad5061d0311274030dc944e96fc2c764dcd892d9d8472e66606bb91c5c5cfb4"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=34--success=True--task=pick_up_the_black_bowl_on_the_cookie_box.mp4",
+    "bytes": 56875,
+    "sha256": "a56fbf55355dae4a86ca8fb7b760a3d5bc82e495e77a190946abaf6e52c01158"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=35--success=True--task=pick_up_the_black_bowl_on_the_cookie_box.mp4",
+    "bytes": 56936,
+    "sha256": "bcd5846f1a0a6e0da2ef3faafff342539e4680f18667e4eceab84edd3d08930e"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=36--success=True--task=pick_up_the_black_bowl_on_the_cookie_box.mp4",
+    "bytes": 58078,
+    "sha256": "23d3e6afad7f86f2403167c7fa96018ba7a2392e83e4ba2efd90200b752c6d5b"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=37--success=True--task=pick_up_the_black_bowl_on_the_cookie_box.mp4",
+    "bytes": 58045,
+    "sha256": "3faa51173d1e1785a662b0b287af55cf513d15c56d36223426ec4b3c3bb56891"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=38--success=True--task=pick_up_the_black_bowl_on_the_cookie_box.mp4",
+    "bytes": 53622,
+    "sha256": "f41163cf9fa272058221d61a23bef3b07cbfc595ea376cf43adc0937a53ef107"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=39--success=True--task=pick_up_the_black_bowl_on_the_cookie_box.mp4",
+    "bytes": 56771,
+    "sha256": "cca19b5e5f58fdc526e1899516bb0a63e4d1e94ab00e3524f1b861914085014e"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=4--success=True--task=pick_up_the_black_bowl_between_the_plate.mp4",
+    "bytes": 48360,
+    "sha256": "6c0a34d76f8024004c1ae2db34805c3250fffaec7e02b52a092d5d48e5337b05"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=40--success=True--task=pick_up_the_black_bowl_on_the_cookie_box.mp4",
+    "bytes": 52338,
+    "sha256": "de108c46c0d2c65fed14e1f6dfebed5e6f4e3cb22398e9e54aae02bbfae8f330"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=41--success=True--task=pick_up_the_black_bowl_in_the_top_drawer.mp4",
+    "bytes": 76290,
+    "sha256": "540d5f801a29cbd7cb9942061c8b56c77bb58d28db7f1aac2c8c2627939accd0"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=42--success=True--task=pick_up_the_black_bowl_in_the_top_drawer.mp4",
+    "bytes": 73707,
+    "sha256": "c78a4e9b8f4a2bdac67c7864957a13d018a6153369c0870d95ba33e52102708c"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=43--success=True--task=pick_up_the_black_bowl_in_the_top_drawer.mp4",
+    "bytes": 73590,
+    "sha256": "de4f0ed4c32362a1db7de5cbac81007cc632009af1fa39654ad12a27770625ee"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=44--success=True--task=pick_up_the_black_bowl_in_the_top_drawer.mp4",
+    "bytes": 86456,
+    "sha256": "fd4f4b53b6d671a8c1e1b6b2f192f4220ba98fb5fb665efaf2c606fb8b0d02c0"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=45--success=True--task=pick_up_the_black_bowl_in_the_top_drawer.mp4",
+    "bytes": 77421,
+    "sha256": "b9445128a1d22b271b4eb1734843216e6fc45cdf3155dddb8212f167888fb1ba"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=46--success=True--task=pick_up_the_black_bowl_in_the_top_drawer.mp4",
+    "bytes": 81301,
+    "sha256": "ee1965f53f21a303412810b607df75e25dee441d51d118e1d0747e1d3c31856a"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=47--success=True--task=pick_up_the_black_bowl_in_the_top_drawer.mp4",
+    "bytes": 77687,
+    "sha256": "584cc0d969838cb20434f0da2cab60e8d34e8d041509e750a4bb77a4671404f7"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=48--success=True--task=pick_up_the_black_bowl_in_the_top_drawer.mp4",
+    "bytes": 82920,
+    "sha256": "ccaaf4bc72099a9669732d205e33f7042d1f889b121f288f6d9a9865a67bb7bc"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=49--success=True--task=pick_up_the_black_bowl_in_the_top_drawer.mp4",
+    "bytes": 75998,
+    "sha256": "6e0698bf3a0c0f29e7456b021c43e75848c8522d4ed05534038cafa240f2105f"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=5--success=True--task=pick_up_the_black_bowl_between_the_plate.mp4",
+    "bytes": 49016,
+    "sha256": "57dbefc7e5d0965aabfe38f0b2e3fc0de5028a57e465bbe87b75cafcf3f20c64"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=50--success=True--task=pick_up_the_black_bowl_in_the_top_drawer.mp4",
+    "bytes": 78660,
+    "sha256": "c36cf4d36f5bf96ae7f0b8597701f7114a6e168dd298984538c0d64fd1cf78c6"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=51--success=False--task=pick_up_the_black_bowl_on_the_ramekin_an.mp4",
+    "bytes": 109742,
+    "sha256": "9136fc11f684f859363dc9f769fa2083f15c6dbfc4b7a6c6cfa27617f7f687d6"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=52--success=True--task=pick_up_the_black_bowl_on_the_ramekin_an.mp4",
+    "bytes": 52308,
+    "sha256": "e1a4e15011eca22eb5a90f801a1e3de915578f48875eec3e392ab05a9bacbbe0"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=53--success=True--task=pick_up_the_black_bowl_on_the_ramekin_an.mp4",
+    "bytes": 45282,
+    "sha256": "b83beddfa3802bcef6c6c51cc01371a9995fd580b1865491f3141d4036dc87aa"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=54--success=True--task=pick_up_the_black_bowl_on_the_ramekin_an.mp4",
+    "bytes": 48867,
+    "sha256": "f0a1af8beece64b2d340e53e3c9f9e02440f31feaf5f91d6f315c09ac680a495"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=55--success=True--task=pick_up_the_black_bowl_on_the_ramekin_an.mp4",
+    "bytes": 48305,
+    "sha256": "f8a82cb317a4eec66555e79ab5334339689217e76b9237af96fa01a3a8811dde"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=56--success=True--task=pick_up_the_black_bowl_on_the_ramekin_an.mp4",
+    "bytes": 47543,
+    "sha256": "08c0f53c95a858b84861eb7ff39b4b29d17a3cbfddee49e4677f32c765a22e15"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=57--success=True--task=pick_up_the_black_bowl_on_the_ramekin_an.mp4",
+    "bytes": 53501,
+    "sha256": "63d8fb5f09637fcf210c00e6a699b96b2b3bd0897d4996a50dba9704c891bba8"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=58--success=True--task=pick_up_the_black_bowl_on_the_ramekin_an.mp4",
+    "bytes": 55160,
+    "sha256": "f007758828f6a67e4b59fd8612c7d8f8dccac22ba0b25020e066c363716c6880"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=59--success=True--task=pick_up_the_black_bowl_on_the_ramekin_an.mp4",
+    "bytes": 46286,
+    "sha256": "e85b2cbafff9f5823e4ba9cbdebb2196ca1ca7e70bf930b850af1ef4f725e596"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=6--success=True--task=pick_up_the_black_bowl_between_the_plate.mp4",
+    "bytes": 50161,
+    "sha256": "3739e867a06c284fbd920542c9516b844519b93d42edfd01faa2d061586e21ba"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=60--success=True--task=pick_up_the_black_bowl_on_the_ramekin_an.mp4",
+    "bytes": 46903,
+    "sha256": "549c3dead2e83a8f73f3e43ff19a2555b54e27f0cf7908e7cbaeef18812f3962"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=61--success=True--task=pick_up_the_black_bowl_next_to_the_cooki.mp4",
+    "bytes": 72840,
+    "sha256": "6bfb7c1d9366e426dc39a895bbd2c36253a7c338082499fb6dca40e259f212df"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=62--success=True--task=pick_up_the_black_bowl_next_to_the_cooki.mp4",
+    "bytes": 73459,
+    "sha256": "3bf063b8b7e0a51fb262ffed3ee6e85f9ea273bebe1528c23c9f850ee726b56e"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=63--success=True--task=pick_up_the_black_bowl_next_to_the_cooki.mp4",
+    "bytes": 64624,
+    "sha256": "160418f12097fda46f5e78b35d2c9018c45140f39d297eadb46c1ae8e65fa84c"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=64--success=True--task=pick_up_the_black_bowl_next_to_the_cooki.mp4",
+    "bytes": 76031,
+    "sha256": "4285aa69368a3f6db13d09497ec48a1433cdd2434e25d87139c861d6a173ce75"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=65--success=True--task=pick_up_the_black_bowl_next_to_the_cooki.mp4",
+    "bytes": 69314,
+    "sha256": "635e082def035104b7857cccb26a68f2224d04dbc8cbd22946f1ee4dedf60e0b"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=66--success=True--task=pick_up_the_black_bowl_next_to_the_cooki.mp4",
+    "bytes": 72105,
+    "sha256": "9941a5e3eee6b7d7141e79185dfd6d5d932727d6fcb3ec700969aad7565a7afd"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=67--success=True--task=pick_up_the_black_bowl_next_to_the_cooki.mp4",
+    "bytes": 70487,
+    "sha256": "6ac8087111467295ac7ecc80b72ebcb16cd78e13d185a70461899eef9b88acf3"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=68--success=True--task=pick_up_the_black_bowl_next_to_the_cooki.mp4",
+    "bytes": 71141,
+    "sha256": "b672c84f05e66539a9d8ff2bf2e0189568fc6ef653913d0cdf3951793c08c185"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=69--success=True--task=pick_up_the_black_bowl_next_to_the_cooki.mp4",
+    "bytes": 72179,
+    "sha256": "a5c23fc5178f3b8fca9016263429d4caf90059d7e393c8af2f2616c0d3e11c32"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=7--success=True--task=pick_up_the_black_bowl_between_the_plate.mp4",
+    "bytes": 42741,
+    "sha256": "0301d1d7bf731a1df64d70500b936941f71bf918ab59012b97912b2ec5c5e6b3"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=70--success=True--task=pick_up_the_black_bowl_next_to_the_cooki.mp4",
+    "bytes": 69829,
+    "sha256": "e10c0da89b6c7d2f0b5ffe0f9d46ace2535c7ed49478375cfd147797b8f87b84"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=71--success=True--task=pick_up_the_black_bowl_on_the_stove_and_.mp4",
+    "bytes": 59815,
+    "sha256": "0ea4e5cfda58f430b45f6878f1b5e48054626e13b7f4cae753317cbae7f0fe2f"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=72--success=True--task=pick_up_the_black_bowl_on_the_stove_and_.mp4",
+    "bytes": 64181,
+    "sha256": "11a9741f931acaf0afbf0c3f1ca840ccafe36a845407741743b55bc76350f791"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=73--success=True--task=pick_up_the_black_bowl_on_the_stove_and_.mp4",
+    "bytes": 60565,
+    "sha256": "2a8b95b39c05d6df28afb7722f162141a5892984156a35badef3a41cc560c000"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=74--success=True--task=pick_up_the_black_bowl_on_the_stove_and_.mp4",
+    "bytes": 61999,
+    "sha256": "4fb52fd51317467e3c7595328038864af9e9405d64d7c88d0d68e28d85acd286"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=75--success=True--task=pick_up_the_black_bowl_on_the_stove_and_.mp4",
+    "bytes": 61960,
+    "sha256": "d65b68aa53cfe9a4cf6415bacd0bd677f0370206f2e01b35ee1b690ef8d0f9fe"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=76--success=True--task=pick_up_the_black_bowl_on_the_stove_and_.mp4",
+    "bytes": 61643,
+    "sha256": "3484b593bb8fafad859454a810399500412f935991460aecbc83101de644ca80"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=77--success=True--task=pick_up_the_black_bowl_on_the_stove_and_.mp4",
+    "bytes": 58238,
+    "sha256": "f5e1e92447c68e5e3bcf887a3ba41735deb7c035823e9607b9763658d3909f37"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=78--success=True--task=pick_up_the_black_bowl_on_the_stove_and_.mp4",
+    "bytes": 60817,
+    "sha256": "19a17c36ae6a550ca3c9035efbae8a297b837d8d3aef1bd1db798801db4e72d3"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=79--success=True--task=pick_up_the_black_bowl_on_the_stove_and_.mp4",
+    "bytes": 65900,
+    "sha256": "ca485ccd9b01a2f4d790543baf18b597e12040f4ab67f517a235cfb28c02f2ef"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=8--success=True--task=pick_up_the_black_bowl_between_the_plate.mp4",
+    "bytes": 48850,
+    "sha256": "1846cf5c1b8b28216c86de3480de82cb0c8263969b6acabe49565c4f84f10f1c"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=80--success=True--task=pick_up_the_black_bowl_on_the_stove_and_.mp4",
+    "bytes": 62437,
+    "sha256": "cfdcf8a9a82bd9b3e1516aa363bf3c611eaa242c6dbb0ec8e3279711eeba2eaa"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=81--success=True--task=pick_up_the_black_bowl_next_to_the_plate.mp4",
+    "bytes": 65081,
+    "sha256": "469a892a71549b468fcd6bd164a754e1ddc7cc8d1576493ea2537772d01075fa"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=82--success=True--task=pick_up_the_black_bowl_next_to_the_plate.mp4",
+    "bytes": 56347,
+    "sha256": "f06d89f373c19996edb9cdfddb8391377507bb1f73f48e09eb8ca0d1c59acc9d"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=83--success=True--task=pick_up_the_black_bowl_next_to_the_plate.mp4",
+    "bytes": 54843,
+    "sha256": "84b4b55e48a8fd8ffccc1f38840d647f50ff933f48a98935fcc9db2c7b73f305"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=84--success=True--task=pick_up_the_black_bowl_next_to_the_plate.mp4",
+    "bytes": 61102,
+    "sha256": "21e410c7e36b2fe6544f035e07196e3f868d7b4d9496a6d112c65602f854a5ea"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=85--success=True--task=pick_up_the_black_bowl_next_to_the_plate.mp4",
+    "bytes": 55688,
+    "sha256": "430b536c02d53ae879ea5ecca546f44520f364f94443053693567f5048b89e74"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=86--success=True--task=pick_up_the_black_bowl_next_to_the_plate.mp4",
+    "bytes": 58160,
+    "sha256": "625557d6338d8f9265e715e25e52aef2707c58da7cd3fffb10bdca82b8fefb6c"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=87--success=True--task=pick_up_the_black_bowl_next_to_the_plate.mp4",
+    "bytes": 51801,
+    "sha256": "985fa86e3da627e6322c87ec2e2c80c4b903ce1748c0ace3145cdf196653c187"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=88--success=True--task=pick_up_the_black_bowl_next_to_the_plate.mp4",
+    "bytes": 61072,
+    "sha256": "9a07230e6bd4f88f869ea2b568787e9d399cef19f837937bb5f0ef62fe4a367a"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=89--success=True--task=pick_up_the_black_bowl_next_to_the_plate.mp4",
+    "bytes": 58684,
+    "sha256": "43223546c57677785b2b58c3dd8f029d97b9d02a1b87e8a28563b0426980b7bc"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=9--success=True--task=pick_up_the_black_bowl_between_the_plate.mp4",
+    "bytes": 44094,
+    "sha256": "e2cc3bb39980bd81b8d1a84fc69cf755996480aa34f99a87661541ac6e21180f"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=90--success=True--task=pick_up_the_black_bowl_next_to_the_plate.mp4",
+    "bytes": 64218,
+    "sha256": "42a003dfd3b84c6535ad9fed287e7926f0dcf6842d65fe356f049ba0177a956f"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=91--success=True--task=pick_up_the_black_bowl_on_the_wooden_cab.mp4",
+    "bytes": 60211,
+    "sha256": "baf5d3dce017bab8eb031d2a15300b630814ab3f22c3f0298135df1f6392d637"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=92--success=True--task=pick_up_the_black_bowl_on_the_wooden_cab.mp4",
+    "bytes": 61732,
+    "sha256": "74253dc032e9db8cbb742c452129f947766fbc69abfdc66d0f6dcb9b4d86b5c9"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=93--success=True--task=pick_up_the_black_bowl_on_the_wooden_cab.mp4",
+    "bytes": 60211,
+    "sha256": "d54a6cb1c86efc2977bb1d053e4a65ac625e6192e70467ed9ed3b69f7bb252ab"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=94--success=True--task=pick_up_the_black_bowl_on_the_wooden_cab.mp4",
+    "bytes": 61040,
+    "sha256": "4ea24d13c60774bdf03217f90c44e77ca4923623768da3e7631a6f2444835520"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=95--success=True--task=pick_up_the_black_bowl_on_the_wooden_cab.mp4",
+    "bytes": 61677,
+    "sha256": "848e5855a2b28b2494b98a796b65595d5afb4e6f5bb38e3399b42066d7dd9581"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=96--success=True--task=pick_up_the_black_bowl_on_the_wooden_cab.mp4",
+    "bytes": 58880,
+    "sha256": "226f8998c67de5e0fe8fe9978b6b95dddb817a51c84259ef8793bc0e690cc6bd"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=97--success=True--task=pick_up_the_black_bowl_on_the_wooden_cab.mp4",
+    "bytes": 59539,
+    "sha256": "9e7abb59c1e7ec3d08d5d0e4fdbc8a47f069c4920f18f57961b06cdbd04ab2c4"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=98--success=True--task=pick_up_the_black_bowl_on_the_wooden_cab.mp4",
+    "bytes": 65063,
+    "sha256": "e4a503eccaef3df1cada9b4a5d20571fdd98647510036e586646046ea1ae752e"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--episode=99--success=True--task=pick_up_the_black_bowl_on_the_wooden_cab.mp4",
+    "bytes": 63729,
+    "sha256": "60aafe9b08fdb7a405fd431af767feeda365ea998485994bc9430899a607b888"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=1--success=True--task=pick_up_the_black_bowl_between_the_.mp4",
+    "bytes": 159277,
+    "sha256": "09a801ae5bd55b045768691e8cdf7451a1383774c77aa81293733ee1fae46009"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=10--success=True--task=pick_up_the_black_bowl_between_the_.mp4",
+    "bytes": 161294,
+    "sha256": "515f49a3b0042ed25ae8c5c5c237dc450d3435ce78c687c328adef9ba820ff34"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=100--success=True--task=pick_up_the_black_bowl_on_the_woode.mp4",
+    "bytes": 213189,
+    "sha256": "cf918961e1cfe4de394f741d9ef27a17bdde332c03073e6c34435cda20f82028"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=11--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4",
+    "bytes": 180946,
+    "sha256": "29a758b7efeba6d529e56220d7ceaf94d3abe2ceea2da9cd040d7ae0ecfb73dd"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=12--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4",
+    "bytes": 166810,
+    "sha256": "f8059377d59bde739084cd9fd2d1d8cf13cbf95149f744f2a5d7309378ebf0be"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=13--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4",
+    "bytes": 175865,
+    "sha256": "5aa3379583d6f847d7f114395c1301bdfa2b7ff30948ef8aadd9b0925ff732f0"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=14--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4",
+    "bytes": 168096,
+    "sha256": "f6ef258e50bb5cef6fb4abedba756e5842744330710a7d777669631d9046d4c7"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=15--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4",
+    "bytes": 180347,
+    "sha256": "63225cdf19a106c2327ed59c41d527cd495a0f89e545b1a366296274586d2690"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=16--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4",
+    "bytes": 171189,
+    "sha256": "eceb57be79b61f1e3c393ff039f45ad796925140726b1d47cd856a82cd663a84"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=17--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4",
+    "bytes": 190577,
+    "sha256": "8c89553c42d796f0bb8d3eda2c7805165aa2724e8a9b1e81731addca8393d6ef"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=18--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4",
+    "bytes": 193661,
+    "sha256": "aa30a1e954453f6fde04337e7996ecc42bdf29db4077b0fbab5a054e09d288db"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=19--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4",
+    "bytes": 168613,
+    "sha256": "742a96533e452fce9882598317ffc1df2a0456f3014c1abef0061520abfc1836"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=2--success=True--task=pick_up_the_black_bowl_between_the_.mp4",
+    "bytes": 168578,
+    "sha256": "72c808c1ed394e7a3078a9d5a2b3b2121a500bc4a77ef640e5bf4c37215ea66c"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=20--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4",
+    "bytes": 213016,
+    "sha256": "f23ddae77794f9902dbd501e6794f8abae752755c9a566b08cd9e7f7f7c55a59"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=21--success=True--task=pick_up_the_black_bowl_from_table_c.mp4",
+    "bytes": 182366,
+    "sha256": "727d66564eb75b18646d514ded5d2ffc599a0e0d46c8a49e95fbe7f191795350"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=22--success=True--task=pick_up_the_black_bowl_from_table_c.mp4",
+    "bytes": 189817,
+    "sha256": "26149774733b6793e68548abb8e75bb0c7cce70678f40512f62cbcf1e731a26a"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=23--success=True--task=pick_up_the_black_bowl_from_table_c.mp4",
+    "bytes": 184146,
+    "sha256": "6f289ddb479bc25a1d4b267f5004f68851a5f5e80f88f1dfa6bbbff8823c25d9"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=24--success=True--task=pick_up_the_black_bowl_from_table_c.mp4",
+    "bytes": 175844,
+    "sha256": "ff201ce0b6de0211f4813d429b11435549eacf9864fc5720a05a249fd1f47a8e"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=25--success=True--task=pick_up_the_black_bowl_from_table_c.mp4",
+    "bytes": 178007,
+    "sha256": "e241c658919ffea20cb13ed14ccfb374931052028d784cb8f8d0e7c93909cc6b"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=26--success=True--task=pick_up_the_black_bowl_from_table_c.mp4",
+    "bytes": 187485,
+    "sha256": "cb3186b8e8151f211ad1ee74881773cb68709b4c9dbea534aa95673a78c820c1"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=27--success=True--task=pick_up_the_black_bowl_from_table_c.mp4",
+    "bytes": 187047,
+    "sha256": "d814ee56d798354788021dbf6f6d987097ea7653a609ff2a668bfd5ddfb6d242"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=28--success=True--task=pick_up_the_black_bowl_from_table_c.mp4",
+    "bytes": 184630,
+    "sha256": "4d87623473b9e7157b08501634deb951d53e5fe9c7a2636c24583ea57afd67f7"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=29--success=True--task=pick_up_the_black_bowl_from_table_c.mp4",
+    "bytes": 187983,
+    "sha256": "ebf8b07e7a443306ba13915c9349196486cc2054198c3b714e14845ae33f63b8"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=3--success=True--task=pick_up_the_black_bowl_between_the_.mp4",
+    "bytes": 161282,
+    "sha256": "eecb9031d599956646cdd2d3c38375d4b2c5d001e2c66fe3b94cbcff16184bfb"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=30--success=True--task=pick_up_the_black_bowl_from_table_c.mp4",
+    "bytes": 184662,
+    "sha256": "fb44541666e34a58309a93630ac4954d11e72690a043a7c7baeed978ddc51eb0"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=31--success=True--task=pick_up_the_black_bowl_on_the_cooki.mp4",
+    "bytes": 163794,
+    "sha256": "34167e267b1ceaf7249281a3e61cf172c50e57cf3473096a0b59c9e42068ae3c"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=32--success=True--task=pick_up_the_black_bowl_on_the_cooki.mp4",
+    "bytes": 158533,
+    "sha256": "12139142c003794ce42ae7ab61269e3671301cbd81b71901935c531987da0659"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=33--success=True--task=pick_up_the_black_bowl_on_the_cooki.mp4",
+    "bytes": 168032,
+    "sha256": "ad583da00ac521b2bc843b8a6ec0b87f99fac4a61698c9eb7e87b5b4fdcb475e"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=34--success=True--task=pick_up_the_black_bowl_on_the_cooki.mp4",
+    "bytes": 158941,
+    "sha256": "d6880dbae9bb22a47246a914296606096f0cd0a459250a64968ca57971bd4878"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=35--success=True--task=pick_up_the_black_bowl_on_the_cooki.mp4",
+    "bytes": 159537,
+    "sha256": "75b3f05c80ea7c68e2bae16faecddb5e59b0664d903afce8a636c60a5435730c"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=36--success=True--task=pick_up_the_black_bowl_on_the_cooki.mp4",
+    "bytes": 156102,
+    "sha256": "741645f392f2081cb0a357f99a9c3139acb32685a83a1afab2102c08d107d880"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=37--success=True--task=pick_up_the_black_bowl_on_the_cooki.mp4",
+    "bytes": 166405,
+    "sha256": "4f6d66cd406ca545d5c5fb26ba1f7e102f239b2105d969632a62fcd2916e2d25"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=38--success=True--task=pick_up_the_black_bowl_on_the_cooki.mp4",
+    "bytes": 150481,
+    "sha256": "1b8080feeb6aee7a405bf1edfd2bc0b7d58ee5de44db044682ec859e14acb5cc"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=39--success=True--task=pick_up_the_black_bowl_on_the_cooki.mp4",
+    "bytes": 168609,
+    "sha256": "79d4eb504caf1fd481a1913e684d9d97a585b5f6ed93aede3a46f998b9f3b6fe"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=4--success=True--task=pick_up_the_black_bowl_between_the_.mp4",
+    "bytes": 167711,
+    "sha256": "5f0dc89ce5e3fc24bf28c57eef0ad27104a309e62bfb99c7f93bc56da6a2997b"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=40--success=True--task=pick_up_the_black_bowl_on_the_cooki.mp4",
+    "bytes": 159087,
+    "sha256": "8372a95cfc7a2965c0910c925eae19ae21bf09b6eb1eee0406b11b3d1e0f4e1f"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=41--success=True--task=pick_up_the_black_bowl_in_the_top_d.mp4",
+    "bytes": 241737,
+    "sha256": "f32a141499d395d5b7c0726901be38e21a5f669a3daa87f6a12927a2eb4d477c"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=42--success=True--task=pick_up_the_black_bowl_in_the_top_d.mp4",
+    "bytes": 232928,
+    "sha256": "e30f48c9632a8ed250032dc31699f62c8dc292aed0c2021761958e994c0d8e24"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=43--success=True--task=pick_up_the_black_bowl_in_the_top_d.mp4",
+    "bytes": 234187,
+    "sha256": "4664d50ec6f6f846e6611faad26bcb9183f0c9f2e64ff58dd5bea78b01f78a16"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=44--success=True--task=pick_up_the_black_bowl_in_the_top_d.mp4",
+    "bytes": 262888,
+    "sha256": "57b4ada59c40b9720fd1fde40a5a5c2b49ff3b58fab91fb9972e814b85fd6eb4"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=45--success=True--task=pick_up_the_black_bowl_in_the_top_d.mp4",
+    "bytes": 242198,
+    "sha256": "92ad1489993fd09a878ca9c2faeec8e1e1fd26a992c8dc3ea638b49d2b52c654"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=46--success=True--task=pick_up_the_black_bowl_in_the_top_d.mp4",
+    "bytes": 250115,
+    "sha256": "28c1969afaf88348e621f3d8f29cdf8b4fb22b55ca1a5b8bb404fa227e8e263e"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=47--success=True--task=pick_up_the_black_bowl_in_the_top_d.mp4",
+    "bytes": 238748,
+    "sha256": "d570671c03ad6abc53155bcfe190230d1b009f0b4851ec5bd0c4126ca0a2ea8e"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=48--success=True--task=pick_up_the_black_bowl_in_the_top_d.mp4",
+    "bytes": 266625,
+    "sha256": "f77567559d2d5d522988ae19859a66a08f078757d7b9da0b0c404814cb93b02a"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=49--success=True--task=pick_up_the_black_bowl_in_the_top_d.mp4",
+    "bytes": 239133,
+    "sha256": "2eb28171e32823cafe026bd2d87b3b03b15653388f19b4acb8361f261e818980"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=5--success=True--task=pick_up_the_black_bowl_between_the_.mp4",
+    "bytes": 176648,
+    "sha256": "646f7350f46981828fd11d34699cce7aed61cfb02d5c053b33415abd7ad3ff46"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=50--success=True--task=pick_up_the_black_bowl_in_the_top_d.mp4",
+    "bytes": 238405,
+    "sha256": "1dc8214d253ee519500d3818b6b3a32345a4afc60a23693e0b9de64a26d6ee9a"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=51--success=False--task=pick_up_the_black_bowl_on_the_ramek.mp4",
+    "bytes": 474356,
+    "sha256": "80e0910d72b631963d9bd1df42abc232a6946612beb95061bdc3838ba188d704"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=52--success=True--task=pick_up_the_black_bowl_on_the_ramek.mp4",
+    "bytes": 184350,
+    "sha256": "86e98694a9b782e94b6e4b6e5deb75f8bee2948583c85557c57cf51c77ef6185"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=53--success=True--task=pick_up_the_black_bowl_on_the_ramek.mp4",
+    "bytes": 178441,
+    "sha256": "5f2be54133f936a2d55608c0f71c445a4db6bead7e46d3775101d9b292659450"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=54--success=True--task=pick_up_the_black_bowl_on_the_ramek.mp4",
+    "bytes": 186736,
+    "sha256": "7ae26ee13fb9f9b6c72b2b46822d109d78b9d7f94e4af74c9b198eb23c663eda"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=55--success=True--task=pick_up_the_black_bowl_on_the_ramek.mp4",
+    "bytes": 190482,
+    "sha256": "256bb005852574c28b79ab7b22cc13a2a3357e48d9edf3959e6a3f6da1482363"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=56--success=True--task=pick_up_the_black_bowl_on_the_ramek.mp4",
+    "bytes": 170105,
+    "sha256": "237a59fd92b3600fc720c761a5071406dabaaf6372874baf7019117462e60972"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=57--success=True--task=pick_up_the_black_bowl_on_the_ramek.mp4",
+    "bytes": 199153,
+    "sha256": "6cd2ed5e64db276b54245353abb71f7726e61a9e2149e898ee8b5a3705b38634"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=58--success=True--task=pick_up_the_black_bowl_on_the_ramek.mp4",
+    "bytes": 191620,
+    "sha256": "12fb43b5122f7ae957fbcd3b026eace44df0e8c378de7bd3fb2ef186dd77c784"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=59--success=True--task=pick_up_the_black_bowl_on_the_ramek.mp4",
+    "bytes": 172713,
+    "sha256": "6e571757f06c936accb43773126c13416fad99acc70f92fa3987e9bd4cfe0182"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=6--success=True--task=pick_up_the_black_bowl_between_the_.mp4",
+    "bytes": 173744,
+    "sha256": "4bc7a8f25b22e0babd01faac9a37fb7025399d6aefc8fa0ce140b845f1ecd948"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=60--success=True--task=pick_up_the_black_bowl_on_the_ramek.mp4",
+    "bytes": 174851,
+    "sha256": "3628ce11864a773582caceb095d3994096bd195b335eeedf852ac1d7370cedd1"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=61--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4",
+    "bytes": 198488,
+    "sha256": "38c31346990a6a748446cddb686724a35625be48fbea74539347f7389fd78728"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=62--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4",
+    "bytes": 197183,
+    "sha256": "d8fae53263bd5935447ecffa3a20244fc02fa6e7128695b696407920ddadf1f7"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=63--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4",
+    "bytes": 186313,
+    "sha256": "b9f2eaa4b4bda19dbb50fac5e742c1ef898a14ed75c4860ae11abafd01804e58"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=64--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4",
+    "bytes": 194501,
+    "sha256": "58ba8d704e4bee7184cdb34407f0ec4cc68f3d2613e2a321e4560c84d958ee51"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=65--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4",
+    "bytes": 194831,
+    "sha256": "aebfb75adac22f813c4d44a7bb20ec46dc2634abf572ce02b717a0e42d2cea71"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=66--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4",
+    "bytes": 197712,
+    "sha256": "137bf6e2f0bbbd05aa004a752e776fbdfc419c086254de4474df6471e0c453b0"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=67--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4",
+    "bytes": 221579,
+    "sha256": "31530a480c0c5bd94f0d8a5362888a1defaf0e8eac42b62c2d8326f13cc8a2e0"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=68--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4",
+    "bytes": 191865,
+    "sha256": "06c5ea06b078be635e6285a8b88232f031ac6da9c42161940f2c7e6c623ac147"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=69--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4",
+    "bytes": 191806,
+    "sha256": "49f73fbb9d3fcb1d8d1d20e05afc978c0ff15439b46b1fb9780ba4923e8331ff"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=7--success=True--task=pick_up_the_black_bowl_between_the_.mp4",
+    "bytes": 150953,
+    "sha256": "e009f1831e34fbbb9fbbe29492b032329291b6b6f5e1804455751e32063d99a7"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=70--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4",
+    "bytes": 185365,
+    "sha256": "22daebe0c8d626496acde0eff267b8436cd4670bb06b82a11b4593d90cc5c2ba"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=71--success=True--task=pick_up_the_black_bowl_on_the_stove.mp4",
+    "bytes": 211822,
+    "sha256": "eab178e99c374ddcd2d37e17596807d200c778cb6e358c901ff9914a5013538b"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=72--success=True--task=pick_up_the_black_bowl_on_the_stove.mp4",
+    "bytes": 224445,
+    "sha256": "c1e1e353996327280382538df7aebe064a4b453fff0fb52d43445eeab63bf11a"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=73--success=True--task=pick_up_the_black_bowl_on_the_stove.mp4",
+    "bytes": 204258,
+    "sha256": "9e4650135d4b7cc341249bd0e1a928620ed59c55f491202959039157949e1a7d"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=74--success=True--task=pick_up_the_black_bowl_on_the_stove.mp4",
+    "bytes": 221398,
+    "sha256": "886504752b45d98a9d2e75725c00b5bc57daa8f39df5e17176e13a300f934090"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=75--success=True--task=pick_up_the_black_bowl_on_the_stove.mp4",
+    "bytes": 209915,
+    "sha256": "c746ac03e06309b1ab7302fae99f3883064f8bc82e27f074f11bbb07e138a681"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=76--success=True--task=pick_up_the_black_bowl_on_the_stove.mp4",
+    "bytes": 206860,
+    "sha256": "b88b8081171925e2af11219ffa39dc91ef84dead4bd638076f1c811acf692bf3"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=77--success=True--task=pick_up_the_black_bowl_on_the_stove.mp4",
+    "bytes": 207155,
+    "sha256": "d12e3e99d7f30cd234a55c4e26ede07ce50c5dfca0ffbccc83a04c546cf3cdb0"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=78--success=True--task=pick_up_the_black_bowl_on_the_stove.mp4",
+    "bytes": 213787,
+    "sha256": "84f8c9ec42c86db8d8dfdba85eba17e86fc6cb9fdc97a97200c81cbd0b4d4dc8"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=79--success=True--task=pick_up_the_black_bowl_on_the_stove.mp4",
+    "bytes": 227892,
+    "sha256": "be9a3197bd2cd05042bf6e1429cb5ae3a6e20f9e192344058a92daf621336817"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=8--success=True--task=pick_up_the_black_bowl_between_the_.mp4",
+    "bytes": 181635,
+    "sha256": "e17294b25cf73c65b262f4e6343e17ef84688a09cd48a6c49089337cdb1468fd"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=80--success=True--task=pick_up_the_black_bowl_on_the_stove.mp4",
+    "bytes": 219385,
+    "sha256": "388232988dee03a5f5b3251e91c4dfc83f8a017b6a38e4d4fb7eb112700a10de"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=81--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4",
+    "bytes": 212887,
+    "sha256": "109a20df45799748142a3fea6bb9d61d158f2bdba9952d6e30d3f2e9fe4c450e"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=82--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4",
+    "bytes": 178619,
+    "sha256": "3138e5698ca01aae2720d0da063391853e40cafd5d1ea3d40d870dc789107341"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=83--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4",
+    "bytes": 181483,
+    "sha256": "da3281fed9515365f12c264b78b674f8242dd238d8b1bc0b3d1b18967eb8efa5"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=84--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4",
+    "bytes": 186834,
+    "sha256": "649ad544541604a7f231e9c16547528521df94679fdae876164860d295b584af"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=85--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4",
+    "bytes": 175253,
+    "sha256": "24ed71fd1c4067b9a300be8500a8c26a271613ed5e2a63235ce3819435c94b3b"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=86--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4",
+    "bytes": 192756,
+    "sha256": "75a6e01009e855b047a64945035789675a3251deaf53d55e711687529b7dfa3a"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=87--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4",
+    "bytes": 189978,
+    "sha256": "71f0ac4c8ea5a052d2521b1f884ba467bab209e7bc656fb32a9cc79e864d7b0f"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=88--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4",
+    "bytes": 197421,
+    "sha256": "f94d57f80e399a30b69b2a78cfc69a25bafd4bc20a6d867fe9660f59f9700de7"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=89--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4",
+    "bytes": 196511,
+    "sha256": "3be8948c9603125419df833ea332a83727a9e3237a33707072566bac729644db"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=9--success=True--task=pick_up_the_black_bowl_between_the_.mp4",
+    "bytes": 155287,
+    "sha256": "4b81a13d293d2d877ab4cef9df97643dc82172e00ae13caecb2f8f8ed11aef4c"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=90--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4",
+    "bytes": 208481,
+    "sha256": "7bf2e3b5fdf7a2c383a0b91be2d6658793f0c5553791cf0574dcbc538bcc2390"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=91--success=True--task=pick_up_the_black_bowl_on_the_woode.mp4",
+    "bytes": 207503,
+    "sha256": "1ca7b66909ebdea152df0a24c5fd1c6956607eb9af89bf2a5087f1436991e761"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=92--success=True--task=pick_up_the_black_bowl_on_the_woode.mp4",
+    "bytes": 215459,
+    "sha256": "648f5b9878d1417281eb19b20469ffeed976ad23d25399ba35ab933d8686d9dd"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=93--success=True--task=pick_up_the_black_bowl_on_the_woode.mp4",
+    "bytes": 208613,
+    "sha256": "dffad1987afa4fd53dfb7b3dc29f030361d0a64017b6af6895912f04d2dbef40"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=94--success=True--task=pick_up_the_black_bowl_on_the_woode.mp4",
+    "bytes": 205968,
+    "sha256": "36693402444d085e5e962425f46a5f4870a23a19fac827b18447de87c8e17f2b"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=95--success=True--task=pick_up_the_black_bowl_on_the_woode.mp4",
+    "bytes": 205230,
+    "sha256": "acc79cdf37fa301ac73528ecfaa70bfb840b2a816d24b79549aa337762d59b67"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=96--success=True--task=pick_up_the_black_bowl_on_the_woode.mp4",
+    "bytes": 222420,
+    "sha256": "0bf7b6d43a7e236bb197619ceca8ccf58b7df34848fb0321505eb0c93d382610"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=97--success=True--task=pick_up_the_black_bowl_on_the_woode.mp4",
+    "bytes": 209126,
+    "sha256": "a63cd49fe5b4b64a81f09550864f75211c9a9263d3c356578ee892ee8f368f8b"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=98--success=True--task=pick_up_the_black_bowl_on_the_woode.mp4",
+    "bytes": 202777,
+    "sha256": "4f9875522b0342e8b6b165e9a561acd4c39f56b17ac957b802ab28c7ca5e9ac9"
+  },
+  {
+    "path": "videos/2026_10_13-16_01_46--with_future_img--episode=99--success=True--task=pick_up_the_black_bowl_on_the_woode.mp4",
+    "bytes": 214450,
+    "sha256": "e6650398be03d1943d97d0791b603a5a5ea112bb280d84b8776854a555266ab2"
+  }
+]

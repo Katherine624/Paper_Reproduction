@@ -1,0 +1,25 @@
+{
+  "status": "complete",
+  "model": "nvidia/Cosmos-Policy-LIBERO-Predict2-2B",
+  "checkpoint_revision": "cb689ec0e3347c13667d70a78a3447388f5c3bb8",
+  "seed": 195,
+  "expected_episodes": 1,
+  "completed_episodes": 1,
+  "successes": 1,
+  "overall_success_rate": 1.0,
+  "task_count": 1,
+  "exit_code": 0,
+  "video_count": 2,
+  "evaluator_log": "logs\\ENV_EVAL-libero_spatial-cosmos-2026_10_13-15_58_22--official_spatial_pilot.txt",
+  "tasks": [
+    {
+      "task_id": 0,
+      "task": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "episodes": 1,
+      "successes": 1,
+      "failures": 0,
+      "success_rate": 1.0
+    }
+  ],
+  "limitation": "Reduced evaluation, one seed; not the paper's full protocol."
+}

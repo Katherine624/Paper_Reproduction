@@ -1,0 +1,11 @@
+export PI05_ROOT=/root/gpufree-data/pi05-repro
+export UV_CACHE_DIR="$PI05_ROOT/cache/uv"
+export UV_PYTHON_INSTALL_DIR="$PI05_ROOT/tools/python"
+export PIP_CACHE_DIR="$PI05_ROOT/cache/pip"
+export HF_HOME="$PI05_ROOT/cache/huggingface"
+export OPENPI_DATA_HOME="$PI05_ROOT/cache/openpi"
+export XDG_CACHE_HOME="$PI05_ROOT/cache/xdg"
+export TMPDIR="$PI05_ROOT/cache/tmp"
+export GIT_LFS_SKIP_SMUDGE=1
+export WANDB_MODE=disabled
+export PATH="$PI05_ROOT/tools/bin:$PATH"

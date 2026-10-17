@@ -1,0 +1,13 @@
+{
+  "task": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+  "checkpoint": "/mnt/d/xiao/Documents/ChatGPT/cosmos/runs/libero_mini/best.pt",
+  "episodes": [
+    {
+      "episode": 0,
+      "success": false,
+      "steps": 220
+    }
+  ],
+  "successes": 0,
+  "success_rate": 0.0
+}

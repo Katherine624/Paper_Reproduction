@@ -1,0 +1,7 @@
+{
+  "success_source": "2026_10_13-16_01_46--episode=1--success=True--task=pick_up_the_black_bowl_between_the_plate.mp4",
+  "failure_source": "2026_10_13-16_01_46--episode=51--success=False--task=pick_up_the_black_bowl_on_the_ramekin_an.mp4",
+  "original_video_count": 200,
+  "empty_video_count": 0,
+  "video_bytes": 25572833.0
+}

@@ -1,0 +1,38 @@
+cmd: /root/autodl-tmp/cosmos/upstream/cosmos-policy/cosmos_policy/scripts/train.py
+  --config=cosmos_policy/config/config.py -- experiment=cosmos_predict2_2b_480p_libero
+  model.config.fsdp_shard_size=1 model.config.use_lora=true model.config.lora_rank=32
+  model.config.lora_alpha=32 checkpoint.load_path=/root/autodl-tmp/cosmos/checkpoints/Cosmos-Predict2-2B-Video2World/model-480p-16fps.pt
+  model.config.tokenizer.vae_pth=/root/autodl-tmp/cosmos/checkpoints/Cosmos-Predict2-2B-Video2World/tokenizer/tokenizer.pth
+  dataloader_train.dataset.data_dir=/root/autodl-tmp/cosmos/cloud-runs/data-view/LIBERO-Cosmos-Policy/success_only
+  dataloader_train.dataset.rollout_data_dir=/root/autodl-tmp/cosmos/cloud-runs/data-view/LIBERO-Cosmos-Policy/all_episodes
+  dataloader_train.dataset.t5_text_embeddings_path=/root/autodl-tmp/cosmos/cloud-runs/data-view/LIBERO-Cosmos-Policy/success_only/t5_embeddings.pkl
+  dataloader_train.batch_size=2 dataloader_train.num_workers=4 trainer.grad_accum_iter=8
+  trainer.max_iter=100000 trainer.logging_iter=10 trainer.run_validation=false scheduler.warm_up_steps=[20,0]
+  scheduler.cycle_lengths=[1000,100000000000000] checkpoint.save_iter=100 job.project=cosmos_policy_cloud
+  job.group=libero_spatial_lora job.name=spatial_rtxpro6000_01 job.wandb_mode=disabled
+args_cfg_path: cosmos_policy/config/config.py
+args_override:
+- --
+- experiment=cosmos_predict2_2b_480p_libero
+- model.config.fsdp_shard_size=1
+- model.config.use_lora=true
+- model.config.lora_rank=32
+- model.config.lora_alpha=32
+- checkpoint.load_path=/root/autodl-tmp/cosmos/checkpoints/Cosmos-Predict2-2B-Video2World/model-480p-16fps.pt
+- model.config.tokenizer.vae_pth=/root/autodl-tmp/cosmos/checkpoints/Cosmos-Predict2-2B-Video2World/tokenizer/tokenizer.pth
+- dataloader_train.dataset.data_dir=/root/autodl-tmp/cosmos/cloud-runs/data-view/LIBERO-Cosmos-Policy/success_only
+- dataloader_train.dataset.rollout_data_dir=/root/autodl-tmp/cosmos/cloud-runs/data-view/LIBERO-Cosmos-Policy/all_episodes
+- dataloader_train.dataset.t5_text_embeddings_path=/root/autodl-tmp/cosmos/cloud-runs/data-view/LIBERO-Cosmos-Policy/success_only/t5_embeddings.pkl
+- dataloader_train.batch_size=2
+- dataloader_train.num_workers=4
+- trainer.grad_accum_iter=8
+- trainer.max_iter=100000
+- trainer.logging_iter=10
+- trainer.run_validation=false
+- scheduler.warm_up_steps=[20,0]
+- scheduler.cycle_lengths=[1000,100000000000000]
+- checkpoint.save_iter=100
+- job.project=cosmos_policy_cloud
+- job.group=libero_spatial_lora
+- job.name=spatial_rtxpro6000_01
+- job.wandb_mode=disabled

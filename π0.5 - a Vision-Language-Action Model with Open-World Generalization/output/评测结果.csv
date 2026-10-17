@@ -1,0 +1,11 @@
+﻿任务编号,任务,成功次数,尝试次数,成功率,随机种子
+1,pick up the black bowl between the plate and the ramekin and place it on the plate,10,10,1.0,7
+2,pick up the black bowl next to the ramekin and place it on the plate,10,10,1.0,7
+3,pick up the black bowl from table center and place it on the plate,10,10,1.0,7
+4,pick up the black bowl on the cookie box and place it on the plate,8,10,0.8,7
+5,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate,10,10,1.0,7
+6,pick up the black bowl on the ramekin and place it on the plate,10,10,1.0,7
+7,pick up the black bowl next to the cookie box and place it on the plate,10,10,1.0,7
+8,pick up the black bowl on the stove and place it on the plate,10,10,1.0,7
+9,pick up the black bowl next to the plate and place it on the plate,10,10,1.0,7
+10,pick up the black bowl on the wooden cabinet and place it on the plate,9,10,0.9,7

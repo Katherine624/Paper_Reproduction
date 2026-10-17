@@ -1,0 +1,13 @@
+# Downloaded data, checkpoints, and local environments
+/datasets/
+/checkpoints/
+/env/
+/runs/
+/cloud-runs/
+/upstream/cosmos-policy/.venv/
+/upstream/cosmos-policy-source.zip
+
+# Hugging Face metadata and local caches
+**/.cache/
+**/__pycache__/
+*.pyc

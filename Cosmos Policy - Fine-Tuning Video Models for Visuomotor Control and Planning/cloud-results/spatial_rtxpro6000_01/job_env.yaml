@@ -1,0 +1,3 @@
+PWD: /root/autodl-tmp/cosmos/upstream/cosmos-policy
+job_local_path: /root/autodl-tmp/cosmos/cloud-runs/cosmos_policy_cloud/libero_spatial_lora/spatial_rtxpro6000_01
+s3: s3://bucket/cosmos_policy_cloud/libero_spatial_lora/spatial_rtxpro6000_01/

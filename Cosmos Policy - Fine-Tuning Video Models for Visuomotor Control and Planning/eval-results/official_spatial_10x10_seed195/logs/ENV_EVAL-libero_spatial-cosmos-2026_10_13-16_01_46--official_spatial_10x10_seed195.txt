@@ -1,0 +1,3614 @@
+Eval config: PolicyEvalConfig(suite='libero', model_family='cosmos', config='cosmos_predict2_2b_480p_libero__inference_only', ckpt_path='/mnt/d/xiao/Documents/ChatGPT/cosmos/checkpoints/Cosmos-Policy-LIBERO-Predict2-2B/Cosmos-Policy-LIBERO-Predict2-2B.pt', lora_path='', tokenizer_path='/mnt/d/xiao/Documents/ChatGPT/cosmos/checkpoints/Cosmos-Predict2-2B-Video2World/tokenizer/tokenizer.pth', lora_rank=32, lora_alpha=32, planning_model_config_name='', planning_model_ckpt_path='', config_file='cosmos_policy/config/config.py', use_third_person_image=True, num_third_person_images=1, use_wrist_image=True, num_wrist_images=1, use_proprio=True, flip_images=True, use_variance_scale=False, use_jpeg_compression=True, ar_future_prediction=False, ar_value_prediction=False, ar_qvalue_prediction=False, num_denoising_steps_action=5, num_denoising_steps_future_state=1, num_denoising_steps_value=1, unnormalize_actions=True, normalize_proprio=True, dataset_stats_path='/mnt/d/xiao/Documents/ChatGPT/cosmos/checkpoints/Cosmos-Policy-LIBERO-Predict2-2B/libero_dataset_statistics.json', t5_text_embeddings_path='/mnt/d/xiao/Documents/ChatGPT/cosmos/checkpoints/Cosmos-Policy-LIBERO-Predict2-2B/libero_t5_embeddings.pkl', trained_with_image_aug=True, chunk_size=16, num_open_loop_steps=16, deterministic=True, deterministic_reset=False, deterministic_reset_seed=None, use_ensemble_future_state_predictions=False, num_future_state_predictions_in_ensemble=3, future_state_ensemble_aggregation_scheme='average', use_ensemble_value_predictions=False, num_value_predictions_in_ensemble=5, value_ensemble_aggregation_scheme='average', search_depth=1, mask_current_state_action_for_value_prediction=False, mask_future_state_for_qvalue_prediction=False, num_queries_best_of_n=1, use_parallel_inference=False, available_gpus='0', parallel_timeout=15, task_suite_name='libero_spatial', task_id=-1, num_trials_per_task=10, initial_states_path='DEFAULT', env_img_res=256, local_log_dir='/mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/logs', run_id_note='official_spatial_10x10_seed195', use_wandb=False, wandb_entity='YOUR_ENTITY', wandb_project='YOUR_PROJECT', seed=195, randomize_seed=False, data_collection=False, jpeg_compress=True)
+Using serial inference (parallel inference disabled)
+Task suite: libero_spatial
+Number of tasks: 10
+Using default initial states
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Starting episode 1...
+Query 1/1: Action query time = 4.775 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4707
+t=10: Selected seed 195 with value = 0.4707
+Query 1/1: Action query time = 2.791 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5747
+t=26: Selected seed 195 with value = 0.5747
+Query 1/1: Action query time = 2.820 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6525
+t=42: Selected seed 195 with value = 0.6525
+Query 1/1: Action query time = 2.817 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7445
+t=58: Selected seed 195 with value = 0.7445
+Query 1/1: Action query time = 2.799 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9027
+t=74: Selected seed 195 with value = 0.9027
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=1--success=True--task=pick_up_the_black_bowl_between_the_plate.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=1--success=True--task=pick_up_the_black_bowl_between_the_.mp4
+Success: True
+# episodes completed so far: 1
+# successes: 1 (100.0%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Starting episode 2...
+Query 1/1: Action query time = 2.938 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4755
+t=10: Selected seed 195 with value = 0.4755
+Query 1/1: Action query time = 2.839 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5714
+t=26: Selected seed 195 with value = 0.5714
+Query 1/1: Action query time = 2.815 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6424
+t=42: Selected seed 195 with value = 0.6424
+Query 1/1: Action query time = 2.694 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7294
+t=58: Selected seed 195 with value = 0.7294
+Query 1/1: Action query time = 2.677 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9018
+t=74: Selected seed 195 with value = 0.9018
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=2--success=True--task=pick_up_the_black_bowl_between_the_plate.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=2--success=True--task=pick_up_the_black_bowl_between_the_.mp4
+Success: True
+# episodes completed so far: 2
+# successes: 2 (100.0%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Starting episode 3...
+Query 1/1: Action query time = 2.908 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4704
+t=10: Selected seed 195 with value = 0.4704
+Query 1/1: Action query time = 2.754 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5671
+t=26: Selected seed 195 with value = 0.5671
+Query 1/1: Action query time = 2.736 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3882
+t=42: Selected seed 195 with value = 0.3882
+Query 1/1: Action query time = 2.742 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7331
+t=58: Selected seed 195 with value = 0.7331
+Query 1/1: Action query time = 2.721 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8945
+t=74: Selected seed 195 with value = 0.8945
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=3--success=True--task=pick_up_the_black_bowl_between_the_plate.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=3--success=True--task=pick_up_the_black_bowl_between_the_.mp4
+Success: True
+# episodes completed so far: 3
+# successes: 3 (100.0%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Starting episode 4...
+Query 1/1: Action query time = 3.028 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3666
+t=10: Selected seed 195 with value = 0.3666
+Query 1/1: Action query time = 2.765 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5413
+t=26: Selected seed 195 with value = 0.5413
+Query 1/1: Action query time = 2.614 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6365
+t=42: Selected seed 195 with value = 0.6365
+Query 1/1: Action query time = 2.613 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7306
+t=58: Selected seed 195 with value = 0.7306
+Query 1/1: Action query time = 2.687 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8606
+t=74: Selected seed 195 with value = 0.8606
+Query 1/1: Action query time = 2.588 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9996
+t=90: Selected seed 195 with value = 0.9996
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=4--success=True--task=pick_up_the_black_bowl_between_the_plate.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=4--success=True--task=pick_up_the_black_bowl_between_the_.mp4
+Success: True
+# episodes completed so far: 4
+# successes: 4 (100.0%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Starting episode 5...
+Query 1/1: Action query time = 2.634 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4063
+t=10: Selected seed 195 with value = 0.4063
+Query 1/1: Action query time = 2.624 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5703
+t=26: Selected seed 195 with value = 0.5703
+Query 1/1: Action query time = 2.760 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6535
+t=42: Selected seed 195 with value = 0.6535
+Query 1/1: Action query time = 2.774 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7048
+t=58: Selected seed 195 with value = 0.7048
+Query 1/1: Action query time = 2.774 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8516
+t=74: Selected seed 195 with value = 0.8516
+Query 1/1: Action query time = 2.763 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9997
+t=90: Selected seed 195 with value = 0.9997
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=5--success=True--task=pick_up_the_black_bowl_between_the_plate.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=5--success=True--task=pick_up_the_black_bowl_between_the_.mp4
+Success: True
+# episodes completed so far: 5
+# successes: 5 (100.0%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Starting episode 6...
+Query 1/1: Action query time = 2.753 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4820
+t=10: Selected seed 195 with value = 0.4820
+Query 1/1: Action query time = 2.759 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5637
+t=26: Selected seed 195 with value = 0.5637
+Query 1/1: Action query time = 2.778 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6600
+t=42: Selected seed 195 with value = 0.6600
+Query 1/1: Action query time = 2.666 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7429
+t=58: Selected seed 195 with value = 0.7429
+Query 1/1: Action query time = 2.760 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8726
+t=74: Selected seed 195 with value = 0.8726
+Query 1/1: Action query time = 2.656 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9823
+t=90: Selected seed 195 with value = 0.9823
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=6--success=True--task=pick_up_the_black_bowl_between_the_plate.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=6--success=True--task=pick_up_the_black_bowl_between_the_.mp4
+Success: True
+# episodes completed so far: 6
+# successes: 6 (100.0%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Starting episode 7...
+Query 1/1: Action query time = 2.837 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4775
+t=10: Selected seed 195 with value = 0.4775
+Query 1/1: Action query time = 2.747 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5831
+t=26: Selected seed 195 with value = 0.5831
+Query 1/1: Action query time = 2.783 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6573
+t=42: Selected seed 195 with value = 0.6573
+Query 1/1: Action query time = 2.818 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8103
+t=58: Selected seed 195 with value = 0.8103
+Query 1/1: Action query time = 2.768 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9403
+t=74: Selected seed 195 with value = 0.9403
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=7--success=True--task=pick_up_the_black_bowl_between_the_plate.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=7--success=True--task=pick_up_the_black_bowl_between_the_.mp4
+Success: True
+# episodes completed so far: 7
+# successes: 7 (100.0%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Starting episode 8...
+Query 1/1: Action query time = 2.753 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4773
+t=10: Selected seed 195 with value = 0.4773
+Query 1/1: Action query time = 2.738 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5598
+t=26: Selected seed 195 with value = 0.5598
+Query 1/1: Action query time = 2.757 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6433
+t=42: Selected seed 195 with value = 0.6433
+Query 1/1: Action query time = 2.765 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7587
+t=58: Selected seed 195 with value = 0.7587
+Query 1/1: Action query time = 2.761 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8710
+t=74: Selected seed 195 with value = 0.8710
+Query 1/1: Action query time = 2.723 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9999
+t=90: Selected seed 195 with value = 0.9999
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=8--success=True--task=pick_up_the_black_bowl_between_the_plate.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=8--success=True--task=pick_up_the_black_bowl_between_the_.mp4
+Success: True
+# episodes completed so far: 8
+# successes: 8 (100.0%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Starting episode 9...
+Query 1/1: Action query time = 2.674 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4349
+t=10: Selected seed 195 with value = 0.4349
+Query 1/1: Action query time = 2.745 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5567
+t=26: Selected seed 195 with value = 0.5567
+Query 1/1: Action query time = 2.771 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6602
+t=42: Selected seed 195 with value = 0.6602
+Query 1/1: Action query time = 2.745 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7595
+t=58: Selected seed 195 with value = 0.7595
+Query 1/1: Action query time = 2.937 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9266
+t=74: Selected seed 195 with value = 0.9266
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=9--success=True--task=pick_up_the_black_bowl_between_the_plate.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=9--success=True--task=pick_up_the_black_bowl_between_the_.mp4
+Success: True
+# episodes completed so far: 9
+# successes: 9 (100.0%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Starting episode 10...
+Query 1/1: Action query time = 2.959 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4369
+t=10: Selected seed 195 with value = 0.4369
+Query 1/1: Action query time = 2.804 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5603
+t=26: Selected seed 195 with value = 0.5603
+Query 1/1: Action query time = 2.879 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6286
+t=42: Selected seed 195 with value = 0.6286
+Query 1/1: Action query time = 2.785 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7387
+t=58: Selected seed 195 with value = 0.7387
+Query 1/1: Action query time = 2.896 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9160
+t=74: Selected seed 195 with value = 0.9160
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=10--success=True--task=pick_up_the_black_bowl_between_the_plate.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=10--success=True--task=pick_up_the_black_bowl_between_the_.mp4
+Success: True
+# episodes completed so far: 10
+# successes: 10 (100.0%)
+Current task success rate: 1.0
+Current total success rate: 1.0
+Using default initial states
+
+Task: pick up the black bowl next to the ramekin and place it on the plate
+Starting episode 1...
+Query 1/1: Action query time = 2.889 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3039
+t=10: Selected seed 195 with value = 0.3039
+Query 1/1: Action query time = 2.817 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3327
+t=26: Selected seed 195 with value = 0.3327
+Query 1/1: Action query time = 2.640 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3978
+t=42: Selected seed 195 with value = 0.3978
+Query 1/1: Action query time = 2.636 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5209
+t=58: Selected seed 195 with value = 0.5209
+Query 1/1: Action query time = 2.591 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5915
+t=74: Selected seed 195 with value = 0.5915
+Query 1/1: Action query time = 2.599 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6891
+t=90: Selected seed 195 with value = 0.6891
+Query 1/1: Action query time = 2.662 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8287
+t=106: Selected seed 195 with value = 0.8287
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=11--success=True--task=pick_up_the_black_bowl_next_to_the_ramek.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=11--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4
+Success: True
+# episodes completed so far: 11
+# successes: 11 (100.0%)
+
+Task: pick up the black bowl next to the ramekin and place it on the plate
+Starting episode 2...
+Query 1/1: Action query time = 2.820 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3702
+t=10: Selected seed 195 with value = 0.3702
+Query 1/1: Action query time = 2.666 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4404
+t=26: Selected seed 195 with value = 0.4404
+Query 1/1: Action query time = 2.606 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5105
+t=42: Selected seed 195 with value = 0.5105
+Query 1/1: Action query time = 2.572 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6242
+t=58: Selected seed 195 with value = 0.6242
+Query 1/1: Action query time = 2.859 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7247
+t=74: Selected seed 195 with value = 0.7247
+Query 1/1: Action query time = 2.812 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8490
+t=90: Selected seed 195 with value = 0.8490
+Query 1/1: Action query time = 2.624 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9958
+t=106: Selected seed 195 with value = 0.9958
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=12--success=True--task=pick_up_the_black_bowl_next_to_the_ramek.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=12--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4
+Success: True
+# episodes completed so far: 12
+# successes: 12 (100.0%)
+
+Task: pick up the black bowl next to the ramekin and place it on the plate
+Starting episode 3...
+Query 1/1: Action query time = 2.798 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3065
+t=10: Selected seed 195 with value = 0.3065
+Query 1/1: Action query time = 2.693 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4054
+t=26: Selected seed 195 with value = 0.4054
+Query 1/1: Action query time = 2.730 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4309
+t=42: Selected seed 195 with value = 0.4309
+Query 1/1: Action query time = 2.598 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5686
+t=58: Selected seed 195 with value = 0.5686
+Query 1/1: Action query time = 2.660 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6394
+t=74: Selected seed 195 with value = 0.6394
+Query 1/1: Action query time = 2.548 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7541
+t=90: Selected seed 195 with value = 0.7541
+Query 1/1: Action query time = 2.638 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9150
+t=106: Selected seed 195 with value = 0.9150
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=13--success=True--task=pick_up_the_black_bowl_next_to_the_ramek.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=13--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4
+Success: True
+# episodes completed so far: 13
+# successes: 13 (100.0%)
+
+Task: pick up the black bowl next to the ramekin and place it on the plate
+Starting episode 4...
+Query 1/1: Action query time = 2.871 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.2780
+t=10: Selected seed 195 with value = 0.2780
+Query 1/1: Action query time = 2.595 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3325
+t=26: Selected seed 195 with value = 0.3325
+Query 1/1: Action query time = 2.647 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4123
+t=42: Selected seed 195 with value = 0.4123
+Query 1/1: Action query time = 2.682 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4623
+t=58: Selected seed 195 with value = 0.4623
+Query 1/1: Action query time = 2.608 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7016
+t=74: Selected seed 195 with value = 0.7016
+Query 1/1: Action query time = 2.634 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8347
+t=90: Selected seed 195 with value = 0.8347
+Query 1/1: Action query time = 2.591 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9782
+t=106: Selected seed 195 with value = 0.9782
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=14--success=True--task=pick_up_the_black_bowl_next_to_the_ramek.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=14--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4
+Success: True
+# episodes completed so far: 14
+# successes: 14 (100.0%)
+
+Task: pick up the black bowl next to the ramekin and place it on the plate
+Starting episode 5...
+Query 1/1: Action query time = 2.743 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.2626
+t=10: Selected seed 195 with value = 0.2626
+Query 1/1: Action query time = 2.587 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3032
+t=26: Selected seed 195 with value = 0.3032
+Query 1/1: Action query time = 2.593 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3866
+t=42: Selected seed 195 with value = 0.3866
+Query 1/1: Action query time = 2.545 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4328
+t=58: Selected seed 195 with value = 0.4328
+Query 1/1: Action query time = 2.594 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5070
+t=74: Selected seed 195 with value = 0.5070
+Query 1/1: Action query time = 2.605 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7219
+t=90: Selected seed 195 with value = 0.7219
+Query 1/1: Action query time = 2.592 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8410
+t=106: Selected seed 195 with value = 0.8410
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=15--success=True--task=pick_up_the_black_bowl_next_to_the_ramek.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=15--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4
+Success: True
+# episodes completed so far: 15
+# successes: 15 (100.0%)
+
+Task: pick up the black bowl next to the ramekin and place it on the plate
+Starting episode 6...
+Query 1/1: Action query time = 2.914 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3503
+t=10: Selected seed 195 with value = 0.3503
+Query 1/1: Action query time = 2.688 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4390
+t=26: Selected seed 195 with value = 0.4390
+Query 1/1: Action query time = 2.588 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5381
+t=42: Selected seed 195 with value = 0.5381
+Query 1/1: Action query time = 2.549 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6003
+t=58: Selected seed 195 with value = 0.6003
+Query 1/1: Action query time = 2.621 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7059
+t=74: Selected seed 195 with value = 0.7059
+Query 1/1: Action query time = 2.736 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8343
+t=90: Selected seed 195 with value = 0.8343
+Query 1/1: Action query time = 2.750 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9262
+t=106: Selected seed 195 with value = 0.9262
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=16--success=True--task=pick_up_the_black_bowl_next_to_the_ramek.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=16--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4
+Success: True
+# episodes completed so far: 16
+# successes: 16 (100.0%)
+
+Task: pick up the black bowl next to the ramekin and place it on the plate
+Starting episode 7...
+Query 1/1: Action query time = 2.724 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3115
+t=10: Selected seed 195 with value = 0.3115
+Query 1/1: Action query time = 2.580 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3726
+t=26: Selected seed 195 with value = 0.3726
+Query 1/1: Action query time = 2.533 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4095
+t=42: Selected seed 195 with value = 0.4095
+Query 1/1: Action query time = 2.546 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4890
+t=58: Selected seed 195 with value = 0.4890
+Query 1/1: Action query time = 2.690 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5837
+t=74: Selected seed 195 with value = 0.5837
+Query 1/1: Action query time = 2.601 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6971
+t=90: Selected seed 195 with value = 0.6971
+Query 1/1: Action query time = 2.571 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8139
+t=106: Selected seed 195 with value = 0.8139
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=17--success=True--task=pick_up_the_black_bowl_next_to_the_ramek.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=17--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4
+Success: True
+# episodes completed so far: 17
+# successes: 17 (100.0%)
+
+Task: pick up the black bowl next to the ramekin and place it on the plate
+Starting episode 8...
+Query 1/1: Action query time = 2.806 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.2602
+t=10: Selected seed 195 with value = 0.2602
+Query 1/1: Action query time = 2.667 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3181
+t=26: Selected seed 195 with value = 0.3181
+Query 1/1: Action query time = 2.670 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3895
+t=42: Selected seed 195 with value = 0.3895
+Query 1/1: Action query time = 2.539 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4365
+t=58: Selected seed 195 with value = 0.4365
+Query 1/1: Action query time = 2.595 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5023
+t=74: Selected seed 195 with value = 0.5023
+Query 1/1: Action query time = 2.586 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6770
+t=90: Selected seed 195 with value = 0.6770
+Query 1/1: Action query time = 2.551 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7925
+t=106: Selected seed 195 with value = 0.7925
+Query 1/1: Action query time = 2.599 sec
+t=122: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9490
+t=122: Selected seed 195 with value = 0.9490
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=18--success=True--task=pick_up_the_black_bowl_next_to_the_ramek.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=18--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4
+Success: True
+# episodes completed so far: 18
+# successes: 18 (100.0%)
+
+Task: pick up the black bowl next to the ramekin and place it on the plate
+Starting episode 9...
+Query 1/1: Action query time = 2.754 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3659
+t=10: Selected seed 195 with value = 0.3659
+Query 1/1: Action query time = 2.612 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4379
+t=26: Selected seed 195 with value = 0.4379
+Query 1/1: Action query time = 2.558 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5386
+t=42: Selected seed 195 with value = 0.5386
+Query 1/1: Action query time = 2.547 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5506
+t=58: Selected seed 195 with value = 0.5506
+Query 1/1: Action query time = 2.601 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6722
+t=74: Selected seed 195 with value = 0.6722
+Query 1/1: Action query time = 2.656 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8138
+t=90: Selected seed 195 with value = 0.8138
+Query 1/1: Action query time = 2.604 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9129
+t=106: Selected seed 195 with value = 0.9129
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=19--success=True--task=pick_up_the_black_bowl_next_to_the_ramek.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=19--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4
+Success: True
+# episodes completed so far: 19
+# successes: 19 (100.0%)
+
+Task: pick up the black bowl next to the ramekin and place it on the plate
+Starting episode 10...
+Query 1/1: Action query time = 2.573 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3151
+t=10: Selected seed 195 with value = 0.3151
+Query 1/1: Action query time = 2.603 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3546
+t=26: Selected seed 195 with value = 0.3546
+Query 1/1: Action query time = 2.620 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4246
+t=42: Selected seed 195 with value = 0.4246
+Query 1/1: Action query time = 2.528 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4690
+t=58: Selected seed 195 with value = 0.4690
+Query 1/1: Action query time = 2.631 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5208
+t=74: Selected seed 195 with value = 0.5208
+Query 1/1: Action query time = 2.586 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6190
+t=90: Selected seed 195 with value = 0.6190
+Query 1/1: Action query time = 2.571 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7415
+t=106: Selected seed 195 with value = 0.7415
+Query 1/1: Action query time = 2.592 sec
+t=122: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8564
+t=122: Selected seed 195 with value = 0.8564
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=20--success=True--task=pick_up_the_black_bowl_next_to_the_ramek.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=20--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4
+Success: True
+# episodes completed so far: 20
+# successes: 20 (100.0%)
+Current task success rate: 1.0
+Current total success rate: 1.0
+Using default initial states
+
+Task: pick up the black bowl from table center and place it on the plate
+Starting episode 1...
+Query 1/1: Action query time = 2.985 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3793
+t=10: Selected seed 195 with value = 0.3793
+Query 1/1: Action query time = 2.638 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4574
+t=26: Selected seed 195 with value = 0.4574
+Query 1/1: Action query time = 2.569 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5427
+t=42: Selected seed 195 with value = 0.5427
+Query 1/1: Action query time = 2.703 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6500
+t=58: Selected seed 195 with value = 0.6500
+Query 1/1: Action query time = 2.598 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7795
+t=74: Selected seed 195 with value = 0.7795
+Query 1/1: Action query time = 2.593 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8947
+t=90: Selected seed 195 with value = 0.8947
+Query 1/1: Action query time = 2.666 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9998
+t=106: Selected seed 195 with value = 0.9998
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=21--success=True--task=pick_up_the_black_bowl_from_table_center.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=21--success=True--task=pick_up_the_black_bowl_from_table_c.mp4
+Success: True
+# episodes completed so far: 21
+# successes: 21 (100.0%)
+
+Task: pick up the black bowl from table center and place it on the plate
+Starting episode 2...
+Query 1/1: Action query time = 2.711 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3365
+t=10: Selected seed 195 with value = 0.3365
+Query 1/1: Action query time = 2.626 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4194
+t=26: Selected seed 195 with value = 0.4194
+Query 1/1: Action query time = 2.710 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4834
+t=42: Selected seed 195 with value = 0.4834
+Query 1/1: Action query time = 2.567 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6184
+t=58: Selected seed 195 with value = 0.6184
+Query 1/1: Action query time = 2.569 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7466
+t=74: Selected seed 195 with value = 0.7466
+Query 1/1: Action query time = 2.583 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8717
+t=90: Selected seed 195 with value = 0.8717
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=22--success=True--task=pick_up_the_black_bowl_from_table_center.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=22--success=True--task=pick_up_the_black_bowl_from_table_c.mp4
+Success: True
+# episodes completed so far: 22
+# successes: 22 (100.0%)
+
+Task: pick up the black bowl from table center and place it on the plate
+Starting episode 3...
+Query 1/1: Action query time = 2.816 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3841
+t=10: Selected seed 195 with value = 0.3841
+Query 1/1: Action query time = 2.582 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4709
+t=26: Selected seed 195 with value = 0.4709
+Query 1/1: Action query time = 2.626 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5541
+t=42: Selected seed 195 with value = 0.5541
+Query 1/1: Action query time = 2.696 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6472
+t=58: Selected seed 195 with value = 0.6472
+Query 1/1: Action query time = 2.687 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7611
+t=74: Selected seed 195 with value = 0.7611
+Query 1/1: Action query time = 2.726 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8995
+t=90: Selected seed 195 with value = 0.8995
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=23--success=True--task=pick_up_the_black_bowl_from_table_center.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=23--success=True--task=pick_up_the_black_bowl_from_table_c.mp4
+Success: True
+# episodes completed so far: 23
+# successes: 23 (100.0%)
+
+Task: pick up the black bowl from table center and place it on the plate
+Starting episode 4...
+Query 1/1: Action query time = 2.751 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3826
+t=10: Selected seed 195 with value = 0.3826
+Query 1/1: Action query time = 2.685 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4738
+t=26: Selected seed 195 with value = 0.4738
+Query 1/1: Action query time = 2.528 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5770
+t=42: Selected seed 195 with value = 0.5770
+Query 1/1: Action query time = 2.534 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6925
+t=58: Selected seed 195 with value = 0.6925
+Query 1/1: Action query time = 2.557 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8059
+t=74: Selected seed 195 with value = 0.8059
+Query 1/1: Action query time = 2.818 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9194
+t=90: Selected seed 195 with value = 0.9194
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=24--success=True--task=pick_up_the_black_bowl_from_table_center.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=24--success=True--task=pick_up_the_black_bowl_from_table_c.mp4
+Success: True
+# episodes completed so far: 24
+# successes: 24 (100.0%)
+
+Task: pick up the black bowl from table center and place it on the plate
+Starting episode 5...
+Query 1/1: Action query time = 2.607 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4063
+t=10: Selected seed 195 with value = 0.4063
+Query 1/1: Action query time = 2.676 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4704
+t=26: Selected seed 195 with value = 0.4704
+Query 1/1: Action query time = 2.757 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5534
+t=42: Selected seed 195 with value = 0.5534
+Query 1/1: Action query time = 2.548 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6543
+t=58: Selected seed 195 with value = 0.6543
+Query 1/1: Action query time = 2.576 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7639
+t=74: Selected seed 195 with value = 0.7639
+Query 1/1: Action query time = 2.543 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9102
+t=90: Selected seed 195 with value = 0.9102
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=25--success=True--task=pick_up_the_black_bowl_from_table_center.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=25--success=True--task=pick_up_the_black_bowl_from_table_c.mp4
+Success: True
+# episodes completed so far: 25
+# successes: 25 (100.0%)
+
+Task: pick up the black bowl from table center and place it on the plate
+Starting episode 6...
+Query 1/1: Action query time = 2.776 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3808
+t=10: Selected seed 195 with value = 0.3808
+Query 1/1: Action query time = 2.540 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4591
+t=26: Selected seed 195 with value = 0.4591
+Query 1/1: Action query time = 2.651 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5223
+t=42: Selected seed 195 with value = 0.5223
+Query 1/1: Action query time = 2.568 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6044
+t=58: Selected seed 195 with value = 0.6044
+Query 1/1: Action query time = 2.566 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7452
+t=74: Selected seed 195 with value = 0.7452
+Query 1/1: Action query time = 2.559 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8786
+t=90: Selected seed 195 with value = 0.8786
+Query 1/1: Action query time = 2.518 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9638
+t=106: Selected seed 195 with value = 0.9638
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=26--success=True--task=pick_up_the_black_bowl_from_table_center.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=26--success=True--task=pick_up_the_black_bowl_from_table_c.mp4
+Success: True
+# episodes completed so far: 26
+# successes: 26 (100.0%)
+
+Task: pick up the black bowl from table center and place it on the plate
+Starting episode 7...
+Query 1/1: Action query time = 2.554 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3843
+t=10: Selected seed 195 with value = 0.3843
+Query 1/1: Action query time = 2.756 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4437
+t=26: Selected seed 195 with value = 0.4437
+Query 1/1: Action query time = 2.584 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5292
+t=42: Selected seed 195 with value = 0.5292
+Query 1/1: Action query time = 2.606 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5418
+t=58: Selected seed 195 with value = 0.5418
+Query 1/1: Action query time = 2.529 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6869
+t=74: Selected seed 195 with value = 0.6869
+Query 1/1: Action query time = 2.676 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8009
+t=90: Selected seed 195 with value = 0.8009
+Query 1/1: Action query time = 2.628 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9934
+t=106: Selected seed 195 with value = 0.9934
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=27--success=True--task=pick_up_the_black_bowl_from_table_center.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=27--success=True--task=pick_up_the_black_bowl_from_table_c.mp4
+Success: True
+# episodes completed so far: 27
+# successes: 27 (100.0%)
+
+Task: pick up the black bowl from table center and place it on the plate
+Starting episode 8...
+Query 1/1: Action query time = 2.649 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3488
+t=10: Selected seed 195 with value = 0.3488
+Query 1/1: Action query time = 2.551 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4079
+t=26: Selected seed 195 with value = 0.4079
+Query 1/1: Action query time = 2.560 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4851
+t=42: Selected seed 195 with value = 0.4851
+Query 1/1: Action query time = 2.549 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6454
+t=58: Selected seed 195 with value = 0.6454
+Query 1/1: Action query time = 2.519 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7781
+t=74: Selected seed 195 with value = 0.7781
+Query 1/1: Action query time = 2.566 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9151
+t=90: Selected seed 195 with value = 0.9151
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=28--success=True--task=pick_up_the_black_bowl_from_table_center.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=28--success=True--task=pick_up_the_black_bowl_from_table_c.mp4
+Success: True
+# episodes completed so far: 28
+# successes: 28 (100.0%)
+
+Task: pick up the black bowl from table center and place it on the plate
+Starting episode 9...
+Query 1/1: Action query time = 2.541 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3603
+t=10: Selected seed 195 with value = 0.3603
+Query 1/1: Action query time = 2.551 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4364
+t=26: Selected seed 195 with value = 0.4364
+Query 1/1: Action query time = 2.525 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5078
+t=42: Selected seed 195 with value = 0.5078
+Query 1/1: Action query time = 2.649 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6133
+t=58: Selected seed 195 with value = 0.6133
+Query 1/1: Action query time = 2.508 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7283
+t=74: Selected seed 195 with value = 0.7283
+Query 1/1: Action query time = 2.615 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8662
+t=90: Selected seed 195 with value = 0.8662
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=29--success=True--task=pick_up_the_black_bowl_from_table_center.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=29--success=True--task=pick_up_the_black_bowl_from_table_c.mp4
+Success: True
+# episodes completed so far: 29
+# successes: 29 (100.0%)
+
+Task: pick up the black bowl from table center and place it on the plate
+Starting episode 10...
+Query 1/1: Action query time = 2.702 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3508
+t=10: Selected seed 195 with value = 0.3508
+Query 1/1: Action query time = 2.523 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4076
+t=26: Selected seed 195 with value = 0.4076
+Query 1/1: Action query time = 2.540 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4730
+t=42: Selected seed 195 with value = 0.4730
+Query 1/1: Action query time = 2.560 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5879
+t=58: Selected seed 195 with value = 0.5879
+Query 1/1: Action query time = 2.547 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6418
+t=74: Selected seed 195 with value = 0.6418
+Query 1/1: Action query time = 2.555 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8624
+t=90: Selected seed 195 with value = 0.8624
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=30--success=True--task=pick_up_the_black_bowl_from_table_center.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=30--success=True--task=pick_up_the_black_bowl_from_table_c.mp4
+Success: True
+# episodes completed so far: 30
+# successes: 30 (100.0%)
+Current task success rate: 1.0
+Current total success rate: 1.0
+Using default initial states
+
+Task: pick up the black bowl on the cookie box and place it on the plate
+Starting episode 1...
+Query 1/1: Action query time = 2.679 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4318
+t=10: Selected seed 195 with value = 0.4318
+Query 1/1: Action query time = 2.535 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5376
+t=26: Selected seed 195 with value = 0.5376
+Query 1/1: Action query time = 2.522 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6451
+t=42: Selected seed 195 with value = 0.6451
+Query 1/1: Action query time = 2.645 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7185
+t=58: Selected seed 195 with value = 0.7185
+Query 1/1: Action query time = 2.669 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8780
+t=74: Selected seed 195 with value = 0.8780
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=31--success=True--task=pick_up_the_black_bowl_on_the_cookie_box.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=31--success=True--task=pick_up_the_black_bowl_on_the_cooki.mp4
+Success: True
+# episodes completed so far: 31
+# successes: 31 (100.0%)
+
+Task: pick up the black bowl on the cookie box and place it on the plate
+Starting episode 2...
+Query 1/1: Action query time = 2.548 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4679
+t=10: Selected seed 195 with value = 0.4679
+Query 1/1: Action query time = 2.566 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5413
+t=26: Selected seed 195 with value = 0.5413
+Query 1/1: Action query time = 2.603 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6376
+t=42: Selected seed 195 with value = 0.6376
+Query 1/1: Action query time = 2.637 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7429
+t=58: Selected seed 195 with value = 0.7429
+Query 1/1: Action query time = 2.534 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8705
+t=74: Selected seed 195 with value = 0.8705
+Query 1/1: Action query time = 2.808 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 1.0000
+t=90: Selected seed 195 with value = 1.0000
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=32--success=True--task=pick_up_the_black_bowl_on_the_cookie_box.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=32--success=True--task=pick_up_the_black_bowl_on_the_cooki.mp4
+Success: True
+# episodes completed so far: 32
+# successes: 32 (100.0%)
+
+Task: pick up the black bowl on the cookie box and place it on the plate
+Starting episode 3...
+Query 1/1: Action query time = 2.674 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4341
+t=10: Selected seed 195 with value = 0.4341
+Query 1/1: Action query time = 2.585 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4946
+t=26: Selected seed 195 with value = 0.4946
+Query 1/1: Action query time = 2.595 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6221
+t=42: Selected seed 195 with value = 0.6221
+Query 1/1: Action query time = 2.628 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7106
+t=58: Selected seed 195 with value = 0.7106
+Query 1/1: Action query time = 2.611 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8619
+t=74: Selected seed 195 with value = 0.8619
+Query 1/1: Action query time = 2.587 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 1.0000
+t=90: Selected seed 195 with value = 1.0000
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=33--success=True--task=pick_up_the_black_bowl_on_the_cookie_box.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=33--success=True--task=pick_up_the_black_bowl_on_the_cooki.mp4
+Success: True
+# episodes completed so far: 33
+# successes: 33 (100.0%)
+
+Task: pick up the black bowl on the cookie box and place it on the plate
+Starting episode 4...
+Query 1/1: Action query time = 2.694 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4482
+t=10: Selected seed 195 with value = 0.4482
+Query 1/1: Action query time = 2.701 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4970
+t=26: Selected seed 195 with value = 0.4970
+Query 1/1: Action query time = 2.794 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6053
+t=42: Selected seed 195 with value = 0.6053
+Query 1/1: Action query time = 2.575 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7224
+t=58: Selected seed 195 with value = 0.7224
+Query 1/1: Action query time = 2.521 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8466
+t=74: Selected seed 195 with value = 0.8466
+Query 1/1: Action query time = 2.686 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9994
+t=90: Selected seed 195 with value = 0.9994
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=34--success=True--task=pick_up_the_black_bowl_on_the_cookie_box.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=34--success=True--task=pick_up_the_black_bowl_on_the_cooki.mp4
+Success: True
+# episodes completed so far: 34
+# successes: 34 (100.0%)
+
+Task: pick up the black bowl on the cookie box and place it on the plate
+Starting episode 5...
+Query 1/1: Action query time = 2.677 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4155
+t=10: Selected seed 195 with value = 0.4155
+Query 1/1: Action query time = 2.667 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4950
+t=26: Selected seed 195 with value = 0.4950
+Query 1/1: Action query time = 2.677 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5984
+t=42: Selected seed 195 with value = 0.5984
+Query 1/1: Action query time = 2.653 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6937
+t=58: Selected seed 195 with value = 0.6937
+Query 1/1: Action query time = 2.561 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8340
+t=74: Selected seed 195 with value = 0.8340
+Query 1/1: Action query time = 2.584 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9218
+t=90: Selected seed 195 with value = 0.9218
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=35--success=True--task=pick_up_the_black_bowl_on_the_cookie_box.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=35--success=True--task=pick_up_the_black_bowl_on_the_cooki.mp4
+Success: True
+# episodes completed so far: 35
+# successes: 35 (100.0%)
+
+Task: pick up the black bowl on the cookie box and place it on the plate
+Starting episode 6...
+Query 1/1: Action query time = 2.567 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4101
+t=10: Selected seed 195 with value = 0.4101
+Query 1/1: Action query time = 2.749 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5051
+t=26: Selected seed 195 with value = 0.5051
+Query 1/1: Action query time = 2.587 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5877
+t=42: Selected seed 195 with value = 0.5877
+Query 1/1: Action query time = 2.600 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6493
+t=58: Selected seed 195 with value = 0.6493
+Query 1/1: Action query time = 2.680 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7604
+t=74: Selected seed 195 with value = 0.7604
+Query 1/1: Action query time = 2.715 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9262
+t=90: Selected seed 195 with value = 0.9262
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=36--success=True--task=pick_up_the_black_bowl_on_the_cookie_box.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=36--success=True--task=pick_up_the_black_bowl_on_the_cooki.mp4
+Success: True
+# episodes completed so far: 36
+# successes: 36 (100.0%)
+
+Task: pick up the black bowl on the cookie box and place it on the plate
+Starting episode 7...
+Query 1/1: Action query time = 2.710 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4398
+t=10: Selected seed 195 with value = 0.4398
+Query 1/1: Action query time = 2.794 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5298
+t=26: Selected seed 195 with value = 0.5298
+Query 1/1: Action query time = 2.690 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5812
+t=42: Selected seed 195 with value = 0.5812
+Query 1/1: Action query time = 2.620 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7276
+t=58: Selected seed 195 with value = 0.7276
+Query 1/1: Action query time = 2.790 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8550
+t=74: Selected seed 195 with value = 0.8550
+Query 1/1: Action query time = 2.742 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 1.0000
+t=90: Selected seed 195 with value = 1.0000
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=37--success=True--task=pick_up_the_black_bowl_on_the_cookie_box.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=37--success=True--task=pick_up_the_black_bowl_on_the_cooki.mp4
+Success: True
+# episodes completed so far: 37
+# successes: 37 (100.0%)
+
+Task: pick up the black bowl on the cookie box and place it on the plate
+Starting episode 8...
+Query 1/1: Action query time = 2.664 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4424
+t=10: Selected seed 195 with value = 0.4424
+Query 1/1: Action query time = 2.585 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5282
+t=26: Selected seed 195 with value = 0.5282
+Query 1/1: Action query time = 2.660 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6336
+t=42: Selected seed 195 with value = 0.6336
+Query 1/1: Action query time = 2.632 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7485
+t=58: Selected seed 195 with value = 0.7485
+Query 1/1: Action query time = 2.743 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8822
+t=74: Selected seed 195 with value = 0.8822
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=38--success=True--task=pick_up_the_black_bowl_on_the_cookie_box.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=38--success=True--task=pick_up_the_black_bowl_on_the_cooki.mp4
+Success: True
+# episodes completed so far: 38
+# successes: 38 (100.0%)
+
+Task: pick up the black bowl on the cookie box and place it on the plate
+Starting episode 9...
+Query 1/1: Action query time = 2.723 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4388
+t=10: Selected seed 195 with value = 0.4388
+Query 1/1: Action query time = 2.638 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5114
+t=26: Selected seed 195 with value = 0.5114
+Query 1/1: Action query time = 2.613 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6098
+t=42: Selected seed 195 with value = 0.6098
+Query 1/1: Action query time = 2.541 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7155
+t=58: Selected seed 195 with value = 0.7155
+Query 1/1: Action query time = 2.545 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8447
+t=74: Selected seed 195 with value = 0.8447
+Query 1/1: Action query time = 2.631 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9917
+t=90: Selected seed 195 with value = 0.9917
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=39--success=True--task=pick_up_the_black_bowl_on_the_cookie_box.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=39--success=True--task=pick_up_the_black_bowl_on_the_cooki.mp4
+Success: True
+# episodes completed so far: 39
+# successes: 39 (100.0%)
+
+Task: pick up the black bowl on the cookie box and place it on the plate
+Starting episode 10...
+Query 1/1: Action query time = 2.681 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4588
+t=10: Selected seed 195 with value = 0.4588
+Query 1/1: Action query time = 2.654 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5582
+t=26: Selected seed 195 with value = 0.5582
+Query 1/1: Action query time = 2.569 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6467
+t=42: Selected seed 195 with value = 0.6467
+Query 1/1: Action query time = 2.573 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7661
+t=58: Selected seed 195 with value = 0.7661
+Query 1/1: Action query time = 2.613 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8987
+t=74: Selected seed 195 with value = 0.8987
+Query 1/1: Action query time = 2.673 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 1.0000
+t=90: Selected seed 195 with value = 1.0000
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=40--success=True--task=pick_up_the_black_bowl_on_the_cookie_box.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=40--success=True--task=pick_up_the_black_bowl_on_the_cooki.mp4
+Success: True
+# episodes completed so far: 40
+# successes: 40 (100.0%)
+Current task success rate: 1.0
+Current total success rate: 1.0
+Using default initial states
+
+Task: pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+Starting episode 1...
+Query 1/1: Action query time = 2.791 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.2508
+t=10: Selected seed 195 with value = 0.2508
+Query 1/1: Action query time = 2.527 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.2997
+t=26: Selected seed 195 with value = 0.2997
+Query 1/1: Action query time = 2.609 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3502
+t=42: Selected seed 195 with value = 0.3502
+Query 1/1: Action query time = 2.648 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4354
+t=58: Selected seed 195 with value = 0.4354
+Query 1/1: Action query time = 2.644 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5342
+t=74: Selected seed 195 with value = 0.5342
+Query 1/1: Action query time = 2.582 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6016
+t=90: Selected seed 195 with value = 0.6016
+Query 1/1: Action query time = 2.543 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7024
+t=106: Selected seed 195 with value = 0.7024
+Query 1/1: Action query time = 2.578 sec
+t=122: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8149
+t=122: Selected seed 195 with value = 0.8149
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=41--success=True--task=pick_up_the_black_bowl_in_the_top_drawer.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=41--success=True--task=pick_up_the_black_bowl_in_the_top_d.mp4
+Success: True
+# episodes completed so far: 41
+# successes: 41 (100.0%)
+
+Task: pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+Starting episode 2...
+Query 1/1: Action query time = 2.576 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.2826
+t=10: Selected seed 195 with value = 0.2826
+Query 1/1: Action query time = 2.558 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3243
+t=26: Selected seed 195 with value = 0.3243
+Query 1/1: Action query time = 2.696 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3556
+t=42: Selected seed 195 with value = 0.3556
+Query 1/1: Action query time = 2.623 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4470
+t=58: Selected seed 195 with value = 0.4470
+Query 1/1: Action query time = 2.548 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5417
+t=74: Selected seed 195 with value = 0.5417
+Query 1/1: Action query time = 2.534 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6510
+t=90: Selected seed 195 with value = 0.6510
+Query 1/1: Action query time = 2.553 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7454
+t=106: Selected seed 195 with value = 0.7454
+Query 1/1: Action query time = 2.749 sec
+t=122: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9165
+t=122: Selected seed 195 with value = 0.9165
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=42--success=True--task=pick_up_the_black_bowl_in_the_top_drawer.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=42--success=True--task=pick_up_the_black_bowl_in_the_top_d.mp4
+Success: True
+# episodes completed so far: 42
+# successes: 42 (100.0%)
+
+Task: pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+Starting episode 3...
+Query 1/1: Action query time = 2.608 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.2383
+t=10: Selected seed 195 with value = 0.2383
+Query 1/1: Action query time = 2.560 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3436
+t=26: Selected seed 195 with value = 0.3436
+Query 1/1: Action query time = 2.562 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4102
+t=42: Selected seed 195 with value = 0.4102
+Query 1/1: Action query time = 2.555 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4768
+t=58: Selected seed 195 with value = 0.4768
+Query 1/1: Action query time = 2.550 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5289
+t=74: Selected seed 195 with value = 0.5289
+Query 1/1: Action query time = 2.559 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6204
+t=90: Selected seed 195 with value = 0.6204
+Query 1/1: Action query time = 2.561 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7312
+t=106: Selected seed 195 with value = 0.7312
+Query 1/1: Action query time = 2.595 sec
+t=122: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9608
+t=122: Selected seed 195 with value = 0.9608
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=43--success=True--task=pick_up_the_black_bowl_in_the_top_drawer.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=43--success=True--task=pick_up_the_black_bowl_in_the_top_d.mp4
+Success: True
+# episodes completed so far: 43
+# successes: 43 (100.0%)
+
+Task: pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+Starting episode 4...
+Query 1/1: Action query time = 2.640 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.2631
+t=10: Selected seed 195 with value = 0.2631
+Query 1/1: Action query time = 2.566 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3005
+t=26: Selected seed 195 with value = 0.3005
+Query 1/1: Action query time = 2.532 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3504
+t=42: Selected seed 195 with value = 0.3504
+Query 1/1: Action query time = 2.552 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4079
+t=58: Selected seed 195 with value = 0.4079
+Query 1/1: Action query time = 2.615 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4847
+t=74: Selected seed 195 with value = 0.4847
+Query 1/1: Action query time = 2.696 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5684
+t=90: Selected seed 195 with value = 0.5684
+Query 1/1: Action query time = 2.574 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6193
+t=106: Selected seed 195 with value = 0.6193
+Query 1/1: Action query time = 2.547 sec
+t=122: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7035
+t=122: Selected seed 195 with value = 0.7035
+Query 1/1: Action query time = 2.630 sec
+t=138: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8711
+t=138: Selected seed 195 with value = 0.8711
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=44--success=True--task=pick_up_the_black_bowl_in_the_top_drawer.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=44--success=True--task=pick_up_the_black_bowl_in_the_top_d.mp4
+Success: True
+# episodes completed so far: 44
+# successes: 44 (100.0%)
+
+Task: pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+Starting episode 5...
+Query 1/1: Action query time = 2.821 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.2598
+t=10: Selected seed 195 with value = 0.2598
+Query 1/1: Action query time = 2.526 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.2959
+t=26: Selected seed 195 with value = 0.2959
+Query 1/1: Action query time = 2.847 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3467
+t=42: Selected seed 195 with value = 0.3467
+Query 1/1: Action query time = 2.702 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4058
+t=58: Selected seed 195 with value = 0.4058
+Query 1/1: Action query time = 2.665 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4604
+t=74: Selected seed 195 with value = 0.4604
+Query 1/1: Action query time = 2.705 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5526
+t=90: Selected seed 195 with value = 0.5526
+Query 1/1: Action query time = 2.679 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6433
+t=106: Selected seed 195 with value = 0.6433
+Query 1/1: Action query time = 2.603 sec
+t=122: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7570
+t=122: Selected seed 195 with value = 0.7570
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=45--success=True--task=pick_up_the_black_bowl_in_the_top_drawer.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=45--success=True--task=pick_up_the_black_bowl_in_the_top_d.mp4
+Success: True
+# episodes completed so far: 45
+# successes: 45 (100.0%)
+
+Task: pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+Starting episode 6...
+Query 1/1: Action query time = 2.703 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.2863
+t=10: Selected seed 195 with value = 0.2863
+Query 1/1: Action query time = 2.726 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3034
+t=26: Selected seed 195 with value = 0.3034
+Query 1/1: Action query time = 2.700 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3405
+t=42: Selected seed 195 with value = 0.3405
+Query 1/1: Action query time = 2.644 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4280
+t=58: Selected seed 195 with value = 0.4280
+Query 1/1: Action query time = 2.640 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5333
+t=74: Selected seed 195 with value = 0.5333
+Query 1/1: Action query time = 2.605 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5964
+t=90: Selected seed 195 with value = 0.5964
+Query 1/1: Action query time = 2.682 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6997
+t=106: Selected seed 195 with value = 0.6997
+Query 1/1: Action query time = 2.797 sec
+t=122: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8273
+t=122: Selected seed 195 with value = 0.8273
+Query 1/1: Action query time = 2.649 sec
+t=138: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9561
+t=138: Selected seed 195 with value = 0.9561
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=46--success=True--task=pick_up_the_black_bowl_in_the_top_drawer.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=46--success=True--task=pick_up_the_black_bowl_in_the_top_d.mp4
+Success: True
+# episodes completed so far: 46
+# successes: 46 (100.0%)
+
+Task: pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+Starting episode 7...
+Query 1/1: Action query time = 2.689 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.2330
+t=10: Selected seed 195 with value = 0.2330
+Query 1/1: Action query time = 2.525 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.2890
+t=26: Selected seed 195 with value = 0.2890
+Query 1/1: Action query time = 2.630 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3238
+t=42: Selected seed 195 with value = 0.3238
+Query 1/1: Action query time = 2.664 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3834
+t=58: Selected seed 195 with value = 0.3834
+Query 1/1: Action query time = 2.627 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4426
+t=74: Selected seed 195 with value = 0.4426
+Query 1/1: Action query time = 2.670 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5416
+t=90: Selected seed 195 with value = 0.5416
+Query 1/1: Action query time = 2.641 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6377
+t=106: Selected seed 195 with value = 0.6377
+Query 1/1: Action query time = 2.631 sec
+t=122: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7817
+t=122: Selected seed 195 with value = 0.7817
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=47--success=True--task=pick_up_the_black_bowl_in_the_top_drawer.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=47--success=True--task=pick_up_the_black_bowl_in_the_top_d.mp4
+Success: True
+# episodes completed so far: 47
+# successes: 47 (100.0%)
+
+Task: pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+Starting episode 8...
+Query 1/1: Action query time = 2.927 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.2440
+t=10: Selected seed 195 with value = 0.2440
+Query 1/1: Action query time = 2.787 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3064
+t=26: Selected seed 195 with value = 0.3064
+Query 1/1: Action query time = 2.759 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3500
+t=42: Selected seed 195 with value = 0.3500
+Query 1/1: Action query time = 2.615 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4082
+t=58: Selected seed 195 with value = 0.4082
+Query 1/1: Action query time = 2.739 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5005
+t=74: Selected seed 195 with value = 0.5005
+Query 1/1: Action query time = 2.709 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5468
+t=90: Selected seed 195 with value = 0.5468
+Query 1/1: Action query time = 2.682 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6322
+t=106: Selected seed 195 with value = 0.6322
+Query 1/1: Action query time = 2.694 sec
+t=122: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7452
+t=122: Selected seed 195 with value = 0.7452
+Query 1/1: Action query time = 2.643 sec
+t=138: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9663
+t=138: Selected seed 195 with value = 0.9663
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=48--success=True--task=pick_up_the_black_bowl_in_the_top_drawer.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=48--success=True--task=pick_up_the_black_bowl_in_the_top_d.mp4
+Success: True
+# episodes completed so far: 48
+# successes: 48 (100.0%)
+
+Task: pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+Starting episode 9...
+Query 1/1: Action query time = 2.689 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.2513
+t=10: Selected seed 195 with value = 0.2513
+Query 1/1: Action query time = 2.634 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.2946
+t=26: Selected seed 195 with value = 0.2946
+Query 1/1: Action query time = 2.686 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3414
+t=42: Selected seed 195 with value = 0.3414
+Query 1/1: Action query time = 2.734 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4203
+t=58: Selected seed 195 with value = 0.4203
+Query 1/1: Action query time = 2.590 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5587
+t=74: Selected seed 195 with value = 0.5587
+Query 1/1: Action query time = 2.731 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6327
+t=90: Selected seed 195 with value = 0.6327
+Query 1/1: Action query time = 2.584 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7579
+t=106: Selected seed 195 with value = 0.7579
+Query 1/1: Action query time = 2.575 sec
+t=122: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8717
+t=122: Selected seed 195 with value = 0.8717
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=49--success=True--task=pick_up_the_black_bowl_in_the_top_drawer.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=49--success=True--task=pick_up_the_black_bowl_in_the_top_d.mp4
+Success: True
+# episodes completed so far: 49
+# successes: 49 (100.0%)
+
+Task: pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+Starting episode 10...
+Query 1/1: Action query time = 2.927 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.2905
+t=10: Selected seed 195 with value = 0.2905
+Query 1/1: Action query time = 2.700 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3058
+t=26: Selected seed 195 with value = 0.3058
+Query 1/1: Action query time = 2.729 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3643
+t=42: Selected seed 195 with value = 0.3643
+Query 1/1: Action query time = 2.931 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4666
+t=58: Selected seed 195 with value = 0.4666
+Query 1/1: Action query time = 2.668 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5657
+t=74: Selected seed 195 with value = 0.5657
+Query 1/1: Action query time = 2.607 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6606
+t=90: Selected seed 195 with value = 0.6606
+Query 1/1: Action query time = 2.657 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7749
+t=106: Selected seed 195 with value = 0.7749
+Query 1/1: Action query time = 2.727 sec
+t=122: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8762
+t=122: Selected seed 195 with value = 0.8762
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=50--success=True--task=pick_up_the_black_bowl_in_the_top_drawer.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=50--success=True--task=pick_up_the_black_bowl_in_the_top_d.mp4
+Success: True
+# episodes completed so far: 50
+# successes: 50 (100.0%)
+Current task success rate: 1.0
+Current total success rate: 1.0
+Using default initial states
+
+Task: pick up the black bowl on the ramekin and place it on the plate
+Starting episode 1...
+Query 1/1: Action query time = 2.730 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4465
+t=10: Selected seed 195 with value = 0.4465
+Query 1/1: Action query time = 2.591 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5203
+t=26: Selected seed 195 with value = 0.5203
+Query 1/1: Action query time = 2.598 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6028
+t=42: Selected seed 195 with value = 0.6028
+Query 1/1: Action query time = 2.781 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6703
+t=58: Selected seed 195 with value = 0.6703
+Query 1/1: Action query time = 2.599 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8012
+t=74: Selected seed 195 with value = 0.8012
+Query 1/1: Action query time = 2.571 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9528
+t=90: Selected seed 195 with value = 0.9528
+Query 1/1: Action query time = 2.592 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 1.0000
+t=106: Selected seed 195 with value = 1.0000
+Query 1/1: Action query time = 2.748 sec
+t=122: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 1.0000
+t=122: Selected seed 195 with value = 1.0000
+Query 1/1: Action query time = 2.595 sec
+t=138: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7220
+t=138: Selected seed 195 with value = 0.7220
+Query 1/1: Action query time = 2.577 sec
+t=154: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9998
+t=154: Selected seed 195 with value = 0.9998
+Query 1/1: Action query time = 2.619 sec
+t=170: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9769
+t=170: Selected seed 195 with value = 0.9769
+Query 1/1: Action query time = 2.572 sec
+t=186: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 1.0000
+t=186: Selected seed 195 with value = 1.0000
+Query 1/1: Action query time = 2.605 sec
+t=202: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9998
+t=202: Selected seed 195 with value = 0.9998
+Query 1/1: Action query time = 2.586 sec
+t=218: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9980
+t=218: Selected seed 195 with value = 0.9980
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=51--success=False--task=pick_up_the_black_bowl_on_the_ramekin_an.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=51--success=False--task=pick_up_the_black_bowl_on_the_ramek.mp4
+Success: False
+# episodes completed so far: 51
+# successes: 50 (98.0%)
+
+Task: pick up the black bowl on the ramekin and place it on the plate
+Starting episode 2...
+Query 1/1: Action query time = 2.640 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3259
+t=10: Selected seed 195 with value = 0.3259
+Query 1/1: Action query time = 2.592 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4204
+t=26: Selected seed 195 with value = 0.4204
+Query 1/1: Action query time = 2.749 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5205
+t=42: Selected seed 195 with value = 0.5205
+Query 1/1: Action query time = 2.798 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5933
+t=58: Selected seed 195 with value = 0.5933
+Query 1/1: Action query time = 2.787 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7080
+t=74: Selected seed 195 with value = 0.7080
+Query 1/1: Action query time = 2.748 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8517
+t=90: Selected seed 195 with value = 0.8517
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=52--success=True--task=pick_up_the_black_bowl_on_the_ramekin_an.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=52--success=True--task=pick_up_the_black_bowl_on_the_ramek.mp4
+Success: True
+# episodes completed so far: 52
+# successes: 51 (98.1%)
+
+Task: pick up the black bowl on the ramekin and place it on the plate
+Starting episode 3...
+Query 1/1: Action query time = 2.797 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4405
+t=10: Selected seed 195 with value = 0.4405
+Query 1/1: Action query time = 2.606 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4713
+t=26: Selected seed 195 with value = 0.4713
+Query 1/1: Action query time = 2.607 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5843
+t=42: Selected seed 195 with value = 0.5843
+Query 1/1: Action query time = 2.690 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7101
+t=58: Selected seed 195 with value = 0.7101
+Query 1/1: Action query time = 2.652 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8471
+t=74: Selected seed 195 with value = 0.8471
+Query 1/1: Action query time = 2.590 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9028
+t=90: Selected seed 195 with value = 0.9028
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=53--success=True--task=pick_up_the_black_bowl_on_the_ramekin_an.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=53--success=True--task=pick_up_the_black_bowl_on_the_ramek.mp4
+Success: True
+# episodes completed so far: 53
+# successes: 52 (98.1%)
+
+Task: pick up the black bowl on the ramekin and place it on the plate
+Starting episode 4...
+Query 1/1: Action query time = 2.855 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3751
+t=10: Selected seed 195 with value = 0.3751
+Query 1/1: Action query time = 2.614 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4590
+t=26: Selected seed 195 with value = 0.4590
+Query 1/1: Action query time = 2.611 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5448
+t=42: Selected seed 195 with value = 0.5448
+Query 1/1: Action query time = 2.625 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6664
+t=58: Selected seed 195 with value = 0.6664
+Query 1/1: Action query time = 2.576 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7145
+t=74: Selected seed 195 with value = 0.7145
+Query 1/1: Action query time = 2.579 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8860
+t=90: Selected seed 195 with value = 0.8860
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=54--success=True--task=pick_up_the_black_bowl_on_the_ramekin_an.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=54--success=True--task=pick_up_the_black_bowl_on_the_ramek.mp4
+Success: True
+# episodes completed so far: 54
+# successes: 53 (98.1%)
+
+Task: pick up the black bowl on the ramekin and place it on the plate
+Starting episode 5...
+Query 1/1: Action query time = 2.583 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3543
+t=10: Selected seed 195 with value = 0.3543
+Query 1/1: Action query time = 2.622 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4985
+t=26: Selected seed 195 with value = 0.4985
+Query 1/1: Action query time = 2.566 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5375
+t=42: Selected seed 195 with value = 0.5375
+Query 1/1: Action query time = 2.592 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6723
+t=58: Selected seed 195 with value = 0.6723
+Query 1/1: Action query time = 2.592 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7676
+t=74: Selected seed 195 with value = 0.7676
+Query 1/1: Action query time = 2.708 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9265
+t=90: Selected seed 195 with value = 0.9265
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=55--success=True--task=pick_up_the_black_bowl_on_the_ramekin_an.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=55--success=True--task=pick_up_the_black_bowl_on_the_ramek.mp4
+Success: True
+# episodes completed so far: 55
+# successes: 54 (98.2%)
+
+Task: pick up the black bowl on the ramekin and place it on the plate
+Starting episode 6...
+Query 1/1: Action query time = 2.802 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4136
+t=10: Selected seed 195 with value = 0.4136
+Query 1/1: Action query time = 2.619 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4929
+t=26: Selected seed 195 with value = 0.4929
+Query 1/1: Action query time = 2.577 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5914
+t=42: Selected seed 195 with value = 0.5914
+Query 1/1: Action query time = 2.687 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6854
+t=58: Selected seed 195 with value = 0.6854
+Query 1/1: Action query time = 2.731 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8376
+t=74: Selected seed 195 with value = 0.8376
+Query 1/1: Action query time = 2.647 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9942
+t=90: Selected seed 195 with value = 0.9942
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=56--success=True--task=pick_up_the_black_bowl_on_the_ramekin_an.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=56--success=True--task=pick_up_the_black_bowl_on_the_ramek.mp4
+Success: True
+# episodes completed so far: 56
+# successes: 55 (98.2%)
+
+Task: pick up the black bowl on the ramekin and place it on the plate
+Starting episode 7...
+Query 1/1: Action query time = 2.583 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3191
+t=10: Selected seed 195 with value = 0.3191
+Query 1/1: Action query time = 2.599 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3741
+t=26: Selected seed 195 with value = 0.3741
+Query 1/1: Action query time = 2.575 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4545
+t=42: Selected seed 195 with value = 0.4545
+Query 1/1: Action query time = 2.535 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5651
+t=58: Selected seed 195 with value = 0.5651
+Query 1/1: Action query time = 2.577 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6747
+t=74: Selected seed 195 with value = 0.6747
+Query 1/1: Action query time = 2.583 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7923
+t=90: Selected seed 195 with value = 0.7923
+Query 1/1: Action query time = 2.556 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9040
+t=106: Selected seed 195 with value = 0.9040
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=57--success=True--task=pick_up_the_black_bowl_on_the_ramekin_an.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=57--success=True--task=pick_up_the_black_bowl_on_the_ramek.mp4
+Success: True
+# episodes completed so far: 57
+# successes: 56 (98.2%)
+
+Task: pick up the black bowl on the ramekin and place it on the plate
+Starting episode 8...
+Query 1/1: Action query time = 2.616 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3124
+t=10: Selected seed 195 with value = 0.3124
+Query 1/1: Action query time = 2.578 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3682
+t=26: Selected seed 195 with value = 0.3682
+Query 1/1: Action query time = 2.613 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4324
+t=42: Selected seed 195 with value = 0.4324
+Query 1/1: Action query time = 2.605 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5231
+t=58: Selected seed 195 with value = 0.5231
+Query 1/1: Action query time = 2.539 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6634
+t=74: Selected seed 195 with value = 0.6634
+Query 1/1: Action query time = 2.575 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7559
+t=90: Selected seed 195 with value = 0.7559
+Query 1/1: Action query time = 2.614 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9089
+t=106: Selected seed 195 with value = 0.9089
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=58--success=True--task=pick_up_the_black_bowl_on_the_ramekin_an.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=58--success=True--task=pick_up_the_black_bowl_on_the_ramek.mp4
+Success: True
+# episodes completed so far: 58
+# successes: 57 (98.3%)
+
+Task: pick up the black bowl on the ramekin and place it on the plate
+Starting episode 9...
+Query 1/1: Action query time = 2.744 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3443
+t=10: Selected seed 195 with value = 0.3443
+Query 1/1: Action query time = 2.628 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4572
+t=26: Selected seed 195 with value = 0.4572
+Query 1/1: Action query time = 2.545 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5419
+t=42: Selected seed 195 with value = 0.5419
+Query 1/1: Action query time = 2.566 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6258
+t=58: Selected seed 195 with value = 0.6258
+Query 1/1: Action query time = 2.551 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7755
+t=74: Selected seed 195 with value = 0.7755
+Query 1/1: Action query time = 2.565 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9145
+t=90: Selected seed 195 with value = 0.9145
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=59--success=True--task=pick_up_the_black_bowl_on_the_ramekin_an.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=59--success=True--task=pick_up_the_black_bowl_on_the_ramek.mp4
+Success: True
+# episodes completed so far: 59
+# successes: 58 (98.3%)
+
+Task: pick up the black bowl on the ramekin and place it on the plate
+Starting episode 10...
+Query 1/1: Action query time = 2.764 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3932
+t=10: Selected seed 195 with value = 0.3932
+Query 1/1: Action query time = 2.774 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4643
+t=26: Selected seed 195 with value = 0.4643
+Query 1/1: Action query time = 2.552 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5739
+t=42: Selected seed 195 with value = 0.5739
+Query 1/1: Action query time = 2.562 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6277
+t=58: Selected seed 195 with value = 0.6277
+Query 1/1: Action query time = 2.635 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7872
+t=74: Selected seed 195 with value = 0.7872
+Query 1/1: Action query time = 2.613 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9213
+t=90: Selected seed 195 with value = 0.9213
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=60--success=True--task=pick_up_the_black_bowl_on_the_ramekin_an.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=60--success=True--task=pick_up_the_black_bowl_on_the_ramek.mp4
+Success: True
+# episodes completed so far: 60
+# successes: 59 (98.3%)
+Current task success rate: 0.9
+Current total success rate: 0.9833333333333333
+Using default initial states
+
+Task: pick up the black bowl next to the cookie box and place it on the plate
+Starting episode 1...
+Query 1/1: Action query time = 2.605 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3411
+t=10: Selected seed 195 with value = 0.3411
+Query 1/1: Action query time = 2.630 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4242
+t=26: Selected seed 195 with value = 0.4242
+Query 1/1: Action query time = 2.599 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5070
+t=42: Selected seed 195 with value = 0.5070
+Query 1/1: Action query time = 2.585 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6098
+t=58: Selected seed 195 with value = 0.6098
+Query 1/1: Action query time = 2.683 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6907
+t=74: Selected seed 195 with value = 0.6907
+Query 1/1: Action query time = 2.579 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7984
+t=90: Selected seed 195 with value = 0.7984
+Query 1/1: Action query time = 2.548 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9542
+t=106: Selected seed 195 with value = 0.9542
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=61--success=True--task=pick_up_the_black_bowl_next_to_the_cooki.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=61--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4
+Success: True
+# episodes completed so far: 61
+# successes: 60 (98.4%)
+
+Task: pick up the black bowl next to the cookie box and place it on the plate
+Starting episode 2...
+Query 1/1: Action query time = 2.785 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3532
+t=10: Selected seed 195 with value = 0.3532
+Query 1/1: Action query time = 2.641 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4189
+t=26: Selected seed 195 with value = 0.4189
+Query 1/1: Action query time = 2.586 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4925
+t=42: Selected seed 195 with value = 0.4925
+Query 1/1: Action query time = 2.798 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5871
+t=58: Selected seed 195 with value = 0.5871
+Query 1/1: Action query time = 2.619 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6643
+t=74: Selected seed 195 with value = 0.6643
+Query 1/1: Action query time = 2.593 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7513
+t=90: Selected seed 195 with value = 0.7513
+Query 1/1: Action query time = 2.570 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8935
+t=106: Selected seed 195 with value = 0.8935
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=62--success=True--task=pick_up_the_black_bowl_next_to_the_cooki.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=62--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4
+Success: True
+# episodes completed so far: 62
+# successes: 61 (98.4%)
+
+Task: pick up the black bowl next to the cookie box and place it on the plate
+Starting episode 3...
+Query 1/1: Action query time = 2.598 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3190
+t=10: Selected seed 195 with value = 0.3190
+Query 1/1: Action query time = 2.597 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3813
+t=26: Selected seed 195 with value = 0.3813
+Query 1/1: Action query time = 2.559 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4163
+t=42: Selected seed 195 with value = 0.4163
+Query 1/1: Action query time = 2.552 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6291
+t=58: Selected seed 195 with value = 0.6291
+Query 1/1: Action query time = 2.527 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7444
+t=74: Selected seed 195 with value = 0.7444
+Query 1/1: Action query time = 2.541 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8877
+t=90: Selected seed 195 with value = 0.8877
+Query 1/1: Action query time = 2.744 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9995
+t=106: Selected seed 195 with value = 0.9995
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=63--success=True--task=pick_up_the_black_bowl_next_to_the_cooki.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=63--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4
+Success: True
+# episodes completed so far: 63
+# successes: 62 (98.4%)
+
+Task: pick up the black bowl next to the cookie box and place it on the plate
+Starting episode 4...
+Query 1/1: Action query time = 2.691 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3123
+t=10: Selected seed 195 with value = 0.3123
+Query 1/1: Action query time = 2.560 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3557
+t=26: Selected seed 195 with value = 0.3557
+Query 1/1: Action query time = 2.656 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4446
+t=42: Selected seed 195 with value = 0.4446
+Query 1/1: Action query time = 2.545 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4722
+t=58: Selected seed 195 with value = 0.4722
+Query 1/1: Action query time = 2.559 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5523
+t=74: Selected seed 195 with value = 0.5523
+Query 1/1: Action query time = 2.605 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6596
+t=90: Selected seed 195 with value = 0.6596
+Query 1/1: Action query time = 2.533 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7731
+t=106: Selected seed 195 with value = 0.7731
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=64--success=True--task=pick_up_the_black_bowl_next_to_the_cooki.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=64--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4
+Success: True
+# episodes completed so far: 64
+# successes: 63 (98.4%)
+
+Task: pick up the black bowl next to the cookie box and place it on the plate
+Starting episode 5...
+Query 1/1: Action query time = 2.646 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3560
+t=10: Selected seed 195 with value = 0.3560
+Query 1/1: Action query time = 2.558 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4349
+t=26: Selected seed 195 with value = 0.4349
+Query 1/1: Action query time = 2.510 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4725
+t=42: Selected seed 195 with value = 0.4725
+Query 1/1: Action query time = 2.540 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6117
+t=58: Selected seed 195 with value = 0.6117
+Query 1/1: Action query time = 2.550 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6620
+t=74: Selected seed 195 with value = 0.6620
+Query 1/1: Action query time = 2.582 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8326
+t=90: Selected seed 195 with value = 0.8326
+Query 1/1: Action query time = 2.559 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9666
+t=106: Selected seed 195 with value = 0.9666
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=65--success=True--task=pick_up_the_black_bowl_next_to_the_cooki.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=65--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4
+Success: True
+# episodes completed so far: 65
+# successes: 64 (98.5%)
+
+Task: pick up the black bowl next to the cookie box and place it on the plate
+Starting episode 6...
+Query 1/1: Action query time = 2.556 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3667
+t=10: Selected seed 195 with value = 0.3667
+Query 1/1: Action query time = 2.552 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3959
+t=26: Selected seed 195 with value = 0.3959
+Query 1/1: Action query time = 2.507 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4219
+t=42: Selected seed 195 with value = 0.4219
+Query 1/1: Action query time = 2.628 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5047
+t=58: Selected seed 195 with value = 0.5047
+Query 1/1: Action query time = 2.525 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6570
+t=74: Selected seed 195 with value = 0.6570
+Query 1/1: Action query time = 2.525 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7823
+t=90: Selected seed 195 with value = 0.7823
+Query 1/1: Action query time = 2.540 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9503
+t=106: Selected seed 195 with value = 0.9503
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=66--success=True--task=pick_up_the_black_bowl_next_to_the_cooki.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=66--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4
+Success: True
+# episodes completed so far: 66
+# successes: 65 (98.5%)
+
+Task: pick up the black bowl next to the cookie box and place it on the plate
+Starting episode 7...
+Query 1/1: Action query time = 2.798 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3401
+t=10: Selected seed 195 with value = 0.3401
+Query 1/1: Action query time = 2.656 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4336
+t=26: Selected seed 195 with value = 0.4336
+Query 1/1: Action query time = 2.528 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4636
+t=42: Selected seed 195 with value = 0.4636
+Query 1/1: Action query time = 2.526 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5681
+t=58: Selected seed 195 with value = 0.5681
+Query 1/1: Action query time = 2.519 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6566
+t=74: Selected seed 195 with value = 0.6566
+Query 1/1: Action query time = 2.528 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6480
+t=90: Selected seed 195 with value = 0.6480
+Query 1/1: Action query time = 2.559 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7650
+t=106: Selected seed 195 with value = 0.7650
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=67--success=True--task=pick_up_the_black_bowl_next_to_the_cooki.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=67--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4
+Success: True
+# episodes completed so far: 67
+# successes: 66 (98.5%)
+
+Task: pick up the black bowl next to the cookie box and place it on the plate
+Starting episode 8...
+Query 1/1: Action query time = 2.874 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3499
+t=10: Selected seed 195 with value = 0.3499
+Query 1/1: Action query time = 2.617 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4167
+t=26: Selected seed 195 with value = 0.4167
+Query 1/1: Action query time = 2.644 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5216
+t=42: Selected seed 195 with value = 0.5216
+Query 1/1: Action query time = 2.631 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6083
+t=58: Selected seed 195 with value = 0.6083
+Query 1/1: Action query time = 2.526 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6785
+t=74: Selected seed 195 with value = 0.6785
+Query 1/1: Action query time = 2.532 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8068
+t=90: Selected seed 195 with value = 0.8068
+Query 1/1: Action query time = 2.611 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9622
+t=106: Selected seed 195 with value = 0.9622
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=68--success=True--task=pick_up_the_black_bowl_next_to_the_cooki.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=68--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4
+Success: True
+# episodes completed so far: 68
+# successes: 67 (98.5%)
+
+Task: pick up the black bowl next to the cookie box and place it on the plate
+Starting episode 9...
+Query 1/1: Action query time = 2.600 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3229
+t=10: Selected seed 195 with value = 0.3229
+Query 1/1: Action query time = 2.607 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3801
+t=26: Selected seed 195 with value = 0.3801
+Query 1/1: Action query time = 2.550 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4744
+t=42: Selected seed 195 with value = 0.4744
+Query 1/1: Action query time = 2.522 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5561
+t=58: Selected seed 195 with value = 0.5561
+Query 1/1: Action query time = 2.555 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6236
+t=74: Selected seed 195 with value = 0.6236
+Query 1/1: Action query time = 2.545 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7370
+t=90: Selected seed 195 with value = 0.7370
+Query 1/1: Action query time = 2.560 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8806
+t=106: Selected seed 195 with value = 0.8806
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=69--success=True--task=pick_up_the_black_bowl_next_to_the_cooki.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=69--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4
+Success: True
+# episodes completed so far: 69
+# successes: 68 (98.6%)
+
+Task: pick up the black bowl next to the cookie box and place it on the plate
+Starting episode 10...
+Query 1/1: Action query time = 2.622 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3691
+t=10: Selected seed 195 with value = 0.3691
+Query 1/1: Action query time = 2.766 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4416
+t=26: Selected seed 195 with value = 0.4416
+Query 1/1: Action query time = 2.783 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5073
+t=42: Selected seed 195 with value = 0.5073
+Query 1/1: Action query time = 2.617 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6237
+t=58: Selected seed 195 with value = 0.6237
+Query 1/1: Action query time = 2.542 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6990
+t=74: Selected seed 195 with value = 0.6990
+Query 1/1: Action query time = 2.618 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8221
+t=90: Selected seed 195 with value = 0.8221
+Query 1/1: Action query time = 2.549 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9190
+t=106: Selected seed 195 with value = 0.9190
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=70--success=True--task=pick_up_the_black_bowl_next_to_the_cooki.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=70--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4
+Success: True
+# episodes completed so far: 70
+# successes: 69 (98.6%)
+Current task success rate: 1.0
+Current total success rate: 0.9857142857142858
+Using default initial states
+
+Task: pick up the black bowl on the stove and place it on the plate
+Starting episode 1...
+Query 1/1: Action query time = 2.678 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3165
+t=10: Selected seed 195 with value = 0.3165
+Query 1/1: Action query time = 2.656 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3534
+t=26: Selected seed 195 with value = 0.3534
+Query 1/1: Action query time = 2.537 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4426
+t=42: Selected seed 195 with value = 0.4426
+Query 1/1: Action query time = 2.712 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5266
+t=58: Selected seed 195 with value = 0.5266
+Query 1/1: Action query time = 2.566 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6191
+t=74: Selected seed 195 with value = 0.6191
+Query 1/1: Action query time = 2.629 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7238
+t=90: Selected seed 195 with value = 0.7238
+Query 1/1: Action query time = 2.605 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8372
+t=106: Selected seed 195 with value = 0.8372
+Query 1/1: Action query time = 2.566 sec
+t=122: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 1.0000
+t=122: Selected seed 195 with value = 1.0000
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=71--success=True--task=pick_up_the_black_bowl_on_the_stove_and_.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=71--success=True--task=pick_up_the_black_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 71
+# successes: 70 (98.6%)
+
+Task: pick up the black bowl on the stove and place it on the plate
+Starting episode 2...
+Query 1/1: Action query time = 2.550 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3010
+t=10: Selected seed 195 with value = 0.3010
+Query 1/1: Action query time = 2.530 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3408
+t=26: Selected seed 195 with value = 0.3408
+Query 1/1: Action query time = 2.527 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4054
+t=42: Selected seed 195 with value = 0.4054
+Query 1/1: Action query time = 2.549 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4872
+t=58: Selected seed 195 with value = 0.4872
+Query 1/1: Action query time = 2.552 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5692
+t=74: Selected seed 195 with value = 0.5692
+Query 1/1: Action query time = 2.573 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6487
+t=90: Selected seed 195 with value = 0.6487
+Query 1/1: Action query time = 2.542 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7480
+t=106: Selected seed 195 with value = 0.7480
+Query 1/1: Action query time = 2.592 sec
+t=122: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8942
+t=122: Selected seed 195 with value = 0.8942
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=72--success=True--task=pick_up_the_black_bowl_on_the_stove_and_.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=72--success=True--task=pick_up_the_black_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 72
+# successes: 71 (98.6%)
+
+Task: pick up the black bowl on the stove and place it on the plate
+Starting episode 3...
+Query 1/1: Action query time = 2.834 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3093
+t=10: Selected seed 195 with value = 0.3093
+Query 1/1: Action query time = 2.684 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3751
+t=26: Selected seed 195 with value = 0.3751
+Query 1/1: Action query time = 2.658 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4270
+t=42: Selected seed 195 with value = 0.4270
+Query 1/1: Action query time = 2.797 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5346
+t=58: Selected seed 195 with value = 0.5346
+Query 1/1: Action query time = 2.692 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6168
+t=74: Selected seed 195 with value = 0.6168
+Query 1/1: Action query time = 2.764 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7457
+t=90: Selected seed 195 with value = 0.7457
+Query 1/1: Action query time = 2.630 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8941
+t=106: Selected seed 195 with value = 0.8941
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=73--success=True--task=pick_up_the_black_bowl_on_the_stove_and_.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=73--success=True--task=pick_up_the_black_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 73
+# successes: 72 (98.6%)
+
+Task: pick up the black bowl on the stove and place it on the plate
+Starting episode 4...
+Query 1/1: Action query time = 2.765 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3019
+t=10: Selected seed 195 with value = 0.3019
+Query 1/1: Action query time = 2.617 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3607
+t=26: Selected seed 195 with value = 0.3607
+Query 1/1: Action query time = 2.584 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4068
+t=42: Selected seed 195 with value = 0.4068
+Query 1/1: Action query time = 2.648 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4512
+t=58: Selected seed 195 with value = 0.4512
+Query 1/1: Action query time = 2.620 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5728
+t=74: Selected seed 195 with value = 0.5728
+Query 1/1: Action query time = 2.590 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6908
+t=90: Selected seed 195 with value = 0.6908
+Query 1/1: Action query time = 2.779 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8152
+t=106: Selected seed 195 with value = 0.8152
+Query 1/1: Action query time = 2.740 sec
+t=122: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9619
+t=122: Selected seed 195 with value = 0.9619
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=74--success=True--task=pick_up_the_black_bowl_on_the_stove_and_.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=74--success=True--task=pick_up_the_black_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 74
+# successes: 73 (98.6%)
+
+Task: pick up the black bowl on the stove and place it on the plate
+Starting episode 5...
+Query 1/1: Action query time = 2.659 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3138
+t=10: Selected seed 195 with value = 0.3138
+Query 1/1: Action query time = 2.761 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3778
+t=26: Selected seed 195 with value = 0.3778
+Query 1/1: Action query time = 2.754 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4317
+t=42: Selected seed 195 with value = 0.4317
+Query 1/1: Action query time = 2.571 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4931
+t=58: Selected seed 195 with value = 0.4931
+Query 1/1: Action query time = 2.573 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6202
+t=74: Selected seed 195 with value = 0.6202
+Query 1/1: Action query time = 2.629 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7353
+t=90: Selected seed 195 with value = 0.7353
+Query 1/1: Action query time = 2.571 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8602
+t=106: Selected seed 195 with value = 0.8602
+Query 1/1: Action query time = 2.556 sec
+t=122: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 1.0000
+t=122: Selected seed 195 with value = 1.0000
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=75--success=True--task=pick_up_the_black_bowl_on_the_stove_and_.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=75--success=True--task=pick_up_the_black_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 75
+# successes: 74 (98.7%)
+
+Task: pick up the black bowl on the stove and place it on the plate
+Starting episode 6...
+Query 1/1: Action query time = 2.730 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.2992
+t=10: Selected seed 195 with value = 0.2992
+Query 1/1: Action query time = 2.587 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3406
+t=26: Selected seed 195 with value = 0.3406
+Query 1/1: Action query time = 2.559 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4036
+t=42: Selected seed 195 with value = 0.4036
+Query 1/1: Action query time = 2.539 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4847
+t=58: Selected seed 195 with value = 0.4847
+Query 1/1: Action query time = 2.591 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5780
+t=74: Selected seed 195 with value = 0.5780
+Query 1/1: Action query time = 2.673 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7273
+t=90: Selected seed 195 with value = 0.7273
+Query 1/1: Action query time = 2.562 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8467
+t=106: Selected seed 195 with value = 0.8467
+Query 1/1: Action query time = 2.574 sec
+t=122: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9590
+t=122: Selected seed 195 with value = 0.9590
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=76--success=True--task=pick_up_the_black_bowl_on_the_stove_and_.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=76--success=True--task=pick_up_the_black_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 76
+# successes: 75 (98.7%)
+
+Task: pick up the black bowl on the stove and place it on the plate
+Starting episode 7...
+Query 1/1: Action query time = 2.568 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.2971
+t=10: Selected seed 195 with value = 0.2971
+Query 1/1: Action query time = 2.546 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3642
+t=26: Selected seed 195 with value = 0.3642
+Query 1/1: Action query time = 2.664 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4353
+t=42: Selected seed 195 with value = 0.4353
+Query 1/1: Action query time = 2.688 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5051
+t=58: Selected seed 195 with value = 0.5051
+Query 1/1: Action query time = 2.591 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6260
+t=74: Selected seed 195 with value = 0.6260
+Query 1/1: Action query time = 2.616 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7592
+t=90: Selected seed 195 with value = 0.7592
+Query 1/1: Action query time = 2.746 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9000
+t=106: Selected seed 195 with value = 0.9000
+Query 1/1: Action query time = 2.617 sec
+t=122: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 1.0000
+t=122: Selected seed 195 with value = 1.0000
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=77--success=True--task=pick_up_the_black_bowl_on_the_stove_and_.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=77--success=True--task=pick_up_the_black_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 77
+# successes: 76 (98.7%)
+
+Task: pick up the black bowl on the stove and place it on the plate
+Starting episode 8...
+Query 1/1: Action query time = 2.754 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3181
+t=10: Selected seed 195 with value = 0.3181
+Query 1/1: Action query time = 2.588 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3693
+t=26: Selected seed 195 with value = 0.3693
+Query 1/1: Action query time = 2.573 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4171
+t=42: Selected seed 195 with value = 0.4171
+Query 1/1: Action query time = 2.547 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5264
+t=58: Selected seed 195 with value = 0.5264
+Query 1/1: Action query time = 2.721 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5959
+t=74: Selected seed 195 with value = 0.5959
+Query 1/1: Action query time = 2.549 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7221
+t=90: Selected seed 195 with value = 0.7221
+Query 1/1: Action query time = 2.583 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8227
+t=106: Selected seed 195 with value = 0.8227
+Query 1/1: Action query time = 2.548 sec
+t=122: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9426
+t=122: Selected seed 195 with value = 0.9426
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=78--success=True--task=pick_up_the_black_bowl_on_the_stove_and_.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=78--success=True--task=pick_up_the_black_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 78
+# successes: 77 (98.7%)
+
+Task: pick up the black bowl on the stove and place it on the plate
+Starting episode 9...
+Query 1/1: Action query time = 2.597 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.2909
+t=10: Selected seed 195 with value = 0.2909
+Query 1/1: Action query time = 2.569 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3196
+t=26: Selected seed 195 with value = 0.3196
+Query 1/1: Action query time = 2.623 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3878
+t=42: Selected seed 195 with value = 0.3878
+Query 1/1: Action query time = 2.605 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4589
+t=58: Selected seed 195 with value = 0.4589
+Query 1/1: Action query time = 2.602 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5292
+t=74: Selected seed 195 with value = 0.5292
+Query 1/1: Action query time = 2.586 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6452
+t=90: Selected seed 195 with value = 0.6452
+Query 1/1: Action query time = 2.597 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7536
+t=106: Selected seed 195 with value = 0.7536
+Query 1/1: Action query time = 2.599 sec
+t=122: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9154
+t=122: Selected seed 195 with value = 0.9154
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=79--success=True--task=pick_up_the_black_bowl_on_the_stove_and_.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=79--success=True--task=pick_up_the_black_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 79
+# successes: 78 (98.7%)
+
+Task: pick up the black bowl on the stove and place it on the plate
+Starting episode 10...
+Query 1/1: Action query time = 2.808 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3147
+t=10: Selected seed 195 with value = 0.3147
+Query 1/1: Action query time = 2.580 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3659
+t=26: Selected seed 195 with value = 0.3659
+Query 1/1: Action query time = 2.572 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4259
+t=42: Selected seed 195 with value = 0.4259
+Query 1/1: Action query time = 2.770 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4739
+t=58: Selected seed 195 with value = 0.4739
+Query 1/1: Action query time = 2.655 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5509
+t=74: Selected seed 195 with value = 0.5509
+Query 1/1: Action query time = 2.543 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6470
+t=90: Selected seed 195 with value = 0.6470
+Query 1/1: Action query time = 2.546 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7769
+t=106: Selected seed 195 with value = 0.7769
+Query 1/1: Action query time = 2.593 sec
+t=122: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9092
+t=122: Selected seed 195 with value = 0.9092
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=80--success=True--task=pick_up_the_black_bowl_on_the_stove_and_.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=80--success=True--task=pick_up_the_black_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 80
+# successes: 79 (98.8%)
+Current task success rate: 1.0
+Current total success rate: 0.9875
+Using default initial states
+
+Task: pick up the black bowl next to the plate and place it on the plate
+Starting episode 1...
+Query 1/1: Action query time = 2.835 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3255
+t=10: Selected seed 195 with value = 0.3255
+Query 1/1: Action query time = 2.757 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3992
+t=26: Selected seed 195 with value = 0.3992
+Query 1/1: Action query time = 2.809 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4771
+t=42: Selected seed 195 with value = 0.4771
+Query 1/1: Action query time = 2.792 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5392
+t=58: Selected seed 195 with value = 0.5392
+Query 1/1: Action query time = 2.818 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6342
+t=74: Selected seed 195 with value = 0.6342
+Query 1/1: Action query time = 2.702 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7727
+t=90: Selected seed 195 with value = 0.7727
+Query 1/1: Action query time = 2.706 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9036
+t=106: Selected seed 195 with value = 0.9036
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=81--success=True--task=pick_up_the_black_bowl_next_to_the_plate.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=81--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4
+Success: True
+# episodes completed so far: 81
+# successes: 80 (98.8%)
+
+Task: pick up the black bowl next to the plate and place it on the plate
+Starting episode 2...
+Query 1/1: Action query time = 2.593 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4271
+t=10: Selected seed 195 with value = 0.4271
+Query 1/1: Action query time = 2.708 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4988
+t=26: Selected seed 195 with value = 0.4988
+Query 1/1: Action query time = 2.549 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5822
+t=42: Selected seed 195 with value = 0.5822
+Query 1/1: Action query time = 2.561 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6864
+t=58: Selected seed 195 with value = 0.6864
+Query 1/1: Action query time = 2.548 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7965
+t=74: Selected seed 195 with value = 0.7965
+Query 1/1: Action query time = 2.523 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9515
+t=90: Selected seed 195 with value = 0.9515
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=82--success=True--task=pick_up_the_black_bowl_next_to_the_plate.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=82--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4
+Success: True
+# episodes completed so far: 82
+# successes: 81 (98.8%)
+
+Task: pick up the black bowl next to the plate and place it on the plate
+Starting episode 3...
+Query 1/1: Action query time = 2.555 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3690
+t=10: Selected seed 195 with value = 0.3690
+Query 1/1: Action query time = 2.623 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4765
+t=26: Selected seed 195 with value = 0.4765
+Query 1/1: Action query time = 2.631 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5687
+t=42: Selected seed 195 with value = 0.5687
+Query 1/1: Action query time = 2.540 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6567
+t=58: Selected seed 195 with value = 0.6567
+Query 1/1: Action query time = 2.547 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7832
+t=74: Selected seed 195 with value = 0.7832
+Query 1/1: Action query time = 2.587 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9273
+t=90: Selected seed 195 with value = 0.9273
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=83--success=True--task=pick_up_the_black_bowl_next_to_the_plate.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=83--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4
+Success: True
+# episodes completed so far: 83
+# successes: 82 (98.8%)
+
+Task: pick up the black bowl next to the plate and place it on the plate
+Starting episode 4...
+Query 1/1: Action query time = 2.694 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3467
+t=10: Selected seed 195 with value = 0.3467
+Query 1/1: Action query time = 2.580 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4455
+t=26: Selected seed 195 with value = 0.4455
+Query 1/1: Action query time = 2.584 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5100
+t=42: Selected seed 195 with value = 0.5100
+Query 1/1: Action query time = 2.634 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6467
+t=58: Selected seed 195 with value = 0.6467
+Query 1/1: Action query time = 2.734 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7560
+t=74: Selected seed 195 with value = 0.7560
+Query 1/1: Action query time = 2.666 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8799
+t=90: Selected seed 195 with value = 0.8799
+Query 1/1: Action query time = 2.645 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9997
+t=106: Selected seed 195 with value = 0.9997
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=84--success=True--task=pick_up_the_black_bowl_next_to_the_plate.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=84--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4
+Success: True
+# episodes completed so far: 84
+# successes: 83 (98.8%)
+
+Task: pick up the black bowl next to the plate and place it on the plate
+Starting episode 5...
+Query 1/1: Action query time = 2.800 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3705
+t=10: Selected seed 195 with value = 0.3705
+Query 1/1: Action query time = 2.575 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4421
+t=26: Selected seed 195 with value = 0.4421
+Query 1/1: Action query time = 2.771 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4845
+t=42: Selected seed 195 with value = 0.4845
+Query 1/1: Action query time = 2.587 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6075
+t=58: Selected seed 195 with value = 0.6075
+Query 1/1: Action query time = 2.630 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6170
+t=74: Selected seed 195 with value = 0.6170
+Query 1/1: Action query time = 2.646 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8494
+t=90: Selected seed 195 with value = 0.8494
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=85--success=True--task=pick_up_the_black_bowl_next_to_the_plate.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=85--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4
+Success: True
+# episodes completed so far: 85
+# successes: 84 (98.8%)
+
+Task: pick up the black bowl next to the plate and place it on the plate
+Starting episode 6...
+Query 1/1: Action query time = 2.838 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4033
+t=10: Selected seed 195 with value = 0.4033
+Query 1/1: Action query time = 2.536 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4815
+t=26: Selected seed 195 with value = 0.4815
+Query 1/1: Action query time = 2.580 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5742
+t=42: Selected seed 195 with value = 0.5742
+Query 1/1: Action query time = 2.601 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6580
+t=58: Selected seed 195 with value = 0.6580
+Query 1/1: Action query time = 2.533 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7239
+t=74: Selected seed 195 with value = 0.7239
+Query 1/1: Action query time = 2.595 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8668
+t=90: Selected seed 195 with value = 0.8668
+Query 1/1: Action query time = 2.606 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9089
+t=106: Selected seed 195 with value = 0.9089
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=86--success=True--task=pick_up_the_black_bowl_next_to_the_plate.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=86--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4
+Success: True
+# episodes completed so far: 86
+# successes: 85 (98.8%)
+
+Task: pick up the black bowl next to the plate and place it on the plate
+Starting episode 7...
+Query 1/1: Action query time = 2.529 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3850
+t=10: Selected seed 195 with value = 0.3850
+Query 1/1: Action query time = 2.682 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4967
+t=26: Selected seed 195 with value = 0.4967
+Query 1/1: Action query time = 2.602 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5987
+t=42: Selected seed 195 with value = 0.5987
+Query 1/1: Action query time = 2.605 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7117
+t=58: Selected seed 195 with value = 0.7117
+Query 1/1: Action query time = 2.613 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8260
+t=74: Selected seed 195 with value = 0.8260
+Query 1/1: Action query time = 2.611 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9728
+t=90: Selected seed 195 with value = 0.9728
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=87--success=True--task=pick_up_the_black_bowl_next_to_the_plate.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=87--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4
+Success: True
+# episodes completed so far: 87
+# successes: 86 (98.9%)
+
+Task: pick up the black bowl next to the plate and place it on the plate
+Starting episode 8...
+Query 1/1: Action query time = 2.925 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3970
+t=10: Selected seed 195 with value = 0.3970
+Query 1/1: Action query time = 2.644 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5028
+t=26: Selected seed 195 with value = 0.5028
+Query 1/1: Action query time = 2.638 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5666
+t=42: Selected seed 195 with value = 0.5666
+Query 1/1: Action query time = 2.734 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6170
+t=58: Selected seed 195 with value = 0.6170
+Query 1/1: Action query time = 2.694 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7305
+t=74: Selected seed 195 with value = 0.7305
+Query 1/1: Action query time = 2.637 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8661
+t=90: Selected seed 195 with value = 0.8661
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=88--success=True--task=pick_up_the_black_bowl_next_to_the_plate.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=88--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4
+Success: True
+# episodes completed so far: 88
+# successes: 87 (98.9%)
+
+Task: pick up the black bowl next to the plate and place it on the plate
+Starting episode 9...
+Query 1/1: Action query time = 2.658 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3861
+t=10: Selected seed 195 with value = 0.3861
+Query 1/1: Action query time = 2.675 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4241
+t=26: Selected seed 195 with value = 0.4241
+Query 1/1: Action query time = 2.620 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4780
+t=42: Selected seed 195 with value = 0.4780
+Query 1/1: Action query time = 2.620 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5734
+t=58: Selected seed 195 with value = 0.5734
+Query 1/1: Action query time = 2.608 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6742
+t=74: Selected seed 195 with value = 0.6742
+Query 1/1: Action query time = 2.770 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8599
+t=90: Selected seed 195 with value = 0.8599
+Query 1/1: Action query time = 2.733 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9849
+t=106: Selected seed 195 with value = 0.9849
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=89--success=True--task=pick_up_the_black_bowl_next_to_the_plate.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=89--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4
+Success: True
+# episodes completed so far: 89
+# successes: 88 (98.9%)
+
+Task: pick up the black bowl next to the plate and place it on the plate
+Starting episode 10...
+Query 1/1: Action query time = 2.834 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3802
+t=10: Selected seed 195 with value = 0.3802
+Query 1/1: Action query time = 2.783 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4245
+t=26: Selected seed 195 with value = 0.4245
+Query 1/1: Action query time = 2.654 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5198
+t=42: Selected seed 195 with value = 0.5198
+Query 1/1: Action query time = 2.616 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5751
+t=58: Selected seed 195 with value = 0.5751
+Query 1/1: Action query time = 2.552 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6881
+t=74: Selected seed 195 with value = 0.6881
+Query 1/1: Action query time = 2.649 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8023
+t=90: Selected seed 195 with value = 0.8023
+Query 1/1: Action query time = 2.821 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9395
+t=106: Selected seed 195 with value = 0.9395
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=90--success=True--task=pick_up_the_black_bowl_next_to_the_plate.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=90--success=True--task=pick_up_the_black_bowl_next_to_the_.mp4
+Success: True
+# episodes completed so far: 90
+# successes: 89 (98.9%)
+Current task success rate: 1.0
+Current total success rate: 0.9888888888888889
+Using default initial states
+
+Task: pick up the black bowl on the wooden cabinet and place it on the plate
+Starting episode 1...
+Query 1/1: Action query time = 2.765 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3131
+t=10: Selected seed 195 with value = 0.3131
+Query 1/1: Action query time = 2.685 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3691
+t=26: Selected seed 195 with value = 0.3691
+Query 1/1: Action query time = 2.732 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4529
+t=42: Selected seed 195 with value = 0.4529
+Query 1/1: Action query time = 2.775 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5401
+t=58: Selected seed 195 with value = 0.5401
+Query 1/1: Action query time = 2.632 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6257
+t=74: Selected seed 195 with value = 0.6257
+Query 1/1: Action query time = 2.635 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7161
+t=90: Selected seed 195 with value = 0.7161
+Query 1/1: Action query time = 2.637 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8356
+t=106: Selected seed 195 with value = 0.8356
+Query 1/1: Action query time = 2.639 sec
+t=122: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9916
+t=122: Selected seed 195 with value = 0.9916
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=91--success=True--task=pick_up_the_black_bowl_on_the_wooden_cab.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=91--success=True--task=pick_up_the_black_bowl_on_the_woode.mp4
+Success: True
+# episodes completed so far: 91
+# successes: 90 (98.9%)
+
+Task: pick up the black bowl on the wooden cabinet and place it on the plate
+Starting episode 2...
+Query 1/1: Action query time = 2.835 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3544
+t=10: Selected seed 195 with value = 0.3544
+Query 1/1: Action query time = 2.581 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3973
+t=26: Selected seed 195 with value = 0.3973
+Query 1/1: Action query time = 2.645 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4640
+t=42: Selected seed 195 with value = 0.4640
+Query 1/1: Action query time = 2.738 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5290
+t=58: Selected seed 195 with value = 0.5290
+Query 1/1: Action query time = 2.708 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6066
+t=74: Selected seed 195 with value = 0.6066
+Query 1/1: Action query time = 2.651 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6897
+t=90: Selected seed 195 with value = 0.6897
+Query 1/1: Action query time = 2.633 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8631
+t=106: Selected seed 195 with value = 0.8631
+Query 1/1: Action query time = 2.833 sec
+t=122: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 1.0000
+t=122: Selected seed 195 with value = 1.0000
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=92--success=True--task=pick_up_the_black_bowl_on_the_wooden_cab.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=92--success=True--task=pick_up_the_black_bowl_on_the_woode.mp4
+Success: True
+# episodes completed so far: 92
+# successes: 91 (98.9%)
+
+Task: pick up the black bowl on the wooden cabinet and place it on the plate
+Starting episode 3...
+Query 1/1: Action query time = 2.671 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.2961
+t=10: Selected seed 195 with value = 0.2961
+Query 1/1: Action query time = 2.640 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3430
+t=26: Selected seed 195 with value = 0.3430
+Query 1/1: Action query time = 2.589 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4024
+t=42: Selected seed 195 with value = 0.4024
+Query 1/1: Action query time = 2.588 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4642
+t=58: Selected seed 195 with value = 0.4642
+Query 1/1: Action query time = 2.558 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5481
+t=74: Selected seed 195 with value = 0.5481
+Query 1/1: Action query time = 2.650 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6454
+t=90: Selected seed 195 with value = 0.6454
+Query 1/1: Action query time = 2.636 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7585
+t=106: Selected seed 195 with value = 0.7585
+Query 1/1: Action query time = 2.578 sec
+t=122: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9046
+t=122: Selected seed 195 with value = 0.9046
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=93--success=True--task=pick_up_the_black_bowl_on_the_wooden_cab.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=93--success=True--task=pick_up_the_black_bowl_on_the_woode.mp4
+Success: True
+# episodes completed so far: 93
+# successes: 92 (98.9%)
+
+Task: pick up the black bowl on the wooden cabinet and place it on the plate
+Starting episode 4...
+Query 1/1: Action query time = 2.821 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3211
+t=10: Selected seed 195 with value = 0.3211
+Query 1/1: Action query time = 2.634 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3660
+t=26: Selected seed 195 with value = 0.3660
+Query 1/1: Action query time = 2.794 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4379
+t=42: Selected seed 195 with value = 0.4379
+Query 1/1: Action query time = 2.568 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5147
+t=58: Selected seed 195 with value = 0.5147
+Query 1/1: Action query time = 2.623 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5902
+t=74: Selected seed 195 with value = 0.5902
+Query 1/1: Action query time = 2.606 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6912
+t=90: Selected seed 195 with value = 0.6912
+Query 1/1: Action query time = 2.597 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8059
+t=106: Selected seed 195 with value = 0.8059
+Query 1/1: Action query time = 2.567 sec
+t=122: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9029
+t=122: Selected seed 195 with value = 0.9029
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=94--success=True--task=pick_up_the_black_bowl_on_the_wooden_cab.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=94--success=True--task=pick_up_the_black_bowl_on_the_woode.mp4
+Success: True
+# episodes completed so far: 94
+# successes: 93 (98.9%)
+
+Task: pick up the black bowl on the wooden cabinet and place it on the plate
+Starting episode 5...
+Query 1/1: Action query time = 2.781 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3162
+t=10: Selected seed 195 with value = 0.3162
+Query 1/1: Action query time = 2.658 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3695
+t=26: Selected seed 195 with value = 0.3695
+Query 1/1: Action query time = 2.628 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4397
+t=42: Selected seed 195 with value = 0.4397
+Query 1/1: Action query time = 2.617 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5334
+t=58: Selected seed 195 with value = 0.5334
+Query 1/1: Action query time = 2.701 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6291
+t=74: Selected seed 195 with value = 0.6291
+Query 1/1: Action query time = 2.654 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7147
+t=90: Selected seed 195 with value = 0.7147
+Query 1/1: Action query time = 2.610 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8587
+t=106: Selected seed 195 with value = 0.8587
+Query 1/1: Action query time = 2.727 sec
+t=122: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 1.0000
+t=122: Selected seed 195 with value = 1.0000
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=95--success=True--task=pick_up_the_black_bowl_on_the_wooden_cab.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=95--success=True--task=pick_up_the_black_bowl_on_the_woode.mp4
+Success: True
+# episodes completed so far: 95
+# successes: 94 (98.9%)
+
+Task: pick up the black bowl on the wooden cabinet and place it on the plate
+Starting episode 6...
+Query 1/1: Action query time = 2.909 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.2933
+t=10: Selected seed 195 with value = 0.2933
+Query 1/1: Action query time = 2.686 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3565
+t=26: Selected seed 195 with value = 0.3565
+Query 1/1: Action query time = 2.638 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4263
+t=42: Selected seed 195 with value = 0.4263
+Query 1/1: Action query time = 2.550 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4596
+t=58: Selected seed 195 with value = 0.4596
+Query 1/1: Action query time = 2.585 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5676
+t=74: Selected seed 195 with value = 0.5676
+Query 1/1: Action query time = 2.594 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6516
+t=90: Selected seed 195 with value = 0.6516
+Query 1/1: Action query time = 2.733 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7590
+t=106: Selected seed 195 with value = 0.7590
+Query 1/1: Action query time = 2.544 sec
+t=122: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8903
+t=122: Selected seed 195 with value = 0.8903
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=96--success=True--task=pick_up_the_black_bowl_on_the_wooden_cab.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=96--success=True--task=pick_up_the_black_bowl_on_the_woode.mp4
+Success: True
+# episodes completed so far: 96
+# successes: 95 (99.0%)
+
+Task: pick up the black bowl on the wooden cabinet and place it on the plate
+Starting episode 7...
+Query 1/1: Action query time = 2.665 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3033
+t=10: Selected seed 195 with value = 0.3033
+Query 1/1: Action query time = 2.656 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3418
+t=26: Selected seed 195 with value = 0.3418
+Query 1/1: Action query time = 2.652 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3997
+t=42: Selected seed 195 with value = 0.3997
+Query 1/1: Action query time = 2.683 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4639
+t=58: Selected seed 195 with value = 0.4639
+Query 1/1: Action query time = 2.704 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5358
+t=74: Selected seed 195 with value = 0.5358
+Query 1/1: Action query time = 2.648 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6395
+t=90: Selected seed 195 with value = 0.6395
+Query 1/1: Action query time = 2.709 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7480
+t=106: Selected seed 195 with value = 0.7480
+Query 1/1: Action query time = 2.722 sec
+t=122: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8816
+t=122: Selected seed 195 with value = 0.8816
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=97--success=True--task=pick_up_the_black_bowl_on_the_wooden_cab.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=97--success=True--task=pick_up_the_black_bowl_on_the_woode.mp4
+Success: True
+# episodes completed so far: 97
+# successes: 96 (99.0%)
+
+Task: pick up the black bowl on the wooden cabinet and place it on the plate
+Starting episode 8...
+Query 1/1: Action query time = 2.595 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3173
+t=10: Selected seed 195 with value = 0.3173
+Query 1/1: Action query time = 2.631 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.2392
+t=26: Selected seed 195 with value = 0.2392
+Query 1/1: Action query time = 2.787 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.2821
+t=42: Selected seed 195 with value = 0.2821
+Query 1/1: Action query time = 2.619 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3302
+t=58: Selected seed 195 with value = 0.3302
+Query 1/1: Action query time = 2.648 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5702
+t=74: Selected seed 195 with value = 0.5702
+Query 1/1: Action query time = 2.663 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6375
+t=90: Selected seed 195 with value = 0.6375
+Query 1/1: Action query time = 2.693 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7928
+t=106: Selected seed 195 with value = 0.7928
+Query 1/1: Action query time = 2.765 sec
+t=122: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.8707
+t=122: Selected seed 195 with value = 0.8707
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=98--success=True--task=pick_up_the_black_bowl_on_the_wooden_cab.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=98--success=True--task=pick_up_the_black_bowl_on_the_woode.mp4
+Success: True
+# episodes completed so far: 98
+# successes: 97 (99.0%)
+
+Task: pick up the black bowl on the wooden cabinet and place it on the plate
+Starting episode 9...
+Query 1/1: Action query time = 2.895 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3195
+t=10: Selected seed 195 with value = 0.3195
+Query 1/1: Action query time = 2.739 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3714
+t=26: Selected seed 195 with value = 0.3714
+Query 1/1: Action query time = 2.719 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4325
+t=42: Selected seed 195 with value = 0.4325
+Query 1/1: Action query time = 2.591 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5010
+t=58: Selected seed 195 with value = 0.5010
+Query 1/1: Action query time = 2.640 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5778
+t=74: Selected seed 195 with value = 0.5778
+Query 1/1: Action query time = 2.682 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6457
+t=90: Selected seed 195 with value = 0.6457
+Query 1/1: Action query time = 2.790 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7781
+t=106: Selected seed 195 with value = 0.7781
+Query 1/1: Action query time = 2.598 sec
+t=122: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9438
+t=122: Selected seed 195 with value = 0.9438
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=99--success=True--task=pick_up_the_black_bowl_on_the_wooden_cab.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=99--success=True--task=pick_up_the_black_bowl_on_the_woode.mp4
+Success: True
+# episodes completed so far: 99
+# successes: 98 (99.0%)
+
+Task: pick up the black bowl on the wooden cabinet and place it on the plate
+Starting episode 10...
+Query 1/1: Action query time = 2.665 sec
+t=10: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.2913
+t=10: Selected seed 195 with value = 0.2913
+Query 1/1: Action query time = 2.662 sec
+t=26: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.3440
+t=26: Selected seed 195 with value = 0.3440
+Query 1/1: Action query time = 2.791 sec
+t=42: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4000
+t=42: Selected seed 195 with value = 0.4000
+Query 1/1: Action query time = 2.642 sec
+t=58: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.4765
+t=58: Selected seed 195 with value = 0.4765
+Query 1/1: Action query time = 2.662 sec
+t=74: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.5557
+t=74: Selected seed 195 with value = 0.5557
+Query 1/1: Action query time = 2.658 sec
+t=90: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.6526
+t=90: Selected seed 195 with value = 0.6526
+Query 1/1: Action query time = 2.684 sec
+t=106: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.7621
+t=106: Selected seed 195 with value = 0.7621
+Query 1/1: Action query time = 2.764 sec
+t=122: Current base seed: 195
+Query 1/1 (seed 195): Predicted value = 0.9088
+t=122: Selected seed 195 with value = 0.9088
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--episode=100--success=True--task=pick_up_the_black_bowl_on_the_wooden_cab.mp4
+Saved rollout MP4 at path /mnt/d/xiao/Documents/ChatGPT/cosmos/eval-results/official_spatial_10x10_seed195/videos/2026_10_13-16_01_46--with_future_img--episode=100--success=True--task=pick_up_the_black_bowl_on_the_woode.mp4
+Success: True
+# episodes completed so far: 100
+# successes: 99 (99.0%)
+Current task success rate: 1.0
+Current total success rate: 0.99
+Final results:
+Total episodes: 100
+Total successes: 99
+Overall success rate: 0.9900 (99.0%)

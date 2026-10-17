@@ -1,0 +1,2 @@
+name, memory.used [MiB], ecc.errors.uncorrected.volatile.dram
+NVIDIA L40S, 0 MiB, 0

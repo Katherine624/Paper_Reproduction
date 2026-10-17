@@ -1,0 +1,42 @@
+[
+  {
+    "path": "cosmos_policy/_src/predict2/models/text2world_model.py",
+    "sha256": "bbaa01cffe073c841b6aa0737de9809e0ed00423cf1df052a656efad85bd8edc"
+  },
+  {
+    "path": "cosmos_policy/_src/predict2/utils/model_loader.py",
+    "sha256": "625dc3bf8c9c8d6295c3bf6762acd0d70b5fc692e8f6e81ba51f8753ebc3170b"
+  },
+  {
+    "path": "cosmos_policy/config/config.py",
+    "sha256": "65dbfa8c7e608be975d551f90d751d49be5786fbeb01df5210b4832dd21b5f1b"
+  },
+  {
+    "path": "cosmos_policy/config/experiment/cosmos_policy_experiment_configs.py",
+    "sha256": "f0da2fc5294c4b3e3928c9978b8d01a56894d343bc0e9db724b52a7dc0f7b0dc"
+  },
+  {
+    "path": "cosmos_policy/experiments/robot/cosmos_utils.py",
+    "sha256": "bff0299519a883a3523b98049468d307544f77d116b93258f70e9da39355387f"
+  },
+  {
+    "path": "cosmos_policy/experiments/robot/libero/libero_utils.py",
+    "sha256": "69c08fe630c75c8f7551fa45860565d9c85ccb2905b5debc2b2fccc48b2721ab"
+  },
+  {
+    "path": "cosmos_policy/experiments/robot/libero/run_libero_eval.py",
+    "sha256": "3d5bdf27fa0f8134d6603b4851c3d58d1fb343e30ba83d97ec201d982456ec1f"
+  },
+  {
+    "path": "eval_official_libero.sh",
+    "sha256": "65d2b3e46d0a5975c238ff97eca0c0f448fbbddb399ae16f7b603866f3c3c922"
+  },
+  {
+    "path": "LIBERO.md",
+    "sha256": "827b6fc57913e0d54702904aab193f7410d6534bcb90dc39db23e0294df0fe77"
+  },
+  {
+    "path": "summarize_official_eval.py",
+    "sha256": "a4c9c9eea4b948107a869de5c5caee96702e142a2022ce05a0e72429b6c1ec43"
+  }
+]
