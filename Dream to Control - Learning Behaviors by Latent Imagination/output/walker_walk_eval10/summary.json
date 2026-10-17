@@ -1,0 +1,23 @@
+{
+  "status": "completed",
+  "task": "dmc_walker_walk",
+  "episodes": 10,
+  "mean_return": 30.925519257204552,
+  "std_return": 8.830455513086843,
+  "min_return": 10.756483868662734,
+  "max_return": 42.70019627931263,
+  "elapsed_seconds": 40.30858555994928,
+  "finished_utc": "2026-10-13T13:10:09.822629+00:00",
+  "weights_unchanged": true,
+  "parameter_sha256": {
+    "encode": "ed892c6f3efd4f2b341a6d7135b567a08b8a93126e8f5e194ab9de7b677f982e",
+    "dynamics": "5e10f385cc38943e9df5f700fb6fc73d5209130be592b1ed90cb0e622bf057aa",
+    "actor": "1c962743b620a0ca559212fd42b14a1ec55cce4a535e0da60b0833c3b125ca03"
+  },
+  "checkpoint_source": "/root/rivermind-data/dreamer-v1-repro/runs/walker_walk_seed0",
+  "training_environment_steps": 20000,
+  "evaluation_protocol": "actor sampled-mode approximation; stochastic RSSM; no exploration noise; one independently reset environment per seed",
+  "scope": "short-training pipeline verification, not paper-level performance reproduction",
+  "checkpoint_sha256": "82ac07292324530cc673567b88485f3b44cf0afdac45e2398dc9e05afeae5f09",
+  "restore_max_abs_difference": 0.0
+}

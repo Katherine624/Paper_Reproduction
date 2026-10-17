@@ -1,0 +1,18 @@
+{
+  "dreamer.py": {
+    "upstream_sha256": "c4a3fa7c52808aec54a8c1e1fe2d65abbb2e617f15e9f698e48c38fb10851c90",
+    "adapted_sha256": "63cae1061673187317c3f2f321066e753f067e8dcdb1c727e62447b55f0a286a"
+  },
+  "models.py": {
+    "upstream_sha256": "78aa5c54e8b7499a43ef657de6e8eba4269c398841e95e785d23141db813ad03",
+    "adapted_sha256": "e5fc0c0e21ace85b4cdf041587ae8a61eb8fa74df4d3e1a065b5828bdecb05ab"
+  },
+  "tools.py": {
+    "upstream_sha256": "d0d9e5382c9270ee1e6a8f56402ad26b83a92692fd8cfcfac0a642a389aa697f",
+    "adapted_sha256": "f2a3e26d8b95aea9ec4dae21be696356a347e04a8b2d0ea3beee5e0565ab6ac4"
+  },
+  "wrappers.py": {
+    "upstream_sha256": "391495818914e07f44cdd2eaa9586a8e8e84a8f383b54ab6d42aa8881fd1def2",
+    "adapted_sha256": "c82ceb0cbf8362141263c14567000415c50bb0d4b0990a7c43cb34ee8558aa9c"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "training_metrics": "/root/rivermind-data/dreamer-v1-repro/runs/walker_walk_seed0/metrics.jsonl",
+  "evaluation_episodes": "/root/rivermind-data/dreamer-v1-repro/output/walker_walk_eval10/episodes.jsonl",
+  "checkpoint_sha256": "82ac07292324530cc673567b88485f3b44cf0afdac45e2398dc9e05afeae5f09",
+  "smoothing": "none",
+  "aggregation": "unweighted arithmetic mean across evaluation episodes"
+}

@@ -1,0 +1,175 @@
+--- a/dreamer.py
++++ b/dreamer.py
+@@ -9,10 +9,11 @@
+ 
+ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+ os.environ['MUJOCO_GL'] = 'egl'
++os.environ.setdefault('TF_USE_LEGACY_KERAS', '1')
+ 
+ import numpy as np
+ import tensorflow as tf
+-from tensorflow.keras.mixed_precision import experimental as prec
++from tensorflow.keras import mixed_precision as prec
+ 
+ tf.get_logger().setLevel('ERROR')
+ 
+@@ -113,7 +114,7 @@
+     if state is not None and reset.any():
+       mask = tf.cast(1 - reset, self._float)[:, None]
+       state = tf.nest.map_structure(lambda x: x * mask, state)
+-    if self._should_train(step):
++    if training and self._should_train(step):
+       log = self._should_log(step)
+       n = self._c.pretrain if self._should_pretrain() else self._c.train_steps
+       print(f'Training for {n} steps.')
+@@ -152,7 +153,7 @@
+ 
+   @tf.function()
+   def train(self, data, log_images=False):
+-    self._strategy.experimental_run_v2(self._train, args=(data, log_images))
++    self._strategy.run(self._train, args=(data, log_images))
+ 
+   def _train(self, data, log_images):
+     with tf.GradientTape() as model_tape:
+@@ -318,7 +319,7 @@
+       self._last_time += duration
+       metrics.append(('fps', (step - self._last_log) / duration))
+     self._last_log = step
+-    [m.reset_states() for m in self._metrics.values()]
++    [m.reset_state() for m in self._metrics.values()]
+     with (self._c.logdir / 'metrics.jsonl').open('a') as f:
+       f.write(json.dumps({'step': step, **dict(metrics)}) + '\n')
+     [tf.summary.scalar('agent/' + k, m) for k, m in metrics]
+@@ -346,7 +347,7 @@
+   shapes = {k: (None,) + v.shape[1:] for k, v in episode.items()}
+   generator = lambda: tools.load_episodes(
+       directory, config.train_steps, config.batch_length,
+-      config.dataset_balance)
++      config.dataset_balance, seed=config.seed)
+   dataset = tf.data.Dataset.from_generator(generator, types, shapes)
+   dataset = dataset.batch(config.batch_size, drop_remainder=True)
+   dataset = dataset.map(functools.partial(preprocess, config=config))
+@@ -376,7 +377,8 @@
+ def make_env(config, writer, prefix, datadir, store):
+   suite, task = config.task.split('_', 1)
+   if suite == 'dmc':
+-    env = wrappers.DeepMindControl(task)
++    env = wrappers.DeepMindControl(
++        task, seed=config.seed + (10000 if prefix == 'test' else 0))
+     env = wrappers.ActionRepeat(env, config.action_repeat)
+     env = wrappers.NormalizeActions(env)
+   elif suite == 'atari':
+@@ -403,7 +405,7 @@
+       tf.config.experimental.set_memory_growth(gpu, True)
+   assert config.precision in (16, 32), config.precision
+   if config.precision == 16:
+-    prec.set_policy(prec.Policy('mixed_float16'))
++    prec.set_global_policy(prec.Policy('mixed_float16'))
+   config.steps = int(config.steps)
+   config.logdir.mkdir(parents=True, exist_ok=True)
+   print('Logdir', config.logdir)
+@@ -420,6 +422,7 @@
+       config, writer, 'test', datadir, store=False), config.parallel)
+       for _ in range(config.envs)]
+   actspace = train_envs[0].action_space
++  actspace.seed(config.seed)
+ 
+   # Prefill dataset with random episodes.
+   step = count_steps(datadir, config)
+--- a/models.py
++++ b/models.py
+@@ -2,7 +2,7 @@
+ import tensorflow as tf
+ from tensorflow.keras import layers as tfkl
+ from tensorflow_probability import distributions as tfd
+-from tensorflow.keras.mixed_precision import experimental as prec
++from tensorflow.keras import mixed_precision as prec
+ 
+ import tools
+ 
+@@ -23,7 +23,7 @@
+         mean=tf.zeros([batch_size, self._stoch_size], dtype),
+         std=tf.zeros([batch_size, self._stoch_size], dtype),
+         stoch=tf.zeros([batch_size, self._stoch_size], dtype),
+-        deter=self._cell.get_initial_state(None, batch_size, dtype))
++        deter=tf.zeros([batch_size, self._deter_size], dtype))
+ 
+   @tf.function
+   def observe(self, embed, action, state=None):
+@@ -130,7 +130,7 @@
+     x = features
+     for index in range(self._layers):
+       x = self.get(f'h{index}', tfkl.Dense, self._units, self._act)(x)
+-    x = self.get(f'hout', tfkl.Dense, np.prod(self._shape))(x)
++    x = self.get(f'hout', tfkl.Dense, int(np.prod(self._shape)))(x)
+     x = tf.reshape(x, tf.concat([tf.shape(features)[:-1], self._shape], 0))
+     if self._dist == 'normal':
+       return tfd.Independent(tfd.Normal(x, 1), len(self._shape))
+--- a/tools.py
++++ b/tools.py
+@@ -10,7 +10,7 @@
+ import tensorflow as tf
+ import tensorflow.compat.v1 as tf1
+ import tensorflow_probability as tfp
+-from tensorflow.keras.mixed_precision import experimental as prec
++from tensorflow.keras import mixed_precision as prec
+ from tensorflow_probability import distributions as tfd
+ 
+ 
+@@ -101,7 +101,7 @@
+   # Initialize or unpack simulation state.
+   if state is None:
+     step, episode = 0, 0
+-    done = np.ones(len(envs), np.bool)
++    done = np.ones(len(envs), np.bool_)
+     length = np.zeros(len(envs), np.int32)
+     obs = [None] * len(envs)
+     agent_state = None
+@@ -346,8 +346,8 @@
+     self._clip = clip
+     self._wd = wd
+     self._wdpattern = wdpattern
+-    self._opt = tf.optimizers.Adam(lr)
+-    self._opt = prec.LossScaleOptimizer(self._opt, 'dynamic')
++    self._opt = tf.keras.optimizers.legacy.Adam(lr)
++    self._opt = prec.LossScaleOptimizer(self._opt, dynamic=True)
+     self._variables = None
+ 
+   @property
+@@ -366,6 +366,8 @@
+     grads = tape.gradient(loss, self._variables)
+     grads = self._opt.get_unscaled_gradients(grads)
+     norm = tf.linalg.global_norm(grads)
++    tf.debugging.assert_all_finite(loss, self._name + ' loss is not finite')
++    tf.debugging.assert_all_finite(norm, self._name + ' gradients are not finite')
+     if self._clip:
+       grads, _ = tf.clip_by_global_norm(grads, self._clip, norm)
+     if self._wd:
+--- a/wrappers.py
++++ b/wrappers.py
+@@ -11,13 +11,13 @@
+ 
+ class DeepMindControl:
+ 
+-  def __init__(self, name, size=(64, 64), camera=None):
++  def __init__(self, name, size=(64, 64), camera=None, seed=0):
+     domain, task = name.split('_', 1)
+     if domain == 'cup':  # Only domain with multiple words.
+       domain = 'ball_in_cup'
+     if isinstance(domain, str):
+       from dm_control import suite
+-      self._env = suite.load(domain, task)
++      self._env = suite.load(domain, task, task_kwargs={'random': seed})
+     else:
+       assert task is None
+       self._env = domain()
+@@ -60,6 +60,9 @@
+     if kwargs.get('mode', 'rgb_array') != 'rgb_array':
+       raise ValueError("Only render mode 'rgb_array' is supported.")
+     return self._env.physics.render(*self._size, camera_id=self._camera)
++
++  def close(self):
++    return self._env.close()
+ 
+ 
+ class Atari:
