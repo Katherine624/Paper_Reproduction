@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "release_base_url": "https://github.com/Katherine624/Paper_Reproduction/releases/download/tau0-wm-2026-10-17",
+  "files": [
+    {
+      "path": "runs/checkpoints/vam-gpuhome-30/step_30/diffusion_pytorch_model-00001-of-00002.bin",
+      "size": 9999856397,
+      "sha256": "f419215f59d23b05edf17fe37949d1dde8aa74ce95070efaefa6ed6e82389ec1",
+      "chunks": [
+        {
+          "name": "vam30-shard1-part01of10.bin",
+          "size": 1073741824,
+          "sha256": "491a6f59c1ddf818045e0c9ab28012c7e0b35618702821ce5d22d25d712b2b2b"
+        },
+        {
+          "name": "vam30-shard1-part02of10.bin",
+          "size": 1073741824,
+          "sha256": "0e35fe2d8742dedadd5ebff2b45ac59bbf45afb0536ccea5924e1cb8bf18719e"
+        },
+        {
+          "name": "vam30-shard1-part03of10.bin",
+          "size": 1073741824,
+          "sha256": "1db683a3b85afeaac82333f571e0f3578f39f362e6e893ce9738ef8cf9f62140"
+        },
+        {
+          "name": "vam30-shard1-part04of10.bin",
+          "size": 1073741824,
+          "sha256": "fc559e40243ef67ac5b27982657e145fc2d09e5a9bfd11c99706d94678958c6f"
+        },
+        {
+          "name": "vam30-shard1-part05of10.bin",
+          "size": 1073741824,
+          "sha256": "c917f72d6de54ec2f22e3e7c59dbb159129e9f74a133b5f476a54384b9ce7d71"
+        },
+        {
+          "name": "vam30-shard1-part06of10.bin",
+          "size": 1073741824,
+          "sha256": "87000d77c2750e01b51815cf283ced06a1c872affb7041c55e8819a634f0c1ca"
+        },
+        {
+          "name": "vam30-shard1-part07of10.bin",
+          "size": 1073741824,
+          "sha256": "c29a64dd13aed3b022685bf2d8f4a0c8d6b4a273cfa13285954862d7d301f70d"
+        },
+        {
+          "name": "vam30-shard1-part08of10.bin",
+          "size": 1073741824,
+          "sha256": "2e680ff14b9cd7b1d69bb120959636add3c95bebbdde57f32a2dfc8efb4f00dc"
+        },
+        {
+          "name": "vam30-shard1-part09of10.bin",
+          "size": 1073741824,
+          "sha256": "dc1629121ade66db204be537d67204d16a821054bc11cf24b475926182e49cfa"
+        },
+        {
+          "name": "vam30-shard1-part10of10.bin",
+          "size": 336179981,
+          "sha256": "8c76d60f7a7ff1b21bf36784e3bbccab15556730351202a2400c9545db627f3b"
+        }
+      ]
+    },
+    {
+      "path": "runs/checkpoints/vam-gpuhome-30/step_30/diffusion_pytorch_model-00002-of-00002.bin",
+      "size": 1023521803,
+      "sha256": "1a6d1d1aff0bb18d80ce24177a795c2ecae30685153c3b188d95c3b52be4791e",
+      "chunks": [
+        {
+          "name": "vam30-shard2-part01of01.bin",
+          "size": 1023521803,
+          "sha256": "1a6d1d1aff0bb18d80ce24177a795c2ecae30685153c3b188d95c3b52be4791e"
+        }
+      ]
+    },
+    {
+      "path": "runs/checkpoints/sim-gpuhome-30/step_30/diffusion_pytorch_model-00001-of-00002.bin",
+      "size": 9999848246,
+      "sha256": "b1ac5f371c4068022076d5f48b1e921aca3597c3b6d3a763010a9169846a50a5",
+      "chunks": [
+        {
+          "name": "sim30-shard1-part01of10.bin",
+          "size": 1073741824,
+          "sha256": "24fc8690b357b38b293e2ce21978b1a5cc501efcf9584777750369be15314f86"
+        },
+        {
+          "name": "sim30-shard1-part02of10.bin",
+          "size": 1073741824,
+          "sha256": "ccd25ca40f2aeaf9594084b3bac01e4bf2e95cafce6c9b4b47e9818b3aa9300e"
+        },
+        {
+          "name": "sim30-shard1-part03of10.bin",
+          "size": 1073741824,
+          "sha256": "70ce97186d5c752cd55ef9c97f8a3c95bcbb51012e2ae1872f41f6b3b5bde209"
+        },
+        {
+          "name": "sim30-shard1-part04of10.bin",
+          "size": 1073741824,
+          "sha256": "cacade94eab44413bb63bee4f73e99bb5e17e5756a326bc8c442e77393222768"
+        },
+        {
+          "name": "sim30-shard1-part05of10.bin",
+          "size": 1073741824,
+          "sha256": "8bfa7734bcfa9c3314809bbae346753ca8957d21c6939dfafaf06f61425bee05"
+        },
+        {
+          "name": "sim30-shard1-part06of10.bin",
+          "size": 1073741824,
+          "sha256": "7c5f873e0cf7e0ffee4379213d94f280f92afc0760f61704c24c6a2d35e706d2"
+        },
+        {
+          "name": "sim30-shard1-part07of10.bin",
+          "size": 1073741824,
+          "sha256": "66a3335290377c82a99a91bec61e1d4166d4468d9470e2e045c94c2c0ca48e30"
+        },
+        {
+          "name": "sim30-shard1-part08of10.bin",
+          "size": 1073741824,
+          "sha256": "efd22db35c606f8308f5eed3f17c5dbadaf7f4377aef99f307ff12ca42c0ff67"
+        },
+        {
+          "name": "sim30-shard1-part09of10.bin",
+          "size": 1073741824,
+          "sha256": "6f1df65c20697a290e28587ee290e512e8aabce63bff60295096e270a2ba5803"
+        },
+        {
+          "name": "sim30-shard1-part10of10.bin",
+          "size": 336171830,
+          "sha256": "e3bbdc8ec00a0fe259a5ccfbb92c6b1ba329af045b22c2b4ec6e8c6c36eaed66"
+        }
+      ]
+    },
+    {
+      "path": "runs/checkpoints/sim-gpuhome-30/step_30/diffusion_pytorch_model-00002-of-00002.bin",
+      "size": 1904779018,
+      "sha256": "685ae162762276eb7bb6ac08f6fc254030a5680848b227e369c25fea8b6c540e",
+      "chunks": [
+        {
+          "name": "sim30-shard2-part01of02.bin",
+          "size": 1073741824,
+          "sha256": "591371f271552918f824910f8f9d87458238760ad9709b2ae651d0d9378db021"
+        },
+        {
+          "name": "sim30-shard2-part02of02.bin",
+          "size": 831037194,
+          "sha256": "ae5264bafb48f32191eb9d202823b028f623a48686c89206f55644672f3ee206"
+        }
+      ]
+    }
+  ]
+}
